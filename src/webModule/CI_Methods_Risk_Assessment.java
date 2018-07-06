@@ -2,11 +2,13 @@ package webModule;
 
 import org.openqa.selenium.WebDriver;
 
-import pageObjectRepositories.CI_Objects_Call_Forward;
+import pageObjectRepositories.CI_Objects_Access_To_Site_Or_Meter_Gained;
+import pageObjectRepositories.CI_Objects_Arrive;
+import pageObjectRepositories.CI_Objects_Check_For_Smell_Of_Gas;
 import utility.Log;
 import utility.Utils;
 
-public class CI_Methods_Call_Forward{
+public class CI_Methods_Risk_Assessment{
 	
 	
 	
@@ -33,25 +35,32 @@ public class CI_Methods_Call_Forward{
 	* Details:
 	*
 	****************************************************************************************************/	
-
+	
+	
 	/*
 	
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 
 		//Check that all of the elements of that are expected are displayed
-		Objects_Electricity_Meter_Initial_Polarity_Check_At_Meter_Page.lbl_Initial_Polarity_Check_At_Meter(driver).isDisplayed();{
-		Log.info(sTestCaseName + " | Initial Polarity Check At Meter label displayed as expected");
+		Objects_Electricity_Meter_Initial_Polarity_Check_At_Meter_Page.lbl_Initial_Polarity_Check_At_Meter(driver)
+				.isDisplayed();
+		{
+			Log.info(sTestCaseName + " | Initial Polarity Check At Meter label displayed as expected");
 		}
-		
-		Objects_Electricity_Meter_Initial_Polarity_Check_At_Meter_Page.btn_Polarity_Check_At_Cut_Out_Pass(driver).isDisplayed();{
-		Log.info(sTestCaseName + " | Polarity Check At Cut Out - Pass radio button displayed as expected");
+
+		Objects_Electricity_Meter_Initial_Polarity_Check_At_Meter_Page.btn_Polarity_Check_At_Cut_Out_Pass(driver)
+				.isDisplayed();
+		{
+			Log.info(sTestCaseName + " | Polarity Check At Cut Out - Pass radio button displayed as expected");
 		}
-		
-		Objects_Electricity_Meter_Initial_Polarity_Check_At_Meter_Page.btn_Polarity_Check_At_Cut_Out_Fail(driver).isDisplayed();{
-		Log.info(sTestCaseName + " | Polarity Check At Cut Out - Fail radio button displayed as expected");
+
+		Objects_Electricity_Meter_Initial_Polarity_Check_At_Meter_Page.btn_Polarity_Check_At_Cut_Out_Fail(driver)
+				.isDisplayed();
+		{
+			Log.info(sTestCaseName + " | Polarity Check At Cut Out - Fail radio button displayed as expected");
 		}
-		
+
 		//Take a screenshot to show what we've done
 		Utils.takeScreenshot(driver, sTestCaseName + "-viewPage");
 		
@@ -60,12 +69,15 @@ public class CI_Methods_Call_Forward{
 	
 	
 	*/
-		
+	
+	
 	/* **************************************************************************************************
-	* Function: addSuccessValues
+	* Function: addSuccessValuesAll
 	* Author: Charlotte Jones
 	* Date: 06/07/2018
-	* Purpose: This method adds the required responses in the Call Forward section for a happy path scenario 
+	* Purpose: This method adds the required responses in the Risk Assessment sections for a happy path scenario
+	* This comprises the following sections from the workflow document:
+	*   Check for Smell of Gas
 	* Arguments: 
 	* 			
 	* Returns: 
@@ -77,27 +89,20 @@ public class CI_Methods_Call_Forward{
 	* Details:
 	*
 	****************************************************************************************************/	
-	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesAll(WebDriver driver, String sTestCaseName) throws Exception{
 	
-		// Select Call Forward button
-		CI_Objects_Call_Forward.btn_call_forward(driver).click();{
-			Log.info(sTestCaseName + " | Call Forward button clicked");
-		}
-		// Next section - Display Call Forward
-		CI_Objects_Call_Forward.btn_contact_made_y(driver).click();{
-			Log.info(sTestCaseName + " | Contact Made radio button clicked");
-		}
-		CI_Objects_Call_Forward.btn_appt_confirm_y(driver).click();{
-			Log.info(sTestCaseName + " | Appointment Confirm - Yes radio button clicked");
-		}
-		CI_Objects_Call_Forward.btn_depart(driver).click();{
-			Log.info(sTestCaseName + " | Depart button clicked");
-		}
-		CI_Objects_Call_Forward.btn_ok(driver).click();{
-			Log.info(sTestCaseName + " | OK (pop up) button clicked");
+	// Initial Risk Assessment	
+		// Check for Smell of Gas section
+		
+		CI_Objects_Check_For_Smell_Of_Gas.btn_smell_gas_n(driver).click();
+		{
+			Log.info(sTestCaseName + " | Can you smell Gas? - No button clicked");
 		}
 		
-	}	
+	// END OF ADD SUCCESS VALUES ALL METHOD
+	}
+
+		
 		
 	
 //END OF METHODS

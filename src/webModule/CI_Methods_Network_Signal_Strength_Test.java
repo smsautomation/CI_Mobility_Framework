@@ -1,12 +1,15 @@
 package webModule;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import pageObjectRepositories.CI_Objects_Call_Forward;
+import pageObjectRepositories.CI_Objects_Network_Signal_Strength_Test;
 import utility.Log;
 import utility.Utils;
 
-public class CI_Methods_Call_Forward{
+public class CI_Methods_Network_Signal_Strength_Test{
 	
 	
 	
@@ -33,7 +36,8 @@ public class CI_Methods_Call_Forward{
 	* Details:
 	*
 	****************************************************************************************************/	
-
+	
+	
 	/*
 	
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
@@ -60,14 +64,16 @@ public class CI_Methods_Call_Forward{
 	
 	
 	*/
+	
 		
 	/* **************************************************************************************************
 	* Function: addSuccessValues
 	* Author: Charlotte Jones
 	* Date: 06/07/2018
 	* Purpose: This method adds the required responses in the Call Forward section for a happy path scenario 
-	* Arguments: 
-	* 			
+	* Arguments:	arg1 - sig_strength_vod
+	* 				arg2 - sig_strength_o2
+	*				arg3 - sig_strength_ee 			
 	* Returns: 
 	*****************************************************************************************************
 	* Change Log:
@@ -79,25 +85,37 @@ public class CI_Methods_Call_Forward{
 	****************************************************************************************************/	
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
-		// Select Call Forward button
-		CI_Objects_Call_Forward.btn_call_forward(driver).click();{
-			Log.info(sTestCaseName + " | Call Forward button clicked");
-		}
-		// Next section - Display Call Forward
-		CI_Objects_Call_Forward.btn_contact_made_y(driver).click();{
-			Log.info(sTestCaseName + " | Contact Made radio button clicked");
-		}
-		CI_Objects_Call_Forward.btn_appt_confirm_y(driver).click();{
-			Log.info(sTestCaseName + " | Appointment Confirm - Yes radio button clicked");
-		}
-		CI_Objects_Call_Forward.btn_depart(driver).click();{
-			Log.info(sTestCaseName + " | Depart button clicked");
-		}
-		CI_Objects_Call_Forward.btn_ok(driver).click();{
-			Log.info(sTestCaseName + " | OK (pop up) button clicked");
+		Integer iSignalVod = 37;
+	    Integer iSignalO2 = 15;
+	    Integer iSignalEe = 66;
+	    
+	    
+
+		CI_Objects_Network_Signal_Strength_Test.btn_signal_strength_required(driver).click();
+		
+		// Vodaphone signal strength
+		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_vod(driver).click();
+		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_vod(driver).sendKeys(Integer.toString(iSignalVod));
+		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_vod(driver).sendKeys(Keys.ENTER);
+		
+		// O2 signal strength
+		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_o2(driver).click();
+		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_o2(driver).sendKeys(Integer.toString(iSignalO2));
+		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_o2(driver).sendKeys(Keys.ENTER);
+		
+		// EE signal strength
+		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_ee(driver).click();
+		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_ee(driver).sendKeys(Integer.toString(iSignalEe));
+		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_ee(driver).sendKeys(Keys.ENTER);
+		
+		CI_Objects_Network_Signal_Strength_Test.btn_enough_signal_y(driver).click();
+		{
+			Log.info(sTestCaseName + " | Network Signal Strength Test completed and passed");
 		}
 		
+		
 	}	
+			
 		
 	
 //END OF METHODS
