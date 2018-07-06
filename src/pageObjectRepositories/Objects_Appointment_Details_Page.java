@@ -67,36 +67,6 @@ public class Objects_Appointment_Details_Page {
 	    return element;
 	}
 	
-	public static WebElement btn_Call_Forward (WebDriver driver){
-	   	 
-		try{
-			element = driver.findElement(By.id("btnCall1"));
- 		}catch(Exception e){
-			Log.error(sRepositoryName + " | btn_Call_Forward not found | Exception desc : "+e.getMessage());		
- 		} 
-	    return element;
-	}
-	
-	public static WebElement btn_Contact_Made_Yes (WebDriver driver){
-	   	 
-		try{
-			element = driver.findElement(By.id("rb_contact_y"));
- 		}catch(Exception e){
-			Log.error(sRepositoryName + " | btn_Contact_Made_Yes not found | Exception desc : "+e.getMessage());		
- 		} 
-	    return element;
-	}
-	
-	public static WebElement btn_Contact_Made_No (WebDriver driver){
-	   	 
-		try{
-			element = driver.findElement(By.id("rb_contact_n"));
- 		}catch(Exception e){
-			Log.error(sRepositoryName + " | btn_Contact_Made_No not found | Exception desc : "+e.getMessage());		
- 		} 
-	    return element;
-	}
-	
 	public static WebElement btn_Appointment_Confirm_Yes (WebDriver driver){
 	   	 
 		try{

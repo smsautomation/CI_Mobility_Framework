@@ -58,7 +58,9 @@ public class Asset_Management_Add_Assets_Chrome {
 	    ExcelUtils.setExcelFile(Constant.Path_TestData + "Mobility_Automation_Test_Data" + ".xlsm","Data");
 	
 	    iTestCaseRow = ExcelUtils.getRowContains(sTestCaseName,Constant.Col_Test_Case_Name);
-	
+
+	    System.out.println("iTestCaseRow: " + iTestCaseRow);
+
 	    driver = Utils.openBrowser(iTestCaseRow);
 	    //Add for Grid session
 	    //driver = (RemoteWebDriver) Utils.openGridBrowser(iTestCaseRow);

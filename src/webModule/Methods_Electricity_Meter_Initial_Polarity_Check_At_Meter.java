@@ -28,6 +28,7 @@ public class Methods_Electricity_Meter_Initial_Polarity_Check_At_Meter{
 	****************************************************************************************************/	
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
+
 		//Check that all of the elements of that are expected are displayed
 		Objects_Electricity_Meter_Initial_Polarity_Check_At_Meter_Page.lbl_Initial_Polarity_Check_At_Meter(driver).isDisplayed();{
 		Log.info(sTestCaseName + " | Initial Polarity Check At Meter label displayed as expected");
@@ -47,6 +48,7 @@ public class Methods_Electricity_Meter_Initial_Polarity_Check_At_Meter{
 	//END OF VIEW PAGE METHOD
 	}
 	
+		
 	/* **************************************************************************************************
 	* Function: addSuccessValues
 	* Author: Iain Storrie

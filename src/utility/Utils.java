@@ -182,7 +182,9 @@ public class Utils {
 	        	System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 	        	//DesiredCapabilities Capability = DesiredCapabilities.chrome();
 	        	System.setProperty("webdriver.chrome.logfile", "C:\\eclipse\\chromedriver.log");
-	        	driver = new ChromeDriver(options);	
+	        	System.out.println("All Properties: "+System.getProperties().toString());
+	        	System.out.println(System.getProperty("webdriver.chrome.driver"));
+	        	driver = new ChromeDriver(options);
 	        	//driver.get("http://www.google.co.uk");
 	        	Log.info("New Chrome driver instantiated");
 				

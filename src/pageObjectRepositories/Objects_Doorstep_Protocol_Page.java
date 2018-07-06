@@ -17,9 +17,9 @@ import utility.Utils;
 **********************************************************************
 * Change Log:
 * 
-* Date:
+* Date: 
 * Author: 
-* Details:
+* Details: 
 *
 *********************************************************************/
 
@@ -102,6 +102,70 @@ public static class Sidebar{
     //END OF SIDEBAR METHODS
     }    
     
+	public static WebElement btn_Call_Forward (WebDriver driver){
+	   	 
+		try{
+			element = driver.findElement(By.id("btnCall1"));
+ 		}catch(Exception e){
+			Log.error(sRepositoryName + " | btn_Call_Forward not found | Exception desc : "+e.getMessage());		
+ 		} 
+	    return element;
+	}
+
+	public static WebElement btn_Contact_Made_Yes (WebDriver driver){
+	   	 
+		try{
+			element = driver.findElement(By.id("rb_contact_y"));
+ 		}catch(Exception e){
+			Log.error(sRepositoryName + " | btn_Contact_Made_Yes not found | Exception desc : "+e.getMessage());		
+ 		} 
+	    return element;
+	}
+	
+	public static WebElement btn_Contact_Made_No (WebDriver driver){
+	   	 
+		try{
+			element = driver.findElement(By.id("rb_contact_n"));
+ 		}catch(Exception e){
+			Log.error(sRepositoryName + " | btn_Contact_Made_No not found | Exception desc : "+e.getMessage());		
+ 		} 
+	    return element;
+	}
+	
+	public static WebElement btn_Appointment_Confirm_Yes (WebDriver driver){
+	   	 
+		try{
+			element = driver.findElement(By.id("rb_app_conf_y"));
+ 		}catch(Exception e){
+			Log.error(sRepositoryName + " | btn_Appointment_Confirm_Yes not found | Exception desc : "+e.getMessage());		
+ 		} 
+	    return element;
+	}
+	
+	public static WebElement btn_Appointment_Confirm_No (WebDriver driver){
+	   	 
+		try{
+			element = driver.findElement(By.id("rb_app_conf_n"));
+ 		}catch(Exception e){
+			Log.error(sRepositoryName + " | btn_Appointment_Confirm_No not found | Exception desc : "+e.getMessage());		
+ 		} 
+	    return element;
+	}
+	
+	public static WebElement btn_Depart (WebDriver driver){
+	   	 
+		try{
+			//element = driver.findElement(By.xpath("//*[@ng-click='depart()']"));
+			element = driver.findElement(By.id("btn_depart"));
+ 		}catch(Exception e){
+			Log.error(sRepositoryName + " | btn_Depart not found | Exception desc : "+e.getMessage());		
+ 		} 
+	    return element;
+	}
+	
+	// *** The Arrive section (in workflow doc) ***
+	
+	//not clear from the workflow doc whether or not there will be an "Arrive" button...
     public static WebElement btn_Arrive(WebDriver driver){
     	 
 		try{
@@ -149,7 +213,6 @@ public static class Sidebar{
 	public static WebElement btn_Access_Site_Gained_No (WebDriver driver){
 	   	 
 		try{
-			//element = driver.findElement(By.xpath(".//*[@id='app']/div/div/div[2]/div[2]/ng-switch/div/doorstep/div/div/div/div[2]/div[4]/div[2]/div[2]/label"));
 			element = driver.findElement(By.id("rb_access_n"));
  		}catch(Exception e){
 			Log.error(sRepositoryName + " | btn_Access_Site_Gained_No not found | Exception desc : "+e.getMessage());		
@@ -160,7 +223,6 @@ public static class Sidebar{
 	public static WebElement btn_Customer_Onsite_Yes (WebDriver driver){
 	   	 
 		try{
-			//element = driver.findElement(By.xpath(".//*[@id='app']/div/div/div[2]/div[2]/ng-switch/div/doorstep/div/div/div/div[3]/div[2]/div[1]/label"));
 			element = driver.findElement(By.id("rb_cst_onsite_y"));
  		}catch(Exception e){
 			Log.error(sRepositoryName + " | btn_Customer_Onsite_Yes not found | Exception desc : "+e.getMessage());		
@@ -171,7 +233,6 @@ public static class Sidebar{
 	public static WebElement btn_Customer_Onsite_No (WebDriver driver){
 	   	 
 		try{
-			//element = driver.findElement(By.xpath(".//*[@id='app']/div/div/div[2]/div[2]/ng-switch/div/doorstep/div/div/div/div[3]/div[2]/div[2]/label"));
 			element = driver.findElement(By.id("rb_cst_onsite_n"));
  		}catch(Exception e){
 			Log.error(sRepositoryName + " | btn_Customer_Onsite_No not found | Exception desc : "+e.getMessage());		
@@ -179,16 +240,7 @@ public static class Sidebar{
 	    return element;
 	}
 	
-	//the following element is in the wrong page... (call forward) - it's in the Objects_Appointment_Details_Page, too
-	public static WebElement btn_Appointment_Confirm_No (WebDriver driver){
-	   	 
-		try{
-			element = driver.findElement(By.xpath(".//*[@id='app']/div/div/div[3]/div/ng-switch/div/callforwardform/div/div/div[1]/div[4]/div[2]/div[2]/label"));
- 		}catch(Exception e){
-			Log.error(sRepositoryName + " | btn_Appointment_Confirm_No not found | Exception desc : "+e.getMessage());		
- 		} 
-	    return element;
-	}
+	// *** Access to Site or Meter Gained section ***
 	
 	public static WebElement btn_Onsite (WebDriver driver){
 	   	 
@@ -199,6 +251,10 @@ public static class Sidebar{
  		} 
 	    return element;
 	}
+	
+	
+	
+	// *** other sections not needed as yet for C&I? ***
 	
 	public static WebElement btn_Capture_Photo (WebDriver driver){
 	   	 
