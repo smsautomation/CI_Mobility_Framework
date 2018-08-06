@@ -48,6 +48,66 @@ public class CI_Objects_Vt_Ct_Info_Dno_Bno {
     	return element;
     }
     
+    public static WebElement txt_ct_ratio(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_ct_ratio not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement txt_ct_serial_no_1(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_ct_serial_no_1 not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement txt_ct_serial_no_2(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_ct_serial_no_2 not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement txt_ct_serial_no_3(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_ct_serial_no_3 not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement cbx_ct_class(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |cbx_ct_class not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement cbx_ct_burden_in_va(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |cbx_ct_burden_in_va not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
     public static WebElement btn_vt_info_available(WebDriver driver) {
     	
     	try {
@@ -58,11 +118,76 @@ public class CI_Objects_Vt_Ct_Info_Dno_Bno {
     	return element;
     }
     
+    public static WebElement cbx_vt_ratio(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |cbx_vt_ratio not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
 
+    public static WebElement txt_vt_serial_no_1(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_vt_serial_no_1 not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
 
-
-
-
+    public static WebElement txt_vt_serial_no_2(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_vt_serial_no_2 not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement txt_vt_serial_no_3(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_vt_serial_no_3 not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement cbx_vt_class(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |cbx_vt_class not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement txt_vt_burden_in_va(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_vt_burden_in_va not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement btn_next_section(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_next_section not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
 
 	
 			

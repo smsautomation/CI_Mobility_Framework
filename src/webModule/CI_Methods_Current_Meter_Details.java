@@ -3,10 +3,10 @@ package webModule;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import pageObjectRepositories.CI_Objects_Network_Signal_Strength_Test;
+import pageObjectRepositories.CI_Objects_Current_Meter_Details;
 import utility.Log;
 
-public class CI_Methods_Network_Signal_Strength_Test{
+public class CI_Methods_Current_Meter_Details{
 	
 	
 	
@@ -67,10 +67,9 @@ public class CI_Methods_Network_Signal_Strength_Test{
 	* Function: addSuccessValues
 	* Author: Charlotte Jones
 	* Date: 06/08/2018
-	* Purpose: This method adds the required responses in the Call Forward section for a happy path scenario 
-	* Arguments:	iSignalVod
-	* 				iSignalO2
-	* 				iSignalEe			
+	* Purpose: This method adds the required responses in the Current Meter Details section
+	* for a happy path scenario
+	* Arguments:	iNoOfRegisters		
 	* Returns: 
 	*****************************************************************************************************
 	* Change Log:
@@ -80,36 +79,25 @@ public class CI_Methods_Network_Signal_Strength_Test{
 	* Details:
 	*
 	****************************************************************************************************/	
+	
+	
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
-		Integer iSignalVod = 37;
-	    Integer iSignalO2 = 15;
-	    Integer iSignalEe = 66;
-	    
-	    
-
-		CI_Objects_Network_Signal_Strength_Test.btn_signal_strength_required(driver).click();
+		Integer iNoOfRegisters = 1;
 		
-		// Vodaphone signal strength
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_vod(driver).click();
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_vod(driver).sendKeys(Integer.toString(iSignalVod));
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_vod(driver).sendKeys(Keys.ENTER);
-		
-		// O2 signal strength
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_o2(driver).click();
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_o2(driver).sendKeys(Integer.toString(iSignalO2));
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_o2(driver).sendKeys(Keys.ENTER);
-		
-		// EE signal strength
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_ee(driver).click();
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_ee(driver).sendKeys(Integer.toString(iSignalEe));
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_ee(driver).sendKeys(Keys.ENTER);
-		
-		CI_Objects_Network_Signal_Strength_Test.btn_enough_signal_y(driver).click();
+		CI_Objects_Current_Meter_Details.txt_no_of_registers(driver).click();
+		CI_Objects_Current_Meter_Details.txt_no_of_registers(driver).sendKeys(Integer.toString(iNoOfRegisters));
+		CI_Objects_Current_Meter_Details.txt_no_of_registers(driver).sendKeys(Keys.ENTER);
 		{
-			Log.info(sTestCaseName + " | Network Signal Strength Test completed and passed");
+			Log.info(sTestCaseName + " | No of Registers field completed");
 		}
 		
+		CI_Objects_Current_Meter_Details.btn_existing_serial_no_correct_y(driver).click();
+		{
+			Log.info(sTestCaseName + " | Existing Elec Meter Serial Number Details Correct? - Yes radio button clicked");
+		}
+		
+	    
 		
 	}	
 			

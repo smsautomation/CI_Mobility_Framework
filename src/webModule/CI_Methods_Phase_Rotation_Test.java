@@ -2,11 +2,10 @@ package webModule;
 
 import org.openqa.selenium.WebDriver;
 
-import pageObjectRepositories.CI_Objects_Access_To_Site_Or_Meter_Gained;
-import pageObjectRepositories.CI_Objects_Arrive;
+import pageObjectRepositories.CI_Objects_Phase_Rotation_Test;
 import utility.Log;
 
-public class CI_Methods_Doorstep_Protocol{
+public class CI_Methods_Phase_Rotation_Test{
 	
 	
 	
@@ -33,6 +32,7 @@ public class CI_Methods_Doorstep_Protocol{
 	* Details:
 	*
 	****************************************************************************************************/	
+	
 	
 	/*
 	
@@ -66,18 +66,15 @@ public class CI_Methods_Doorstep_Protocol{
 	
 	
 	*/
-		
+	
+	
 	/* **************************************************************************************************
 	* Function: addSuccessValuesAll
 	* Author: Charlotte Jones
-	* Date: 06/07/2018
-	* Purpose: This method adds the required responses in the Doorstep Protocol section for a happy path scenario
-	* This comprises the following sections from the workflow document:
-	*   Arrival On Site
-	*   Arrive
-	*   Access to Site or Meter Gained
-	* Arguments: 
-	* 			
+	* Date: 06/08/2018
+	* Purpose: This method adds the required responses in the Polarity Check at the Meter section for
+	* a happy path scenario
+	* Arguments: 	
 	* Returns: 
 	*****************************************************************************************************
 	* Change Log:
@@ -89,36 +86,18 @@ public class CI_Methods_Doorstep_Protocol{
 	****************************************************************************************************/	
 	public static void addSuccessValuesAll(WebDriver driver, String sTestCaseName) throws Exception{
 	
-	// No risks identified	
-		
-		// Arrival On Site section
-		
-		CI_Objects_Arrive.btn_arrive(driver).click();
+	
+				
+		CI_Objects_Phase_Rotation_Test.btn_phase_rotation_correct_y(driver).click();
 		{
-			Log.info(sTestCaseName + " | Arrive button clicked");
+			Log.info(sTestCaseName + " | Is Phase Rotation Correct? - Yes radio button clicked");
 		}
 		
-		// Arrive section
-		
-		CI_Objects_Arrive.btn_access_gained_y(driver).click();
-		{
-			Log.info(sTestCaseName + " | Access to Site Gained? radio button clicked");
-		}
-		
-		CI_Objects_Arrive.btn_cust_on_site_y(driver).click();
-		{
-			Log.info(sTestCaseName + " | Customer On Site? radio button clicked");
-		}
-		
-		// Access to Site or Meter Gained
-		
-		CI_Objects_Access_To_Site_Or_Meter_Gained.btn_on_site(driver).click();
-		{
-			Log.info(sTestCaseName + " | On Site button clicked");
-		}
-		
+				
 	// END OF ADD SUCCESS VALUES ALL METHOD
-	}	
+	}
+
+		
 		
 	
 //END OF METHODS

@@ -27,7 +27,17 @@ public class CI_Objects_Remove_Asset {
     private static WebElement element = null;
     private static String sRepositoryName = "CI_Objects_Remove_Asset";
 
-      
+    
+    public static WebElement cbx_meter_to_remove(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |cbx_meter_to_remove not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+        
     public static WebElement cbx_removed_asset_status(WebDriver driver) {
     	
     	try {
@@ -38,7 +48,7 @@ public class CI_Objects_Remove_Asset {
     	return element;
     }
     
-    public static WebElement btn_confirm_asset_removed_y(WebDriver driver) {
+    public static WebElement btn_confirm_asset_removed(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
@@ -48,27 +58,26 @@ public class CI_Objects_Remove_Asset {
     	return element;
     }
     
-    public static WebElement btn_confirm_asset_removed_n(WebDriver driver) {
-    	
-    	try {
-    		element = driver.findElement(By.id(INSERTID));
-    	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |btn_confirm_asset_removed_n not found | Exception desc : "+e.getMessage());
-    	}
-    	return element;
-    }
-    
+ 
     public static WebElement btn_ok(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |btn_ok not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |btn_ok for Removed List Successfully Updated not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
     
-    
+    public static WebElement btn_next_section(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_next_section not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
     
     
     

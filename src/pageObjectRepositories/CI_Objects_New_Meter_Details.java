@@ -38,32 +38,32 @@ public class CI_Objects_New_Meter_Details {
     	return element;
     }
     
-    public static WebElement txt_manufacturer_letter(WebDriver driver) {
+    public static WebElement cbx_manufacturer_letter(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_manufacturer_letter not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |cbx_manufacturer_letter not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
 
-    public static WebElement txt_meter_type(WebDriver driver) {
+    public static WebElement cbx_meter_type(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_meter_type not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |cbx_meter_type not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
 
-    public static WebElement txt_class(WebDriver driver) {
+    public static WebElement cbx_class(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_class not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |cbx_class not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
@@ -108,12 +108,22 @@ public class CI_Objects_New_Meter_Details {
     	return element;
     }
     
-    public static WebElement txt_ssc_code(WebDriver driver) {
+    public static WebElement cbx_ssc_code(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_ssc_code not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |cbx_ssc_code not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement cbx_meter_loc_code(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |cbx_meter_loc_code not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
@@ -128,15 +138,26 @@ public class CI_Objects_New_Meter_Details {
     	return element;
     }
     
-    public static WebElement cbx_ct_ratio_details(WebDriver driver) {
+    public static WebElement cbx_ct_ratio_primary(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |cbx_ct_ratio_details not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |cbx_ct_ratio_primary not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
+    
+    public static WebElement cbx_ct_ratio_secondary(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |cbx_ct_ratio_secondary not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+   
     
     public static WebElement cbx_vt_ratio_details(WebDriver driver) {
     	

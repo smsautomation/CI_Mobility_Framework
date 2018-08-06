@@ -3,10 +3,10 @@ package webModule;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import pageObjectRepositories.CI_Objects_Network_Signal_Strength_Test;
+import pageObjectRepositories.CI_Objects_Initial_Polarity_Check_Martindale;
 import utility.Log;
 
-public class CI_Methods_Network_Signal_Strength_Test{
+public class CI_Methods_Initial_Polarity_Check_Martindale{
 	
 	
 	
@@ -67,10 +67,10 @@ public class CI_Methods_Network_Signal_Strength_Test{
 	* Function: addSuccessValues
 	* Author: Charlotte Jones
 	* Date: 06/08/2018
-	* Purpose: This method adds the required responses in the Call Forward section for a happy path scenario 
-	* Arguments:	iSignalVod
-	* 				iSignalO2
-	* 				iSignalEe			
+	* Purpose: This method adds the required responses in the Phase Rotation Test section for a happy
+	* path scenario 
+	* Arguments:	
+	* 						
 	* Returns: 
 	*****************************************************************************************************
 	* Change Log:
@@ -80,37 +80,37 @@ public class CI_Methods_Network_Signal_Strength_Test{
 	* Details:
 	*
 	****************************************************************************************************/	
+	
+	
+	// *!*!*!*!*!*!*!*!*!* sSocketTestLoc needs defining - depends on the standing data list! *!*!*!*!*!*!*!*!*!*
+	
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
-		Integer iSignalVod = 37;
-	    Integer iSignalO2 = 15;
-	    Integer iSignalEe = 66;
+		
 	    
 	    
-
-		CI_Objects_Network_Signal_Strength_Test.btn_signal_strength_required(driver).click();
+	    CI_Objects_Initial_Polarity_Check_Martindale.cbx_polarity_check_plug_in_test(driver).click();
+	    CI_Objects_Initial_Polarity_Check_Martindale.cbx_polarity_check_plug_in_test(driver).sendKeys(sPolarityTested);
+	    CI_Objects_Initial_Polarity_Check_Martindale.cbx_polarity_check_plug_in_test(driver).sendKeys(Keys.ENTER);
+	    {
+			Log.info(sTestCaseName + " | Polarity tested with plug in test device selected");
+		}
+	    
 		
-		// Vodaphone signal strength
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_vod(driver).click();
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_vod(driver).sendKeys(Integer.toString(iSignalVod));
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_vod(driver).sendKeys(Keys.ENTER);
-		
-		// O2 signal strength
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_o2(driver).click();
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_o2(driver).sendKeys(Integer.toString(iSignalO2));
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_o2(driver).sendKeys(Keys.ENTER);
-		
-		// EE signal strength
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_ee(driver).click();
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_ee(driver).sendKeys(Integer.toString(iSignalEe));
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_ee(driver).sendKeys(Keys.ENTER);
-		
-		CI_Objects_Network_Signal_Strength_Test.btn_enough_signal_y(driver).click();
-		{
-			Log.info(sTestCaseName + " | Network Signal Strength Test completed and passed");
+	    CI_Objects_Initial_Polarity_Check_Martindale.btn_socket_safety_test_pass(driver).click();
+	    {
+			Log.info(sTestCaseName + " | Has the Socket Safety Test Passed/Failed? - Pass button clicked");
 		}
 		
-		
+	    CI_Objects_Initial_Polarity_Check_Martindale.cbx_socket_test_location(driver).click();
+	    CI_Objects_Initial_Polarity_Check_Martindale.cbx_socket_test_location(driver).sendKeys(sSocketTestLoc);
+	    CI_Objects_Initial_Polarity_Check_Martindale.cbx_socket_test_location(driver).sendKeys(Keys.ENTER);
+	    
+	    CI_Objects_Initial_Polarity_Check_Martindale.btn_socket_reverse_polarity_n(driver).click();
+	    {
+			Log.info(sTestCaseName + " | Any Sockets Found as REverse Polarity? - No button clicked");
+		}
+	    
 	}	
 			
 		

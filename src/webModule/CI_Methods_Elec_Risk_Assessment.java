@@ -2,11 +2,10 @@ package webModule;
 
 import org.openqa.selenium.WebDriver;
 
-import pageObjectRepositories.CI_Objects_Access_To_Site_Or_Meter_Gained;
-import pageObjectRepositories.CI_Objects_Arrive;
+import pageObjectRepositories.CI_Objects_Elec_Risk_Assessment;
 import utility.Log;
 
-public class CI_Methods_Doorstep_Protocol{
+public class CI_Methods_Elec_Risk_Assessment{
 	
 	
 	
@@ -33,6 +32,7 @@ public class CI_Methods_Doorstep_Protocol{
 	* Details:
 	*
 	****************************************************************************************************/	
+	
 	
 	/*
 	
@@ -66,17 +66,14 @@ public class CI_Methods_Doorstep_Protocol{
 	
 	
 	*/
-		
+	
+	
 	/* **************************************************************************************************
 	* Function: addSuccessValuesAll
 	* Author: Charlotte Jones
-	* Date: 06/07/2018
-	* Purpose: This method adds the required responses in the Doorstep Protocol section for a happy path scenario
-	* This comprises the following sections from the workflow document:
-	*   Arrival On Site
-	*   Arrive
-	*   Access to Site or Meter Gained
-	* Arguments: 
+	* Date: 12/07/2018
+	* Purpose: This method adds the required responses in the Electricity Risk Assessment sections for a happy path scenario
+	* Arguments: sRiskAssessPass
 	* 			
 	* Returns: 
 	*****************************************************************************************************
@@ -89,36 +86,34 @@ public class CI_Methods_Doorstep_Protocol{
 	****************************************************************************************************/	
 	public static void addSuccessValuesAll(WebDriver driver, String sTestCaseName) throws Exception{
 	
-	// No risks identified	
 		
-		// Arrival On Site section
-		
-		CI_Objects_Arrive.btn_arrive(driver).click();
+		CI_Objects_Elec_Risk_Assessment.btn_perform_risk_assess_y(driver).click();
 		{
-			Log.info(sTestCaseName + " | Arrive button clicked");
+			Log.info(sTestCaseName + " | Perform Risk Assessment? checkbox clicked");
 		}
 		
-		// Arrive section
-		
-		CI_Objects_Arrive.btn_access_gained_y(driver).click();
+		CI_Objects_Elec_Risk_Assessment.btn_risk_assess_pass_y(driver).click();
 		{
-			Log.info(sTestCaseName + " | Access to Site Gained? radio button clicked");
+			Log.info(sTestCaseName + " | Risk Assessment Pass radio button clicked");
 		}
 		
-		CI_Objects_Arrive.btn_cust_on_site_y(driver).click();
+		
+		// Risk Assessment Pass sub-section
+		
+		String sRiskAssessPass = "Risk assessment pass notes";
+		
+		CI_Objects_Elec_Risk_Assessment.txt_risk_assess_pass(driver).click();
+		CI_Objects_Elec_Risk_Assessment.txt_risk_assess_pass(driver).sendKeys(sRiskAssessPass);
 		{
-			Log.info(sTestCaseName + " | Customer On Site? radio button clicked");
+			Log.info(sTestCaseName + " | Notes added to risk assessment pass section");
 		}
 		
-		// Access to Site or Meter Gained
 		
-		CI_Objects_Access_To_Site_Or_Meter_Gained.btn_on_site(driver).click();
-		{
-			Log.info(sTestCaseName + " | On Site button clicked");
-		}
 		
 	// END OF ADD SUCCESS VALUES ALL METHOD
-	}	
+	}
+
+		
 		
 	
 //END OF METHODS

@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 
 import pageObjectRepositories.CI_Objects_Call_Forward;
 import utility.Log;
-import utility.Utils;
 
 public class CI_Methods_Call_Forward{
 	

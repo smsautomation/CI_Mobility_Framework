@@ -8,7 +8,7 @@ import utility.Log;
 /* *******************************************************************
 * Author: Charlotte Jones
 * Date: 03/07/2018
-* Function: CI_Objects_Carry_Out_Elec_Risk_Assessment
+* Function: CI_Objects_Elec_Risk_Assessment
 * Purpose: This class contains all of the elements in the C&I Carry Out Electricity Risk Assessment section
 * Arguments: 
 * 			
@@ -22,10 +22,10 @@ import utility.Log;
 *
 *********************************************************************/
 
-public class CI_Objects_Carry_Out_Elec_Risk_Assessment {
+public class CI_Objects_Elec_Risk_Assessment {
    
     private static WebElement element = null;
-    private static String sRepositoryName = "CI_Objects_Carry_Out_Elec_Risk_Assessment";
+    private static String sRepositoryName = "CI_Objects_Elec_Risk_Assessment";
 
       
     public static WebElement btn_perform_risk_assess_y(WebDriver driver) {

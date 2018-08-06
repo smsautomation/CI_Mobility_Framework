@@ -9,7 +9,7 @@ import utility.Log;
 * Author: Charlotte Jones
 * Date: 04/07/2018
 * Function: CI_Objects_Metering_Tasks
-* Purpose: This class contains all of the elements in the C&I Metering Tasks section
+* Purpose: This class contains all of the elements in the C&I Current Meter Details section
 * Arguments: 
 * 			
 * Returns: 
@@ -22,7 +22,7 @@ import utility.Log;
 *
 *********************************************************************/
 
-public class CI_Objects_Metering_Tasks {
+public class CI_Objects_Current_Meter_Details {
    
     private static WebElement element = null;
     private static String sRepositoryName = "CI_Objects_Metering_Tasks";

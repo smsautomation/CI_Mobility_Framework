@@ -1,12 +1,11 @@
 package webModule;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import pageObjectRepositories.CI_Objects_Network_Signal_Strength_Test;
+import pageObjectRepositories.CI_Objects_Initial_Phase_Rotation_Test;
 import utility.Log;
 
-public class CI_Methods_Network_Signal_Strength_Test{
+public class CI_Methods_Initial_Phase_Rotation_Test{
 	
 	
 	
@@ -67,10 +66,9 @@ public class CI_Methods_Network_Signal_Strength_Test{
 	* Function: addSuccessValues
 	* Author: Charlotte Jones
 	* Date: 06/08/2018
-	* Purpose: This method adds the required responses in the Call Forward section for a happy path scenario 
-	* Arguments:	iSignalVod
-	* 				iSignalO2
-	* 				iSignalEe			
+	* Purpose: This method adds the required responses in the Initial Phase Rotation Test section for
+	* a happy path scenario
+	* Arguments:			
 	* Returns: 
 	*****************************************************************************************************
 	* Change Log:
@@ -80,37 +78,20 @@ public class CI_Methods_Network_Signal_Strength_Test{
 	* Details:
 	*
 	****************************************************************************************************/	
+	
+	
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
-		Integer iSignalVod = 37;
-	    Integer iSignalO2 = 15;
-	    Integer iSignalEe = 66;
-	    
-	    
-
-		CI_Objects_Network_Signal_Strength_Test.btn_signal_strength_required(driver).click();
 		
-		// Vodaphone signal strength
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_vod(driver).click();
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_vod(driver).sendKeys(Integer.toString(iSignalVod));
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_vod(driver).sendKeys(Keys.ENTER);
-		
-		// O2 signal strength
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_o2(driver).click();
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_o2(driver).sendKeys(Integer.toString(iSignalO2));
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_o2(driver).sendKeys(Keys.ENTER);
-		
-		// EE signal strength
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_ee(driver).click();
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_ee(driver).sendKeys(Integer.toString(iSignalEe));
-		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_ee(driver).sendKeys(Keys.ENTER);
-		
-		CI_Objects_Network_Signal_Strength_Test.btn_enough_signal_y(driver).click();
-		{
-			Log.info(sTestCaseName + " | Network Signal Strength Test completed and passed");
+		CI_Objects_Initial_Phase_Rotation_Test.btn_phase_rotation_correct_at_meter_y(driver).click();  
+	    {
+			Log.info(sTestCaseName + " | Is Phase Rotation Correct at Service Cut Out? - Yes radio button clicked");
 		}
+	    
 		
-		
+	    // may need to add in something else to click OK on a pop up (Are Tails Labelled?) - not sure at the moment how this is being displayed
+	    
+	    
 	}	
 			
 		
