@@ -3,10 +3,10 @@ package webModule;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import pageObjectRepositories.CI_Objects_Accuracy_Test_COP4;
+import pageObjectRepositories.CI_Objects_Accuracy_Test_Cop4;
 import utility.Log;
 
-public class CI_Methods_Accuracy_Test_COP4{
+public class CI_Methods_Accuracy_Test_Cop4{
 	
 	
 	
@@ -132,137 +132,137 @@ public class CI_Methods_Accuracy_Test_COP4{
 		String	sComments = "comments";
 		
 		
-		CI_Objects_Accuracy_Test_COP4.btn_test_on_cust_load_y(driver).click();
+		CI_Objects_Accuracy_Test_Cop4.btn_test_on_cust_load_y(driver).click();
 	    {
 			Log.info(sTestCaseName + " | Is test carried out using customer's load? - Yes radio button selected");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.btn_test_type_b(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.btn_test_type_b(driver).click();
 	    {
 			Log.info(sTestCaseName + " | Type of Test - TYPE B radio button selected");
 		}
 	    
 	    // General information
 	    
-	    CI_Objects_Accuracy_Test_COP4.cbx_serial_num(driver).click();
-	    CI_Objects_Accuracy_Test_COP4.cbx_serial_num(driver).sendKeys(sSerialNum);
-	    CI_Objects_Accuracy_Test_COP4.cbx_serial_num(driver).sendKeys(Keys.ENTER);
+	    CI_Objects_Accuracy_Test_Cop4.cbx_serial_num(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.cbx_serial_num(driver).sendKeys(sSerialNum);
+	    CI_Objects_Accuracy_Test_Cop4.cbx_serial_num(driver).sendKeys(Keys.ENTER);
 	    {
 			Log.info(sTestCaseName + " | Serial Number selected from dropdown menu");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.txt_start_time(driver).click();
-	    CI_Objects_Accuracy_Test_COP4.txt_start_time(driver).sendKeys(sStartTime);
-	    CI_Objects_Accuracy_Test_COP4.txt_start_time(driver).sendKeys(Keys.ENTER);
+	    CI_Objects_Accuracy_Test_Cop4.txt_start_time(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.txt_start_time(driver).sendKeys(sStartTime);
+	    CI_Objects_Accuracy_Test_Cop4.txt_start_time(driver).sendKeys(Keys.ENTER);
 	    {
 			Log.info(sTestCaseName + " | Start Time field completed");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.txt_error_calibration(driver).click();
-	    CI_Objects_Accuracy_Test_COP4.txt_error_calibration(driver).sendKeys(sErrorCalib);
-	    CI_Objects_Accuracy_Test_COP4.txt_error_calibration(driver).sendKeys(Keys.ENTER);
+	    CI_Objects_Accuracy_Test_Cop4.txt_error_calibration(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.txt_error_calibration(driver).sendKeys(sErrorCalib);
+	    CI_Objects_Accuracy_Test_Cop4.txt_error_calibration(driver).sendKeys(Keys.ENTER);
 	    {
 			Log.info(sTestCaseName + " | Error Calibration field completed");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.cbx_test_type_undertaken(driver).click();
-	    CI_Objects_Accuracy_Test_COP4.cbx_test_type_undertaken(driver).sendKeys(sType);
-	    CI_Objects_Accuracy_Test_COP4.cbx_test_type_undertaken(driver).sendKeys(Keys.ENTER);
+	    CI_Objects_Accuracy_Test_Cop4.cbx_test_type_undertaken(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.cbx_test_type_undertaken(driver).sendKeys(sType);
+	    CI_Objects_Accuracy_Test_Cop4.cbx_test_type_undertaken(driver).sendKeys(Keys.ENTER);
 	    {
 			Log.info(sTestCaseName + " | Test Type Undertaken - option selected from dropdown");
 		}
 	    
 	    // Test sub-section
 	    
-	    CI_Objects_Accuracy_Test_COP4.cbx_test_point(driver).click();
-	    CI_Objects_Accuracy_Test_COP4.cbx_test_point(driver).sendKeys(sTestPoint);
-	    CI_Objects_Accuracy_Test_COP4.cbx_test_point(driver).sendKeys(Keys.ENTER);
+	    CI_Objects_Accuracy_Test_Cop4.cbx_test_point(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.cbx_test_point(driver).sendKeys(sTestPoint);
+	    CI_Objects_Accuracy_Test_Cop4.cbx_test_point(driver).sendKeys(Keys.ENTER);
 	    {
 			Log.info(sTestCaseName + " | Test Point field completed");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.txt_test_error(driver).click();
-	    CI_Objects_Accuracy_Test_COP4.txt_test_error(driver).sendKeys(Integer.toString(iTestError));
-	    CI_Objects_Accuracy_Test_COP4.txt_test_error(driver).sendKeys(Keys.ENTER);
+	    CI_Objects_Accuracy_Test_Cop4.txt_test_error(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.txt_test_error(driver).sendKeys(Integer.toString(iTestError));
+	    CI_Objects_Accuracy_Test_Cop4.txt_test_error(driver).sendKeys(Keys.ENTER);
 	    {
 			Log.info(sTestCaseName + " | Test Error % field completed");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.txt_test_error_plus(driver).click();
-	    CI_Objects_Accuracy_Test_COP4.txt_test_error_plus(driver).sendKeys(Integer.toString(iTestErrorPlus));
-	    CI_Objects_Accuracy_Test_COP4.txt_test_error_plus(driver).sendKeys(Keys.ENTER);
+	    CI_Objects_Accuracy_Test_Cop4.txt_test_error_plus(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.txt_test_error_plus(driver).sendKeys(Integer.toString(iTestErrorPlus));
+	    CI_Objects_Accuracy_Test_Cop4.txt_test_error_plus(driver).sendKeys(Keys.ENTER);
 	    {
 			Log.info(sTestCaseName + " | Test Error % - plus tolerance field completed");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.txt_test_error_minus(driver).click();
-	    CI_Objects_Accuracy_Test_COP4.txt_test_error_minus(driver).sendKeys(Integer.toString(iTestErrorMinus));
-	    CI_Objects_Accuracy_Test_COP4.txt_test_error_minus(driver).sendKeys(Keys.ENTER);
+	    CI_Objects_Accuracy_Test_Cop4.txt_test_error_minus(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.txt_test_error_minus(driver).sendKeys(Integer.toString(iTestErrorMinus));
+	    CI_Objects_Accuracy_Test_Cop4.txt_test_error_minus(driver).sendKeys(Keys.ENTER);
 	    {
 			Log.info(sTestCaseName + " | Test Error %  - minus tolerance field completed");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.txt_test_set_error(driver).click();
-	    CI_Objects_Accuracy_Test_COP4.txt_test_set_error(driver).sendKeys(Integer.toString(iTestSetError));
-	    CI_Objects_Accuracy_Test_COP4.txt_test_set_error(driver).sendKeys(Keys.ENTER);
+	    CI_Objects_Accuracy_Test_Cop4.txt_test_set_error(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.txt_test_set_error(driver).sendKeys(Integer.toString(iTestSetError));
+	    CI_Objects_Accuracy_Test_Cop4.txt_test_set_error(driver).sendKeys(Keys.ENTER);
 	    {
 			Log.info(sTestCaseName + " | Test Set Error % field completed");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.txt_test_set_error_plus(driver).click();
-	    CI_Objects_Accuracy_Test_COP4.txt_test_set_error_plus(driver).sendKeys(Integer.toString(iTestSetErrorPlus));
-	    CI_Objects_Accuracy_Test_COP4.txt_test_set_error_plus(driver).sendKeys(Keys.ENTER);
+	    CI_Objects_Accuracy_Test_Cop4.txt_test_set_error_plus(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.txt_test_set_error_plus(driver).sendKeys(Integer.toString(iTestSetErrorPlus));
+	    CI_Objects_Accuracy_Test_Cop4.txt_test_set_error_plus(driver).sendKeys(Keys.ENTER);
 	    {
 			Log.info(sTestCaseName + " | Test Set Error % - plus tolerance field completed");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.txt_test_set_error_minus(driver).click();
-	    CI_Objects_Accuracy_Test_COP4.txt_test_set_error_minus(driver).sendKeys(Integer.toString(iTestSetErrorMinus));
-	    CI_Objects_Accuracy_Test_COP4.txt_test_set_error_minus(driver).sendKeys(Keys.ENTER);
+	    CI_Objects_Accuracy_Test_Cop4.txt_test_set_error_minus(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.txt_test_set_error_minus(driver).sendKeys(Integer.toString(iTestSetErrorMinus));
+	    CI_Objects_Accuracy_Test_Cop4.txt_test_set_error_minus(driver).sendKeys(Keys.ENTER);
 	    {
 			Log.info(sTestCaseName + " | Test Set Error % - minus tolerance field completed");
 		}
 	    
 	    // *!*!*!*!*!*!* Need to include method to check the Meter Error %
 	    
-	    CI_Objects_Accuracy_Test_COP4.txt_ct_error(driver).click();
-	    CI_Objects_Accuracy_Test_COP4.txt_ct_error(driver).sendKeys(Integer.toString(iCtError));
-	    CI_Objects_Accuracy_Test_COP4.txt_ct_error(driver).sendKeys(Keys.ENTER);
+	    CI_Objects_Accuracy_Test_Cop4.txt_ct_error(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.txt_ct_error(driver).sendKeys(Integer.toString(iCtError));
+	    CI_Objects_Accuracy_Test_Cop4.txt_ct_error(driver).sendKeys(Keys.ENTER);
 	    {
 			Log.info(sTestCaseName + " | CT Error % field completed");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.txt_ct_error_plus(driver).click();
-	    CI_Objects_Accuracy_Test_COP4.txt_ct_error_plus(driver).sendKeys(Integer.toString(iCtErrorPlus));
-	    CI_Objects_Accuracy_Test_COP4.txt_ct_error_plus(driver).sendKeys(Keys.ENTER);
+	    CI_Objects_Accuracy_Test_Cop4.txt_ct_error_plus(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.txt_ct_error_plus(driver).sendKeys(Integer.toString(iCtErrorPlus));
+	    CI_Objects_Accuracy_Test_Cop4.txt_ct_error_plus(driver).sendKeys(Keys.ENTER);
 	    {
 			Log.info(sTestCaseName + " | CT Error % field - plus tolerance completed");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.txt_ct_error_minus(driver).click();
-	    CI_Objects_Accuracy_Test_COP4.txt_ct_error_minus(driver).sendKeys(Integer.toString(iCtErrorMinus));
-	    CI_Objects_Accuracy_Test_COP4.txt_ct_error_minus(driver).sendKeys(Keys.ENTER);
+	    CI_Objects_Accuracy_Test_Cop4.txt_ct_error_minus(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.txt_ct_error_minus(driver).sendKeys(Integer.toString(iCtErrorMinus));
+	    CI_Objects_Accuracy_Test_Cop4.txt_ct_error_minus(driver).sendKeys(Keys.ENTER);
 	    {
 			Log.info(sTestCaseName + " | CT Error %  - minus tolerance field completed");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.txt_vt_error(driver).click();
-	    CI_Objects_Accuracy_Test_COP4.txt_vt_error(driver).sendKeys(Integer.toString(iVtError));
-	    CI_Objects_Accuracy_Test_COP4.txt_vt_error(driver).sendKeys(Keys.ENTER);
+	    CI_Objects_Accuracy_Test_Cop4.txt_vt_error(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.txt_vt_error(driver).sendKeys(Integer.toString(iVtError));
+	    CI_Objects_Accuracy_Test_Cop4.txt_vt_error(driver).sendKeys(Keys.ENTER);
 	    {
 			Log.info(sTestCaseName + " | VT Error % field completed");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.txt_vt_error_plus(driver).click();
-	    CI_Objects_Accuracy_Test_COP4.txt_vt_error_plus(driver).sendKeys(Integer.toString(iVtErrorPlus));
-	    CI_Objects_Accuracy_Test_COP4.txt_vt_error_plus(driver).sendKeys(Keys.ENTER);
+	    CI_Objects_Accuracy_Test_Cop4.txt_vt_error_plus(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.txt_vt_error_plus(driver).sendKeys(Integer.toString(iVtErrorPlus));
+	    CI_Objects_Accuracy_Test_Cop4.txt_vt_error_plus(driver).sendKeys(Keys.ENTER);
 	    {
 			Log.info(sTestCaseName + " | VT Error % - plus tolerance field completed");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.txt_vt_error_minus(driver).click();
-	    CI_Objects_Accuracy_Test_COP4.txt_vt_error_minus(driver).sendKeys(Integer.toString(iVtErrorMinus));
-	    CI_Objects_Accuracy_Test_COP4.txt_vt_error_minus(driver).sendKeys(Keys.ENTER);
+	    CI_Objects_Accuracy_Test_Cop4.txt_vt_error_minus(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.txt_vt_error_minus(driver).sendKeys(Integer.toString(iVtErrorMinus));
+	    CI_Objects_Accuracy_Test_Cop4.txt_vt_error_minus(driver).sendKeys(Keys.ENTER);
 	    {
 			Log.info(sTestCaseName + " | VT Error % - minus tolerance field completed");
 		}
@@ -280,52 +280,52 @@ public class CI_Methods_Accuracy_Test_COP4{
 	    
 	    */
 	    
-	    CI_Objects_Accuracy_Test_COP4.txt_instrument_serial_num(driver).click();
-	    CI_Objects_Accuracy_Test_COP4.txt_instrument_serial_num(driver).sendKeys(sInstSerialNum);
+	    CI_Objects_Accuracy_Test_Cop4.txt_instrument_serial_num(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.txt_instrument_serial_num(driver).sendKeys(sInstSerialNum);
 	    {
 			Log.info(sTestCaseName + " | Instrument Serial Number field completed");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.btn_test_outcome_pass(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.btn_test_outcome_pass(driver).click();
 	    {
 			Log.info(sTestCaseName + " | Test Outcome = Pass radio button selected");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.txt_last_calibration_date(driver).click();
-	    CI_Objects_Accuracy_Test_COP4.txt_last_calibration_date(driver).sendKeys(sCalibDate);
+	    CI_Objects_Accuracy_Test_Cop4.txt_last_calibration_date(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.txt_last_calibration_date(driver).sendKeys(sCalibDate);
 	    {
 			Log.info(sTestCaseName + " | Last Calibration Date field completed");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.txt_date_of_test(driver).click();
-	    CI_Objects_Accuracy_Test_COP4.txt_date_of_test(driver).sendKeys(sTestDate);
+	    CI_Objects_Accuracy_Test_Cop4.txt_date_of_test(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.txt_date_of_test(driver).sendKeys(sTestDate);
 	    {
 			Log.info(sTestCaseName + " | Date of Test field completed");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.txt_finish_time(driver).click();
-	    CI_Objects_Accuracy_Test_COP4.txt_finish_time(driver).sendKeys(sFinishTime);
+	    CI_Objects_Accuracy_Test_Cop4.txt_finish_time(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.txt_finish_time(driver).sendKeys(sFinishTime);
 	    {
 			Log.info(sTestCaseName + " | Finish Time field completed");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.txt_signature(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.txt_signature(driver).click();
 	    {
 			Log.info(sTestCaseName + " | Signature field clicked");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.txt_comments(driver).click();
-	    CI_Objects_Accuracy_Test_COP4.txt_finish_time(driver).sendKeys(sComments);
+	    CI_Objects_Accuracy_Test_Cop4.txt_comments(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.txt_finish_time(driver).sendKeys(sComments);
 	    {
 			Log.info(sTestCaseName + " | Finish Time field completed");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.btn_save(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.btn_save(driver).click();
 	    {
 			Log.info(sTestCaseName + " | Save button clicked");
 		}
 	    
-	    CI_Objects_Accuracy_Test_COP4.btn_completed(driver).click();
+	    CI_Objects_Accuracy_Test_Cop4.btn_completed(driver).click();
 	    {
 			Log.info(sTestCaseName + " | Completed button clicked");
 		}

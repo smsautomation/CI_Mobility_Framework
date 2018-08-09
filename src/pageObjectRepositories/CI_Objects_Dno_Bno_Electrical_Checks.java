@@ -22,7 +22,7 @@ import utility.Log;
 *
 *********************************************************************/
 
-public class CI_Objects_DNO_BNO_Electrical_Checks {
+public class CI_Objects_Dno_Bno_Electrical_Checks {
    
     private static WebElement element = null;
     private static String sRepositoryName = "CI_Objects_DNO_BNO_Electrical_Checks";

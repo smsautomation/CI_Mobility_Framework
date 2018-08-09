@@ -22,7 +22,7 @@ import utility.Log;
 *
 *********************************************************************/
 
-public class CI_Objects_Accuracy_Test_COP4 {
+public class CI_Objects_Accuracy_Test_Cop4 {
    
     private static WebElement element = null;
     private static String sRepositoryName = "CI_Objects_Accuracy_Test_COP4";

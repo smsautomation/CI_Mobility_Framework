@@ -7,9 +7,9 @@ import utility.Log;
 
 /* *******************************************************************
 * Author: Charlotte Jones
-* Date: 05/07/2018
-* Function: CI_Objects_Commissioning_HV_CT
-* Purpose: This class contains all of the elements in the C&I Commissioning Document - HV CT section
+* Date: 04/07/2018
+* Function: CI_Objects_Commissioning_WC_3PH_LV_CT
+* Purpose: This class contains all of the elements in the C&I Commissioning Document - WC 3PH & LV CT section
 * Arguments: 
 * 			
 * Returns: 
@@ -22,12 +22,12 @@ import utility.Log;
 *
 *********************************************************************/
 
-public class CI_Objects_Commissioning_HV_CT {
+public class CI_Objects_Commissioning_Wc_3ph_Lv_Ct {
    
     private static WebElement element = null;
-    private static String sRepositoryName = "CI_Objects_Commissioning_HV_CT";
+    private static String sRepositoryName = "CI_Objects_Commissioning_WC_3PH_LV_CT";
 
-           
+
     	// Commissioning Possible? sub-section
     	  
     	public static WebElement btn_can_meters_be_commissioned_y(WebDriver driver) {
@@ -261,27 +261,7 @@ public class CI_Objects_Commissioning_HV_CT {
     		}
     		return element;
     	}
-    	
-    	public static WebElement btn_vt_burden_less_than_vt_rating_y(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |btn_vt_burden_less_than_vt_rating_y not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}
-    	
-    	public static WebElement btn_vt_burden_less_than_vt_rating_n(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |btn_vt_burden_less_than_vt_rating_n not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}
-    	
+    	  	
      	public static WebElement btn_ct_ratio_confirmed_y(WebDriver driver) {
         	
     		try {
@@ -353,47 +333,15 @@ public class CI_Objects_Commissioning_HV_CT {
     		}
     		return element;
     	}
+    	 	
+    	// Measured and Calculated Load Values sub-section (display with the Meter Indicated Values section)
     	
-    	// Measured and Calculated Load Values sub-section (do not display with the Meter Indicated Values section)
-    	
-    	public static WebElement cbx_primary_currents_measured_hv(WebDriver driver) {
+    	public static WebElement txt_l1_measured_volts(WebDriver driver) {
         	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |cbx_primary_currents_measured_hv not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}
-    	
-    	public static WebElement cbx_primary_currents_measured_lv(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |cbx_primary_currents_measured_lv not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}
-
-    	public static WebElement cbx_primary_currents_measured_hv4(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |cbx_primary_currents_measured_hv4 not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}
-    	  
-    	// Measured and Calculated Load Values with HV Currents sub-section (do not display with the Meter Indicated Values section) - **
-    	
-    	public static WebElement txt_l1_measured_volts_sec(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l1_measured_volts_sec not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |txt_l1_measured_volts not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}
@@ -409,6 +357,66 @@ public class CI_Objects_Commissioning_HV_CT {
     	}
     	
     	public static WebElement txt_l1_measured_i_sec(WebDriver driver) {
+        	
+    		try {
+    			element = driver.findElement(By.id(INSERTID));
+    		}catch(Exception e) {
+    			Log.error(sRepositoryName + " |txt_l1_measured_i_sec not found | Exception desc : "+e.getMessage());
+    		}
+    		return element;
+    	}
+    	
+    	public static WebElement txt_l2_measured_volts(WebDriver driver) {
+        	
+    		try {
+    			element = driver.findElement(By.id(INSERTID));
+    		}catch(Exception e) {
+    			Log.error(sRepositoryName + " |txt_l1_measured_volts not found | Exception desc : "+e.getMessage());
+    		}
+    		return element;
+    	}
+    	
+    	public static WebElement txt_l2_measured_i_pri(WebDriver driver) {
+        	
+    		try {
+    			element = driver.findElement(By.id(INSERTID));
+    		}catch(Exception e) {
+    			Log.error(sRepositoryName + " |txt_l1_measured_i_pri not found | Exception desc : "+e.getMessage());
+    		}
+    		return element;
+    	}
+    	
+    	public static WebElement txt_l2_measured_i_sec(WebDriver driver) {
+        	
+    		try {
+    			element = driver.findElement(By.id(INSERTID));
+    		}catch(Exception e) {
+    			Log.error(sRepositoryName + " |txt_l1_measured_i_sec not found | Exception desc : "+e.getMessage());
+    		}
+    		return element;
+    	}
+    	
+    	public static WebElement txt_l3_measured_volts(WebDriver driver) {
+        	
+    		try {
+    			element = driver.findElement(By.id(INSERTID));
+    		}catch(Exception e) {
+    			Log.error(sRepositoryName + " |txt_l1_measured_volts not found | Exception desc : "+e.getMessage());
+    		}
+    		return element;
+    	}
+    	
+    	public static WebElement txt_l3_measured_i_pri(WebDriver driver) {
+        	
+    		try {
+    			element = driver.findElement(By.id(INSERTID));
+    		}catch(Exception e) {
+    			Log.error(sRepositoryName + " |txt_l1_measured_i_pri not found | Exception desc : "+e.getMessage());
+    		}
+    		return element;
+    	}
+    	
+    	public static WebElement txt_l3_measured_i_sec(WebDriver driver) {
         	
     		try {
     			element = driver.findElement(By.id(INSERTID));
@@ -418,301 +426,7 @@ public class CI_Objects_Commissioning_HV_CT {
     		return element;
     	}
     	   	
-    	public static WebElement txt_l3_measured_volts_sec(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l3_measured_volts_sec not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}
-    	
-    	public static WebElement txt_l3_measured_i_pri(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l3_measured_i_pri not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}
-   		
-    	public static WebElement txt_l3_measured_i_sec(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l3_measured_i_sec not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}    	
-    
-    	// Measure and Calculated Load Values with LV Currents sub-section (display with the Meter Indicated Values section)
-   
-    	
-    	public static WebElement txt_l1_measured_volts_lv(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l1_measured_volts_lv not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}    	
-    
-    	public static WebElement txt_l1_measured_i_lv(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l1_measured_i_lv not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}    	
-    
-    	public static WebElement txt_l1_measured_volts_sec_hv(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l1_measured_volts_sec_hv not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}    	
-    
-    	public static WebElement txt_l1_measured_i_sec_hv(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l1_measured_i_sec_hv not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}    	
-        
-    	public static WebElement txt_l2_measured_volts_lv(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l2_measured_volts_lv not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}    	
-        
-    	public static WebElement txt_l2_measured_i_lv(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l2_measured_i_lv not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}    	
-        
-    	public static WebElement txt_l3_measured_volts_lv(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l3_measured_volts_lv not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}    	
-        
-    	public static WebElement txt_l3_measured_i_lv(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l3_measured_i_lv not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}    	
-            
-    	public static WebElement txt_l3_measured_volts_sec_hv(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l3_measured_volts_sec_hv not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}    	
-            
-    	public static WebElement txt_l3_measured_i_sec_hv(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l3_measured_i_sec_hv not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-        	
-           
-    }
-        
-    
-        // Measure and Calculated Load Values with HV 4 Wire Currents sub-section (display with the Meter Indicated Values section)
-    
-    public static class WITH_HV_4_WIRE_CURRENTS{
-    
-    	public static WebElement txt_l1_measured_volts(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l1_measured_volts not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}     
-    
-    	public static WebElement txt_l1_measured_i_pri(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l1_measured_i_pri not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}     
-    
-    	public static WebElement txt_l1_measured_i_sec(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l1_measured_i_sec not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}     
-    
-    	public static WebElement txt_l1_measured_kva_p(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l1_measured_kva_p not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}     
-    
-    	public static WebElement txt_l1_measured_kva_s(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l1_measured_kva_s not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}     
-    
-    	public static WebElement txt_l2_measured_volts(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l2_measured_volts not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}     
-    
-    	public static WebElement txt_l2_measured_i_pri(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l2_measured_i_pri not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}     
-    
-    	public static WebElement txt_l2_measured_i_sec(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l2_measured_i_sec not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}     
-    
-    	public static WebElement txt_l2_measured_kva_p(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l2_measured_kva_p not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}     
-    
-    	public static WebElement txt_l2_measured_kva_s(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l2_measured_kva_s not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}     
-    
-    	public static WebElement txt_l3_measured_volts(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l3_measured_volts not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}     
-    
-    	public static WebElement txt_l3_measured_i_pri(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l3_measured_i_pri not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}     
-    
-    	public static WebElement txt_l3_measured_i_sec(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l3_measured_i_sec not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}     
-    
-    	public static WebElement txt_l3_measured_kva_p(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l3_measured_kva_p not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}     
-    
-    	public static WebElement txt_l3_measured_kva_s(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l3_measured_kva_s not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}     
-    	
-    }
-    // END OF CLASS WITH_HV_4_WIRE_CURRENTS
-    
-    
-        // Meter Indicated Values sub-section (display with the Measured and Calculated Load Values section)
+    	// Meter Indicated Values sub-section (display with the Measured and Calculated Load Values section)
     	
     	public static WebElement txt_l1_meter_indicated_v_primary(WebDriver driver) {
         	
@@ -739,7 +453,7 @@ public class CI_Objects_Commissioning_HV_CT {
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l2_meter_indicated_v_primary not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |txt_l1_meter_indicated_v_primary not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}
@@ -749,7 +463,7 @@ public class CI_Objects_Commissioning_HV_CT {
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l2_meter_indicated_i_pri not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |txt_l1_meter_indicated_i_pri not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}
@@ -759,7 +473,7 @@ public class CI_Objects_Commissioning_HV_CT {
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l3_meter_indicated_v_primary not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |txt_l1_meter_indicated_v_primary not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}
@@ -769,11 +483,11 @@ public class CI_Objects_Commissioning_HV_CT {
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_l3_meter_indicated_i_pri not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |txt_l1_meter_indicated_i_pri not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}
-    	
+    	   	
     	public static WebElement txt_displayed_values_kw(WebDriver driver) {
         	
     		try {
@@ -814,7 +528,7 @@ public class CI_Objects_Commissioning_HV_CT {
     		return element;
     	}
     	
-    	// Timed Demand Advance sub-section
+    	// Timed Demand Advance
     	
     	public static WebElement txt_rising_md_value(WebDriver driver) {
         	
@@ -837,7 +551,7 @@ public class CI_Objects_Commissioning_HV_CT {
     	}
     	
     	public static WebElement cbx_unit(WebDriver driver) {
-        	
+    	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
@@ -845,11 +559,11 @@ public class CI_Objects_Commissioning_HV_CT {
     		}
     		return element;
     	}
-    	
-    	// Impulses/Pulses Set
-    	
+	
+    	// Impulses/Pulses Set sub-section
+   	
     	public static WebElement txt_impulses_kw_actual_num(WebDriver driver) {
-        	
+    	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
@@ -857,17 +571,17 @@ public class CI_Objects_Commissioning_HV_CT {
     		}
     		return element;
     	}
-    	
+	
     	public static WebElement txt_impulses_kw_time_taken(WebDriver driver) {
-        	
+    	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_impulses_kw_time_taken not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |txt_impulses_kw_actual_no not found | Exception desc : "+e.getMessage());
     		}
     		return element;
-    	}
-    	
+    	}	
+	
     	public static WebElement txt_impulses_kw_pulse_value_meter(WebDriver driver) {
         	
     		try {
@@ -876,8 +590,8 @@ public class CI_Objects_Commissioning_HV_CT {
     			Log.error(sRepositoryName + " |txt_impulses_kw_pulse_value_meter not found | Exception desc : "+e.getMessage());
     		}
     		return element;
-    	}
-    	
+    	}	
+	
     	public static WebElement txt_impulses_kvar_actual_num(WebDriver driver) {
         	
     		try {
@@ -887,17 +601,17 @@ public class CI_Objects_Commissioning_HV_CT {
     		}
     		return element;
     	}
-    	
+	
     	public static WebElement txt_impulses_kvar_time_taken(WebDriver driver) {
-        	
+    	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
     			Log.error(sRepositoryName + " |txt_impulses_kvar_time_taken not found | Exception desc : "+e.getMessage());
     		}
     		return element;
-    	}
-    	
+    	}	
+	
     	public static WebElement txt_impulses_kvar_pulse_value_meter(WebDriver driver) {
         	
     		try {
@@ -906,8 +620,8 @@ public class CI_Objects_Commissioning_HV_CT {
     			Log.error(sRepositoryName + " |txt_impulses_kvar_pulse_value_meter not found | Exception desc : "+e.getMessage());
     		}
     		return element;
-    	}
-    	
+    	}	
+	
     	// Registers sub-section
     	
     	public static WebElement txt_time_start(WebDriver driver) {
@@ -1071,10 +785,11 @@ public class CI_Objects_Commissioning_HV_CT {
     	}			
     	
     	
+
     	
-    	
-    
-    
-    
+
+    	  
+      }
+			
 //END OF METHODS	    
 }

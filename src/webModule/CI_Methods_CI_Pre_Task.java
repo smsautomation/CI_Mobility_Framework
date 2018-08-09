@@ -3,7 +3,7 @@ package webModule;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import pageObjectRepositories.CI_Objects_CI_Pre_Task;
+import pageObjectRepositories.CI_Objects_Ci_Pre_Task;
 import utility.Log;
 
 public class CI_Methods_CI_Pre_Task{
@@ -86,9 +86,9 @@ public class CI_Methods_CI_Pre_Task{
 	****************************************************************************************************/	
 	public static void addSuccessValuesSub100WC1PH(WebDriver driver, String sTestCaseName) throws Exception{
 				
-		CI_Objects_CI_Pre_Task.cbx_sub100_meter_supply(driver).click();
-		CI_Objects_CI_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys("WC 1");
-		CI_Objects_CI_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys(Keys.ENTER);
+		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).click();
+		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys("WC 1");
+		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys(Keys.ENTER);
 		{
 			Log.info(sTestCaseName + " | Sub100 WC 1PH metering supply selected");
 		}
@@ -98,9 +98,9 @@ public class CI_Methods_CI_Pre_Task{
 		
 	public static void addSuccessValuesSub100WC3PH(WebDriver driver, String sTestCaseName) throws Exception{
 		
-		CI_Objects_CI_Pre_Task.cbx_sub100_meter_supply(driver).click();
-		CI_Objects_CI_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys("WC 3");
-		CI_Objects_CI_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys(Keys.ENTER);
+		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).click();
+		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys("WC 3");
+		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys(Keys.ENTER);
 		{
 			Log.info(sTestCaseName + " | Sub100 WC 3PH metering supply selected");
 		}
@@ -111,9 +111,9 @@ public class CI_Methods_CI_Pre_Task{
 		
 	public static void addSuccessValuesSub100LVCT(WebDriver driver, String sTestCaseName) throws Exception{
 		
-		CI_Objects_CI_Pre_Task.cbx_sub100_meter_supply(driver).click();
-		CI_Objects_CI_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys("L");
-		CI_Objects_CI_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys(Keys.ENTER);
+		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).click();
+		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys("L");
+		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys(Keys.ENTER);
 		{
 			Log.info(sTestCaseName + " | Sub100 LV CT metering supply selected");
 		}
@@ -124,9 +124,9 @@ public class CI_Methods_CI_Pre_Task{
 			
 	public static void addSuccessValuesSub100HVCT(WebDriver driver, String sTestCaseName) throws Exception{
 		
-		CI_Objects_CI_Pre_Task.cbx_sub100_meter_supply(driver).click();
-		CI_Objects_CI_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys("H");
-		CI_Objects_CI_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys(Keys.ENTER);
+		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).click();
+		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys("H");
+		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys(Keys.ENTER);
 		{
 			Log.info(sTestCaseName + " | Sub100 HV CT metering supply selected");
 		}

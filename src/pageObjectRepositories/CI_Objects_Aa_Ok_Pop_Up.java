@@ -22,7 +22,7 @@ import utility.Log;
 *
 *********************************************************************/
 
-public class CI_Objects_AA_OK_Pop_Up {
+public class CI_Objects_Aa_Ok_Pop_Up {
    
     private static WebElement element = null;
     private static String sRepositoryName = "CI_Objects_Arrive";

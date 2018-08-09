@@ -1,11 +1,12 @@
 package webModule;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import pageObjectRepositories.CI_Objects_Phase_Rotation_Test;
+import pageObjectRepositories.CI_Objects_Dno_Bno_Work;
 import utility.Log;
 
-public class CI_Methods_Phase_Rotation_Test{
+public class CI_Methods_Dno_Bno_Work{
 	
 	
 	
@@ -71,9 +72,9 @@ public class CI_Methods_Phase_Rotation_Test{
 	/* **************************************************************************************************
 	* Function: addSuccessValuesAll
 	* Author: Charlotte Jones
-	* Date: 06/08/2018
-	* Purpose: This method adds the required responses in the Phase Rotation Test section for a happy
-	* 	path scenario
+	* Date: 09/08/2018
+	* Purpose: This method adds the required responses in the DNO/BNO Work section for a happy path
+	* 	scenario - this Methods script covers the Job Summary Details sub-section from the workflow doc
 	* Arguments: 	
 	* Returns: 
 	*****************************************************************************************************
@@ -87,10 +88,56 @@ public class CI_Methods_Phase_Rotation_Test{
 	public static void addSuccessValuesAll(WebDriver driver, String sTestCaseName) throws Exception{
 	
 	
+		// *!*!*!*!*!* Need values for below variables *!*!*!*!*!*
+		String	sSurveyReport = "survey report words";
+		String	sCabinetSerialNum = "";	// up to 30 characters in length
+		String	sSubStationName = "";	// up to 30 characters 
+		String	sWorkSummary = "";
+		
 				
-		CI_Objects_Phase_Rotation_Test.btn_phase_rotation_correct_y(driver).click();
+		CI_Objects_Dno_Bno_Work.txt_survey_report(driver).click();
+		CI_Objects_Dno_Bno_Work.txt_survey_report(driver).sendKeys(sSurveyReport);
+		CI_Objects_Dno_Bno_Work.txt_survey_report(driver).sendKeys(Keys.ENTER);
 		{
-			Log.info(sTestCaseName + " | Is Phase Rotation Correct? - Yes radio button clicked");
+			Log.info(sTestCaseName + " | Survey Report field completed");
+		}
+		
+		CI_Objects_Dno_Bno_Work.btn_photo_survey_1(driver).click();
+		CI_Objects_Dno_Bno_Work.btn_photo_survey_2(driver).click();
+		CI_Objects_Dno_Bno_Work.btn_photo_survey_3(driver).click();
+		CI_Objects_Dno_Bno_Work.btn_photo_survey_4(driver).click();
+		CI_Objects_Dno_Bno_Work.btn_photo_survey_5(driver).click();
+		{
+			Log.info(sTestCaseName + " | 5 Survey Photos taken");
+		}
+		
+		CI_Objects_Dno_Bno_Work.btn_p283_completed(driver).click();
+		{
+			Log.info(sTestCaseName + " | P283 Completed? tickbox checked");
+		}
+		
+		CI_Objects_Dno_Bno_Work.btn_photo_p283_1(driver).click();
+		CI_Objects_Dno_Bno_Work.btn_photo_p283_2(driver).click();
+		{
+			Log.info(sTestCaseName + " | 2 P283 Photos taken");
+		}
+		
+		CI_Objects_Dno_Bno_Work.txt_cabinet_serial_num(driver).click();
+		CI_Objects_Dno_Bno_Work.txt_cabinet_serial_num(driver).sendKeys(sCabinetSerialNum);
+		{
+			Log.info(sTestCaseName + " | Meter Cabinet Serial Number field completed");
+		}
+		
+		CI_Objects_Dno_Bno_Work.txt_sub_station_name_num(driver).click();
+		CI_Objects_Dno_Bno_Work.txt_sub_station_name_num(driver).sendKeys(sSubStationName);
+		{
+			Log.info(sTestCaseName + " | Sub Station Name/Number field completed");
+		}
+		
+		CI_Objects_Dno_Bno_Work.txt_work_summary(driver).click();
+		CI_Objects_Dno_Bno_Work.txt_work_summary(driver).sendKeys(sWorkSummary);
+		{
+			Log.info(sTestCaseName + " | Sub Station Name/Number field completed");
 		}
 		
 				

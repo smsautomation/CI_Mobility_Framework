@@ -22,7 +22,7 @@ import utility.Log;
 *
 *********************************************************************/
 
-public class CI_Objects_TAA_Non_Compliance_Visit {
+public class CI_Objects_Taa_Non_Compliance_Visit {
    
     private static WebElement element = null;
     private static String sRepositoryName = "CI_Objects_TAA_Non_Compliance_Visit";

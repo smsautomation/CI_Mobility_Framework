@@ -3,10 +3,10 @@ package webModule;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import pageObjectRepositories.CI_Objects_Commissioning_WC_3PH_LV_CT;
+import pageObjectRepositories.CI_Objects_Commissioning_Wc_3ph_Lv_Ct;
 import utility.Log;
 
-public class CI_Methods_Commissioning_WC_3PH_LV_CT{
+public class CI_Methods_Commissioning_Wc_3ph_Lv_Ct{
 	
 	
 	
@@ -177,270 +177,270 @@ public class CI_Methods_Commissioning_WC_3PH_LV_CT{
 		String	sComments = "lots of comments about commissioning";
 		
 				
-		CI_Objects_Commissioning_WC_3PH_LV_CT.btn_can_meters_be_commissioned_y(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.btn_can_meters_be_commissioned_y(driver).click();
 		{
 			Log.info(sTestCaseName + " | Can meters be commissioned? - Yes radio button clicked");
 		}
 		
 		// Meter Checks sub-section
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.cbx_serial_num(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.cbx_serial_num(driver).sendKeys(sSerialNum);
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.cbx_serial_num(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.cbx_serial_num(driver).sendKeys(sSerialNum);
 		{
 			Log.info(sTestCaseName + " | Serial Number field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.btn_date_time_correct_y(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.btn_date_time_correct_y(driver).click();
 		{
 			Log.info(sTestCaseName + " | Meter time and date correct - Yes radio button selected");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.btn_operator_label_fitted_y(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.btn_operator_label_fitted_y(driver).click();
 		{
 			Log.info(sTestCaseName + " | Meter operator label fitted - Yes radio button selected");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.btn_wiring_connected_correctly_y(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.btn_wiring_connected_correctly_y(driver).click();
 		{
 			Log.info(sTestCaseName + " | Wiring connected correctly - Yes radio button selected");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.btn_phase_rotation_correct_y(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.btn_phase_rotation_correct_y(driver).click();
 		{
 			Log.info(sTestCaseName + " | Phase rotation correct at meter - Yes radio button selected");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.btn_ct_polarity_correct_y(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.btn_ct_polarity_correct_y(driver).click();
 		{
 			Log.info(sTestCaseName + " | CT Polarity correct - Yes radio button selected");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.btn_meter_advances_each_element_y(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.btn_meter_advances_each_element_y(driver).click();
 		{
 			Log.info(sTestCaseName + " | Meter advances on each element - Yes radio button selected");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.btn_test_block_correct_n(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.btn_test_block_correct_n(driver).click();
 		{
 			Log.info(sTestCaseName + " | Test block operation correct - No radio button selected");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.btn_phase_failure_indication_working_n(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.btn_phase_failure_indication_working_n(driver).click();
 		{
 			Log.info(sTestCaseName + " | Phase failure indication working - No radio button selected");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.btn_ct_burden_less_than_ct_rating_y(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.btn_ct_burden_less_than_ct_rating_y(driver).click();
 		{
 			Log.info(sTestCaseName + " | CT Burden < CT Rating - Yes radio button selected");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.btn_ct_ratio_confirmed_y(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.btn_ct_ratio_confirmed_y(driver).click();
 		{
 			Log.info(sTestCaseName + " | PCT Ratio confirmed - Yes radio button selected");
 		}
 		
 		// Phase Voltages sub-section
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l1_l3(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l1_l3(driver).sendKeys(Integer.toString(iL1L3));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l1_l3(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l1_l3(driver).sendKeys(Integer.toString(iL1L3));
 		{
 			Log.info(sTestCaseName + " | L1 - L3 field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l2_l3(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l2_l3(driver).sendKeys(Integer.toString(iL2L3));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l2_l3(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l2_l3(driver).sendKeys(Integer.toString(iL2L3));
 		{
 			Log.info(sTestCaseName + " | L2 - L3 field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l1_earth(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l1_earth(driver).sendKeys(Integer.toString(iL1Earth));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l1_earth(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l1_earth(driver).sendKeys(Integer.toString(iL1Earth));
 		{
 			Log.info(sTestCaseName + " | L1 - Earth field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l1_neutral(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l1_neutral(driver).sendKeys(Integer.toString(iL1Neutral));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l1_neutral(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l1_neutral(driver).sendKeys(Integer.toString(iL1Neutral));
 		{
 			Log.info(sTestCaseName + " | L1 - Neutral field completed");
 		}
 		
 		//Measure and Calculated Load Values (display with the Meter Indicated Values section) sub-section
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l1_measured_volts(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l1_measured_volts(driver).sendKeys(Integer.toString(iL1MeasuredVolts));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l1_measured_volts(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l1_measured_volts(driver).sendKeys(Integer.toString(iL1MeasuredVolts));
 		{
 			Log.info(sTestCaseName + " | L1 - Measured - Volts field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l1_measured_i_pri(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l1_measured_i_pri(driver).sendKeys(Integer.toString(iL1MeasuredIPri));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l1_measured_i_pri(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l1_measured_i_pri(driver).sendKeys(Integer.toString(iL1MeasuredIPri));
 		{
 			Log.info(sTestCaseName + " | L1 - Measured - I (pri) field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l1_measured_i_sec(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l1_measured_i_sec(driver).sendKeys(Integer.toString(iL1MeasuredISec));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l1_measured_i_sec(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l1_measured_i_sec(driver).sendKeys(Integer.toString(iL1MeasuredISec));
 		{
 			Log.info(sTestCaseName + " | L1 - Measured - I (sec) field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l2_measured_volts(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l2_measured_volts(driver).sendKeys(Integer.toString(iL2MeasuredVolts));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l2_measured_volts(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l2_measured_volts(driver).sendKeys(Integer.toString(iL2MeasuredVolts));
 		{
 			Log.info(sTestCaseName + " | L2 - Measured - Volts field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l2_measured_i_pri(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l2_measured_i_pri(driver).sendKeys(Integer.toString(iL2MeasuredIPri));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l2_measured_i_pri(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l2_measured_i_pri(driver).sendKeys(Integer.toString(iL2MeasuredIPri));
 		{
 			Log.info(sTestCaseName + " | L2 - Measured - I (pri) field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l2_measured_i_sec(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l2_measured_i_sec(driver).sendKeys(Integer.toString(iL2MeasuredISec));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l2_measured_i_sec(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l2_measured_i_sec(driver).sendKeys(Integer.toString(iL2MeasuredISec));
 		{
 			Log.info(sTestCaseName + " | L2 - Measured - I (sec) field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l3_measured_volts(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l3_measured_volts(driver).sendKeys(Integer.toString(iL3MeasuredVolts));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l3_measured_volts(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l3_measured_volts(driver).sendKeys(Integer.toString(iL3MeasuredVolts));
 		{
 			Log.info(sTestCaseName + " | L3 - Measured - Volts field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l3_measured_i_pri(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l3_measured_i_pri(driver).sendKeys(Integer.toString(iL3MeasuredIPri));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l3_measured_i_pri(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l3_measured_i_pri(driver).sendKeys(Integer.toString(iL3MeasuredIPri));
 		{
 			Log.info(sTestCaseName + " | L3 - Measured - I (pri) field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l3_measured_i_sec(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l3_measured_i_sec(driver).sendKeys(Integer.toString(iL3MeasuredISec));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l3_measured_i_sec(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l3_measured_i_sec(driver).sendKeys(Integer.toString(iL3MeasuredISec));
 		{
 			Log.info(sTestCaseName + " | L3 - Measured - I (sec) field completed");
 		}
 		
 		// Meter Indicated Values (display with the Measured and Calculated Load Values section) sub-section
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l1_meter_indicated_v_primary(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l1_meter_indicated_v_primary(driver).sendKeys(Integer.toString(iL1MeterIndicVPri));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l1_meter_indicated_v_primary(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l1_meter_indicated_v_primary(driver).sendKeys(Integer.toString(iL1MeterIndicVPri));
 		{
 			Log.info(sTestCaseName + " | L1 - Meter Indicated - V (Primary) field completed");
 		}
 			
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l1_meter_indicated_i_pri(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l1_meter_indicated_i_pri(driver).sendKeys(Integer.toString(iL1MeterIndicIPri));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l1_meter_indicated_i_pri(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l1_meter_indicated_i_pri(driver).sendKeys(Integer.toString(iL1MeterIndicIPri));
 		{
 			Log.info(sTestCaseName + " | L1 - Meter Indicated - I (Pri) field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l2_meter_indicated_v_primary(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l2_meter_indicated_v_primary(driver).sendKeys(Integer.toString(iL2MeterIndicVPri));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l2_meter_indicated_v_primary(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l2_meter_indicated_v_primary(driver).sendKeys(Integer.toString(iL2MeterIndicVPri));
 		{
 			Log.info(sTestCaseName + " | L2 - Meter Indicated - V (Primary) field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l2_meter_indicated_i_pri(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l2_meter_indicated_i_pri(driver).sendKeys(Integer.toString(iL2MeterIndicIPri));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l2_meter_indicated_i_pri(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l2_meter_indicated_i_pri(driver).sendKeys(Integer.toString(iL2MeterIndicIPri));
 		{
 			Log.info(sTestCaseName + " | L2 - Meter Indicated - I (Pri) field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l3_meter_indicated_v_primary(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l3_meter_indicated_v_primary(driver).sendKeys(Integer.toString(iL3MeterIndicVPri));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l3_meter_indicated_v_primary(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l3_meter_indicated_v_primary(driver).sendKeys(Integer.toString(iL3MeterIndicVPri));
 		{
 			Log.info(sTestCaseName + " | L3 - Meter Indicated - V (Primary) field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l3_meter_indicated_i_pri(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_l3_meter_indicated_i_pri(driver).sendKeys(Integer.toString(iL3MeterIndicIPri));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l3_meter_indicated_i_pri(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_l3_meter_indicated_i_pri(driver).sendKeys(Integer.toString(iL3MeterIndicIPri));
 		{
 			Log.info(sTestCaseName + " | L3 - Meter Indicated - I (Pri) field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_displayed_values_kw(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_displayed_values_kw(driver).sendKeys(Integer.toString(iDisplayKw));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_displayed_values_kw(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_displayed_values_kw(driver).sendKeys(Integer.toString(iDisplayKw));
 		{
 			Log.info(sTestCaseName + " | Displayed Values - kW field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_displayed_values_kvar(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_displayed_values_kvar(driver).sendKeys(Integer.toString(iDisplayKvar));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_displayed_values_kvar(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_displayed_values_kvar(driver).sendKeys(Integer.toString(iDisplayKvar));
 		{
 			Log.info(sTestCaseName + " | Displayed Values - kVAr field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_displayed_values_pf(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_displayed_values_pf(driver).sendKeys(sDisplayPf);
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_displayed_values_pf(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_displayed_values_pf(driver).sendKeys(sDisplayPf);
 		{
 			Log.info(sTestCaseName + " | Displayed Values - Pf field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_displayed_values_kva(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_displayed_values_kva(driver).sendKeys(Integer.toString(iDisplayKva));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_displayed_values_kva(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_displayed_values_kva(driver).sendKeys(Integer.toString(iDisplayKva));
 		{
 			Log.info(sTestCaseName + " | Displayed Values - kVA field completed");
 		}
 		
 		// Timed Demand Advance
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_rising_md_value(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_rising_md_value(driver).sendKeys(Integer.toString(iRisingMD));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_rising_md_value(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_rising_md_value(driver).sendKeys(Integer.toString(iRisingMD));
 		{
 			Log.info(sTestCaseName + " | Rising MD Value field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_time_seconds(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_rising_md_value(driver).sendKeys(Integer.toString(iTimeSecs));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_time_seconds(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_rising_md_value(driver).sendKeys(Integer.toString(iTimeSecs));
 		{
 			Log.info(sTestCaseName + " | Time (seconds) field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.cbx_unit(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.cbx_unit(driver).sendKeys(sUnit);
-		CI_Objects_Commissioning_WC_3PH_LV_CT.cbx_unit(driver).sendKeys(Keys.ENTER);
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.cbx_unit(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.cbx_unit(driver).sendKeys(sUnit);
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.cbx_unit(driver).sendKeys(Keys.ENTER);
 		{
 			Log.info(sTestCaseName + " | Unit dropdown completed");
 		}
 		
 		// Impulses/Pulses Set
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_impulses_kw_actual_num(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_impulses_kw_actual_num(driver).sendKeys(Integer.toString(iImpulsesKwAct));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_impulses_kw_actual_num(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_impulses_kw_actual_num(driver).sendKeys(Integer.toString(iImpulsesKwAct));
 		{
 			Log.info(sTestCaseName + " | Impulses - kW - Actual No. field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_impulses_kw_time_taken(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_impulses_kw_time_taken(driver).sendKeys(Integer.toString(iImpulsesKwTime));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_impulses_kw_time_taken(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_impulses_kw_time_taken(driver).sendKeys(Integer.toString(iImpulsesKwTime));
 		{
 			Log.info(sTestCaseName + " | Impulses - kW - Time Taken field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_impulses_kw_pulse_value_meter(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_impulses_kw_pulse_value_meter(driver).sendKeys(Integer.toString(iImpulsesKwPulseVal));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_impulses_kw_pulse_value_meter(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_impulses_kw_pulse_value_meter(driver).sendKeys(Integer.toString(iImpulsesKwPulseVal));
 		{
 			Log.info(sTestCaseName + " | Impulses - kW - Pulse Value of Meter field completed");
 		}
 		
 		// *!*!*!*!*!*!*! need to insert method to perform check of result *!*!*!*!*!*!*!
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_impulses_kvar_actual_num(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_impulses_kvar_actual_num(driver).sendKeys(Integer.toString(iImpulsesKvarAct));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_impulses_kvar_actual_num(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_impulses_kvar_actual_num(driver).sendKeys(Integer.toString(iImpulsesKvarAct));
 		{
 			Log.info(sTestCaseName + " | Impulses - kVAr - Actual No. field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_impulses_kvar_time_taken(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_impulses_kvar_time_taken(driver).sendKeys(Integer.toString(iImpulsesKvarTime));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_impulses_kvar_time_taken(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_impulses_kvar_time_taken(driver).sendKeys(Integer.toString(iImpulsesKvarTime));
 		{
 			Log.info(sTestCaseName + " | Impulses - kVar - Time Taken field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_impulses_kvar_pulse_value_meter(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_impulses_kvar_pulse_value_meter(driver).sendKeys(Integer.toString(iImpulsesKvarPulseVal));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_impulses_kvar_pulse_value_meter(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_impulses_kvar_pulse_value_meter(driver).sendKeys(Integer.toString(iImpulsesKvarPulseVal));
 		{
 			Log.info(sTestCaseName + " | Impulses - kVAr - Pulse Value of Meter field completed");
 		}
@@ -451,97 +451,97 @@ public class CI_Methods_Commissioning_WC_3PH_LV_CT{
 		
 		// *!*!*!*!*!*!*! Have an outstanding query with Nicky re if it's 24 hour clock for the time, or 12 hour clock *!*!*!*!*!*!*!
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_time_start(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_time_start(driver).sendKeys(sTimeStart);
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_time_start(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_time_start(driver).sendKeys(sTimeStart);
 		{
 			Log.info(sTestCaseName + " | Time - Start field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_time_finish(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_time_finish(driver).sendKeys(sTimeFinish);
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_time_finish(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_time_finish(driver).sendKeys(sTimeFinish);
 		{
 			Log.info(sTestCaseName + " | Time - Start field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_import_kwh_start(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_import_kwh_start(driver).sendKeys(Integer.toString(iImportKwhStart));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_import_kwh_start(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_import_kwh_start(driver).sendKeys(Integer.toString(iImportKwhStart));
 		{
 			Log.info(sTestCaseName + " | Import kWh - Start field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_import_kwh_finish(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_import_kwh_finish(driver).sendKeys(Integer.toString(iImportKwhFinish));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_import_kwh_finish(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_import_kwh_finish(driver).sendKeys(Integer.toString(iImportKwhFinish));
 		{
 			Log.info(sTestCaseName + " | Import kWh - Finish field completed");
 		}
 		
 		// *!*!*!*!*!*!*! need to insert method to perform check of Advance result *!*!*!*!*!*!*!
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_export_kwh_start(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_export_kwh_start(driver).sendKeys(Integer.toString(iExportKwhStart));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_export_kwh_start(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_export_kwh_start(driver).sendKeys(Integer.toString(iExportKwhStart));
 		{
 			Log.info(sTestCaseName + " | Export kWh - Start field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_export_kwh_finish(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_export_kwh_finish(driver).sendKeys(Integer.toString(iExportKwhFinish));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_export_kwh_finish(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_export_kwh_finish(driver).sendKeys(Integer.toString(iExportKwhFinish));
 		{
 			Log.info(sTestCaseName + " | Export kWh - Finish field completed");
 		}
 		
 		// *!*!*!*!*!*!*! need to insert method to perform check of Advance result *!*!*!*!*!*!*!
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_total_kvarh_start(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_total_kvarh_start(driver).sendKeys(Integer.toString(iTotalKvarhStart));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_total_kvarh_start(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_total_kvarh_start(driver).sendKeys(Integer.toString(iTotalKvarhStart));
 		{
 			Log.info(sTestCaseName + " | Total kVArh - Start field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_total_kvarh_finish(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_total_kvarh_finish(driver).sendKeys(Integer.toString(iTotalKvarhFinish));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_total_kvarh_finish(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_total_kvarh_finish(driver).sendKeys(Integer.toString(iTotalKvarhFinish));
 		{
 			Log.info(sTestCaseName + " | Total kVArh - Finish field completed");
 		}
 		
 		// *!*!*!*!*!*!*! need to insert method to perform check of Advance result *!*!*!*!*!*!*!
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_total_kvah_start(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_total_kvah_start(driver).sendKeys(Integer.toString(iTotalKvahStart));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_total_kvah_start(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_total_kvah_start(driver).sendKeys(Integer.toString(iTotalKvahStart));
 		{
 			Log.info(sTestCaseName + " | Total kVAh - Start field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_total_kvah_finish(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_total_kvah_finish(driver).sendKeys(Integer.toString(iTotalKvahFinish));
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_total_kvah_finish(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_total_kvah_finish(driver).sendKeys(Integer.toString(iTotalKvahFinish));
 		{
 			Log.info(sTestCaseName + " | Total kVAh - Finish field completed");
 		}
 		
 		// *!*!*!*!*!*!*! need to insert method to perform check of Advance result *!*!*!*!*!*!*!
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_commissioned_date(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_commissioned_date(driver).sendKeys(sCommissDate);
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_commissioned_date(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_commissioned_date(driver).sendKeys(sCommissDate);
 		{
 			Log.info(sTestCaseName + " | Commissioned Date field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_signature(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_signature(driver).click();
 		{
 			Log.info(sTestCaseName + " | Signature field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_comments(driver).click();
-		CI_Objects_Commissioning_WC_3PH_LV_CT.txt_comments(driver).sendKeys(sComments);
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_comments(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.txt_comments(driver).sendKeys(sComments);
 		{
 			Log.info(sTestCaseName + " | Comments field completed");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.btn_save(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.btn_save(driver).click();
 		{
 			Log.info(sTestCaseName + " | Save button clicked");
 		}
 		
-		CI_Objects_Commissioning_WC_3PH_LV_CT.btn_continue(driver).click();
+		CI_Objects_Commissioning_Wc_3ph_Lv_Ct.btn_continue(driver).click();
 		{
 			Log.info(sTestCaseName + " | Continue button clicked");
 		}

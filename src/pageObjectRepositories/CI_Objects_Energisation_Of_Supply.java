@@ -108,23 +108,23 @@ public class CI_Objects_Energisation_Of_Supply {
     	return element;
     }
     
-    public static WebElement txt_supply_energised(WebDriver driver) {
+    public static WebElement txt_supply_energised_comments(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_supply_energised not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |txt_supply_energised_comments not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
 
-    	//assuming this is a notes field - need confirmation via email
-    public static WebElement txt_reason_not_energised(WebDriver driver) {
+    
+    public static WebElement cbx_reason_not_energised(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_reason_not_energised not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |cbx_reason_not_energised not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }

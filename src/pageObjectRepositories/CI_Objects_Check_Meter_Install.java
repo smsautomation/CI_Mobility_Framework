@@ -39,12 +39,12 @@ public class CI_Objects_Check_Meter_Install {
     	return element;
     }
     
-    public static WebElement txt_serial_no(WebDriver driver) {
+    public static WebElement txt_serial_num(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_serial_no not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |txt_serial_num not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }

@@ -2,10 +2,10 @@ package webModule;
 
 import org.openqa.selenium.WebDriver;
 
-import pageObjectRepositories.CI_Objects_Phase_Rotation_Test;
+import pageObjectRepositories.CI_Objects_Bt_Connect;
 import utility.Log;
 
-public class CI_Methods_Phase_Rotation_Test{
+public class CI_Methods_Bt_Connect{
 	
 	
 	
@@ -71,9 +71,9 @@ public class CI_Methods_Phase_Rotation_Test{
 	/* **************************************************************************************************
 	* Function: addSuccessValuesAll
 	* Author: Charlotte Jones
-	* Date: 06/08/2018
-	* Purpose: This method adds the required responses in the Phase Rotation Test section for a happy
-	* 	path scenario
+	* Date: 09/08/2018
+	* Purpose: This method adds the required responses in the BT Connect - BT Socket to Modem and Test
+	* Dial section for a happy path scenario
 	* Arguments: 	
 	* Returns: 
 	*****************************************************************************************************
@@ -88,10 +88,17 @@ public class CI_Methods_Phase_Rotation_Test{
 	
 	
 				
-		CI_Objects_Phase_Rotation_Test.btn_phase_rotation_correct_y(driver).click();
+		CI_Objects_Bt_Connect.btn_socket_live_y(driver).click();
 		{
-			Log.info(sTestCaseName + " | Is Phase Rotation Correct? - Yes radio button clicked");
+			Log.info(sTestCaseName + " | BT Socket Live? - Yes radio button clicked");
 		}
+		
+		CI_Objects_Bt_Connect.btn_bt_test_dial_completed(driver).click();
+		{
+			Log.info(sTestCaseName + " | BT Test Dial Completed tickbox checked");
+		}
+		
+		
 		
 				
 	// END OF ADD SUCCESS VALUES ALL METHOD

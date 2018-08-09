@@ -22,7 +22,7 @@ import utility.Log;
 *
 *********************************************************************/
 
-public class CI_Objects_Report_To_DNO {
+public class CI_Objects_Report_To_Dno {
    
     private static WebElement element = null;
     private static String sRepositoryName = "CI_Objects_Report_To_DNO";

@@ -22,7 +22,7 @@ import utility.Log;
 *
 *********************************************************************/
 
-public class CI_Objects_BT_Connect {
+public class CI_Objects_Bt_Connect {
    
     private static WebElement element = null;
     private static String sRepositoryName = "CI_Objects_BT_Connect";

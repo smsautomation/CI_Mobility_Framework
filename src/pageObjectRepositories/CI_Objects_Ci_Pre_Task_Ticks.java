@@ -23,7 +23,7 @@ import utility.Log;
 *
 *********************************************************************/
 
-public class CI_Objects_CI_Pre_Task_Ticks {
+public class CI_Objects_Ci_Pre_Task_Ticks {
    
     private static WebElement element = null;
     private static String sRepositoryName = "CI_Objects_CI_Pre_Task_Ticks";

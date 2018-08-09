@@ -8,7 +8,7 @@ import utility.Log;
 /* *******************************************************************
 * Author: Charlotte Jones
 * Date: 05/07/2018
-* Function: CI_Objects_DNP_BNO_Work
+* Function: CI_Objects_DNO_BNO_Work
 * Purpose: This class contains all of the elements in the C&I DNO/BNO Work section
 * Arguments: 
 * 			
@@ -22,10 +22,10 @@ import utility.Log;
 *
 *********************************************************************/
 
-public class CI_Objects_DNO_BNO_Work {
+public class CI_Objects_Dno_Bno_Work {
    
     private static WebElement element = null;
-    private static String sRepositoryName = "CI_Objects_DNO_BNO_Work";
+    private static String sRepositoryName = "CI_Objects_Dno_Bno_Work";
 
     // Tasks Completed sub-section
     public static class DNO_BNO_TASKS{
@@ -519,27 +519,47 @@ public class CI_Objects_DNO_BNO_Work {
     		return element;
     	}
           
-    	public static WebElement btn_ac_dc_traction_system_y(WebDriver driver) {
+    	public static WebElement btn_ac_dc_traction_system_dc(WebDriver driver) {
         	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |btn_ac_dc_traction_system_y not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |btn_ac_dc_traction_system_dc not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}
           
-    	public static WebElement btn_ac_dc_traction_system_n(WebDriver driver) {
+    	public static WebElement btn_ac_dc_traction_system_ac(WebDriver driver) {
         	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |btn_ac_dc_traction_system_n not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |btn_ac_dc_traction_system_ac not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}
           
-    	public static WebElement btn_transfer_track_between_systems_y(WebDriver driver) {
+    	public static WebElement btn_assoc_dc_traction_sys_y(WebDriver driver) {
+        	
+    		try {
+    			element = driver.findElement(By.id(INSERTID));
+    		}catch(Exception e) {
+    			Log.error(sRepositoryName + " |btn_assoc_traction_sys_y not found | Exception desc : "+e.getMessage());
+    		}
+    		return element;
+    	}
+    	
+    	public static WebElement btn_assoc_dc_traction_sys_n(WebDriver driver) {
+        	
+    		try {
+    			element = driver.findElement(By.id(INSERTID));
+    		}catch(Exception e) {
+    			Log.error(sRepositoryName + " |btn_assoc_traction_sys_n not found | Exception desc : "+e.getMessage());
+    		}
+    		return element;
+    	}
+    	
+    	public static WebElement btn_transfer_track_between_ac_dc_y(WebDriver driver) {
         	
     		try {
     			element = driver.findElement(By.id(INSERTID));
@@ -549,7 +569,7 @@ public class CI_Objects_DNO_BNO_Work {
     		return element;
     	}
           
-    	public static WebElement btn_transfer_track_between_systems_n(WebDriver driver) {
+    	public static WebElement btn_transfer_track_between_ac_dc_n(WebDriver driver) {
         	
     		try {
     			element = driver.findElement(By.id(INSERTID));
@@ -828,7 +848,27 @@ public class CI_Objects_DNO_BNO_Work {
     		}
     		return element;
     	}
+    	
+    	public static WebElement lbl_pme_acceptable(WebDriver driver) {
+        	
+    		try {
+    			element = driver.findElement(By.id(INSERTID));
+    		}catch(Exception e) {
+    			Log.error(sRepositoryName + " |lbl_pme_acceptable not found | Exception desc : "+e.getMessage());
+    		}
+    		return element;
+    	}
          
+    	public static WebElement lbl_pme_not_acceptable(WebDriver driver) {
+        	
+    		try {
+    			element = driver.findElement(By.id(INSERTID));
+    		}catch(Exception e) {
+    			Log.error(sRepositoryName + " |lbl_pme_not_acceptable not found | Exception desc : "+e.getMessage());
+    		}
+    		return element;
+    	}
+    	
     }
     	
     // END OF CLASS RAILWAY_PME_SURVEY_JOB_TASKS
@@ -935,22 +975,22 @@ public class CI_Objects_DNO_BNO_Work {
     		return element;
     	}
     	
-    	public static WebElement txt_cabinet_serial_no(WebDriver driver) {
+    	public static WebElement txt_cabinet_serial_num(WebDriver driver) {
         	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_cabinet_serial_no not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |txt_cabinet_serial_num not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}
     	
-    	public static WebElement txt_sub_station_name_no(WebDriver driver) {
+    	public static WebElement txt_sub_station_name_num(WebDriver driver) {
         	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_sub_station_name_no not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |txt_sub_station_name_num not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}

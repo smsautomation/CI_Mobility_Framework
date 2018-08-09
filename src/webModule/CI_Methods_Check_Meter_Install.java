@@ -2,10 +2,10 @@ package webModule;
 
 import org.openqa.selenium.WebDriver;
 
-import pageObjectRepositories.CI_Objects_Phase_Rotation_Test;
+import pageObjectRepositories.CI_Objects_Check_Meter_Install;
 import utility.Log;
 
-public class CI_Methods_Phase_Rotation_Test{
+public class CI_Methods_Check_Meter_Install{
 	
 	
 	
@@ -40,24 +40,18 @@ public class CI_Methods_Phase_Rotation_Test{
 	
 
 		//Check that all of the elements of that are expected are displayed
-		Objects_Electricity_Meter_Initial_Polarity_Check_At_Meter_Page.lbl_Initial_Polarity_Check_At_Meter(driver)
-				.isDisplayed();
-		{
-			Log.info(sTestCaseName + " | Initial Polarity Check At Meter label displayed as expected");
+		Objects_Electricity_Meter_Initial_Polarity_Check_At_Meter_Page.lbl_Initial_Polarity_Check_At_Meter(driver).isDisplayed();{
+		Log.info(sTestCaseName + " | Initial Polarity Check At Meter label displayed as expected");
 		}
-
-		Objects_Electricity_Meter_Initial_Polarity_Check_At_Meter_Page.btn_Polarity_Check_At_Cut_Out_Pass(driver)
-				.isDisplayed();
-		{
-			Log.info(sTestCaseName + " | Polarity Check At Cut Out - Pass radio button displayed as expected");
+		
+		Objects_Electricity_Meter_Initial_Polarity_Check_At_Meter_Page.btn_Polarity_Check_At_Cut_Out_Pass(driver).isDisplayed();{
+		Log.info(sTestCaseName + " | Polarity Check At Cut Out - Pass radio button displayed as expected");
 		}
-
-		Objects_Electricity_Meter_Initial_Polarity_Check_At_Meter_Page.btn_Polarity_Check_At_Cut_Out_Fail(driver)
-				.isDisplayed();
-		{
-			Log.info(sTestCaseName + " | Polarity Check At Cut Out - Fail radio button displayed as expected");
+		
+		Objects_Electricity_Meter_Initial_Polarity_Check_At_Meter_Page.btn_Polarity_Check_At_Cut_Out_Fail(driver).isDisplayed();{
+		Log.info(sTestCaseName + " | Polarity Check At Cut Out - Fail radio button displayed as expected");
 		}
-
+		
 		//Take a screenshot to show what we've done
 		Utils.takeScreenshot(driver, sTestCaseName + "-viewPage");
 		
@@ -67,14 +61,14 @@ public class CI_Methods_Phase_Rotation_Test{
 	
 	*/
 	
-	
+		
 	/* **************************************************************************************************
-	* Function: addSuccessValuesAll
+	* Function: addSuccessValues
 	* Author: Charlotte Jones
-	* Date: 06/08/2018
-	* Purpose: This method adds the required responses in the Phase Rotation Test section for a happy
-	* 	path scenario
-	* Arguments: 	
+	* Date: 09/08/2018
+	* Purpose: This method adds the required responses in the Check Meter Install section for a happy
+	* path scenario
+	* Arguments:			
 	* Returns: 
 	*****************************************************************************************************
 	* Change Log:
@@ -84,20 +78,34 @@ public class CI_Methods_Phase_Rotation_Test{
 	* Details:
 	*
 	****************************************************************************************************/	
-	public static void addSuccessValuesAll(WebDriver driver, String sTestCaseName) throws Exception{
 	
 	
-				
-		CI_Objects_Phase_Rotation_Test.btn_phase_rotation_correct_y(driver).click();
-		{
-			Log.info(sTestCaseName + " | Is Phase Rotation Correct? - Yes radio button clicked");
+	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
+	
+		
+		// Install Check Meter
+		
+		CI_Objects_Check_Meter_Install.btn_isolated_supply(driver).click();  
+	    {
+			Log.info(sTestCaseName + " | Isolated Supply to Meter? tickbox checked");
 		}
-		
-				
-	// END OF ADD SUCCESS VALUES ALL METHOD
-	}
-
-		
+	    
+	    CI_Objects_Check_Meter_Install.txt_serial_num(driver).click();
+	    {
+			Log.info(sTestCaseName + " | Serial Number field completed");
+		}
+	    
+	    //Check Meter Reading
+	    
+	    CI_Objects_Check_Meter_Install.btn_reinstated_supply(driver).click();
+	    {
+			Log.info(sTestCaseName + " | Re-Instated Supply to Meter? tickbox checked");
+		}
+	    
+	    
+	    
+	}	
+			
 		
 	
 //END OF METHODS
