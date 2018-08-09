@@ -86,7 +86,8 @@ public class CI_Methods_Initial_Polarity_Check_Martindale{
 	
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
-		
+		String 	sPolarityTested = "";
+		String 	sSocketTestLoc = "";
 	    
 	    
 	    CI_Objects_Initial_Polarity_Check_Martindale.cbx_polarity_check_plug_in_test(driver).click();

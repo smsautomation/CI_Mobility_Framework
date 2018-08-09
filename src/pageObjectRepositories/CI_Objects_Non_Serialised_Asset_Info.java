@@ -37,6 +37,16 @@ public class CI_Objects_Non_Serialised_Asset_Info {
     		}
     		return element;
     	}
+    	
+    	public static WebElement txt_asset_quantity(WebDriver driver) {
+        	
+    		try {
+    			element = driver.findElement(By.id(INSERTID));
+    		}catch(Exception e) {
+    			Log.error(sRepositoryName + " |txt_asset_quantity not found | Exception desc : "+e.getMessage());
+    		}
+    		return element;
+    	}
     
     	public static WebElement cbx_aerial_location(WebDriver driver) {
     	

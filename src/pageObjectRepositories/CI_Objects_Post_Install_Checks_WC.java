@@ -22,10 +22,10 @@ import utility.Log;
 *
 *********************************************************************/
 
-public class CI_Objects_Post_Install_Checks {
+public class CI_Objects_Post_Install_Checks_WC {
    
     private static WebElement element = null;
-    private static String sRepositoryName = "CI_Objects_Post_Install_Checks_WC_1PH_3PH";
+    private static String sRepositoryName = "CI_Objects_Post_Install_Checks_WC";
 
       
     public static WebElement btn_polarity_check_correct(WebDriver driver) {
@@ -172,6 +172,8 @@ public class CI_Objects_Post_Install_Checks {
     }
     
     // Final Photographic Evidence sub-section
+    
+    // *!*!*!*!*!*!* Not sure if this will be the same button and therefore the elements need changing *!*!*!*!*!*!*
     
     public static WebElement btn_photo_martindale_test_1(WebDriver driver) {
     	

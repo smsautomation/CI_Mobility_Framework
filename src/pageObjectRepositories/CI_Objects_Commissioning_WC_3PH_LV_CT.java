@@ -72,12 +72,12 @@ public class CI_Objects_Commissioning_WC_3PH_LV_CT {
     
     	// Meter Checks sub-section
     	
-    	public static WebElement cbx_serial_no(WebDriver driver) {
+    	public static WebElement cbx_serial_num(WebDriver driver) {
         	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |cbx_serial_no not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |cbx_serial_num not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}
@@ -487,9 +487,7 @@ public class CI_Objects_Commissioning_WC_3PH_LV_CT {
     		}
     		return element;
     	}
-    	
-    	// potentially need Total - kVA field including - awaiting confirmation via email
-    	
+    	   	
     	public static WebElement txt_displayed_values_kw(WebDriver driver) {
         	
     		try {
@@ -564,12 +562,12 @@ public class CI_Objects_Commissioning_WC_3PH_LV_CT {
 	
     	// Impulses/Pulses Set sub-section
    	
-    	public static WebElement txt_impulses_kw_actual_no(WebDriver driver) {
+    	public static WebElement txt_impulses_kw_actual_num(WebDriver driver) {
     	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_impulses_kw_actual_no not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |txt_impulses_kw_actual_num not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}
@@ -594,12 +592,12 @@ public class CI_Objects_Commissioning_WC_3PH_LV_CT {
     		return element;
     	}	
 	
-    	public static WebElement txt_impulses_kvar_actual_no(WebDriver driver) {
+    	public static WebElement txt_impulses_kvar_actual_num(WebDriver driver) {
         	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_impulses_kvar_actual_no not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |txt_impulses_kvar_actual_num not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}
@@ -609,7 +607,7 @@ public class CI_Objects_Commissioning_WC_3PH_LV_CT {
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_impulses_kvar_actual_no not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |txt_impulses_kvar_time_taken not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}	

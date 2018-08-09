@@ -4,7 +4,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 import pageObjectRepositories.CI_Objects_Final_Meter_Reading;
-import pageObjectRepositories.CI_Objects_Network_Signal_Strength_Test;
 import utility.Log;
 
 public class CI_Methods_Final_Meter_Reading{
@@ -78,7 +77,8 @@ public class CI_Methods_Final_Meter_Reading{
 	*					iQuad3 					
 	* 					iQuad4
 	* 					iTotalKvarhImp
-	* 					iTotalKvarh
+	* 					iTotalKvarhExp
+	* 					iTotalKvah
 	* 					iRate1
 	* 					iRate2
 	* 					iRate3
@@ -105,27 +105,28 @@ public class CI_Methods_Final_Meter_Reading{
  
 		// *!*!*!*!*!*!*!* These variables need to be given values! *!*!*!*!*!*!*!*
 		
-	    Integer iDialEnd = 1
-	    String 	sUnits = "k"
-	    Integer iTotalKwhImp = 
-	    Integer iTotalKwhExp = 
-	    Integer iQuad1 =
-	    Integer iQuad2 =
-	    Integer iQuad3 = 
-	    Integer iQuad4 = 
-	    Integer iTotalKvarhImp = 
-	    Integer iTotalKvarh = 
-	    Integer iRate1 = 
-	    Integer iRate2 = 
-	    Integer iRate3 =
-	    Integer iRate4 =
-	    Integer iRate5 =
-	    Integer iRate6 =
-	    Integer iKwMaxDemand = 
-	    Integer iKvaMaxDemand =
-	    Integer iOtherRegRead = 
-	    String 	sOtherRegName = 
-	    String 	sAssetStatus = "no"
+	    Integer iDialEnd = 1;
+	    String 	sUnits = "k";
+	    Integer iTotalKwhImp = 12;
+	    Integer iTotalKwhExp = 14;
+	    Integer iQuad1 = 1;
+	    Integer iQuad2 = 2;
+	    Integer iQuad3 = 3;
+	    Integer iQuad4 = 4;
+	    Integer iTotalKvarhImp = 52; 
+	    Integer iTotalKvarhExp = 53;
+	    Integer	iTotalKvah = 20;
+	    Integer iRate1 = 1;
+	    Integer iRate2 = 2;
+	    Integer iRate3 = 3;
+	    Integer iRate4 = 4;
+	    Integer iRate5 = 5;
+	    Integer iRate6 = 6;
+	    Integer iKwMaxDemand = 66; 
+	    Integer iKvaMaxDemand = 75;
+	    Integer iOtherRegRead = 123;
+	    String 	sOtherRegName = "";
+	    String 	sAssetStatus = "no";
 	    
 	    
 		CI_Objects_Final_Meter_Reading.cbx_dial_end(driver).click();
@@ -198,9 +199,9 @@ public class CI_Methods_Final_Meter_Reading{
 			Log.info(sTestCaseName + " | Total kVArh Exp field completed");
 		}
 		
-		CI_Objects_Final_Meter_Reading.txt_total_kvarh(driver).click();
-		CI_Objects_Final_Meter_Reading.txt_total_kvarh(driver).sendKeys(Integer.toString(iTotalKvarh));
-		CI_Objects_Final_Meter_Reading.txt_total_kvarh(driver).sendKeys(Keys.ENTER);
+		CI_Objects_Final_Meter_Reading.txt_total_kvah(driver).click();
+		CI_Objects_Final_Meter_Reading.txt_total_kvah(driver).sendKeys(Integer.toString(iTotalKvah));
+		CI_Objects_Final_Meter_Reading.txt_total_kvah(driver).sendKeys(Keys.ENTER);
 		{
 			Log.info(sTestCaseName + " | Total kVArh field completed");
 		}

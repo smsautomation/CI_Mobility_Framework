@@ -48,7 +48,6 @@ public class CI_Objects_Accuracy_Test_COP4 {
     	return element;
     }
     
-    // need to confirm the format of the Type of Test question
     
     public static WebElement btn_test_type_b(WebDriver driver) {
     	
@@ -72,12 +71,12 @@ public class CI_Objects_Accuracy_Test_COP4 {
     
     // General Information sub-section
     
-    public static WebElement cbx_serial_no(WebDriver driver) {
+    public static WebElement cbx_serial_num(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |cbx_serial_no not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |cbx_serial_num not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
@@ -134,6 +133,26 @@ public class CI_Objects_Accuracy_Test_COP4 {
     	return element;
     }
     
+    public static WebElement txt_test_error_plus(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_test_error_plus not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+
+    public static WebElement txt_test_error_minus(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_test_error_minus not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
     public static WebElement txt_test_set_error(WebDriver driver) {
     	
     	try {
@@ -143,6 +162,27 @@ public class CI_Objects_Accuracy_Test_COP4 {
     	}
     	return element;
     }
+    
+    public static WebElement txt_test_set_error_plus(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_test_set_error_plus not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement txt_test_set_error_minus(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_test_set_error_minus not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
     
     public static WebElement txt_ct_error(WebDriver driver) {
     	
@@ -154,12 +194,53 @@ public class CI_Objects_Accuracy_Test_COP4 {
     	return element;
     }
     
+    
+    public static WebElement txt_ct_error_plus(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_ct_error_plus not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement txt_ct_error_minus(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_ct_error_minus not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
     public static WebElement txt_vt_error(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |txt_vt_error not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement txt_vt_error_plus(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_vt_error_plus not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement txt_vt_error_minus(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_vt_error_minus not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
@@ -184,12 +265,12 @@ public class CI_Objects_Accuracy_Test_COP4 {
     	return element;
     }
     
-    public static WebElement txt_instrument_serial_no(WebDriver driver) {
+    public static WebElement txt_instrument_serial_num(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_instrument_serial_no not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |txt_instrument_serial_num not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }

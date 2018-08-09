@@ -1,12 +1,11 @@
 package webModule;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import pageObjectRepositories.CI_Objects_Polarity_Check_Martindale;
+import pageObjectRepositories.CI_Objects_Post_Install_Checks_LV_HV;
 import utility.Log;
 
-public class CI_Methods_Polarity_Check_Martindale{
+public class CI_Methods_Post_Install_Checks_LV_HV{
 	
 	
 	
@@ -73,11 +72,9 @@ public class CI_Methods_Polarity_Check_Martindale{
 	* Function: addSuccessValuesAll
 	* Author: Charlotte Jones
 	* Date: 06/08/2018
-	* Purpose: This method adds the required responses in the Polarity Check at the Meter section for
-	* a happy path scenario
-	* Arguments: 	sPolarityTested
-	* 				sPolarityNotTested
-	* 				sSocketTestLoc
+	* Purpose: This method adds the required responses in the Post Installation Checks (for LV/HV
+	* Metering) section for a happy path scenario
+	* Arguments: 	
 	* Returns: 
 	*****************************************************************************************************
 	* Change Log:
@@ -90,32 +87,75 @@ public class CI_Methods_Polarity_Check_Martindale{
 	public static void addSuccessValuesAll(WebDriver driver, String sTestCaseName) throws Exception{
 	
 	
-		String 	sPolarityTested = "pola";
-		String 	sSocketTestLoc = "";
+		// *!*!*!*!*!*!*! Need values for the variables below *!*!*!*!*!*!*!
+		
+		String 	sMaintenanceWork = "notes about maintenance";
 				
-		CI_Objects_Polarity_Check_Martindale.cbx_polarity_check_plug_in_test(driver).click();
-		CI_Objects_Polarity_Check_Martindale.cbx_polarity_check_plug_in_test(driver).sendKeys(sPolarityTested);
-		CI_Objects_Polarity_Check_Martindale.cbx_polarity_check_plug_in_test(driver).sendKeys(Keys.ENTER);
+					
+		CI_Objects_Post_Install_Checks_LV_HV.btn_phase_rotation_correct(driver).click();
 		{
-			Log.info(sTestCaseName + " | Carry Out Polarity Check with Plug In Test Device dropdown completed");
+			Log.info(sTestCaseName + " | Phase Rotation Correct checkbox ticked");
 		}
 		
-		CI_Objects_Polarity_Check_Martindale.btn_socket_safety_test_pass(driver).click();
+		CI_Objects_Post_Install_Checks_LV_HV.btn_terminal_screw_tightness(driver).click();
 		{
-			Log.info(sTestCaseName + " | Has the Socket Safety Test Passed/Failed - Pass radio button selected");
+			Log.info(sTestCaseName + " | Terminal Screw Tightness Checked checkbox ticked");
 		}
 		
-		CI_Objects_Polarity_Check_Martindale.cbx_socket_test_location_1(driver).click();
-		CI_Objects_Polarity_Check_Martindale.cbx_socket_test_location_1(driver).sendKeys(sSocketTestLoc);
-		CI_Objects_Polarity_Check_Martindale.cbx_socket_test_location_1(driver).sendKeys(Keys.ENTER);
+		CI_Objects_Post_Install_Checks_LV_HV.btn_ct_run_position(driver).click();
 		{
-			Log.info(sTestCaseName + " | Socket Test Location selected");
+			Log.info(sTestCaseName + " | CTs left in run position - all seals intact checkbox ticked");
 		}
 		
-		CI_Objects_Polarity_Check_Martindale.btn_photo_socket_test_pass(driver).click();
+		CI_Objects_Post_Install_Checks_LV_HV.cbx_earth_type(driver).click();
 		{
-			Log.info(sTestCaseName + " | Capture Photographic Evidence selected");
+			Log.info(sTestCaseName + " | Earth Type checkbox ticked");
 		}
+		
+		CI_Objects_Post_Install_Checks_LV_HV.btn_addnl_maintenance_work(driver).click();
+		{
+			Log.info(sTestCaseName + " | Additional Maintence checkbox ticked");
+		}
+		
+		CI_Objects_Post_Install_Checks_LV_HV.txt_notes_maintenance_work(driver).click();
+		CI_Objects_Post_Install_Checks_LV_HV.txt_notes_maintenance_work(driver).sendKeys(sMaintenanceWork);
+		{
+			Log.info(sTestCaseName + " | Additional Notes/Remarks - Maintenance Work Carried Out field completed");
+		}
+		
+		// Final Photographic Evidence sub-section
+		
+		CI_Objects_Post_Install_Checks_LV_HV.btn_photo_final_meter_install_1(driver).click();
+		{
+			Log.info(sTestCaseName + " | 1st Photo of Final Meter Installation taken");
+		}
+		
+		CI_Objects_Post_Install_Checks_LV_HV.btn_photo_final_meter_install_2(driver).click();
+		{
+			Log.info(sTestCaseName + " | 2nd Photo of Final Meter Installation taken");
+		}
+		
+		CI_Objects_Post_Install_Checks_LV_HV.btn_photo_final_meter_install_3(driver).click();
+		{
+			Log.info(sTestCaseName + " | 3rd Photo of Final Meter Installation taken");
+		}
+		
+		CI_Objects_Post_Install_Checks_LV_HV.btn_photo_close_up_1(driver).click();
+		{
+			Log.info(sTestCaseName + " | 1st Photo of Close Up of Meter taken");
+		}
+		
+		CI_Objects_Post_Install_Checks_LV_HV.btn_photo_close_up_2(driver).click();
+		{
+			Log.info(sTestCaseName + " | 2nd Photo of Close Up of Meter taken");
+		}
+		
+		CI_Objects_Post_Install_Checks_LV_HV.btn_photo_close_up_3(driver).click();
+		{
+			Log.info(sTestCaseName + " | 3rd Photo of Close Up of Meter taken");
+		}
+		
+		
 		
 		
 				

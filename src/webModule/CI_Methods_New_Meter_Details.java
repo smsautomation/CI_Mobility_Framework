@@ -104,10 +104,10 @@ public class CI_Methods_New_Meter_Details{
 		String 	sManuLetter = "";
 		String 	sMeterType = "";
 		String 	sClass = "";
-		Integer iEdmiSerialNo = ;
-		Integer iSscCode = ;
+		Integer iEdmiSerialNo = 1;
+		Integer iSscCode = 3;
 		String 	sMeterLocCode = "";
-		Integer iCertYearMonth = ;
+		Integer iCertYearMonth = 2;
 		Integer iCtRatioPrimary = 1;
 		Integer iCtRatioSecondary = 1;
 		Integer iVtRatio = 1;

@@ -50,12 +50,12 @@ public class CI_Objects_Modem_Comms_Details {
     		return element;
     	}
     
-    	public static WebElement txt_removed_modem_serial_no(WebDriver driver) {
+    	public static WebElement txt_removed_modem_serial_num(WebDriver driver) {
     	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_removed_modem_serial_no not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |txt_removed_modem_serial_num not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}
@@ -76,32 +76,32 @@ public class CI_Objects_Modem_Comms_Details {
     
     public static class GSM_GPRS{
     
-    	public static WebElement txt_modem_serial_no(WebDriver driver) {
+    	public static WebElement txt_modem_serial_num(WebDriver driver) {
         	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_modem_serial_no not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |txt_modem_serial_num not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}
     
-    	public static WebElement txt_sim_serial_no(WebDriver driver) {
+    	public static WebElement txt_sim_serial_num(WebDriver driver) {
         	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_sim_serial_no not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |txt_sim_serial_num not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}
     
-    	public static WebElement txt_comms_no(WebDriver driver) {
+    	public static WebElement txt_comms_num(WebDriver driver) {
         	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_comms_no not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |txt_comms_num not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}
@@ -133,12 +133,12 @@ public class CI_Objects_Modem_Comms_Details {
     
     public static class PSTN{
         
-    	public static WebElement txt_modem_serial_no(WebDriver driver) {
+    	public static WebElement txt_modem_serial_num(WebDriver driver) {
         	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_modem_serial_no not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |txt_modem_serial_num not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}
@@ -163,24 +163,24 @@ public class CI_Objects_Modem_Comms_Details {
     		return element;
     	}
     
-    	public static WebElement txt_comms_no(WebDriver driver) {
+    	public static WebElement txt_comms_num(WebDriver driver) {
         	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_comms_no not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |txt_comms_num not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}
     
     		// ALERT - POP-UP? - Remember BT Sticker
     	
-    	public static WebElement btn_cust_advised(WebDriver driver) {
+    	public static WebElement btn_cust_advised_bt_line(WebDriver driver) {
         	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |btn_cust_advised not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |btn_cust_advised_bt_line not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}
@@ -211,22 +211,22 @@ public class CI_Objects_Modem_Comms_Details {
     
     public static class PAKNET{
         
-    	public static WebElement txt_pad_serial_no(WebDriver driver) {
+    	public static WebElement txt_pad_serial_num(WebDriver driver) {
         	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_modem_serial_no not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |txt_modem_serial_num not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}
     
-    	public static WebElement txt_comms_no(WebDriver driver) {
+    	public static WebElement txt_comms_num(WebDriver driver) {
         	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_modem_serial_no not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |txt_modem_serial_num not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}  	
@@ -237,22 +237,22 @@ public class CI_Objects_Modem_Comms_Details {
     
     public static class OTHER{
         
-    	public static WebElement txt_modem_serial_no(WebDriver driver) {
+    	public static WebElement txt_modem_serial_num(WebDriver driver) {
         	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_modem_serial_no not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |txt_modem_serial_num not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}
     
-    	public static WebElement txt_comms_no(WebDriver driver) {
+    	public static WebElement txt_comms_num(WebDriver driver) {
         	
     		try {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |txt_modem_serial_no not found | Exception desc : "+e.getMessage());
+    			Log.error(sRepositoryName + " |txt_modem_serial_num not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}  	

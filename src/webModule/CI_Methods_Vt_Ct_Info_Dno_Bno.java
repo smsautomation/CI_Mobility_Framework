@@ -3,7 +3,6 @@ package webModule;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import pageObjectRepositories.CI_Objects_Polarity_Check_Martindale;
 import pageObjectRepositories.CI_Objects_Vt_Ct_Info_Dno_Bno;
 import utility.Log;
 
@@ -106,7 +105,7 @@ public class CI_Methods_Vt_Ct_Info_Dno_Bno{
 		String 	sVtSerialNo2 = "";
 		String 	sVtSerialNo3 = "";
 		String 	sVtClass = "";
-		Integer	iVtBurden = ;
+		Integer	iVtBurden = 2;
 		
 		CI_Objects_Vt_Ct_Info_Dno_Bno.cbx_serial_no_to_enter(driver).click();		
 		CI_Objects_Vt_Ct_Info_Dno_Bno.cbx_serial_no_to_enter(driver).sendKeys(sCtVtSerialNo);
@@ -168,7 +167,7 @@ public class CI_Methods_Vt_Ct_Info_Dno_Bno{
 		}
 		
 		CI_Objects_Vt_Ct_Info_Dno_Bno.cbx_vt_ratio(driver).click();
-		CI_Objects_Vt_Ct_Info_Dno_Bno.cbx_vt_ratio(driver).sendKeys(Integer.toString(VtRatio));
+		CI_Objects_Vt_Ct_Info_Dno_Bno.cbx_vt_ratio(driver).sendKeys(Integer.toString(iVtRatio));
 		CI_Objects_Vt_Ct_Info_Dno_Bno.cbx_vt_ratio(driver).sendKeys(Keys.ENTER);
 		{
 			Log.info(sTestCaseName + " | VT Ratio completed");
