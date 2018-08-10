@@ -82,42 +82,42 @@ public class CI_Objects_Reprogramme_Meter {
     
     // Take New Meter Readings
     
-    public static WebElement cbx_ct_ratio_changed(WebDriver driver) {
+    public static WebElement btn_ct_ratio_changed(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |cbx_ct_ratio_changed not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |btn_ct_ratio_changed not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
     
-    public static WebElement cbx_vt_ratio_changed(WebDriver driver) {
+    public static WebElement btn_vt_ratio_changed(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |cbx_vt_ratio_changed not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |btn_vt_ratio_changed not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
     
-    public static WebElement cbx_ssc_changed(WebDriver driver) {
+    public static WebElement btn_ssc_changed(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |cbx_ssc_changed not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " btn_ssc_changed not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
     
-    public static WebElement cbx_baud_rate_changed(WebDriver driver) {
+    public static WebElement btn_baud_rate_changed(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |cbx_baud_rate_changed not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |btn_baud_rate_changed not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }

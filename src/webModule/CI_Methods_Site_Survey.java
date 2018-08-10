@@ -1,11 +1,12 @@
 package webModule;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import pageObjectRepositories.CI_Objects_Phase_Rotation_Test;
+import pageObjectRepositories.CI_Objects_Site_Survey;
 import utility.Log;
 
-public class CI_Methods_Phase_Rotation_Test{
+public class CI_Methods_Site_Survey{
 	
 	
 	
@@ -69,11 +70,11 @@ public class CI_Methods_Phase_Rotation_Test{
 	
 	
 	/* **************************************************************************************************
-	* Function: addSuccessValues
+	* Function: addSuccessValuesMeterExchVisitPart1
 	* Author: Charlotte Jones
-	* Date: 06/08/2018
-	* Purpose: This method adds the required responses in the Phase Rotation Test section for a happy
-	* 	path scenario
+	* Date: 10/08/2018
+	* Purpose: This method adds the required responses in the Site Survey section for a Meter Exchange
+	* 	scenario - where the meter can be exchange during the visit 
 	* Arguments: 	
 	* Returns: 
 	*****************************************************************************************************
@@ -84,21 +85,71 @@ public class CI_Methods_Phase_Rotation_Test{
 	* Details:
 	*
 	****************************************************************************************************/	
-	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesMeterExchVisitPart1(WebDriver driver, String sTestCaseName) throws Exception{
 	
 	
 				
-		CI_Objects_Phase_Rotation_Test.btn_phase_rotation_correct_y(driver).click();
+		CI_Objects_Site_Survey.btn_meter_exch_required_y(driver).click();
 		{
-			Log.info(sTestCaseName + " | Is Phase Rotation Correct? - Yes radio button clicked");
+			Log.info(sTestCaseName + " | Is a Meter Exchange Required? - Yes radio button selected");
 		}
 		
+		CI_Objects_Site_Survey.btn_exch_during_visit_y(driver).click();
+		{
+			Log.info(sTestCaseName + " | Can the Meter Be Exchanged During This Visit? - Yes radio button selected");
+		}
+		
+		// the workflow then needs to leave this section and call several other tasks - does return to this
+		//	section, - covered in Meter Exch Part 2
 				
 	// END OF ADD SUCCESS VALUES METHOD
 	}
 
 		
+	/* **************************************************************************************************
+	* Function: addSuccessValuesMeterExchVisitPart2
+	* Author: Charlotte Jones
+	* Date: 10/08/2018
+	* Purpose: This method adds the required responses in the Site Survey section for a Meter Exchange
+	* 	scenario - where the meter can be exchange during the visit 
+	* Arguments: 	
+	* Returns: 
+	*****************************************************************************************************
+	* Change Log:
+	* 
+	* Date:
+	* Author: 
+	* Details:
+	*
+	****************************************************************************************************/	
+	public static void addSuccessValuesMeterExchVisitPart2(WebDriver driver, String sTestCaseName) throws Exception{
+	
+		// *!*!*!*!*!*!*!*!*!* Need values for below variables *!*!*!*!*!*!*!*!*!* 
 		
+		String	sSiteVisitOutcome = "";
+		
+		// Job Resolution sub-section
+				
+		CI_Objects_Site_Survey.txt_outcome_site_visit(driver).click();
+		CI_Objects_Site_Survey.txt_outcome_site_visit(driver).sendKeys(sSiteVisitOutcome);
+		CI_Objects_Site_Survey.txt_outcome_site_visit(driver).sendKeys(Keys.ENTER);
+		{
+			Log.info(sTestCaseName + " | Outcome of Site Visit field completed");
+		}
+		
+		CI_Objects_Site_Survey.btn_photo_site_1(driver).click();
+		{
+			Log.info(sTestCaseName + " | Photographic Evidence - photo taken");
+		}
+		
+		
+				
+	// END OF ADD SUCCESS VALUES METER EXCH VISIT PART 2 METHOD
+	}
+	
+	
+	
+	
 	
 //END OF METHODS
 }

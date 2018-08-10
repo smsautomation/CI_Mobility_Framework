@@ -2,11 +2,10 @@ package webModule;
 
 import org.openqa.selenium.WebDriver;
 
-import pageObjectRepositories.CI_Objects_Access_To_Site_Or_Meter_Gained;
-import pageObjectRepositories.CI_Objects_Arrive;
+import pageObjectRepositories.CI_Objects_Removal_Of_All_Equipment;
 import utility.Log;
 
-public class CI_Methods_Doorstep_Protocol{
+public class CI_Methods_Removal_Of_All_Equipment{
 	
 	
 	
@@ -33,6 +32,7 @@ public class CI_Methods_Doorstep_Protocol{
 	* Details:
 	*
 	****************************************************************************************************/	
+	
 	
 	/*
 	
@@ -66,18 +66,19 @@ public class CI_Methods_Doorstep_Protocol{
 	
 	
 	*/
-		
+	
+	
 	/* **************************************************************************************************
-	* Function: addSuccessValues
+	* Function: addSuccessValuesHv
 	* Author: Charlotte Jones
-	* Date: 06/07/2018
-	* Purpose: This method adds the required responses in the Doorstep Protocol section for a happy path scenario
-	* This comprises the following sections from the workflow document:
-	*   Arrival On Site
-	*   Arrive
-	*   Access to Site or Meter Gained
-	* Arguments: 
-	* 			
+	* Date: 06/08/2018
+	* Purpose: This method adds the required responses in the Removal of All Equipment section for a happy
+	* 	path scenario where the metering supply is HV:
+	* 		HV CT
+	* 		COP5 HV
+	* 		COP3 HV
+	* 		COP2
+	* Arguments: 	
 	* Returns: 
 	*****************************************************************************************************
 	* Change Log:
@@ -87,38 +88,51 @@ public class CI_Methods_Doorstep_Protocol{
 	* Details:
 	*
 	****************************************************************************************************/	
-	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesHv(WebDriver driver, String sTestCaseName) throws Exception{
 	
-	// No risks identified	
-		
-		// Arrival On Site section
-		
-		CI_Objects_Arrive.btn_arrive(driver).click();
+	
+				
+		CI_Objects_Removal_Of_All_Equipment.btn_supply_de_energised_y(driver).click();
 		{
-			Log.info(sTestCaseName + " | Arrive button clicked");
+			Log.info(sTestCaseName + " | Has the Supply Already Been De-energised? - Yes radio button clicked");
 		}
 		
-		// Arrive section
-		
-		CI_Objects_Arrive.btn_access_gained_y(driver).click();
-		{
-			Log.info(sTestCaseName + " | Access to Site Gained? radio button clicked");
-		}
-		
-		CI_Objects_Arrive.btn_cust_on_site_y(driver).click();
-		{
-			Log.info(sTestCaseName + " | Customer On Site? radio button clicked");
-		}
-		
-		// Access to Site or Meter Gained
-		
-		CI_Objects_Access_To_Site_Or_Meter_Gained.btn_on_site(driver).click();
-		{
-			Log.info(sTestCaseName + " | On Site button clicked");
-		}
-		
-	// END OF ADD SUCCESS VALUES METHOD
-	}	
+				
+	// END OF ADD SUCCESS VALUES HV METHOD
+	}
+
+	
+	
+	/* **************************************************************************************************
+	* Function: addSuccessValuesLv
+	* Author: Charlotte Jones
+	* Date: 06/08/2018
+	* Purpose: This method adds the required responses in the Removal of All Equipment section for a happy
+	* 	path scenario where the metering supply is LV:
+	* 		WC 1PH
+	* 		WC 3PH
+	* 		LV CT
+	* 		COP5 WC 3PH
+	* 		COP5 LV
+	* 		COP10 WC 1PH
+	* 		COP10 WC 3PH
+	* 		COP10 LV CT
+	* 		COP3 LV
+	* Arguments: 	
+	* Returns: 
+	*****************************************************************************************************
+	* Change Log:
+	* 
+	* Date:
+	* Author: 
+	* Details:
+	*
+	****************************************************************************************************/	
+
+
+	
+	// there are no questions for this section for low voltage metering - the workflow doc shows a list of
+	//	tasks to be called
 		
 	
 //END OF METHODS

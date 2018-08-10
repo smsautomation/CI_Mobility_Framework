@@ -2,11 +2,10 @@ package webModule;
 
 import org.openqa.selenium.WebDriver;
 
-import pageObjectRepositories.CI_Objects_Access_To_Site_Or_Meter_Gained;
-import pageObjectRepositories.CI_Objects_Arrive;
+import pageObjectRepositories.CI_Objects_Meter_Upgrade_Downgrade;
 import utility.Log;
 
-public class CI_Methods_Doorstep_Protocol{
+public class CI_Methods_Meter_Upgrade_Downgrade{
 	
 	
 	
@@ -33,6 +32,7 @@ public class CI_Methods_Doorstep_Protocol{
 	* Details:
 	*
 	****************************************************************************************************/	
+	
 	
 	/*
 	
@@ -66,18 +66,15 @@ public class CI_Methods_Doorstep_Protocol{
 	
 	
 	*/
-		
+	
+	
 	/* **************************************************************************************************
-	* Function: addSuccessValues
+	* Function: addSuccessValuesReprogramme
 	* Author: Charlotte Jones
-	* Date: 06/07/2018
-	* Purpose: This method adds the required responses in the Doorstep Protocol section for a happy path scenario
-	* This comprises the following sections from the workflow document:
-	*   Arrival On Site
-	*   Arrive
-	*   Access to Site or Meter Gained
-	* Arguments: 
-	* 			
+	* Date: 10/08/2018
+	* Purpose: This method adds the required responses in the Meter Upgrade or Downgrade section for 
+	* 	the scenario where the meter requires reprogramming
+	* Arguments: 	
 	* Returns: 
 	*****************************************************************************************************
 	* Change Log:
@@ -87,38 +84,50 @@ public class CI_Methods_Doorstep_Protocol{
 	* Details:
 	*
 	****************************************************************************************************/	
-	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesRepgramme(WebDriver driver, String sTestCaseName) throws Exception{
 	
-	// No risks identified	
-		
-		// Arrival On Site section
-		
-		CI_Objects_Arrive.btn_arrive(driver).click();
+	
+				
+		CI_Objects_Meter_Upgrade_Downgrade.btn_work_required_reprogramme(driver).click();
 		{
-			Log.info(sTestCaseName + " | Arrive button clicked");
+			Log.info(sTestCaseName + " | Work Required? Re-programme Meter radio button clicked");
 		}
 		
-		// Arrive section
-		
-		CI_Objects_Arrive.btn_access_gained_y(driver).click();
+				
+	// END OF ADD SUCCESS VALUES REPROGRAMME METHOD
+	}
+
+	
+	
+	/* **************************************************************************************************
+	* Function: addSuccessValuesExchange
+	* Author: Charlotte Jones
+	* Date: 10/08/2018
+	* Purpose: This method adds the required responses in the Meter Upgrade or Downgrade section for 
+	* 	the scenario where the meter requires exchanging
+	* Arguments: 	
+	* Returns: 
+	*****************************************************************************************************
+	* Change Log:
+	* 
+	* Date:
+	* Author: 
+	* Details:
+	*
+	****************************************************************************************************/	
+	public static void addSuccessValuesExchange(WebDriver driver, String sTestCaseName) throws Exception{
+	
+	
+				
+		CI_Objects_Meter_Upgrade_Downgrade.btn_work_required_exchange(driver).click();
 		{
-			Log.info(sTestCaseName + " | Access to Site Gained? radio button clicked");
+			Log.info(sTestCaseName + " | Work Required? Exchange Meter radio button clicked");
 		}
 		
-		CI_Objects_Arrive.btn_cust_on_site_y(driver).click();
-		{
-			Log.info(sTestCaseName + " | Customer On Site? radio button clicked");
-		}
-		
-		// Access to Site or Meter Gained
-		
-		CI_Objects_Access_To_Site_Or_Meter_Gained.btn_on_site(driver).click();
-		{
-			Log.info(sTestCaseName + " | On Site button clicked");
-		}
-		
-	// END OF ADD SUCCESS VALUES METHOD
-	}	
+				
+	// END OF ADD SUCCESS VALUES EXCHANGE METHOD
+	}
+
 		
 	
 //END OF METHODS

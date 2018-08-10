@@ -2,11 +2,10 @@ package webModule;
 
 import org.openqa.selenium.WebDriver;
 
-import pageObjectRepositories.CI_Objects_Access_To_Site_Or_Meter_Gained;
-import pageObjectRepositories.CI_Objects_Arrive;
+import pageObjectRepositories.CI_Objects_Report_To_Dno;
 import utility.Log;
 
-public class CI_Methods_Doorstep_Protocol{
+public class CI_Methods_Report_To_Dno{
 	
 	
 	
@@ -33,6 +32,7 @@ public class CI_Methods_Doorstep_Protocol{
 	* Details:
 	*
 	****************************************************************************************************/	
+	
 	
 	/*
 	
@@ -66,18 +66,15 @@ public class CI_Methods_Doorstep_Protocol{
 	
 	
 	*/
-		
+	
+	
 	/* **************************************************************************************************
 	* Function: addSuccessValues
 	* Author: Charlotte Jones
-	* Date: 06/07/2018
-	* Purpose: This method adds the required responses in the Doorstep Protocol section for a happy path scenario
-	* This comprises the following sections from the workflow document:
-	*   Arrival On Site
-	*   Arrive
-	*   Access to Site or Meter Gained
-	* Arguments: 
-	* 			
+	* Date: 10/08/2018
+	* Purpose: This method adds the required responses in the Report to DNO section for a happy path
+	* 	scenario
+	* Arguments: 	
 	* Returns: 
 	*****************************************************************************************************
 	* Change Log:
@@ -89,36 +86,54 @@ public class CI_Methods_Doorstep_Protocol{
 	****************************************************************************************************/	
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
-	// No risks identified	
+	
+		// *!*!*!*!*!*!* Need to provide values for below variables *!*!*!*!*!*!*
 		
-		// Arrival On Site section
-		
-		CI_Objects_Arrive.btn_arrive(driver).click();
+		String	sAirlineRef = "";
+		String	sDnoRef = "";
+				
+		CI_Objects_Report_To_Dno.btn_called_airline_y(driver).click();
 		{
-			Log.info(sTestCaseName + " | Arrive button clicked");
+			Log.info(sTestCaseName + " | Called/Updated H&S (AIRline) - Yes radio button selected");
 		}
 		
-		// Arrive section
-		
-		CI_Objects_Arrive.btn_access_gained_y(driver).click();
+		CI_Objects_Report_To_Dno.txt_airline_ref(driver).click();
+		CI_Objects_Report_To_Dno.txt_airline_ref(driver).sendKeys(sAirlineRef);
 		{
-			Log.info(sTestCaseName + " | Access to Site Gained? radio button clicked");
+			Log.info(sTestCaseName + " | AIRline Ref Number field completed");
 		}
 		
-		CI_Objects_Arrive.btn_cust_on_site_y(driver).click();
+		CI_Objects_Report_To_Dno.btn_reported_to_dno_y(driver).click();
 		{
-			Log.info(sTestCaseName + " | Customer On Site? radio button clicked");
+			Log.info(sTestCaseName + " | Reported Risk to DNO? - Yes radio button selected");
 		}
 		
-		// Access to Site or Meter Gained
-		
-		CI_Objects_Access_To_Site_Or_Meter_Gained.btn_on_site(driver).click();
+		CI_Objects_Report_To_Dno.txt_dno_ref(driver).click();
+		CI_Objects_Report_To_Dno.txt_dno_ref(driver).sendKeys(sDnoRef);
 		{
-			Log.info(sTestCaseName + " | On Site button clicked");
+			Log.info(sTestCaseName + " | DNO Job Ref field completed");
 		}
 		
+		CI_Objects_Report_To_Dno.btn_stay_on_site_y(driver).click();
+		{
+			Log.info(sTestCaseName + " | Stay on Site? Y/N - Yes radio button selected");
+		}
+		
+		CI_Objects_Report_To_Dno.btn_work_can_be_completed_y(driver).click();
+		{
+			Log.info(sTestCaseName + " | Work can be Completed? - Yes radio button selected");
+		}
+		
+		CI_Objects_Report_To_Dno.txt_risk_assess_fail_dno(driver).click();
+		{
+			Log.info(sTestCaseName + " | Additional Notes/Remarks - Risk Assessment Fail DNO Issue");
+		}
+	
+				
 	// END OF ADD SUCCESS VALUES METHOD
-	}	
+	}
+
+		
 		
 	
 //END OF METHODS

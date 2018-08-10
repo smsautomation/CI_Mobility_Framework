@@ -48,15 +48,46 @@ public class CI_Objects_Fault {
     	return element;
     }
     
-    public static WebElement cbx_fault_type(WebDriver driver) {
+    public static WebElement btn_fault_type_comms(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |cbx_fault_type not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |btn_fault_type_comms not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
+    
+    public static WebElement btn_fault_type_meter(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_fault_type_meter not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement btn_fault_type_dno_equip(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_fault_type_dno_equip not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement btn_fault_type_other(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_fault_type_other not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
     
     // Comms heading
     //Replaced Assets sub-section
@@ -81,37 +112,78 @@ public class CI_Objects_Fault {
     	return element;
     }
     
-    public static WebElement cbx_type_of_asset(WebDriver driver) {
+    public static WebElement btn_asset_type_gsm(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |cbx_type_of_asset not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |btn_asset_type_gsm not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
+    
+    public static WebElement btn_asset_type_pstn(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_asset_type_pstn not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement btn_asset_type_other_modem(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_asset_type_other not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement btn_asset_type_sim(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_asset_type_sim not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement btn_asset_type_non_serialised(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_asset_type_non_serialised not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
     
 	// Conditional Fields heading
     //GSM/GPRS Modem sub-section
    
   public static class MODEM_GSM_GPRS{  
     
-    public static WebElement txt_removed_modem_serial_no(WebDriver driver) {
+    public static WebElement txt_removed_modem_serial_num(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_removed_modem_serial_no not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |txt_removed_modem_serial_num not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
     
-    public static WebElement txt_new_modem_serial_no(WebDriver driver) {
+    public static WebElement txt_new_modem_serial_num(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_new_modem_serial_no not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |txt_new_modem_serial_num not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
@@ -133,22 +205,22 @@ public class CI_Objects_Fault {
     
   public static class MODEM_PSTN{
 	  
-    public static WebElement txt_removed_modem_serial_no(WebDriver driver) {
+    public static WebElement txt_removed_modem_serial_num(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_removed_modem_serial_no not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |txt_removed_modem_serial_num not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
     
-    public static WebElement txt_new_modem_serial_no(WebDriver driver) {
+    public static WebElement txt_new_modem_serial_num(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_new_modem_serial_no not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |txt_new_modem_serial_num not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
@@ -183,12 +255,22 @@ public class CI_Objects_Fault {
     	return element;
     }
     
-    public static WebElement txt_comms_no(WebDriver driver) {
+    public static WebElement txt_comms_num(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_comms_no not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |txt_comms_num not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement lbl_remember_bt_sticker(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |lbl_remember_bt_sticker not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
@@ -231,32 +313,32 @@ public class CI_Objects_Fault {
   // Other Modem sub-section
   public static class MODEM_OTHER{
 	  
-	 public static WebElement txt_removed_modem_serial_no(WebDriver driver) {
+	 public static WebElement txt_removed_modem_serial_num(WebDriver driver) {
 	    	
 	    try {
 	    	element = driver.findElement(By.id(INSERTID));
 	    }catch(Exception e) {
-	    	Log.error(sRepositoryName + " |txt_removed_modem_serial_no not found | Exception desc : "+e.getMessage());
+	    	Log.error(sRepositoryName + " |txt_removed_modem_serial_num not found | Exception desc : "+e.getMessage());
 	    }
 	    return element;
 	  }
 	    
-	 public static WebElement txt_new_modem_serial_no(WebDriver driver) {
+	 public static WebElement txt_new_modem_serial_num(WebDriver driver) {
 	    	
 	    try {
 	    	element = driver.findElement(By.id(INSERTID));
 	    }catch(Exception e) {
-	    	Log.error(sRepositoryName + " |txt_new_modem_serial_no not found | Exception desc : "+e.getMessage());
+	    	Log.error(sRepositoryName + " |txt_new_modem_serial_num not found | Exception desc : "+e.getMessage());
 	    }
 	    return element;
 	 }
 	     
-	 public static WebElement txt_comms_nos(WebDriver driver) {
+	 public static WebElement txt_comms_num(WebDriver driver) {
 	    	
 		 try {
 		    element = driver.findElement(By.id(INSERTID));
 		 }catch(Exception e) {
-		    Log.error(sRepositoryName + " |txt_comms_nos not found | Exception desc : "+e.getMessage());
+		    Log.error(sRepositoryName + " |txt_comms_num not found | Exception desc : "+e.getMessage());
 		 }
 		 return element;
 	 }
@@ -266,32 +348,32 @@ public class CI_Objects_Fault {
   // Sim sub-section
   public static class SIM{
 	 
-	 public static WebElement txt_sim_serial_no(WebDriver driver) {
+	 public static WebElement txt_sim_serial_num(WebDriver driver) {
 	    	
 		 try {
 		    element = driver.findElement(By.id(INSERTID));
 		 }catch(Exception e) {
-		    Log.error(sRepositoryName + " |txt_sim_serial_no not found | Exception desc : "+e.getMessage());
+		    Log.error(sRepositoryName + " |txt_sim_serial_num not found | Exception desc : "+e.getMessage());
 		 }
 		 return element;
 	 } 
 	  
-	 public static WebElement txt_network_provider(WebDriver driver) {
+	 public static WebElement cbx_network_provider(WebDriver driver) {
 	    	
 		 try {
 		    element = driver.findElement(By.id(INSERTID));
 		 }catch(Exception e) {
-		    Log.error(sRepositoryName + " |txt_network_provider not found | Exception desc : "+e.getMessage());
+		    Log.error(sRepositoryName + " |cbx_network_provider not found | Exception desc : "+e.getMessage());
 		 }
 		 return element;
 	 } 
 	  
-	 public static WebElement txt_comms_nos(WebDriver driver) {
+	 public static WebElement txt_comms_num(WebDriver driver) {
 	    	
 		 try {
 		    element = driver.findElement(By.id(INSERTID));
 		 }catch(Exception e) {
-		    Log.error(sRepositoryName + " |txt_comms_nos not found | Exception desc : "+e.getMessage());
+		    Log.error(sRepositoryName + " |txt_comms_num not found | Exception desc : "+e.getMessage());
 		 }
 		 return element;
 	 }
