@@ -64,11 +64,12 @@ public class CI_Methods_Current_Meter_Details{
 	
 		
 	/* **************************************************************************************************
-	* Function: addSuccessValues
+	* Function: addSuccessValuesSub100CopsSm
 	* Author: Charlotte Jones
 	* Date: 06/08/2018
-	* Purpose: This method adds the required responses in the Current Meter Details section
-	* for a happy path scenario
+	* Purpose: This method adds the required responses in the Current Meter Details section for a
+	* 	happy path scenario, where all the meter details that have come down are correct - metering types:
+	* 		Sub100
 	* Arguments:	iNoOfRegisters		
 	* Returns: 
 	*****************************************************************************************************
@@ -81,13 +82,14 @@ public class CI_Methods_Current_Meter_Details{
 	****************************************************************************************************/	
 	
 	
-	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesSub100CopsSm(WebDriver driver, String sTestCaseName) throws Exception{
 	
+		// *!*!*!*!*!*!* Need values for the variables *!*!*!*!*!*!* 
+		
 		Integer iNoOfRegisters = 1;
 		
 		CI_Objects_Current_Meter_Details.txt_no_of_registers(driver).click();
 		CI_Objects_Current_Meter_Details.txt_no_of_registers(driver).sendKeys(Integer.toString(iNoOfRegisters));
-		CI_Objects_Current_Meter_Details.txt_no_of_registers(driver).sendKeys(Keys.ENTER);
 		{
 			Log.info(sTestCaseName + " | No of Registers field completed");
 		}
@@ -98,7 +100,7 @@ public class CI_Methods_Current_Meter_Details{
 		}
 		
 	    
-		
+	// END OF ADD SUCCESS VALUES SUB100 COPs SM METHOD	
 	}	
 			
 		

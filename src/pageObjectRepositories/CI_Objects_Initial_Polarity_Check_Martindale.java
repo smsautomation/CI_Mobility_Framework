@@ -51,7 +51,7 @@ public class CI_Objects_Initial_Polarity_Check_Martindale {
     public static WebElement btn_socket_safety_test_pass(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("p3"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_socket_safety_test_pass not found | Exception desc : "+e.getMessage());
     	}
@@ -61,7 +61,7 @@ public class CI_Objects_Initial_Polarity_Check_Martindale {
     public static WebElement btn_socket_safety_test_fail(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("ps4"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_socket_safety_test_fail not found | Exception desc : "+e.getMessage());
     	}
@@ -71,7 +71,7 @@ public class CI_Objects_Initial_Polarity_Check_Martindale {
     public static WebElement cbx_socket_test_location(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("select2"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |cbx_socket_test_location not found | Exception desc : "+e.getMessage());
     	}
@@ -91,7 +91,7 @@ public class CI_Objects_Initial_Polarity_Check_Martindale {
     public static WebElement btn_socket_reverse_polarity_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("ps5"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_socket_reverse_polarity_y not found | Exception desc : "+e.getMessage());
     	}
@@ -101,7 +101,7 @@ public class CI_Objects_Initial_Polarity_Check_Martindale {
     public static WebElement btn_socket_reverse_polarity_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("ps6"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_socket_reverse_polarity_n not found | Exception desc : "+e.getMessage());
     	}
@@ -111,7 +111,7 @@ public class CI_Objects_Initial_Polarity_Check_Martindale {
     public static WebElement cbx_reverse_socket_location(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("select3"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |cbx_socket_test_location not found | Exception desc : "+e.getMessage());
     	}
@@ -121,7 +121,7 @@ public class CI_Objects_Initial_Polarity_Check_Martindale {
 	public static WebElement txt_number_reverse_sockets(WebDriver driver){
 	   	 
 		try{
-			element = driver.findElement(By.id(INSERTID));
+			element = driver.findElement(By.id("input1"));
  		}catch(Exception e){
 			Log.error(sRepositoryName + " | txt_number_reverse_sockets not found | Exception desc : "+e.getMessage());		
  		} 
@@ -146,7 +146,17 @@ public class CI_Objects_Initial_Polarity_Check_Martindale {
     		Log.error(sRepositoryName + " |btn_all_sockets_completed not found | Exception desc : "+e.getMessage());
     	}
     	return element;
-    } 	
+    } 
+    
+    public static WebElement btn_next_section(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("btnNextPlug"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_next_section not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
 	
     // all other fields in this section are not happy path and so have not yet been included
 	

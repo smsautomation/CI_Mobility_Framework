@@ -6,7 +6,7 @@ import pageObjectRepositories.Objects_Electricity_Meter_Han_Wan_Checks_Page;
 import utility.Log;
 import utility.Utils;
 
-public class Methods_Electricity_Meter_HAN_WAN_Checks{
+public class Methods_Electricity_Meter_Han_Wan_Checks{
 	
 		
 	/* **************************************************************************************************

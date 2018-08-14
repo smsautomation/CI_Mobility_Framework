@@ -1,9 +1,9 @@
 /* *******************************************************************
 * Test Case Name: Exchange_1_End_To_End_Chrome
-* Author: Iain Storrie
+* Author: Charlotte Jones
 * Date: 10/07/2017
-* Purpose: This test carries out the end to end Mobility workflow on 
-* the Chrome browser for an Exchange 1 job
+* Purpose: This test carries out the end to end Mobility workflow on
+* 	the IE browser for a Sub100 meter exchange job for an HV CT supply type
 *
 **********************************************************************
 * Change Log:
@@ -28,31 +28,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import utility.*;
 import webModule.*;
-import pageObjectRepositories.Objects_Appointments_List_Page;
-import pageObjectRepositories.Objects_Appointment_Details_Page;
-import pageObjectRepositories.Objects_Doorstep_Protocol_Page;
-import pageObjectRepositories.Objects_Gas_Meter_Initial_Risk_Assessment_Page;
-import pageObjectRepositories.Objects_Gas_Meter_Risk_Assessment_Gas_Page;
-import pageObjectRepositories.Objects_Gas_Meter_Capture_Initial_Photo_Of_Gas_Installation_Page;
-import pageObjectRepositories.Objects_Gas_Meter_Pre_Installation_Gas_Tightness_Test_Page;
-import pageObjectRepositories.Objects_Gas_Meter_Current_Meter_Details_Page;
-import pageObjectRepositories.Objects_Gas_Meter_Remove_Meter_Page;
-import pageObjectRepositories.Objects_Gas_Meter_Remove_Asset_Page;
-import pageObjectRepositories.Objects_Gas_Meter_New_Regulator_Page;
-import pageObjectRepositories.Objects_Gas_Meter_Initial_Meter_Reading_Page;
-import pageObjectRepositories.Objects_Gas_Meter_Install_Kit_Page;
-import pageObjectRepositories.Objects_Gas_Meter_Post_Installation_Gas_Tightness_Test_Page;
-import pageObjectRepositories.Objects_Gas_Meter_Gas_Appliance_Safety_Checks_Page;
-import pageObjectRepositories.Objects_Job_Completion_Device_Binding_Commissioning_Page;
-import pageObjectRepositories.Objects_Job_Completion_Scan_IHD_Page;
-import pageObjectRepositories.Objects_Job_Completion_Configure_All_Meters_Installed_Page;
-import pageObjectRepositories.Objects_Job_Completion_Energy_Efficiency_Information_Page;
-import pageObjectRepositories.Objects_Job_Completion_Summary_Page;
 import pageObjectRepositories.Objects_Login_Page;
-import pageObjectRepositories.Objects_Job_Completion_Capture_Customer_Signature_Page;
 
 
-public class IE_Sub100_Meter_Exchange_Hv_Ct {
+
+public class IE_Sub100_Meter_Exch_Hv_Ct {
 
 	//Declare our test variables
 	public WebDriver driver;
@@ -73,7 +53,7 @@ public class IE_Sub100_Meter_Exchange_Hv_Ct {
 	
 	    Log.startTestCase(sTestCaseName);
 	
-	    ExcelUtils.setExcelFile(Constant.Path_TestData + "Mobility_Automation_Test_Data" + ".xlsm","Data");
+	    ExcelUtils.setExcelFile(Constant.Path_TestData + "CI_Mobility_Automation_Test_Data" + ".xlsm","Data");
 		
 	    iTestCaseRow = ExcelUtils.getRowContains(sTestCaseName,Constant.Col_Test_Case_Name);
 	
@@ -92,58 +72,74 @@ public class IE_Sub100_Meter_Exchange_Hv_Ct {
 	@Test
 	public void main() throws Exception {
 			
-		/*	*!*!*!*!*!*!*!* Need to look into this section myself *!*!*!*!*!*!*!*
-		 ************************************************************************
+		//	*!*!*!*!*!*!*!* Need to look into this section myself *!*!*!*!*!*!*!*
+		// ************************************************************************
 		
 		Methods_Login.viewPage(driver, sTestCaseName);
 		
 		Methods_Login.addSuccessValues(driver, sTestCaseName);
 		
-		Methods_Appointments_List.viewPage(driver, sTestCaseName);
+		// Methods_Appointments_List.viewPage(driver, sTestCaseName);
 		
 		//Select the correct appointment
-		driver.findElement(By.xpath(".//*[@id='app']/div/div/workorderlistitem[170]/div/div[1]/div/div[1]/span[1]/span")).click();
+		driver.findElement(By.xpath(".//*[@id='app']/div/div/workorderlistitem[4]/div/div[1]/div/div[1]/span[3]/span")).click();
 		
 		//Verify that we are on the Appointment Details page
-		Objects_Appointment_Details_Page.btn_Call_Forward(driver).isDisplayed();
-		Log.info("Appointment Details page displayed as expected");	
+		//Objects_Appointment_Details_Page.btn_Call_Forward(driver).isDisplayed();
+		//Log.info("Appointment Details page displayed as expected");	
 		
-		Methods_Appointment_Details.viewPage(driver, sTestCaseName);
+		//Methods_Appointment_Details.viewPage(driver, sTestCaseName);
 		
 		//Verify correct Customer Details displayed
-		Objects_Appointment_Details_Page.lnk_Customer_Details(driver).click();
-		Methods_Appointment_Details.viewCustomerDetails(driver, sTestCaseName, 6);
+		//Objects_Appointment_Details_Page.lnk_Customer_Details(driver).click();
+		//Methods_Appointment_Details.viewCustomerDetails(driver, sTestCaseName, 6);
 				
 		//Verify correct Job Details displayed
-		Objects_Appointment_Details_Page.lnk_Job_Details(driver).click();
-		Methods_Appointment_Details.viewJobDetails(driver, sTestCaseName, 6);
+		//Objects_Appointment_Details_Page.lnk_Job_Details(driver).click();
+		//Methods_Appointment_Details.viewJobDetails(driver, sTestCaseName, 6);
 				
 		//Verify correct Meter Details displayed
-		Objects_Appointment_Details_Page.lnk_Meter_Details(driver).click();
-		Methods_Appointment_Details.viewMeterDetails(driver, sTestCaseName, 6);
+		//Objects_Appointment_Details_Page.lnk_Meter_Details(driver).click();
+		//Methods_Appointment_Details.viewMeterDetails(driver, sTestCaseName, 6);
 		
-		*****************************************************************************
+		// *****************************************************************************
 		
-		*/
 				
-		// Invoke Method to complete Call Forward and Doorstep Protocol sections
+		// Invoke method to complete Call Forward and Doorstep Protocol sections
 		CI_Methods_Call_Forward.addSuccessValues(driver, sTestCaseName);
 		CI_Methods_Doorstep_Protocol.addSuccessValues(driver, sTestCaseName);
-		
-		//Verify that we are on the Gas Meter Initial Risk Assessment page
-		Objects_Gas_Meter_Initial_Risk_Assessment_Page.lbl_Initial_Risk_Assessment(driver).isDisplayed();
-		Log.info("Gas Meter Initial Risk Assessment page displayed as expected");	
 						
-		//Invoke Method to complete a successful initial risk assessment 
-		Methods_Gas_Meter_Initial_Risk_Assessment.addSuccessValues(driver, sTestCaseName);
+		// Invoke method to complete a successful initial risk assessment (check for smell of gas)
+		CI_Methods_Init_Risk_Assess.addSuccessValues(driver, sTestCaseName);
 						
-		//Verify that we are on the Gas Meter Risk Assessment - Gas page
-		Objects_Gas_Meter_Risk_Assessment_Gas_Page.lbl_Risk_Assessment_Gas(driver).isDisplayed();
-		Log.info("Risk Assessment - Gas page displayed as expected");
+		// Invoke method to complete C&I Pre Task section
+		CI_Methods_Ci_Pre_Task.addSuccessValuesSub100HvCt(driver, sTestCaseName);
 		
-		//Verify Initial page elements displayed
-		Methods_Gas_Meter_Risk_Assessment_Gas.viewPage(driver, sTestCaseName);
-		Log.info("Gas Meter Risk Assessment - Gas initial elements displayed as expected");
+		// Invoke method to complete the Carry Out Network Signal Strength section
+		CI_Methods_Network_Signal_Strength_Test.addSuccessValues(driver, sTestCaseName);
+		
+		// Invoke method to complete Carry Out Electricity Risk Assessment section
+		CI_Methods_Elec_Risk_Assessment.addSuccessValuesAll(driver, sTestCaseName);
+		
+		// Invoke method to complete Initial Phase Rotation section
+		CI_Methods_Initial_Phase_Rotation_Test.addSuccessValuesNonDnoBno(driver, sTestCaseName);
+		
+	}
+		/*
+		
+		// Invoke method to complete the Carry Out Terminal Test Block Tests section
+		CI_Methods_Test_Block_Tests.addSuccessValuesHvLvCt(driver, sTestCaseName);
+		
+		
+		
+		// Invoke method to complete the Current Meter Details section
+		CI_Methods_Current_Meter_Details.addSuccessValuesSub100CopsSm(driver, sTestCaseName);
+		
+		// Invoke method to complete the Final Meter Reading section
+		CI_Methods_Final_Meter_Reading
+		
+		
+		
 																												
 		//Invoke Method to complete a successful risk assessment - gas 
 		Methods_Gas_Meter_Risk_Assessment_Gas.addSuccessValues(driver, sTestCaseName);
@@ -340,6 +336,8 @@ public class IE_Sub100_Meter_Exchange_Hv_Ct {
 		Log.info("First Appointment Header displayed");
 		
 	}
+	
+		*/
 	
 	//Log out
 	@AfterMethod

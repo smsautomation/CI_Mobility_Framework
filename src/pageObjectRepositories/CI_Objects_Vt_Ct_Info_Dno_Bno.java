@@ -28,12 +28,12 @@ public class CI_Objects_Vt_Ct_Info_Dno_Bno {
     private static String sRepositoryName = "CI_Objects_Vt_Ct_Info_Dno_Bno";
 
       
-    public static WebElement cbx_serial_no_to_enter(WebDriver driver) {
+    public static WebElement cbx_serial_num_to_enter(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |cbx_serial_no_to_enter not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |cbx_serial_num_to_enter not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
@@ -58,32 +58,32 @@ public class CI_Objects_Vt_Ct_Info_Dno_Bno {
     	return element;
     }
     
-    public static WebElement txt_ct_serial_no_1(WebDriver driver) {
+    public static WebElement txt_ct_serial_num_1(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_ct_serial_no_1 not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |txt_ct_serial_num_1 not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
     
-    public static WebElement txt_ct_serial_no_2(WebDriver driver) {
+    public static WebElement txt_ct_serial_num_2(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_ct_serial_no_2 not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |txt_ct_serial_num_2 not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
     
-    public static WebElement txt_ct_serial_no_3(WebDriver driver) {
+    public static WebElement txt_ct_serial_num_3(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_ct_serial_no_3 not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |txt_ct_serial_num_3 not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
@@ -128,32 +128,32 @@ public class CI_Objects_Vt_Ct_Info_Dno_Bno {
     	return element;
     }
 
-    public static WebElement txt_vt_serial_no_1(WebDriver driver) {
+    public static WebElement txt_vt_serial_num_1(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_vt_serial_no_1 not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |txt_vt_serial_num_1 not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
 
-    public static WebElement txt_vt_serial_no_2(WebDriver driver) {
+    public static WebElement txt_vt_serial_num_2(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_vt_serial_no_2 not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |txt_vt_serial_num_2 not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
     
-    public static WebElement txt_vt_serial_no_3(WebDriver driver) {
+    public static WebElement txt_vt_serial_num_3(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_vt_serial_no_3 not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |txt_vt_serial_num_3 not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }

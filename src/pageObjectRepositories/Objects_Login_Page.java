@@ -37,6 +37,28 @@ public class Objects_Login_Page {
 	    return element;
 	}
     
+	public static WebElement Password(WebDriver driver){
+	   	 
+		try{
+			element = driver.findElement(By.id("input2"));
+ 		}catch(Exception e){
+			Log.error(sRepositoryName + " | Password field not found | Exception desc : "+e.getMessage());		
+ 		} 
+	    return element;
+	}
+    
+	public static WebElement btn_Login (WebDriver driver){
+	   	 
+		try{
+			element = driver.findElement(By.id("btn"));
+		}catch(Exception e){
+			Log.error(sRepositoryName + " | btn_Login not found | Exception desc : "+e.getMessage());		
+ 		} 
+	    return element;
+	}
+	
+	
+	
     public static WebElement UsernameWater(WebDriver driver){
    	 
 		try{
@@ -57,15 +79,7 @@ public class Objects_Login_Page {
 	    return element;
 	}
 
-	public static WebElement Password(WebDriver driver){
-	   	 
-		try{
-			element = driver.findElement(By.id("input2"));
- 		}catch(Exception e){
-			Log.error(sRepositoryName + " | Password field not found | Exception desc : "+e.getMessage());		
- 		} 
-	    return element;
-	}
+
 	
 	public static WebElement PasswordWater(WebDriver driver){
 	   	 
@@ -87,15 +101,7 @@ public class Objects_Login_Page {
 	    return element;
 	}
 
-	public static WebElement btn_Login (WebDriver driver){
-	   	 
-		try{
-			element = driver.findElement(By.id("btn"));
-		}catch(Exception e){
-			Log.error(sRepositoryName + " | btn_Login not found | Exception desc : "+e.getMessage());		
- 		} 
-	    return element;
-	}
+
 	
 	public static WebElement btn_LoginWater (WebDriver driver){
 	   	 

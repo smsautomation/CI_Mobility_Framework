@@ -32,14 +32,18 @@ public class CI_Objects_Ci_Pre_Task {
     	public static WebElement cbx_sub100_meter_supply(WebDriver driver) {
     	
     		try {
-    			element = driver.findElement(By.id(INSERTID));
+    			element = driver.findElement(By.id("ciSupplyTypeSelect"));
     		}catch(Exception e) {
     			Log.error(sRepositoryName + " |cbx_sub100_meter_supply not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}
     
-    	 	
+    	/*  ***** thinking the above element may be the same one across all service lines
+    	 * 				this is why i have commented out the below
+    	 * 				will see once the dev for COPs has begun
+    	 * 				if it is, will probs want to change the name of the above element ******* 	
+    	 
      	public static WebElement cbx_COP_meter_supply(WebDriver driver) {
     	
     		try {
@@ -70,10 +74,12 @@ public class CI_Objects_Ci_Pre_Task {
     		return element;
     	}
     
+    	*/
+    	
     	public static WebElement btn_photos_allowed_y(WebDriver driver) {
         	
     		try {
-    			element = driver.findElement(By.id(INSERTID));
+    			element = driver.findElement(By.id("radioPhotosAllowedTrue"));
     		}catch(Exception e) {
     			Log.error(sRepositoryName + " |btn_photos_allowed_y not found | Exception desc : "+e.getMessage());
     		}
@@ -83,14 +89,43 @@ public class CI_Objects_Ci_Pre_Task {
     	public static WebElement btn_photos_allowed_n(WebDriver driver) {
         	
     		try {
-    			element = driver.findElement(By.id(INSERTID));
+    			element = driver.findElement(By.id("radioPhotosAllowedFalse"));
     		}catch(Exception e) {
     			Log.error(sRepositoryName + " |btn_dno_bno_hv_ct_meter_supply not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}
     	
-  
+    	public static WebElement btn_confirm_supply_type_y(WebDriver driver) {
+        	
+    		try {
+    			element = driver.findElement(By.id(INSERTID));
+    		}catch(Exception e) {
+    			Log.error(sRepositoryName + " |btn_confirm_supply_type_y not found | Exception desc : "+e.getMessage());
+    		}
+    		return element;
+    	}
+    	
+    	public static WebElement btn_confirm_supply_type_n(WebDriver driver) {
+        	
+    		try {
+    			element = driver.findElement(By.id(INSERTID));
+    		}catch(Exception e) {
+    			Log.error(sRepositoryName + " |btn_confirm_supply_type_n not found | Exception desc : "+e.getMessage());
+    		}
+    		return element;
+    	}
+    	
+    	public static WebElement btn_next_section(WebDriver driver) {
+        	
+    		try {
+    			element = driver.findElement(By.id("btnNextComm"));
+    		}catch(Exception e) {
+    			Log.error(sRepositoryName + " |btn_next_section not found | Exception desc : "+e.getMessage());
+    		}
+    		return element;
+    	}
+    	
     
 //END OF METHODS	    
 }

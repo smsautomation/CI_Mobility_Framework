@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import pageObjectRepositories.CI_Objects_Ci_Pre_Task;
 import utility.Log;
 
-public class CI_Methods_CI_Pre_Task{
+public class CI_Methods_Ci_Pre_Task{
 	
 	
 	
@@ -84,7 +84,7 @@ public class CI_Methods_CI_Pre_Task{
 	* Details:
 	*
 	****************************************************************************************************/	
-	public static void addSuccessValuesSub100WC1PH(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesSub100Wc1ph(WebDriver driver, String sTestCaseName) throws Exception{
 				
 		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).click();
 		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys("WC 1");
@@ -93,10 +93,25 @@ public class CI_Methods_CI_Pre_Task{
 			Log.info(sTestCaseName + " | Sub100 WC 1PH metering supply selected");
 		}
 
+		CI_Objects_Ci_Pre_Task.btn_photos_allowed_y(driver).click();
+		{
+			Log.info(sTestCaseName + " | Are Photographs Allowed For This Site? - Yes radio button selected");
+		}
+		
+		CI_Objects_Ci_Pre_Task.btn_confirm_supply_type_y(driver).click();
+		{
+			Log.info(sTestCaseName + " | Supply Type Confirmed: - Yes radio button selected");
+		}
+
+		CI_Objects_Ci_Pre_Task.btn_next_section(driver).click();
+		{
+			Log.info(sTestCaseName + " | Next Section button selected");
+		}
+		
 	// END OF Sub100 WC 1PH Add Success Values method		
 	}	
 		
-	public static void addSuccessValuesSub100WC3PH(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesSub100Wc3ph(WebDriver driver, String sTestCaseName) throws Exception{
 		
 		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).click();
 		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys("WC 3");
@@ -104,31 +119,76 @@ public class CI_Methods_CI_Pre_Task{
 		{
 			Log.info(sTestCaseName + " | Sub100 WC 3PH metering supply selected");
 		}
+		
+		CI_Objects_Ci_Pre_Task.btn_photos_allowed_y(driver).click();
+		{
+			Log.info(sTestCaseName + " | Are Photographs Allowed For This Site? - Yes radio button selected");
+		}
 
+		CI_Objects_Ci_Pre_Task.btn_confirm_supply_type_y(driver).click();
+		{
+			Log.info(sTestCaseName + " | Supply Type Confirmed: - Yes radio button selected");
+		}
+		
+		CI_Objects_Ci_Pre_Task.btn_next_section(driver).click();
+		{
+			Log.info(sTestCaseName + " | Next Section button selected");
+		}
+		
 	// END OF Sub100 WC 3PH Add Success Values method		
 		
 	}
 		
-	public static void addSuccessValuesSub100LVCT(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesSub100LvCt(WebDriver driver, String sTestCaseName) throws Exception{
 		
 		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).click();
-		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys("L");
+		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys("CT L");
 		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys(Keys.ENTER);
 		{
 			Log.info(sTestCaseName + " | Sub100 LV CT metering supply selected");
 		}
+		
+		CI_Objects_Ci_Pre_Task.btn_photos_allowed_y(driver).click();
+		{
+			Log.info(sTestCaseName + " | Are Photographs Allowed For This Site? - Yes radio button selected");
+		}
+		
+		CI_Objects_Ci_Pre_Task.btn_confirm_supply_type_y(driver).click();
+		{
+			Log.info(sTestCaseName + " | Supply Type Confirmed: - Yes radio button selected");
+		}
 
+		CI_Objects_Ci_Pre_Task.btn_next_section(driver).click();
+		{
+			Log.info(sTestCaseName + " | Next Section button selected");
+		}
+		
 	// END OF Sub100 LV CT Add Success Values method		
 		
 	}
 			
-	public static void addSuccessValuesSub100HVCT(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesSub100HvCt(WebDriver driver, String sTestCaseName) throws Exception{
 		
 		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).click();
-		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys("H");
+		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys("CT H");
 		CI_Objects_Ci_Pre_Task.cbx_sub100_meter_supply(driver).sendKeys(Keys.ENTER);
 		{
 			Log.info(sTestCaseName + " | Sub100 HV CT metering supply selected");
+		}
+		
+		CI_Objects_Ci_Pre_Task.btn_photos_allowed_y(driver).click();
+		{
+			Log.info(sTestCaseName + " | Are Photographs Allowed For This Site? - Yes radio button selected");
+		}
+		
+		CI_Objects_Ci_Pre_Task.btn_confirm_supply_type_y(driver).click();
+		{
+			Log.info(sTestCaseName + " | Supply Type Confirmed: - Yes radio button selected");
+		}
+		
+		CI_Objects_Ci_Pre_Task.btn_next_section(driver).click();
+		{
+			Log.info(sTestCaseName + " | Next Section button selected");
 		}
 
 	// END OF Sub100 HV CT Add Success Values method		

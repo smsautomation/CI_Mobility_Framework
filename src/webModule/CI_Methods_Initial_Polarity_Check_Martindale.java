@@ -64,11 +64,13 @@ public class CI_Methods_Initial_Polarity_Check_Martindale{
 	
 		
 	/* **************************************************************************************************
-	* Function: addSuccessValues
+	* Function: addSuccessValuesSub100Wc
 	* Author: Charlotte Jones
 	* Date: 06/08/2018
-	* Purpose: This method adds the required responses in the Phase Rotation Test section for a happy
-	* path scenario 
+	* Purpose: This method adds the required responses in the Initial Polarity Check - Martindale Test
+	* 	section for a happy path scenario 
+	* Meter Supply Types:					WC 1PH
+	* 										WC 3PH
 	* Arguments:	
 	* 						
 	* Returns: 
@@ -84,10 +86,11 @@ public class CI_Methods_Initial_Polarity_Check_Martindale{
 	
 	// *!*!*!*!*!*!*!*!*!* sSocketTestLoc needs defining - depends on the standing data list! *!*!*!*!*!*!*!*!*!*
 	
-	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesSub100Wc(WebDriver driver, String sTestCaseName) throws Exception{
 	
-		String 	sPolarityTested = "";
+		String 	sPolarityTested = "p";
 		String 	sSocketTestLoc = "";
+		String	sCustWitnessInfo = "";
 	    
 	    
 	    CI_Objects_Initial_Polarity_Check_Martindale.cbx_polarity_check_plug_in_test(driver).click();
@@ -107,10 +110,24 @@ public class CI_Methods_Initial_Polarity_Check_Martindale{
 	    CI_Objects_Initial_Polarity_Check_Martindale.cbx_socket_test_location(driver).sendKeys(sSocketTestLoc);
 	    CI_Objects_Initial_Polarity_Check_Martindale.cbx_socket_test_location(driver).sendKeys(Keys.ENTER);
 	    
+	    CI_Objects_Initial_Polarity_Check_Martindale.btn_photo_socket_test(driver).click();
+	    {
+			Log.info(sTestCaseName + " | Capture ? - Pass button clicked");
+		}
+	    
+	    // *!*!*!*!*!* going to need to work out how to take multiple photos *!*!*!*!*!*
+	    
 	    CI_Objects_Initial_Polarity_Check_Martindale.btn_socket_reverse_polarity_n(driver).click();
 	    {
-			Log.info(sTestCaseName + " | Any Sockets Found as REverse Polarity? - No button clicked");
+			Log.info(sTestCaseName + " | Any Sockets Found as Reverse Polarity? - No button clicked");
 		}
+	    
+	    CI_Objects_Initial_Polarity_Check_Martindale.txt_cust_witness_info(driver).click();
+	    CI_Objects_Initial_Polarity_Check_Martindale.txt_cust_witness_info(driver).sendKeys(sCustWitnessInfo);
+	    {
+			Log.info(sTestCaseName + " | Has the Socket Safety Test Passed/Failed? - Pass button clicked");
+		}
+	    
 	    
 	}	
 			

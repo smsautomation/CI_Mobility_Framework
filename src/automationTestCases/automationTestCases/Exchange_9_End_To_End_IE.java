@@ -239,11 +239,11 @@ public class Exchange_9_End_To_End_IE {
 		Log.info("HAN / WAN Check page displayed as expected");
 		
 		//Verify Initial page elements displayed
-		Methods_Electricity_Meter_HAN_WAN_Checks.viewPage(driver, sTestCaseName);
+		Methods_Electricity_Meter_Han_Wan_Checks.viewPage(driver, sTestCaseName);
 		Log.info("Electricity Meter HAN / WAN checks initial elements displayed as expected");
 										
 		//Invoke Method to complete a successful HAN / WAN check 
-		Methods_Electricity_Meter_HAN_WAN_Checks.addSuccessValues(driver, sTestCaseName);
+		Methods_Electricity_Meter_Han_Wan_Checks.addSuccessValues(driver, sTestCaseName);
 	
 		//Verify that we are on the Electricity Meter Current Meter Details page
 		Objects_Electricity_Meter_Current_Meter_Details_Page.lbl_Current_Meter_Details(driver).isDisplayed();

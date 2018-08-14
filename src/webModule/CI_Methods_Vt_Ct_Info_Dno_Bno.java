@@ -70,7 +70,7 @@ public class CI_Methods_Vt_Ct_Info_Dno_Bno{
 	
 	
 	/* **************************************************************************************************
-	* Function: addSuccessValuesAll
+	* Function: addSuccessValuesHv
 	* Author: Charlotte Jones
 	* Date: 06/08/2018
 	* Purpose: This method adds the required responses in the VT/CT Information for DNO/BNO and
@@ -88,31 +88,24 @@ public class CI_Methods_Vt_Ct_Info_Dno_Bno{
 	* Details:
 	*
 	****************************************************************************************************/	
-	public static void addSuccessValuesAll(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesHv(WebDriver driver, String sTestCaseName) throws Exception{
 	
 	
 		// *!*!*!*!*!*!*
 		
-		String 	sCtVtSerialNo = "";
 		String 	sCtRatio = "";
-		String	sCtSerialNo1 = "";
-		String 	sCtSerialNo2 = "";
-		String 	sCtSerialNo3 = "";
+		String	sCtSerialNum1 = "";
+		String 	sCtSerialNum2 = "";
+		String 	sCtSerialNum3 = "";
 		String 	sCtClass = "Class B";
 		String 	sCtBurden = "2";
 		Integer iVtRatio = 6;
-		String 	sVtSerialNo1 = "";
-		String 	sVtSerialNo2 = "";
-		String 	sVtSerialNo3 = "";
+		String 	sVtSerialNum1 = "";
+		String 	sVtSerialNum2 = "";
+		String 	sVtSerialNum3 = "";
 		String 	sVtClass = "";
 		Integer	iVtBurden = 2;
 		
-		CI_Objects_Vt_Ct_Info_Dno_Bno.cbx_serial_no_to_enter(driver).click();		
-		CI_Objects_Vt_Ct_Info_Dno_Bno.cbx_serial_no_to_enter(driver).sendKeys(sCtVtSerialNo);
-		CI_Objects_Vt_Ct_Info_Dno_Bno.cbx_serial_no_to_enter(driver).sendKeys(Keys.ENTER);
-		{
-			Log.info(sTestCaseName + " | Meter Serial Number To Enter CT/VT Information For completed");
-		}
 		
 		CI_Objects_Vt_Ct_Info_Dno_Bno.btn_ct_info_available(driver).click();
 		{
@@ -126,25 +119,25 @@ public class CI_Methods_Vt_Ct_Info_Dno_Bno{
 			Log.info(sTestCaseName + " | CT Ratio completed");
 		}
 		
-		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_no_1(driver).click();
-		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_no_1(driver).sendKeys(sCtSerialNo1);
-		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_no_1(driver).sendKeys(Keys.ENTER);
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_num_1(driver).click();
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_num_1(driver).sendKeys(sCtSerialNum1);
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_num_1(driver).sendKeys(Keys.ENTER);
 		{
-			Log.info(sTestCaseName + " | CT Serial No (1) completed");
+			Log.info(sTestCaseName + " | CT Serial Num (1) completed");
 		}
 		
-		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_no_2(driver).click();
-		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_no_2(driver).sendKeys(sCtSerialNo2);
-		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_no_2(driver).sendKeys(Keys.ENTER);
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_num_2(driver).click();
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_num_2(driver).sendKeys(sCtSerialNum2);
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_num_2(driver).sendKeys(Keys.ENTER);
 		{
-			Log.info(sTestCaseName + " | CT Serial No (2) completed");
+			Log.info(sTestCaseName + " | CT Serial Num (2) completed");
 		}
 		
-		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_no_3(driver).click();
-		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_no_3(driver).sendKeys(sCtSerialNo3);
-		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_no_3(driver).sendKeys(Keys.ENTER);
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_num_3(driver).click();
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_num_3(driver).sendKeys(sCtSerialNum3);
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_num_3(driver).sendKeys(Keys.ENTER);
 		{
-			Log.info(sTestCaseName + " | CT Serial No (3) completed");
+			Log.info(sTestCaseName + " | CT Serial Num (3) completed");
 		}
 		
 		CI_Objects_Vt_Ct_Info_Dno_Bno.cbx_ct_class(driver).click();
@@ -173,25 +166,25 @@ public class CI_Methods_Vt_Ct_Info_Dno_Bno{
 			Log.info(sTestCaseName + " | VT Ratio completed");
 		}
 		
-		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_vt_serial_no_1(driver).click();
-		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_vt_serial_no_1(driver).sendKeys(sVtSerialNo1);
-		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_vt_serial_no_1(driver).sendKeys(Keys.ENTER);
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_vt_serial_num_1(driver).click();
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_vt_serial_num_1(driver).sendKeys(sVtSerialNum1);
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_vt_serial_num_1(driver).sendKeys(Keys.ENTER);
 		{
-			Log.info(sTestCaseName + " | VT Serial No (1) completed");
+			Log.info(sTestCaseName + " | VT Serial Num (1) completed");
 		}
 		
-		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_vt_serial_no_2(driver).click();
-		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_vt_serial_no_2(driver).sendKeys(sVtSerialNo2);
-		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_vt_serial_no_2(driver).sendKeys(Keys.ENTER);
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_vt_serial_num_2(driver).click();
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_vt_serial_num_2(driver).sendKeys(sVtSerialNum2);
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_vt_serial_num_2(driver).sendKeys(Keys.ENTER);
 		{
-			Log.info(sTestCaseName + " | VT Serial No (2) completed");
+			Log.info(sTestCaseName + " | VT Serial Num (2) completed");
 		}
 		
-		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_vt_serial_no_3(driver).click();
-		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_vt_serial_no_3(driver).sendKeys(sVtSerialNo3);
-		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_vt_serial_no_3(driver).sendKeys(Keys.ENTER);
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_vt_serial_num_3(driver).click();
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_vt_serial_num_3(driver).sendKeys(sVtSerialNum3);
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_vt_serial_num_3(driver).sendKeys(Keys.ENTER);
 		{
-			Log.info(sTestCaseName + " | VT Serial No (3) completed");
+			Log.info(sTestCaseName + " | VT Serial Num (3) completed");
 		}
 		
 		CI_Objects_Vt_Ct_Info_Dno_Bno.cbx_vt_class(driver).click();
@@ -212,10 +205,97 @@ public class CI_Methods_Vt_Ct_Info_Dno_Bno{
 			Log.info(sTestCaseName + " | Next Section button clicked");
 		}
 				
-	// END OF ADD SUCCESS VALUES ALL METHOD
+	// END OF ADD SUCCESS VALUES HV METHOD
 	}
 
+	/* **************************************************************************************************
+	* Function: addSuccessValuesLv
+	* Author: Charlotte Jones
+	* Date: 06/08/2018
+	* Purpose: This method adds the required responses in the VT/CT Information for DNO/BNO and
+	* Additional Equipment section for a happy path scenario
+	* Arguments: 	sCtVtSerialNo
+	* 				sCtRatio
+	* 				sCtSerialNo1
+	* 				sCtSerialNo2
+	* Returns: 
+	*****************************************************************************************************
+	* Change Log:
+	* 
+	* Date:
+	* Author: 
+	* Details:
+	*
+	****************************************************************************************************/	
+	public static void addSuccessValuesLv(WebDriver driver, String sTestCaseName) throws Exception{
+	
+	
+		// *!*!*!*!*!*!*
 		
+		String 	sCtRatio = "";
+		String	sCtSerialNum1 = "";
+		String 	sCtSerialNum2 = "";
+		String 	sCtSerialNum3 = "";
+		String 	sCtClass = "Class B";
+		String 	sCtBurden = "2";
+
+		
+		
+		CI_Objects_Vt_Ct_Info_Dno_Bno.btn_ct_info_available(driver).click();
+		{
+			Log.info(sTestCaseName + " | CT/VT Information Accesible? CT Available clicked");
+		}
+		
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_ratio(driver).click();
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_ratio(driver).sendKeys(sCtRatio);
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_ratio(driver).sendKeys(Keys.ENTER);
+		{
+			Log.info(sTestCaseName + " | CT Ratio completed");
+		}
+		
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_num_1(driver).click();
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_num_1(driver).sendKeys(sCtSerialNum1);
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_num_1(driver).sendKeys(Keys.ENTER);
+		{
+			Log.info(sTestCaseName + " | CT Serial Num (1) completed");
+		}
+		
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_num_2(driver).click();
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_num_2(driver).sendKeys(sCtSerialNum2);
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_num_2(driver).sendKeys(Keys.ENTER);
+		{
+			Log.info(sTestCaseName + " | CT Serial Num (2) completed");
+		}
+		
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_num_3(driver).click();
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_num_3(driver).sendKeys(sCtSerialNum3);
+		CI_Objects_Vt_Ct_Info_Dno_Bno.txt_ct_serial_num_3(driver).sendKeys(Keys.ENTER);
+		{
+			Log.info(sTestCaseName + " | CT Serial Num (3) completed");
+		}
+		
+		CI_Objects_Vt_Ct_Info_Dno_Bno.cbx_ct_class(driver).click();
+		CI_Objects_Vt_Ct_Info_Dno_Bno.cbx_ct_class(driver).sendKeys(sCtClass);
+		CI_Objects_Vt_Ct_Info_Dno_Bno.cbx_ct_class(driver).sendKeys(Keys.ENTER);
+		{
+			Log.info(sTestCaseName + " | CT Class completed");
+		}
+		
+		CI_Objects_Vt_Ct_Info_Dno_Bno.cbx_ct_burden_in_va(driver).click();
+		CI_Objects_Vt_Ct_Info_Dno_Bno.cbx_ct_burden_in_va(driver).sendKeys(sCtBurden);
+		CI_Objects_Vt_Ct_Info_Dno_Bno.cbx_ct_burden_in_va(driver).sendKeys(Keys.ENTER);
+		{
+			Log.info(sTestCaseName + " | CT Burden in VA completed");
+		}
+		
+		CI_Objects_Vt_Ct_Info_Dno_Bno.btn_next_section(driver).click();
+		{
+			Log.info(sTestCaseName + " | Next Section button clicked");
+		}
+				
+	// END OF ADD SUCCESS VALUES LV METHOD
+	}
+	
 		
 	
 //END OF METHODS

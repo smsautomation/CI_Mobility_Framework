@@ -217,7 +217,7 @@ Methods_Login.viewPage(driver, sTestCaseName);
 		Log.info("HAN / WAN Check page displayed as expected");
 		
 		//Invoke Method to complete an aborted HAN / WAN check 
-		Methods_Electricity_Meter_HAN_WAN_Checks.addAbortValues(driver, sTestCaseName);
+		Methods_Electricity_Meter_Han_Wan_Checks.addAbortValues(driver, sTestCaseName);
 			
 		//Click Abort button to bring up Abort page 
 		Objects_Electricity_Meter_Han_Wan_Checks_Page.btn_Abort(driver).click();

@@ -31,7 +31,7 @@ public class CI_Objects_Pre_Task_Isolate_Sensitive_Equipment {
     public static WebElement btn_cust_isolated_equipment_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("radiohasCustomerIsolatedTrue"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_cust_isolated_equipment_y not found | Exception desc : "+e.getMessage());
     	}
@@ -41,7 +41,7 @@ public class CI_Objects_Pre_Task_Isolate_Sensitive_Equipment {
     public static WebElement btn_cust_isolated_equipment_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("radiohasCustomerIsolatedFalse"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_cust_isolated_equipment_n not found | Exception desc : "+e.getMessage());
     	}
@@ -51,7 +51,7 @@ public class CI_Objects_Pre_Task_Isolate_Sensitive_Equipment {
     public static WebElement btn_cust_isolated_equipment_na(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("radiohasCustomerIsolatedNull"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_cust_isolated_equipment_na not found | Exception desc : "+e.getMessage());
     	}
@@ -61,7 +61,7 @@ public class CI_Objects_Pre_Task_Isolate_Sensitive_Equipment {
 	public static WebElement txt_cust_isolated_equipment(WebDriver driver){
 	   	 
 		try{
-			element = driver.findElement(By.id(INSERTID));
+			element = driver.findElement(By.id("senstiveEquipTextArea"));
  		}catch(Exception e){
 			Log.error(sRepositoryName + " | txt_Sig_Strength_Vod not found | Exception desc : "+e.getMessage());		
  		} 
@@ -71,7 +71,7 @@ public class CI_Objects_Pre_Task_Isolate_Sensitive_Equipment {
     public static WebElement btn_photo_current_install(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("photopretasknaCustomerIsolated"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_photo_current_install not found | Exception desc : "+e.getMessage());
     	}

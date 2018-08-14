@@ -22,7 +22,7 @@ import utility.Log;
 *
 *********************************************************************/
 
-public class CI_Objects_Terminal_Test_Block_Tests {
+public class CI_Objects_Test_Block_Tests {
    
     private static WebElement element = null;
     private static String sRepositoryName = "CI_Objects_Terminal_Test_Block_Tests";
@@ -61,7 +61,7 @@ public class CI_Objects_Terminal_Test_Block_Tests {
     public static WebElement btn_phase_corrected_at_meter_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("radioPhaseRotationCorrectedAtMeterTrue"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_phase_corrected_at_meter_y not found | Exception desc : "+e.getMessage());
     	}
@@ -71,7 +71,7 @@ public class CI_Objects_Terminal_Test_Block_Tests {
     public static WebElement btn_phase_corrected_at_meter_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("radioPhaseRotationCorrectedAtMeterFalse"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_phase_corrected_at_meter_n not found | Exception desc : "+e.getMessage());
     	}

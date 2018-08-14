@@ -70,10 +70,11 @@ public class CI_Methods_New_Meter_Details{
 	
 	
 	/* **************************************************************************************************
-	* Function: addSuccessValuesAll
+	* Function: addSuccessValuesWc
 	* Author: Charlotte Jones
 	* Date: 06/08/2018
 	* Purpose: This method adds the required responses in the New Meter Details section for a happy path scenario
+	* Metering Supply:				
 	* Arguments: 	sMeterSerialNo
 	* 				sManuLetter
 	* 				sMeterType
@@ -95,7 +96,7 @@ public class CI_Methods_New_Meter_Details{
 	* Details:
 	*
 	****************************************************************************************************/	
-	public static void addSuccessValuesAll(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesWc(WebDriver driver, String sTestCaseName) throws Exception{
 	
 	
 		// *!*!*!*!*!*!*!* Need to complete the below variables *!*!*!*!*!*!*!*
@@ -106,17 +107,16 @@ public class CI_Methods_New_Meter_Details{
 		String 	sClass = "";
 		Integer iEdmiSerialNo = 1;
 		Integer iSscCode = 3;
+		String	sFeederNum = "";
+		Integer	iOutstationNum = 012;
 		String 	sMeterLocCode = "";
 		Integer iCertYearMonth = 2;
-		Integer iCtRatioPrimary = 1;
-		Integer iCtRatioSecondary = 1;
-		Integer iVtRatio = 1;
 		Integer iBaudRate = 1;
 		
 		
-		CI_Objects_New_Meter_Details.txt_serial_no(driver).click();
-		CI_Objects_New_Meter_Details.txt_serial_no(driver).sendKeys(sMeterSerialNo);
-		CI_Objects_New_Meter_Details.txt_serial_no(driver).sendKeys(Keys.ENTER);
+		CI_Objects_New_Meter_Details.txt_serial_num(driver).click();
+		CI_Objects_New_Meter_Details.txt_serial_num(driver).sendKeys(sMeterSerialNo);
+		CI_Objects_New_Meter_Details.txt_serial_num(driver).sendKeys(Keys.ENTER);
 		{
 			Log.info(sTestCaseName + " | Elec Meter Serial Number(s) field completed");
 		}
@@ -148,6 +148,18 @@ public class CI_Methods_New_Meter_Details{
 			Log.info(sTestCaseName + " | EDMI Serial Number field completed");
 		}
 		
+		CI_Objects_New_Meter_Details.txt_feeder_num(driver).click();
+		CI_Objects_New_Meter_Details.txt_feeder_num(driver).sendKeys(sFeederNum);
+		{
+			Log.info(sTestCaseName + " | Feeder Number field completed");
+		}
+		
+		CI_Objects_New_Meter_Details.txt_outstation_num(driver).click();
+		CI_Objects_New_Meter_Details.txt_outstation_num(driver).sendKeys(Integer.toString(iOutstationNum));
+		{
+			Log.info(sTestCaseName + " | Outstation Number field completed");
+		}
+		
 		CI_Objects_New_Meter_Details.cbx_ssc_code(driver).click();
 		CI_Objects_New_Meter_Details.cbx_ssc_code(driver).sendKeys(Integer.toString(iSscCode));
 		CI_Objects_New_Meter_Details.cbx_ssc_code(driver).sendKeys(Keys.ENTER);
@@ -162,12 +174,139 @@ public class CI_Methods_New_Meter_Details{
 			Log.info(sTestCaseName + " | Meter Location Code field completed");
 		}
 		
+		// *!*!*!*!*!*!* could add something later to verify the number of registers is completed *!*!*!*!*!*!*
+		
 		CI_Objects_New_Meter_Details.txt_cert_year_month(driver).click();
 		CI_Objects_New_Meter_Details.txt_cert_year_month(driver).sendKeys(Integer.toString(iCertYearMonth));
 		CI_Objects_New_Meter_Details.txt_cert_year_month(driver).sendKeys(Keys.ENTER);
 		{
 			Log.info(sTestCaseName + " | Certification or MID Year / Month field completed");
 		}
+		
+		// *!*!*!*!*!*!* could add something later to verify the number of dials is completed *!*!*!*!*!*!*
+		
+		CI_Objects_New_Meter_Details.cbx_baud_rate(driver).click();
+		CI_Objects_New_Meter_Details.cbx_baud_rate(driver).sendKeys(Integer.toString(iBaudRate));
+		CI_Objects_New_Meter_Details.cbx_baud_rate(driver).sendKeys(Keys.ENTER);
+		{
+			Log.info(sTestCaseName + " | Baud Rate field completed");
+		}
+
+		
+	// END OF ADD SUCCESS VALUES WC METHOD
+	}
+
+	
+	/* **************************************************************************************************
+	* Function: addSuccessValuesHvLv
+	* Author: Charlotte Jones
+	* Date: 06/08/2018
+	* Purpose: This method adds the required responses in the New Meter Details section for a happy path scenario
+	* Metering Supply:				
+	* Arguments: 	sMeterSerialNo
+	* 				sManuLetter
+	* 				sMeterType
+	* 				sClass
+	* 				iEdmiSerialNo
+	* 				iSscCode
+	* 				sMeterLocCode
+	* 				iCertYearMonth
+	* 				iCtRatioPrimary
+	* 				iCtRatioSecondary
+	* 				iVtRatio
+	* 				iBaudRate
+	* Returns: 
+	*****************************************************************************************************
+	* Change Log:
+	* 
+	* Date:
+	* Author: 
+	* Details:
+	*
+	****************************************************************************************************/	
+	public static void addSuccessValuesHvLv(WebDriver driver, String sTestCaseName) throws Exception{
+	
+	
+		// *!*!*!*!*!*!*!* Need to complete the below variables *!*!*!*!*!*!*!*
+		
+		String 	sMeterSerialNo = "serialno";
+		String 	sManuLetter = "";
+		String 	sMeterType = "";
+		String 	sClass = "";
+		Integer iEdmiSerialNo = 1;
+		String	sFeederNum = "";
+		Integer	iOutstationNum = 012;
+		String 	sMeterLocCode = "";
+		Integer iCertYearMonth = 2;
+		Integer iCtRatioPrimary = 1;
+		Integer iCtRatioSecondary = 1;
+		Integer iVtRatio = 1;
+		Integer iBaudRate = 1;
+		
+		
+		CI_Objects_New_Meter_Details.txt_serial_num(driver).click();
+		CI_Objects_New_Meter_Details.txt_serial_num(driver).sendKeys(sMeterSerialNo);
+		CI_Objects_New_Meter_Details.txt_serial_num(driver).sendKeys(Keys.ENTER);
+		{
+			Log.info(sTestCaseName + " | Elec Meter Serial Number(s) field completed");
+		}
+		
+		CI_Objects_New_Meter_Details.cbx_manufacturer_letter(driver).click();
+		CI_Objects_New_Meter_Details.cbx_manufacturer_letter(driver).sendKeys(sManuLetter);
+		CI_Objects_New_Meter_Details.cbx_manufacturer_letter(driver).sendKeys(Keys.ENTER);
+		{
+			Log.info(sTestCaseName + " | Manufacturer Letter field completed");
+		}
+		
+		CI_Objects_New_Meter_Details.cbx_meter_type(driver).click();
+		CI_Objects_New_Meter_Details.cbx_meter_type(driver).sendKeys(sMeterType);
+		CI_Objects_New_Meter_Details.cbx_meter_type(driver).sendKeys(Keys.ENTER);
+		{
+			Log.info(sTestCaseName + " | Meter Type field completed");
+		}
+		
+		CI_Objects_New_Meter_Details.cbx_class(driver).click();
+		CI_Objects_New_Meter_Details.cbx_class(driver).sendKeys(sClass);
+		CI_Objects_New_Meter_Details.cbx_class(driver).sendKeys(Keys.ENTER);
+		{
+			Log.info(sTestCaseName + " | Class field completed");
+		}
+		
+		CI_Objects_New_Meter_Details.txt_edmi_serial_no(driver).click();
+		CI_Objects_New_Meter_Details.txt_edmi_serial_no(driver).sendKeys(Integer.toString(iEdmiSerialNo));
+				{
+			Log.info(sTestCaseName + " | EDMI Serial Number field completed");
+		}
+		
+		CI_Objects_New_Meter_Details.txt_feeder_num(driver).click();
+		CI_Objects_New_Meter_Details.txt_feeder_num(driver).sendKeys(sFeederNum);
+		{
+			Log.info(sTestCaseName + " | Feeder Number field completed");
+		}
+		
+		CI_Objects_New_Meter_Details.txt_outstation_num(driver).click();
+		CI_Objects_New_Meter_Details.txt_outstation_num(driver).sendKeys(Integer.toString(iOutstationNum));
+		{
+			Log.info(sTestCaseName + " | Outstation Number field completed");
+		}
+		
+		CI_Objects_New_Meter_Details.cbx_meter_loc_code(driver).click();
+		CI_Objects_New_Meter_Details.cbx_meter_loc_code(driver).sendKeys(sMeterLocCode);
+		CI_Objects_New_Meter_Details.cbx_meter_loc_code(driver).sendKeys(Keys.ENTER);
+		{
+			Log.info(sTestCaseName + " | Meter Location Code field completed");
+		}
+		
+		// *!*!*!*!*!*!* could add something later to verify the number of registers is completed *!*!*!*!*!*!*
+		
+		CI_Objects_New_Meter_Details.txt_cert_year_month(driver).click();
+		CI_Objects_New_Meter_Details.txt_cert_year_month(driver).sendKeys(Integer.toString(iCertYearMonth));
+		CI_Objects_New_Meter_Details.txt_cert_year_month(driver).sendKeys(Keys.ENTER);
+		{
+			Log.info(sTestCaseName + " | Certification or MID Year / Month field completed");
+		}
+		
+		// *!*!*!*!*!*!* could add something later to verify the number of dials is completed *!*!*!*!*!*!*
 		
 		CI_Objects_New_Meter_Details.cbx_ct_ratio_primary(driver).click();
 		CI_Objects_New_Meter_Details.cbx_ct_ratio_primary(driver).sendKeys(Integer.toString(iCtRatioPrimary));
@@ -196,13 +335,10 @@ public class CI_Methods_New_Meter_Details{
 		{
 			Log.info(sTestCaseName + " | Baud Rate field completed");
 		}
-		
-		
-		
-		
-	// END OF ADD SUCCESS VALUES ALL METHOD
-	}
 
+		
+	// END OF ADD SUCCESS VALUES HV LV METHOD
+	}
 		
 		
 	

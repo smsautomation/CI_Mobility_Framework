@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import pageObjectRepositories.CI_Objects_Post_Install_Checks_LV_HV;
 import utility.Log;
 
-public class CI_Methods_Post_Install_Checks_LV_HV{
+public class CI_Methods_Post_Install_Checks_Lv_Hv{
 	
 	
 	
@@ -69,7 +69,7 @@ public class CI_Methods_Post_Install_Checks_LV_HV{
 	
 	
 	/* **************************************************************************************************
-	* Function: addSuccessValuesAll
+	* Function: addSuccessValuesLvHv
 	* Author: Charlotte Jones
 	* Date: 06/08/2018
 	* Purpose: This method adds the required responses in the Post Installation Checks (for LV/HV
@@ -84,7 +84,7 @@ public class CI_Methods_Post_Install_Checks_LV_HV{
 	* Details:
 	*
 	****************************************************************************************************/	
-	public static void addSuccessValuesAll(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesLvHv(WebDriver driver, String sTestCaseName) throws Exception{
 	
 	
 		// *!*!*!*!*!*!*! Need values for the variables below *!*!*!*!*!*!*!
@@ -159,7 +159,7 @@ public class CI_Methods_Post_Install_Checks_LV_HV{
 		
 		
 				
-	// END OF ADD SUCCESS VALUES ALL METHOD
+	// END OF ADD SUCCESS VALUES LV HV METHOD
 	}
 
 		

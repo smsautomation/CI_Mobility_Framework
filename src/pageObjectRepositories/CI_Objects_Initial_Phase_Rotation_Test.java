@@ -31,7 +31,7 @@ public class CI_Objects_Initial_Phase_Rotation_Test {
     public static WebElement btn_phase_rotation_correct_at_meter_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("radioPhaseRotationCorrectTrue"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_phase_rotation_correct_at_meter_y not found | Exception desc : "+e.getMessage());
     	}
@@ -41,17 +41,27 @@ public class CI_Objects_Initial_Phase_Rotation_Test {
     public static WebElement btn_phase_rotation_correct_at_meter_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("radioPhaseRotationCorrectFalse"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_phase_rotation_correct_at_meter_n not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }    
 
+    public static WebElement btn_are_tails_labelled_ok(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("radioPhaseRotationCorrectFalse"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_are_tails_labelled_ok not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    } 
+    
     public static WebElement btn_phase_rotation_correct_at_service_cut_out_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.className("confirm"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_phase_rotation_correct_at_meter_y not found | Exception desc : "+e.getMessage());
     	}

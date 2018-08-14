@@ -30,7 +30,7 @@ public class CI_Objects_Call_Forward {
     public static WebElement btn_call_forward(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("btnCall1"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_call_forward not found | Exception desc : "+e.getMessage());
     	}
@@ -40,7 +40,7 @@ public class CI_Objects_Call_Forward {
     public static WebElement btn_contact_made_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("radio1"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_contact_made_y not found | Exception desc : "+e.getMessage());
     	}
@@ -50,29 +50,21 @@ public class CI_Objects_Call_Forward {
     public static WebElement btn_contact_made_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("radio2"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_contact_made_n not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
     
-    public static WebElement btn_depart(WebDriver driver) {
-    	
-    	try {
-    		element = driver.findElement(By.id(INSERTID));
-    	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |btn_depart not found | Exception desc : "+e.getMessage());
-    	}
-    	return element;
-    }
+
     
     // Conditional Fields sub-section
     
     public static WebElement btn_appt_confirm_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("radio3"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_appt_confirm_y not found | Exception desc : "+e.getMessage());
     	}
@@ -82,7 +74,7 @@ public class CI_Objects_Call_Forward {
     public static WebElement btn_appt_confirm_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("radio4"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_appt_confirm_n not found | Exception desc : "+e.getMessage());
     	}
@@ -92,9 +84,19 @@ public class CI_Objects_Call_Forward {
     public static WebElement txt_addnl_access_details(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("notes"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |txt_addnl_access_details not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement btn_depart(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("btnCall1"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_depart not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
@@ -124,7 +126,8 @@ public class CI_Objects_Call_Forward {
     public static WebElement btn_ok(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.className("confirm"));
+    		//element = driver.findElement(By.className("confirm"));
+    		element = driver.findElement(By.id("btnCall2"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_ok not found | Exception desc : "+e.getMessage());
     	}
@@ -134,7 +137,8 @@ public class CI_Objects_Call_Forward {
     public static WebElement btn_cancel(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.className(INSERTID));
+    		//element = driver.findElement(By.className(INSERTID));
+    		element = driver.findElement(By.id("btnCall3"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_cancel not found | Exception desc : "+e.getMessage());
     	}

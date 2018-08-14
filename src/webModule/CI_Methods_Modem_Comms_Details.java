@@ -91,11 +91,11 @@ public class CI_Methods_Modem_Comms_Details{
 	
 		// *!*!*!*!*!*!*!* Need to add values to the below variables *!*!*!*!*!*!*!*
 		
-		String 	sRemModemSerialNum = "";
+		String 	sRemModemSerialNum = "sdf";
 		String	sModemType = "G";
-		String  sModemSerialNum = "";
-		String	sSimSerialNum = "";
-		String 	sCommsNum = "";
+		String  sModemSerialNum = "sfd";
+		String	sSimSerialNum = "es";
+		String 	sCommsNum = "sdf";
 		String	sIpAddress = "1.161.11.241";
 		Integer iModemBaudRate = 1;
 		
@@ -193,12 +193,12 @@ public class CI_Methods_Modem_Comms_Details{
 		
 		// *!*!*!*!*!*!*!* Need to add values to the below variables *!*!*!*!*!*!*!*
 		
-		String 	sRemModemSerialNum = "";
+		String 	sRemModemSerialNum = "ugoj";
 		String	sModemType = "PS";
-		String  sModemSerialNum = "";
-		String 	sCommsNum = "";
+		String  sModemSerialNum = "sdg";
+		String 	sCommsNum = "fg";
 		String 	sCustName = "Customer Name";
-		String 	sCustDetails = "";
+		String 	sCustDetails = "sdfszh";
 		
 		
 		//Removed Modem/Comms Details sub-section
@@ -301,10 +301,10 @@ public class CI_Methods_Modem_Comms_Details{
 		
 		// *!*!*!*!*!*!*!* Need to add values to the below variables *!*!*!*!*!*!*!*
 		
-		String 	sRemModemSerialNum = "";
+		String 	sRemModemSerialNum = "gf";
 		String	sModemType = "PS";
-		String	sPadSerialNum = "";
-		String 	sCommsNum = "";
+		String	sPadSerialNum = "adghj";
+		String 	sCommsNum = "esfaa";
 		
 		
 		//Removed Modem/Comms Details sub-section
@@ -378,10 +378,10 @@ public class CI_Methods_Modem_Comms_Details{
 		
 		// *!*!*!*!*!*!*!* Need to add values to the below variables *!*!*!*!*!*!*!*
 		
-		String 	sRemModemSerialNum = "";
+		String 	sRemModemSerialNum = "kuhjgf";
 		String	sModemType = "PS";
-		String 	sModemSerialNum = "";
-		String 	sCommsNum = "";
+		String 	sModemSerialNum = "gj";
+		String 	sCommsNum = "ghb";
 		
 		
 		//Removed Modem/Comms Details sub-section

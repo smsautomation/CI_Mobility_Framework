@@ -38,12 +38,12 @@ public class CI_Objects_Detailed_Meter_Readings {
     	return element;
     }
     
-    public static WebElement btn_unable_to_read_meter(WebDriver driver) {
+    public static WebElement btn_able_to_read_meter(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |btn_unable_to_read_meter not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |btn_able_to_read_meter not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }

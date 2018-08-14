@@ -70,10 +70,10 @@ public class CI_Methods_Commissioning_Hv_Ct{
 	
 	
 	/* **************************************************************************************************
-	* Function: addSuccessValuesAll
+	* Function: addSuccessValuesHvCt
 	* Author: Charlotte Jones
 	* Date: 08/08/2018
-	* Purpose: This method adds the required responses in the Commissioning Document - WC 3PH & LV CT
+	* Purpose: This method adds the required responses in the Commissioning Document - HV CT
 	* section for a happy path scenario
 	* Arguments: 	sSerialNum
 		 			iL1L2
@@ -148,7 +148,7 @@ public class CI_Methods_Commissioning_Hv_Ct{
 	* Details:
 	*
 	****************************************************************************************************/	
-	public static void addSuccessValuesAll(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesHvCt(WebDriver driver, String sTestCaseName) throws Exception{
 	
 	
 		// *!*!*!*!*!*!* values needed for below variables *!*!*!*!*!*!*
@@ -767,7 +767,7 @@ public class CI_Methods_Commissioning_Hv_Ct{
 		
 		
 	}	
-	// END OF ADD SUCCESS VALUES ALL METHOD
+	// END OF ADD SUCCESS VALUES HV CT METHOD
 
 }
 }		

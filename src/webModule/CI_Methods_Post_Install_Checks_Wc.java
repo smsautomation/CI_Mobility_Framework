@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import pageObjectRepositories.CI_Objects_Post_Install_Checks_WC;
 import utility.Log;
 
-public class CI_Methods_Post_Install_Checks_WC{
+public class CI_Methods_Post_Install_Checks_Wc{
 	
 	
 	
@@ -70,7 +70,7 @@ public class CI_Methods_Post_Install_Checks_WC{
 	
 	
 	/* **************************************************************************************************
-	* Function: addSuccessValues1PH
+	* Function: addSuccessValues1ph
 	* Author: Charlotte Jones
 	* Date: 07/08/2018
 	* Purpose: This method adds the required responses in the Post Install Checks (for Whole Current
@@ -85,7 +85,7 @@ public class CI_Methods_Post_Install_Checks_WC{
 	* Details:
 	*
 	****************************************************************************************************/	
-	public static void addSuccessValues1PH(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValues1ph(WebDriver driver, String sTestCaseName) throws Exception{
 	
 
 		String 	sEarthType = "n";
@@ -205,7 +205,7 @@ public class CI_Methods_Post_Install_Checks_WC{
 	}
 
 	/* **************************************************************************************************
-	* Function: addSuccessValues3PH
+	* Function: addSuccessValues3ph
 	* Author: Charlotte Jones
 	* Date: 07/08/2018
 	* Purpose: This method adds the required responses in the Post Install Checks (for Whole Current
@@ -220,7 +220,7 @@ public class CI_Methods_Post_Install_Checks_WC{
 	* Details:
 	*
 	****************************************************************************************************/	
-	public static void addSuccessValues3PH(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValues3ph(WebDriver driver, String sTestCaseName) throws Exception{
 	
 	
 		String 	sEarthType = "n";

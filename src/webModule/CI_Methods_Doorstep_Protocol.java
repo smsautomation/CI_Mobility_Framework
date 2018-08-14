@@ -110,7 +110,7 @@ public class CI_Methods_Doorstep_Protocol{
 			Log.info(sTestCaseName + " | Customer On Site? radio button clicked");
 		}
 		
-		// Access to Site or Meter Gained
+		// Access to Site or Meter Gained - separate POM
 		
 		CI_Objects_Access_To_Site_Or_Meter_Gained.btn_on_site(driver).click();
 		{

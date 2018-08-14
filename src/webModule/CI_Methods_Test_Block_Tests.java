@@ -2,10 +2,10 @@ package webModule;
 
 import org.openqa.selenium.WebDriver;
 
-import pageObjectRepositories.CI_Objects_Terminal_Test_Block_Tests;
+import pageObjectRepositories.CI_Objects_Test_Block_Tests;
 import utility.Log;
 
-public class CI_Methods_Terminal_Test_Block_Tests{
+public class CI_Methods_Test_Block_Tests{
 	
 	
 	
@@ -63,11 +63,19 @@ public class CI_Methods_Terminal_Test_Block_Tests{
 	
 		
 	/* **************************************************************************************************
-	* Function: addSuccessValues
+	* Function: addSuccessValuesHvLvCt
 	* Author: Charlotte Jones
 	* Date: 06/08/2018
 	* Purpose: This method adds the required responses in the Carry Out Terminal Test Block Tests section
-	* for a happy path scenario
+	* 	for a happy path scenario - for the following metering:
+	* 		HV CT
+	* 		LV CT
+	* 		(COP5 LV)
+	* 		(COP5 HV)
+	* 		(COP3 LV)
+	* 		(COP3 HV)
+	* 		(COP2)
+	* 		(COP10 LV CT)
 	* Arguments:			
 	* Returns: 
 	*****************************************************************************************************
@@ -80,22 +88,33 @@ public class CI_Methods_Terminal_Test_Block_Tests{
 	****************************************************************************************************/	
 	
 	
-	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesHvLvCt(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		
-		CI_Objects_Terminal_Test_Block_Tests.btn_fuses_available_y(driver).click();
+		// *!*!*!*!*!* need values for the below variables *!*!*!*!*!*
+		
+		String	sTestBlockNotes = "";
+		
+		
+		CI_Objects_Test_Block_Tests.txt_terminal_test_block(driver).click();
+		CI_Objects_Test_Block_Tests.txt_terminal_test_block(driver).sendKeys(sTestBlockNotes);
 		{
-			Log.info(sTestCaseName + " | Is Phase Rotation Correct at Service Cut Out? - Yes radio button clicked");
+			Log.info(sTestCaseName + " | Additional Notes/Remarks - Terminal Test Block field completed");
 		}
-		CI_Objects_Terminal_Test_Block_Tests.btn_phase_corrected_at_meter_y(driver).click();
+		
+		CI_Objects_Test_Block_Tests.btn_phase_corrected_at_meter_y(driver).click();
 		{
 			Log.info(sTestCaseName + " | Has Phase Rotation Been Corrected At Meter? - Yes radio button clicked");
 		}
 		
-	    
+	
+	// END OF ADD SUCCESS VALUES HV LV CT  METHOD	
 	}	
 			
-		
+
+	
+	
+			
 	
 //END OF METHODS
 }

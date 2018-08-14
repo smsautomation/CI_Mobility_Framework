@@ -69,11 +69,13 @@ public class CI_Methods_Pre_Task_Isolate_Sensitive_Equipment{
 	
 	
 	/* **************************************************************************************************
-	* Function: addSuccessValuesAll
+	* Function: addSuccessValuesSub100Wc
 	* Author: Charlotte Jones
 	* Date: 06/08/2018
 	* Purpose: This method adds the required responses in the Pre Task - Determine if Customer Needs To
 	* Isolate Sensitive Equipment sections for a happy path scenario
+	* Metering Types:				WC 1PH
+	* 								WC 3PH
 	* Arguments: sRiskAssessPass
 	* 			
 	* Returns: 
@@ -85,12 +87,20 @@ public class CI_Methods_Pre_Task_Isolate_Sensitive_Equipment{
 	* Details:
 	*
 	****************************************************************************************************/	
-	public static void addSuccessValuesAll(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesSub100Wc(WebDriver driver, String sTestCaseName) throws Exception{
 	
+		String	sCustIsolateNotes = "";
 		
-		CI_Objects_Pre_Task_Isolate_Sensitive_Equipment.btn_cust_isolated_equipment_y(driver).click();
+		
+		CI_Objects_Pre_Task_Isolate_Sensitive_Equipment.btn_cust_isolated_equipment_na(driver).click();
 		{
-			Log.info(sTestCaseName + " | Has the customer isolated sensitive equipment? - Yes radio button clicked");
+			Log.info(sTestCaseName + " | Has the customer isolated sensitive equipment? - N/A radio button clicked");
+		}
+		
+		CI_Objects_Pre_Task_Isolate_Sensitive_Equipment.txt_cust_isolated_equipment(driver).click();
+		CI_Objects_Pre_Task_Isolate_Sensitive_Equipment.txt_cust_isolated_equipment(driver).sendKeys(sCustIsolateNotes);
+		{
+			Log.info(sTestCaseName + " | Has the customer isolated sensitive equipment? - N/A radio button clicked");
 		}
 		
 		CI_Objects_Pre_Task_Isolate_Sensitive_Equipment.btn_photo_current_install(driver).click();
@@ -102,7 +112,7 @@ public class CI_Methods_Pre_Task_Isolate_Sensitive_Equipment{
 			
 		
 		
-	// END OF ADD SUCCESS VALUES ALL METHOD
+	// END OF ADD SUCCESS VALUES SUB100 WC METHOD
 	}
 
 		

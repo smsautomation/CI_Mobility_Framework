@@ -82,19 +82,35 @@ public class CI_Methods_Call_Forward{
 		CI_Objects_Call_Forward.btn_call_forward(driver).click();{
 			Log.info(sTestCaseName + " | Call Forward button clicked");
 		}
+		System.out.println("call forward button clicked");
+		
+		
+		
 		// Next section - Display Call Forward
 		CI_Objects_Call_Forward.btn_contact_made_y(driver).click();{
 			Log.info(sTestCaseName + " | Contact Made radio button clicked");
 		}
+		System.out.println("contact made clicked");
+		Thread.sleep(500);
+		
 		CI_Objects_Call_Forward.btn_appt_confirm_y(driver).click();{
 			Log.info(sTestCaseName + " | Appointment Confirm - Yes radio button clicked");
 		}
+		
+		//Take a screenshot to show what we've done
+		Utils.takeScreenshot(driver, sTestCaseName + "-addSuccessValues");
+		
+		System.out.println("appointment confirm clicked");
+		
 		CI_Objects_Call_Forward.btn_depart(driver).click();{
 			Log.info(sTestCaseName + " | Depart button clicked");
 		}
+		System.out.println("depart button clicked");
+		
 		CI_Objects_Call_Forward.btn_ok(driver).click();{
 			Log.info(sTestCaseName + " | OK (pop up) button clicked");
 		}
+		System.out.println("ok button clicked");
 		
 	}	
 		

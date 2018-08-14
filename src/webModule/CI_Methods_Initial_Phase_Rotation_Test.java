@@ -63,11 +63,22 @@ public class CI_Methods_Initial_Phase_Rotation_Test{
 	
 		
 	/* **************************************************************************************************
-	* Function: addSuccessValues
+	* Function: addSuccessValuesNonDnoBno
 	* Author: Charlotte Jones
 	* Date: 06/08/2018
 	* Purpose: This method adds the required responses in the Initial Phase Rotation Test section for
-	* a happy path scenario
+	* 	a happy path scenario - for non-DNO/BNO metering:
+	* 		WC 3PH
+	* 		LV CT
+	* 		HV CT
+	* 		All COP5
+	* 		All COP3
+	* 		All COP2
+	* 		COP10 WC 3PH
+	* 		COP10 LV CT
+	* 		SM WC 3PH
+	* 		SM LV CT
+	* 		SM PM
 	* Arguments:			
 	* Returns: 
 	*****************************************************************************************************
@@ -80,7 +91,7 @@ public class CI_Methods_Initial_Phase_Rotation_Test{
 	****************************************************************************************************/	
 	
 	
-	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesNonDnoBno(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		
 		CI_Objects_Initial_Phase_Rotation_Test.btn_phase_rotation_correct_at_meter_y(driver).click();  
@@ -91,7 +102,8 @@ public class CI_Methods_Initial_Phase_Rotation_Test{
 		
 	    // may need to add in something else to click OK on a pop up (Are Tails Labelled?) - not sure at the moment how this is being displayed
 	    
-	    
+	
+	// END OF ADD SUCCESS VALUES NON DNO BNO METHOD    
 	}	
 			
 		

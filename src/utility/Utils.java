@@ -130,7 +130,7 @@ public class Utils {
         sBrowserName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Browser);
                 
         //The URL will always be the same, so set that here
-    	sURL = "https://" + Constant.URL;
+    	sURL = Constant.URL;
         
         switch(sBrowserName){
 	        case "Firefox" :
@@ -186,8 +186,8 @@ public class Utils {
 	        	System.out.println(System.getProperty("webdriver.chrome.driver"));
 	        	driver = new ChromeDriver(options);
 	        	//driver.get("http://www.google.co.uk");
-	        	Log.info("New Chrome driver instantiated");
-				
+	        	//Log.info("New Chrome driver instantiated");
+				System.out.println("New Chrome driver instantiated");
 	        	
 	            driver.manage().window().maximize();
 	            driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);	

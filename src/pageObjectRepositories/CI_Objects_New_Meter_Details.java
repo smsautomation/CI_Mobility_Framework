@@ -27,13 +27,33 @@ public class CI_Objects_New_Meter_Details {
     private static WebElement element = null;
     private static String sRepositoryName = "CI_Objects_New_Meter_Details";
 
-      
-    public static WebElement txt_serial_no(WebDriver driver) {
+     
+    public static WebElement btn_add_addnl_asset(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(btnNextComm)); // not unique id - needs changing
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_add_addnl_asset not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement btn_delete_new_meter(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(btnNextComm)); // not unique id - needs changing
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_delete_new_meter not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement txt_serial_num(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_serial_no not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |txt_serial_num not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
@@ -78,32 +98,22 @@ public class CI_Objects_New_Meter_Details {
     	return element;
     }
     
-    public static WebElement txt_feeder_no(WebDriver driver) {
+    public static WebElement txt_feeder_num(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_feeder_no not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |txt_feeder_num not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
     
-    public static WebElement txt_outstation_no(WebDriver driver) {
+    public static WebElement txt_outstation_num(WebDriver driver) {
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_outstation_no not found | Exception desc : "+e.getMessage());
-    	}
-    	return element;
-    }
-    
-    public static WebElement txt_outstation_no(WebDriver driver) {
-    	
-    	try {
-    		element = driver.findElement(By.id(INSERTID));
-    	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_outstation_no not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |txt_outstation_num not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
@@ -121,9 +131,19 @@ public class CI_Objects_New_Meter_Details {
     public static WebElement cbx_meter_loc_code(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("select3"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |cbx_meter_loc_code not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement txt_num_of_registers(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("select3"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_num_of_registers not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
@@ -179,7 +199,15 @@ public class CI_Objects_New_Meter_Details {
     	return element;
     }
     
-    
+    public static WebElement btn_next_section(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(btnNextComm)); // non-unique id
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_next_section not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
    
     
 	
