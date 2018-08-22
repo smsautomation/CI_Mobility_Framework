@@ -81,13 +81,15 @@ public class Chrome_Sub100_Meter_Exch_Wc_1ph {
 		
 		CI_Methods_Login.addSuccessValues(driver, sTestCaseName);
 		System.out.println("logged in");
+		Thread.sleep(2000);
 		
 		// Methods_Appointments_List.viewPage(driver, sTestCaseName);
 		
 		//Select the correct appointment
-		driver.findElement(By.xpath(".//*[@id='app']/div/div/workorderlistitem{7]/div/div[1]/div/div[1]/span[3]/span")).click();
-		//driver.findElement(By.xpath("//*[contains(text(), ' Charlotte116')]")).click();
+		//driver.findElement(By.xpath(".//*[@id='app']/div/div/workorderlistitem{6]/div/div[1]/div/div[1]/span[3]/span")).click();
+		driver.findElement(By.xpath("//*[contains(text(), 'Charlotte116, Charlotte116, ,')]")).click();    // needs to be a unique reference in the whole page
 		System.out.println("selected job");
+		Thread.sleep(2000);
 		
 		//Verify that we are on the Appointment Details page
 		//Objects_Appointment_Details_Page.btn_Call_Forward(driver).isDisplayed();
@@ -122,17 +124,28 @@ public class Chrome_Sub100_Meter_Exch_Wc_1ph {
 		// Invoke method to complete C&I Pre Task section
 		CI_Methods_Ci_Pre_Task.addSuccessValuesSub100Wc1ph(driver, sTestCaseName);
 		
+		/* ****** have commented this out for now as it is currently missing from the workflow - will need to be added back in once workflow has been corrected ********
+		
 		// Invoke method to complete the Carry Out Network Signal Strength section
 		CI_Methods_Network_Signal_Strength_Test.addSuccessValues(driver, sTestCaseName);
 		
+		*/
+		
 		// Invoke method to complete Carry Out Electricity Risk Assessment section
 		CI_Methods_Elec_Risk_Assessment.addSuccessValuesAll(driver, sTestCaseName);
+		System.err.println("elec risk assessment section completed");
+		
+		Thread.sleep(2000);
 		
 		// Invoke method to complete Pre Task - Determine if Customer Needs To Isolate Sensitive Equipment section
-		CI_Methods_Pre_Task_Isolate_Sensitive_Equipment.addSuccessValuesSub100Wc(driver, sTestCaseName);
+		CI_Methods_Pre_Task_Isolate_Sensitive_Equipment.addSuccessValuesAllNa(driver, sTestCaseName);
+		System.err.println("Isolate Equipment section completed");
+		
+		Thread.sleep(2000);
 		
 		// Invoke method to complete Initial Polarity Check - Martindale Test section
-		CI_Methods_Initial_Polarity_Check_Martindale.addSuccessValuesSub100Wc(driver, sTestCaseName);
+		CI_Methods_Initial_Polarity_Check_Martindale.addSuccessValuesAll(driver, sTestCaseName);
+		System.err.println("Initial Polarity Martindale Test section completed");
 	
 		// Invoke method to complete Display Meter Details section
 		
@@ -147,10 +160,10 @@ public class Chrome_Sub100_Meter_Exch_Wc_1ph {
 		CI_Methods_New_Meter_Details.addSuccessValuesWc(driver, sTestCaseName);
 		
 		// Invoke method to complete Polarity Check At the Meter section
-		CI_Methods_Polarity_Check_At_Meter.addSuccessValuesWc(driver, sTestCaseName);
+		CI_Methods_Polarity_Check_At_Meter.addSuccessValuesAll(driver, sTestCaseName);
 		
 		// Invoke method to complete Polarity Check Martindale section
-		CI_Methods_Polarity_Check_Martindale.addSuccessValuesWc(driver, sTestCaseName);
+		CI_Methods_Polarity_Check_Martindale.addSuccessValuesAll(driver, sTestCaseName);
 		
 		// Invoke method to complete Meter Readings section
 		
@@ -165,7 +178,7 @@ public class Chrome_Sub100_Meter_Exch_Wc_1ph {
 		CI_Methods_Post_Install_Checks_Wc.addSuccessValues1ph(driver, sTestCaseName);
 		
 		// Invoke method to complete the final section: Complete Job
-		
+		CI_Methods_Complete_Job.addSuccessValuesAll(driver, sTestCaseName);
 		
 		
 	}

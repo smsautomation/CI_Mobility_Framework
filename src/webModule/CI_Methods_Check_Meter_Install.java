@@ -63,11 +63,13 @@ public class CI_Methods_Check_Meter_Install{
 	
 		
 	/* **************************************************************************************************
-	* Function: addSuccessValues
+	* Function: addSuccessValuesAllPart1
 	* Author: Charlotte Jones
-	* Date: 09/08/2018
+	* Date: 21/08/2018
 	* Purpose: This method adds the required responses in the Check Meter Install section for a happy
-	* path scenario
+	* 	path scenario - this is for the first section - after this, the workflow goes to Detailed Meter
+	* 	Reads and then comes back in at part 2
+	* Metering Supply:		WC 1PH
 	* Arguments:			
 	* Returns: 
 	*****************************************************************************************************
@@ -80,8 +82,10 @@ public class CI_Methods_Check_Meter_Install{
 	****************************************************************************************************/	
 	
 	
-	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesAllPart1(WebDriver driver, String sTestCaseName) throws Exception{
 	
+		String sSerialNum = "";
+		
 		
 		// Install Check Meter
 		
@@ -91,10 +95,35 @@ public class CI_Methods_Check_Meter_Install{
 		}
 	    
 	    CI_Objects_Check_Meter_Install.txt_serial_num(driver).click();
+	    CI_Objects_Check_Meter_Install.txt_serial_num(driver).sendKeys(sSerialNum);
 	    {
 			Log.info(sTestCaseName + " | Serial Number field completed");
 		}
 	    
+	    
+		// END OF ADD SUCCESS VALUES ALL PART 1 METHOD    
+		}
+	    
+	/* **************************************************************************************************
+	* Function: addSuccessValuesAllPart2
+	* Author: Charlotte Jones
+	* Date: 21/08/2018
+	* Purpose: This method adds the required responses in the Check Meter Install section for a happy
+	* 	path scenario - this is for the second section - after this, the workflow comes back to the
+	* 	Detailed Meter Reads
+	* Metering Supply:		WC 1PH
+	* Arguments:			
+	* Returns: 
+	*****************************************************************************************************
+	* Change Log:
+	* 
+	* Date:
+	* Author: 
+	* Details:
+	*
+	****************************************************************************************************/	
+	public static void addSuccessValuesAllPart2(WebDriver driver, String sTestCaseName) throws Exception{
+	
 	    //Check Meter Reading
 	    
 	    CI_Objects_Check_Meter_Install.btn_reinstated_supply(driver).click();
@@ -103,7 +132,7 @@ public class CI_Methods_Check_Meter_Install{
 		}
 	    
 	    
-	    
+	// END OF ADD SUCCESS VALUES ALL PART 2 METHOD    
 	}	
 			
 		

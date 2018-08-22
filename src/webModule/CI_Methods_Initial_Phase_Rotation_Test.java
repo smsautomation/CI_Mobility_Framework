@@ -99,8 +99,12 @@ public class CI_Methods_Initial_Phase_Rotation_Test{
 			Log.info(sTestCaseName + " | Is Phase Rotation Correct at Service Cut Out? - Yes radio button clicked");
 		}
 	    
+	    CI_Objects_Initial_Phase_Rotation_Test.btn_are_tails_labelled_ok(driver).click();  
+	    {
+			Log.info(sTestCaseName + " | Are Tails Labelled? - OK pop up dismissed");
+		}
 		
-	    // may need to add in something else to click OK on a pop up (Are Tails Labelled?) - not sure at the moment how this is being displayed
+	   
 	    
 	
 	// END OF ADD SUCCESS VALUES NON DNO BNO METHOD    

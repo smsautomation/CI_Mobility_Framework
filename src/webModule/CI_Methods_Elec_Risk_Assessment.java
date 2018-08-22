@@ -108,7 +108,10 @@ public class CI_Methods_Elec_Risk_Assessment{
 			Log.info(sTestCaseName + " | Notes added to risk assessment pass section");
 		}
 		
-		
+		CI_Objects_Elec_Risk_Assessment.btn_next_section(driver).click();
+		{
+			Log.info(sTestCaseName + " | Next Section button clicked");
+		}
 		
 	// END OF ADD SUCCESS VALUES ALL METHOD
 	}

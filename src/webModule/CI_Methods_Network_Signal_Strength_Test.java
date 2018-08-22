@@ -64,7 +64,7 @@ public class CI_Methods_Network_Signal_Strength_Test{
 	
 		
 	/* **************************************************************************************************
-	* Function: addSuccessValues
+	* Function: addSuccessValuesAll
 	* Author: Charlotte Jones
 	* Date: 06/08/2018
 	* Purpose: This method adds the required responses in the Call Forward section for a happy path scenario 
@@ -80,7 +80,7 @@ public class CI_Methods_Network_Signal_Strength_Test{
 	* Details:
 	*
 	****************************************************************************************************/	
-	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesAll(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		Integer iSignalVod = 37;
 	    Integer iSignalO2 = 15;

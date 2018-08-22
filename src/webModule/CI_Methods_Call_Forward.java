@@ -79,12 +79,13 @@ public class CI_Methods_Call_Forward{
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		// Select Call Forward button
+		Thread.sleep(2000);
 		CI_Objects_Call_Forward.btn_call_forward(driver).click();{
 			Log.info(sTestCaseName + " | Call Forward button clicked");
 		}
 		System.out.println("call forward button clicked");
 		
-		
+		Thread.sleep(1000);
 		
 		// Next section - Display Call Forward
 		CI_Objects_Call_Forward.btn_contact_made_y(driver).click();{
@@ -98,19 +99,24 @@ public class CI_Methods_Call_Forward{
 		}
 		
 		//Take a screenshot to show what we've done
-		Utils.takeScreenshot(driver, sTestCaseName + "-addSuccessValues");
+		//Utils.takeScreenshot(driver, sTestCaseName + "-addSuccessValues");
 		
 		System.out.println("appointment confirm clicked");
 		
+		Thread.sleep(500);
 		CI_Objects_Call_Forward.btn_depart(driver).click();{
 			Log.info(sTestCaseName + " | Depart button clicked");
 		}
 		System.out.println("depart button clicked");
 		
+		Thread.sleep(500);
+		
 		CI_Objects_Call_Forward.btn_ok(driver).click();{
 			Log.info(sTestCaseName + " | OK (pop up) button clicked");
 		}
+		Thread.sleep(500);
 		System.out.println("ok button clicked");
+		
 		
 	}	
 		

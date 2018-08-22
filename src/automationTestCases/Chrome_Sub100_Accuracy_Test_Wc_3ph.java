@@ -117,16 +117,16 @@ public class Chrome_Sub100_Accuracy_Test_Wc_3ph {
 		CI_Methods_Ci_Pre_Task.addSuccessValuesSub100Wc1ph(driver, sTestCaseName);
 		
 		// Invoke method to complete the Carry Out Network Signal Strength section
-		CI_Methods_Network_Signal_Strength_Test.addSuccessValues(driver, sTestCaseName);
+		CI_Methods_Network_Signal_Strength_Test.addSuccessValuesAll(driver, sTestCaseName);
 		
 		// Invoke method to complete Carry Out Electricity Risk Assessment section
 		CI_Methods_Elec_Risk_Assessment.addSuccessValuesAll(driver, sTestCaseName);
 		
 		// Invoke method to complete Initial Polarity Check - Martindale Test section
-		CI_Methods_Initial_Polarity_Check_Martindale.addSuccessValuesSub100Wc(driver, sTestCaseName);
+		CI_Methods_Initial_Polarity_Check_Martindale.addSuccessValuesAll(driver, sTestCaseName);
 		
 		// Invoke method to complete Initial Polarity Check - At Meter and Cut Out section
-		CI_Methods_Initial_Polarity_Check_At_Meter.addSuccessValuesSub100Wc(driver, sTestCaseName);
+		CI_Methods_Initial_Polarity_Check_At_Meter.addSuccessValuesSub100Cop10Cop5SmWc(driver, sTestCaseName);
 	
 		// Invoke method to complete Initial Phase Rotation Test section
 		CI_Methods_Initial_Phase_Rotation_Test.addSuccessValuesNonDnoBno(driver, sTestCaseName);
@@ -135,19 +135,13 @@ public class Chrome_Sub100_Accuracy_Test_Wc_3ph {
 		
 		
 		// Invoke method to complete the Accuracy section
-		
-		
-		// Invoke method to complete the Detailed Meter Readings section
-		
-		
-		// Invoke method to complete the Accuracy section
-		
+		CI_Methods_Accuracy_Test_Cop4.addSuccessValuesCustLoadWc3ph(driver, sTestCaseName);
 		
 		// Invoke method to complete the Detailed Meter Readings section
 		
 		
 		// Invoke method to complete the final section, Complete Job
-		
+		CI_Methods_Complete_Job.addSuccessValuesAll(driver, sTestCaseName);
 		
 		
 	}

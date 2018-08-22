@@ -63,19 +63,24 @@ public class CI_Methods_Test_Block_Tests{
 	
 		
 	/* **************************************************************************************************
-	* Function: addSuccessValuesHvLvCt
+	* Function: addSuccessValuesNonDnoBno
 	* Author: Charlotte Jones
 	* Date: 06/08/2018
 	* Purpose: This method adds the required responses in the Carry Out Terminal Test Block Tests section
 	* 	for a happy path scenario - for the following metering:
+	* 		WC 3PH?
 	* 		HV CT
 	* 		LV CT
-	* 		(COP5 LV)
-	* 		(COP5 HV)
-	* 		(COP3 LV)
-	* 		(COP3 HV)
-	* 		(COP2)
-	* 		(COP10 LV CT)
+	* 		COP10 LV CT
+	* 		COP10 WC 3PH?
+	* 		COP5 LV
+	* 		COP5 HV
+	* 		COP3 LV
+	* 		COP3 HV
+	* 		COP2
+	* 		SM WC 3PH?
+	* 		SM LV CT
+	* 		SM PM
 	* Arguments:			
 	* Returns: 
 	*****************************************************************************************************
@@ -88,7 +93,7 @@ public class CI_Methods_Test_Block_Tests{
 	****************************************************************************************************/	
 	
 	
-	public static void addSuccessValuesHvLvCt(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesNonDnoBno(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		
 		// *!*!*!*!*!* need values for the below variables *!*!*!*!*!*
@@ -108,7 +113,7 @@ public class CI_Methods_Test_Block_Tests{
 		}
 		
 	
-	// END OF ADD SUCCESS VALUES HV LV CT  METHOD	
+	// END OF ADD SUCCESS VALUES NON DNO BNO  METHOD	
 	}	
 			
 

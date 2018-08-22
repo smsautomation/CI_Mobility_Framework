@@ -94,7 +94,7 @@ public class CI_Objects_Call_Forward {
     public static WebElement btn_depart(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("btnCall1"));
+    		element = driver.findElement(By.id("btnDepart"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_depart not found | Exception desc : "+e.getMessage());
     	}
@@ -127,7 +127,7 @@ public class CI_Objects_Call_Forward {
     	
     	try {
     		//element = driver.findElement(By.className("confirm"));
-    		element = driver.findElement(By.id("btnCall2"));
+    		element = driver.findElement(By.xpath("//*[@id=\'app\']/div/div/div[4]/div/div[2]/div[1]"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_ok not found | Exception desc : "+e.getMessage());
     	}

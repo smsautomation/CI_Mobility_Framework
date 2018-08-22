@@ -69,7 +69,7 @@ public class CI_Methods_Polarity_Check_At_Meter{
 	
 	
 	/* **************************************************************************************************
-	* Function: addSuccessValuesWc
+	* Function: addSuccessValuesAll
 	* Author: Charlotte Jones
 	* Date: 06/08/2018
 	* Purpose: This method adds the required responses in the Polarity Check at the Meter section for
@@ -85,7 +85,7 @@ public class CI_Methods_Polarity_Check_At_Meter{
 	* Details:
 	*
 	****************************************************************************************************/	
-	public static void addSuccessValuesWc(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesAll(WebDriver driver, String sTestCaseName) throws Exception{
 	
 	
 				
@@ -95,7 +95,7 @@ public class CI_Methods_Polarity_Check_At_Meter{
 		}
 		
 				
-	// END OF ADD SUCCESS VALUES WC METHOD
+	// END OF ADD SUCCESS VALUES ALL METHOD
 	}
 
 		

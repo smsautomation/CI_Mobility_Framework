@@ -51,7 +51,7 @@ public class CI_Objects_Initial_Phase_Rotation_Test {
     public static WebElement btn_are_tails_labelled_ok(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radioPhaseRotationCorrectFalse"));
+    		element = driver.findElement(By.className("confirm"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_are_tails_labelled_ok not found | Exception desc : "+e.getMessage());
     	}

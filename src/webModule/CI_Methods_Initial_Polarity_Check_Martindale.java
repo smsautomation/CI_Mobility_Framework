@@ -64,7 +64,7 @@ public class CI_Methods_Initial_Polarity_Check_Martindale{
 	
 		
 	/* **************************************************************************************************
-	* Function: addSuccessValuesSub100Wc
+	* Function: addSuccessValuesAll
 	* Author: Charlotte Jones
 	* Date: 06/08/2018
 	* Purpose: This method adds the required responses in the Initial Polarity Check - Martindale Test
@@ -86,7 +86,7 @@ public class CI_Methods_Initial_Polarity_Check_Martindale{
 	
 	// *!*!*!*!*!*!*!*!*!* sSocketTestLoc needs defining - depends on the standing data list! *!*!*!*!*!*!*!*!*!*
 	
-	public static void addSuccessValuesSub100Wc(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesAll(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		String 	sPolarityTested = "p";
 		String 	sSocketTestLoc = "";
@@ -128,7 +128,8 @@ public class CI_Methods_Initial_Polarity_Check_Martindale{
 			Log.info(sTestCaseName + " | Has the Socket Safety Test Passed/Failed? - Pass button clicked");
 		}
 	    
-	    
+	
+	// END OF ADD SUCCESS VALUES ALL METHOD
 	}	
 			
 		

@@ -69,13 +69,20 @@ public class CI_Methods_Pre_Task_Isolate_Sensitive_Equipment{
 	
 	
 	/* **************************************************************************************************
-	* Function: addSuccessValuesSub100Wc
+	* Function: addSuccessValuesAllNa
 	* Author: Charlotte Jones
 	* Date: 06/08/2018
 	* Purpose: This method adds the required responses in the Pre Task - Determine if Customer Needs To
-	* Isolate Sensitive Equipment sections for a happy path scenario
-	* Metering Types:				WC 1PH
+	* 	Isolate Sensitive Equipment sections for a happy path scenario, where it was not applicable to
+	* 	isolate any sensitive equipment
+	* Metering Supply Types:		WC 1PH
 	* 								WC 3PH
+	* 								COP5 WC 3PH
+	*								COP10 WC 1PH
+	*								COP10 WC 3PH
+	*								ALL SM 
+	*								ALL DNO
+	*								ALL BNO
 	* Arguments: sRiskAssessPass
 	* 			
 	* Returns: 
@@ -87,18 +94,10 @@ public class CI_Methods_Pre_Task_Isolate_Sensitive_Equipment{
 	* Details:
 	*
 	****************************************************************************************************/	
-	public static void addSuccessValuesSub100Wc(WebDriver driver, String sTestCaseName) throws Exception{
-	
-		String	sCustIsolateNotes = "";
+	public static void addSuccessValuesAllNa(WebDriver driver, String sTestCaseName) throws Exception{
 		
 		
 		CI_Objects_Pre_Task_Isolate_Sensitive_Equipment.btn_cust_isolated_equipment_na(driver).click();
-		{
-			Log.info(sTestCaseName + " | Has the customer isolated sensitive equipment? - N/A radio button clicked");
-		}
-		
-		CI_Objects_Pre_Task_Isolate_Sensitive_Equipment.txt_cust_isolated_equipment(driver).click();
-		CI_Objects_Pre_Task_Isolate_Sensitive_Equipment.txt_cust_isolated_equipment(driver).sendKeys(sCustIsolateNotes);
 		{
 			Log.info(sTestCaseName + " | Has the customer isolated sensitive equipment? - N/A radio button clicked");
 		}
@@ -107,16 +106,58 @@ public class CI_Methods_Pre_Task_Isolate_Sensitive_Equipment{
 		{
 			Log.info(sTestCaseName + " | Capture photo of current full meter installation button clicked");
 		}
+	
 		
 		
-			
-		
-		
-	// END OF ADD SUCCESS VALUES SUB100 WC METHOD
+	// END OF ADD SUCCESS VALUES ALL N/A METHOD
 	}
 
 		
+	/* **************************************************************************************************
+	* Function: addSuccessValuesAllYes
+	* Author: Charlotte Jones
+	* Date: 06/08/2018
+	* Purpose: This method adds the required responses in the Pre Task - Determine if Customer Needs To
+	* 	Isolate Sensitive Equipment sections for a happy path scenario, where any sensitive equipment
+	* 	has been isolated
+	* Metering Supply Types:		WC 1PH
+	* 								WC 3PH
+	* 								COP5 WC 3PH
+	*								COP10 WC 1PH
+	*								COP10 WC 3PH
+	*								ALL SM 
+	*								ALL DNO
+	*								ALL BNO
+	* Arguments: sRiskAssessPass
+	* 			
+	* Returns: 
+	*****************************************************************************************************
+	* Change Log:
+	* 
+	* Date:
+	* Author: 
+	* Details:
+	*
+	****************************************************************************************************/	
+	public static void addSuccessValuesAllYes(WebDriver driver, String sTestCaseName) throws Exception{
 		
+		
+		CI_Objects_Pre_Task_Isolate_Sensitive_Equipment.btn_cust_isolated_equipment_y(driver).click();
+		{
+			Log.info(sTestCaseName + " | Has the customer isolated sensitive equipment? - N/A radio button clicked");
+		}
+		
+		CI_Objects_Pre_Task_Isolate_Sensitive_Equipment.btn_photo_current_install(driver).click();
+		{
+			Log.info(sTestCaseName + " | Capture photo of current full meter installation button clicked");
+		}
+	
+		
+		
+	// END OF ADD SUCCESS VALUES ALL YES METHOD
+	}
+
+	
 	
 //END OF METHODS
 }

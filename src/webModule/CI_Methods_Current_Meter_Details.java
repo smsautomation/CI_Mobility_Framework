@@ -86,15 +86,15 @@ public class CI_Methods_Current_Meter_Details{
 	
 		// *!*!*!*!*!*!* Need values for the variables *!*!*!*!*!*!* 
 		
-		Integer iNoOfRegisters = 1;
+		Integer iNumOfRegisters = 1;
 		
-		CI_Objects_Current_Meter_Details.txt_no_of_registers(driver).click();
-		CI_Objects_Current_Meter_Details.txt_no_of_registers(driver).sendKeys(Integer.toString(iNoOfRegisters));
+		CI_Objects_Current_Meter_Details.txt_num_of_registers(driver).click();
+		CI_Objects_Current_Meter_Details.txt_num_of_registers(driver).sendKeys(Integer.toString(iNumOfRegisters));
 		{
 			Log.info(sTestCaseName + " | No of Registers field completed");
 		}
 		
-		CI_Objects_Current_Meter_Details.btn_existing_serial_no_correct_y(driver).click();
+		CI_Objects_Current_Meter_Details.btn_existing_serial_num_correct_y(driver).click();
 		{
 			Log.info(sTestCaseName + " | Existing Elec Meter Serial Number Details Correct? - Yes radio button clicked");
 		}

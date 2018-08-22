@@ -719,7 +719,7 @@ public class CI_Objects_Dno_Bno_Work {
     		return element;
     	}
           
-    	public static WebElement btn_transfer_track_between_systems_5.1b_y(WebDriver driver) {
+    	public static WebElement btn_transfer_track_between_systems_5_1b_y(WebDriver driver) {
         	
     		try {
     			element = driver.findElement(By.id(INSERTID));
@@ -729,7 +729,7 @@ public class CI_Objects_Dno_Bno_Work {
     		return element;
     	}
          
-    	public static WebElement btn_transfer_track_between_systems_5.1b_n(WebDriver driver) {
+    	public static WebElement btn_transfer_track_between_systems_5_1b_n(WebDriver driver) {
         	
     		try {
     			element = driver.findElement(By.id(INSERTID));
@@ -835,16 +835,6 @@ public class CI_Objects_Dno_Bno_Work {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
     			Log.error(sRepositoryName + " |btn_rail_to_earth_conductance_n not found | Exception desc : "+e.getMessage());
-    		}
-    		return element;
-    	}
-         
-    	public static WebElement btn_rail_to_earth_conductance_y(WebDriver driver) {
-        	
-    		try {
-    			element = driver.findElement(By.id(INSERTID));
-    		}catch(Exception e) {
-    			Log.error(sRepositoryName + " |btn_rail_to_earth_conductance_y not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}

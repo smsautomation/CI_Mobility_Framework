@@ -70,7 +70,7 @@ public class CI_Methods_Remove_Asset{
 	
 	
 	/* **************************************************************************************************
-	* Function: addSuccessValuesAll
+	* Function: addSuccessValuesSub100All
 	* Author: Charlotte Jones
 	* Date: 06/08/2018
 	* Purpose: This method adds the required responses in the Remove Asset section for a happy path scenario
@@ -87,7 +87,8 @@ public class CI_Methods_Remove_Asset{
 	****************************************************************************************************/	
 	public static void addSuccessValuesAll(WebDriver driver, String sTestCaseName) throws Exception{
 	
-	
+		//Variables
+		
 		String sMeterToRemove = "";
 		String sRemovedAssetStatus = "of";
 		
@@ -105,15 +106,17 @@ public class CI_Methods_Remove_Asset{
 			Log.info(sTestCaseName + " | Removed Asset Status completed");
 		}
 		
-		CI_Objects_Remove_Asset.btn_confirm_asset_removed(driver).click();
+		CI_Objects_Remove_Asset.btn_confirm_asset_removed_y(driver).click();
 		{
 			Log.info(sTestCaseName + " | Confirm Asset Removed? completed");
 		}
-		
+
+		/*
 		CI_Objects_Remove_Asset.btn_ok(driver).click();
 		{
 			Log.info(sTestCaseName + " | Removed List Successfull Updated pop up dismissed");
 		}
+		*/
 		
 		CI_Objects_Remove_Asset.btn_next_section(driver).click();
 		{

@@ -63,7 +63,7 @@ public class CI_Methods_Initial_Polarity_Check_At_Meter{
 	
 		
 	/* **************************************************************************************************
-	* Function: addSuccessValuesSub100Wc
+	* Function: addSuccessValuesSub100Cop10Cop5SmWc
 	* Author: Charlotte Jones
 	* Date: 13/08/2018
 	* Purpose: This method adds the required responses in the Initial Polarity Check - At Meter and Cut Out section for
@@ -82,7 +82,7 @@ public class CI_Methods_Initial_Polarity_Check_At_Meter{
 	****************************************************************************************************/	
 	
 	
-	public static void addSuccessValuesSub100Wc(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesSub100Cop10Cop5SmWc(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		
 		CI_Objects_Initial_Polarity_Check_At_Meter.btn_polarity_check_at_cut_out_pass(driver).click();
@@ -98,7 +98,7 @@ public class CI_Methods_Initial_Polarity_Check_At_Meter{
 	   
 	    
 	
-	// END OF ADD SUCCESS VALUES NON DNO BNO METHOD    
+	// END OF ADD SUCCESS VALUES SUB100 COP10 Cop5 SM WC METHOD    
 	}	
 			
 		

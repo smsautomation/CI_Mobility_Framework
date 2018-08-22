@@ -63,7 +63,7 @@ public class CI_Methods_Check_Meter_Removal{
 	
 		
 	/* **************************************************************************************************
-	* Function: addSuccessValues
+	* Function: addSuccessValuesAll
 	* Author: Charlotte Jones
 	* Date: 09/08/2018
 	* Purpose: This method adds the required responses in the Check Meter Removal section for a happy
@@ -80,7 +80,7 @@ public class CI_Methods_Check_Meter_Removal{
 	****************************************************************************************************/	
 	
 	
-	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesAll(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		
 		// Remove Check Meter

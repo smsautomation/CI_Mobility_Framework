@@ -69,7 +69,7 @@ public class CI_Methods_Phase_Rotation_Test{
 	
 	
 	/* **************************************************************************************************
-	* Function: addSuccessValues
+	* Function: addSuccessValuesAll
 	* Author: Charlotte Jones
 	* Date: 06/08/2018
 	* Purpose: This method adds the required responses in the Phase Rotation Test section for a happy
@@ -84,7 +84,7 @@ public class CI_Methods_Phase_Rotation_Test{
 	* Details:
 	*
 	****************************************************************************************************/	
-	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesAll(WebDriver driver, String sTestCaseName) throws Exception{
 	
 	
 				
@@ -94,7 +94,7 @@ public class CI_Methods_Phase_Rotation_Test{
 		}
 		
 				
-	// END OF ADD SUCCESS VALUES METHOD
+	// END OF ADD SUCCESS VALUES ALL METHOD
 	}
 
 		

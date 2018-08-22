@@ -31,7 +31,7 @@ public class CI_Objects_Init_Risk_Assess {
     public static WebElement btn_smell_gas_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radioai1"));
+    		element = driver.findElement(By.id("radioSmellGasTrue"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_smell_gas_y not found | Exception desc : "+e.getMessage());
     	}
@@ -41,7 +41,7 @@ public class CI_Objects_Init_Risk_Assess {
     public static WebElement btn_smell_gas_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radioai2"));
+    		element = driver.findElement(By.id("radioSmellGasFalse"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_smell_gas_n not found | Exception desc : "+e.getMessage());
     	}
@@ -51,7 +51,7 @@ public class CI_Objects_Init_Risk_Assess {
     public static WebElement btn_turned_off_gas(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiorai3"));
+    		element = driver.findElement(By.id("checkGasOff"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_turned_off_gas_ not found | Exception desc : "+e.getMessage());
     	}
@@ -61,19 +61,19 @@ public class CI_Objects_Init_Risk_Assess {
     public static WebElement btn_called_egp(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiorai5"));
+    		element = driver.findElement(By.id("checkEGP"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_called_egp not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
     
-    public static WebElement btn_egp_ref_no(WebDriver driver) {
+    public static WebElement txt_egp_ref_no(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("input1"));
+    		element = driver.findElement(By.id("inputEGPRef"));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |btn_egp_ref_no not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |txt_egp_ref_no not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
@@ -81,7 +81,7 @@ public class CI_Objects_Init_Risk_Assess {
     public static WebElement btn_reported_to_airline_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiorai7"));
+    		element = driver.findElement(By.id("checkHnSReportedTrue"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_reported_to_airline_y not found | Exception desc : "+e.getMessage());
     	}
@@ -91,19 +91,19 @@ public class CI_Objects_Init_Risk_Assess {
     public static WebElement btn_reported_to_airline_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiorai8"));
+    		element = driver.findElement(By.id("checkHnSReportedFalse"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_reported_to_airline_n not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
     
-    public static WebElement btn_airline_ref(WebDriver driver) {
+    public static WebElement txt_airline_ref(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("input2"));
+    		element = driver.findElement(By.id("inputAirlineRef"));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |btn_airline_ref not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |txt_airline_ref not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
@@ -111,7 +111,7 @@ public class CI_Objects_Init_Risk_Assess {
     public static WebElement btn_ok_to_proceed_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiorai9"));
+    		element = driver.findElement(By.id("radioProceedTrue"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_ok_to_proceed_y not found | Exception desc : "+e.getMessage());
     	}
@@ -121,7 +121,7 @@ public class CI_Objects_Init_Risk_Assess {
     public static WebElement btn_ok_to_proceed_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiorai10"));
+    		element = driver.findElement(By.id("radioProceedFalse"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_ok_to_proceed_n not found | Exception desc : "+e.getMessage());
     	}

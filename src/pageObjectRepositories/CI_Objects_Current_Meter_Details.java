@@ -53,7 +53,7 @@ public class CI_Objects_Current_Meter_Details {
     public static WebElement btn_able_to_read_meter_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(radioAbleToReadTrue)); //left this without quotes as, in the code, the ids need switching round
+    		element = driver.findElement(By.id("radioUnableToReadFalse")); //left tthink these ids are now the right way round
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_able_to_read_meter_y not found | Exception desc : "+e.getMessage());
     	}
@@ -63,7 +63,7 @@ public class CI_Objects_Current_Meter_Details {
     public static WebElement btn_able_to_read_meter_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(radioAbleToReadFalse)); //left this without quotes as, in the code, the ids need switching round
+    		element = driver.findElement(By.id("radioUnableToReadTrue")); //think these ids are now the right way round
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_able_to_read_meter_n not found | Exception desc : "+e.getMessage());
     	}
@@ -83,22 +83,14 @@ public class CI_Objects_Current_Meter_Details {
     public static WebElement txt_total_kwh_imp(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(radioAbleToReadFalse)); 
+    		element = driver.findElement(By.id(INSERTID)); 
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |txt_total_kwh_imp not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     } 
     
-    public static WebElement txt_total_kwh_imp(WebDriver driver) {
-    	
-    	try {
-    		element = driver.findElement(By.id(radioAbleToReadFalse)); 
-    	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |txt_total_kwh_imp not found | Exception desc : "+e.getMessage());
-    	}
-    	return element;
-    } 
+ 
     
     // not going to continue on with this at the moment, as it's not yet clear if there are more changes to make in this section 
     

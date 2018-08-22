@@ -121,7 +121,7 @@ public class Chrome_Sub100_Accuracy_Test_Lv_Ct {
 		CI_Methods_Ci_Pre_Task.addSuccessValuesSub100HvCt(driver, sTestCaseName);
 				
 		// Invoke method to complete the Carry Out Network Signal Strength section
-		CI_Methods_Network_Signal_Strength_Test.addSuccessValues(driver, sTestCaseName);
+		CI_Methods_Network_Signal_Strength_Test.addSuccessValuesAll(driver, sTestCaseName);
 				
 		// Invoke method to complete Carry Out Electricity Risk Assessment section
 		CI_Methods_Elec_Risk_Assessment.addSuccessValuesAll(driver, sTestCaseName);
@@ -130,42 +130,25 @@ public class Chrome_Sub100_Accuracy_Test_Lv_Ct {
 		CI_Methods_Initial_Phase_Rotation_Test.addSuccessValuesNonDnoBno(driver, sTestCaseName);
 				
 		// Invoke method to complete the Terminal Test Block Tests section
-		CI_Methods_Test_Block_Tests.addSuccessValuesHvLvCt(driver, sTestCaseName);
+		CI_Methods_Test_Block_Tests.addSuccessValuesNonDnoBno(driver, sTestCaseName);
 				
 		// Invoke method to complete Display Meter Details section
 		
-				
-		// Invoke method to complete Final Meter Reading section
-				
-				
-		// Invoke method to complete the Remove Asset section
-				
-				
-		// Invoke method to complete the New Meter Details section
-		CI_Methods_New_Meter_Details.addSuccessValuesHvLv(driver, sTestCaseName);
-				
-		// Invoke method to complete the Phase Rotation Test section 
-		CI_Methods_Phase_Rotation_Test.addSuccessValues(driver, sTestCaseName);
-				
-		// Invoke method to complete VT/CT Information for DNO/BNO and Additional Equipment
-		CI_Methods_Vt_Ct_Info_Dno_Bno.addSuccessValuesLv(driver, sTestCaseName);
 		
-		// Invoke method to complete Detailed Meter Readings
+		// Invoke method to complete the Accuracy Test (COP4) section
+		CI_Methods_Accuracy_Test_Cop4.addSuccessValuesNotCustLoadLvHvPart1(driver, sTestCaseName);
 				
+		// Invoke method to complete Detailed Meter Readings section
 				
-		// Invoke method to complete Modem/Comms Details
-		CI_Methods_Modem_Comms_Details.addSuccessValuesOtherModem(driver, sTestCaseName);
-				
-		// Invoke method to complete the Non-Serialised Asset Information
-		CI_Methods_Non_Serialised_Asset_Info.addSuccessValuePulseBox(driver, sTestCaseName);
 			
-		// Invoke method to complete the Post Installation Checks (For LV/HV CT Metering) section
-		CI_Methods_Post_Install_Checks_Lv_Hv.addSuccessValuesLvHv(driver, sTestCaseName);
+		// Invoke method to complete the Accuracy Test (COP4) section
+		CI_Methods_Accuracy_Test_Cop4.addSuccessValuesNotCustLoadLvHvPart2(driver, sTestCaseName);
 		
-		// Invoke method to complete the Commissioning Document - WC 3PH & LV CT
-		CI_Methods_Commissioning_Wc_3ph_Lv_Ct.addSuccessValuesLvCt(driver, sTestCaseName);
+		// Invoke method to complete Detailed Meter Readings section
+		
 				
 		// Invoke method to complete the final section, Complete Job
+		CI_Methods_Complete_Job.addSuccessValuesAll(driver, sTestCaseName);
 		
 		
 	}

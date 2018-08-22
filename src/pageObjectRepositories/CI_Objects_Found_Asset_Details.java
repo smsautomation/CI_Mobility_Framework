@@ -646,16 +646,6 @@ public class CI_Objects_Found_Asset_Details {
     	return element;
     }
  
-    public static WebElement btn_continue_with_job_y(WebDriver driver) {
-    	
-    	try {
-    		element = driver.findElement(By.id(INSERTID));
-    	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |btn_continue_with_job_y not found | Exception desc : "+e.getMessage());
-    	}
-    	return element;
-    }
- 
     public static WebElement btn_photo_evidence(WebDriver driver) {
     	
     	try {

@@ -99,7 +99,7 @@ public class CI_Objects_Ci_Pre_Task {
     	public static WebElement btn_confirm_supply_type_y(WebDriver driver) {
         	
     		try {
-    			element = driver.findElement(By.id(INSERTID));
+    			element = driver.findElement(By.id("radioSupplyConfirmedTrue"));
     		}catch(Exception e) {
     			Log.error(sRepositoryName + " |btn_confirm_supply_type_y not found | Exception desc : "+e.getMessage());
     		}
@@ -109,7 +109,7 @@ public class CI_Objects_Ci_Pre_Task {
     	public static WebElement btn_confirm_supply_type_n(WebDriver driver) {
         	
     		try {
-    			element = driver.findElement(By.id(INSERTID));
+    			element = driver.findElement(By.id("radioSupplyConfirmedFalse"));
     		}catch(Exception e) {
     			Log.error(sRepositoryName + " |btn_confirm_supply_type_n not found | Exception desc : "+e.getMessage());
     		}
@@ -119,7 +119,7 @@ public class CI_Objects_Ci_Pre_Task {
     	public static WebElement btn_next_section(WebDriver driver) {
         	
     		try {
-    			element = driver.findElement(By.id("btnNextComm"));
+    			element = driver.findElement(By.id("btnCiPretaskNextSection"));
     		}catch(Exception e) {
     			Log.error(sRepositoryName + " |btn_next_section not found | Exception desc : "+e.getMessage());
     		}

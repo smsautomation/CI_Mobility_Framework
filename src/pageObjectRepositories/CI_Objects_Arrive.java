@@ -31,7 +31,7 @@ public class CI_Objects_Arrive {
     public static WebElement btn_arrive(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("btnCall1"));
+    		element = driver.findElement(By.id("btnArrive"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_arrive not found | Exception desc : "+e.getMessage());
     	}

@@ -92,11 +92,12 @@ public class CI_Methods_Doorstep_Protocol{
 	// No risks identified	
 		
 		// Arrival On Site section
-		
 		CI_Objects_Arrive.btn_arrive(driver).click();
 		{
 			Log.info(sTestCaseName + " | Arrive button clicked");
 		}
+		
+		System.out.println("arrive button clicked");
 		
 		// Arrive section
 		
@@ -105,10 +106,13 @@ public class CI_Methods_Doorstep_Protocol{
 			Log.info(sTestCaseName + " | Access to Site Gained? radio button clicked");
 		}
 		
+		System.out.println("access to site gained radio button selected");
+		
 		CI_Objects_Arrive.btn_cust_on_site_y(driver).click();
 		{
 			Log.info(sTestCaseName + " | Customer On Site? radio button clicked");
 		}
+		System.out.println("cust on site selected");
 		
 		// Access to Site or Meter Gained - separate POM
 		
@@ -116,6 +120,7 @@ public class CI_Methods_Doorstep_Protocol{
 		{
 			Log.info(sTestCaseName + " | On Site button clicked");
 		}
+		System.out.println("On Site button clicked");
 		
 	// END OF ADD SUCCESS VALUES METHOD
 	}	

@@ -64,11 +64,11 @@ public class CI_Methods_Fault{
 	
 		
 	/* **************************************************************************************************
-	* Function: addSuccessValuesNoFault
+	* Function: addSuccessValuesAllNoFault
 	* Author: Charlotte Jones
 	* Date: 10/08/2018
 	* Purpose: This method adds the required responses in the Fault section for a happy path scenario,
-	* 	where no fault has been found
+	* 	where no fault has been found - this is the same across all metering types
 	* Arguments:			
 	* Returns: 
 	*****************************************************************************************************
@@ -81,7 +81,7 @@ public class CI_Methods_Fault{
 	****************************************************************************************************/	
 	
 	
-	public static void addSuccessValuesNoFault(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesAllNoFault(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		
 		// *!*!*!*!*!*!* Need values for below variables *!*!*!*!*!*!*
@@ -103,7 +103,7 @@ public class CI_Methods_Fault{
 	  	
 	   
 	    
-	// END OF ADD SUCCESS VALUES NO FAULT METHOD    
+	// END OF ADD SUCCESS VALUES ALL NO FAULT METHOD    
 	}	
 			
 		

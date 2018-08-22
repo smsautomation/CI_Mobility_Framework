@@ -87,7 +87,10 @@ public class Chrome_Sub100_Meter_Exch_Lv_Ct {
 		// Methods_Appointments_List.viewPage(driver, sTestCaseName);
 		
 		//Select the correct appointment
-		driver.findElement(By.xpath(".//*[@id='app']/div/div/workorderlistitem[4]/div/div[1]/div/div[1]/span[3]/span")).click();
+		//driver.findElement(By.xpath(".//*[@id='app']/div/div/workorderlistitem[4]/div/div[1]/div/div[1]/span[3]/span")).click();
+		driver.findElement(By.xpath("//*[contains(text(), 'Charlotte116, Charlotte116, ,')]")).click();    // needs to be a unique reference in the whole page
+		System.out.println("selected job");
+		Thread.sleep(2000);
 		
 		//Verify that we are on the Appointment Details page
 		//Objects_Appointment_Details_Page.btn_Call_Forward(driver).isDisplayed();
@@ -118,10 +121,13 @@ public class Chrome_Sub100_Meter_Exch_Lv_Ct {
 		CI_Methods_Init_Risk_Assess.addSuccessValues(driver, sTestCaseName);
 								
 		// Invoke method to complete C&I Pre Task section
-		CI_Methods_Ci_Pre_Task.addSuccessValuesSub100HvCt(driver, sTestCaseName);
+		CI_Methods_Ci_Pre_Task.addSuccessValuesSub100LvCt(driver, sTestCaseName);
+		System.out.println("c&i pre task section completed");
+		Thread.sleep(1500);
+		System.err.println("end of where we can go");
 				
 		// Invoke method to complete the Carry Out Network Signal Strength section
-		CI_Methods_Network_Signal_Strength_Test.addSuccessValues(driver, sTestCaseName);
+		CI_Methods_Network_Signal_Strength_Test.addSuccessValuesAll(driver, sTestCaseName);
 				
 		// Invoke method to complete Carry Out Electricity Risk Assessment section
 		CI_Methods_Elec_Risk_Assessment.addSuccessValuesAll(driver, sTestCaseName);
@@ -130,7 +136,7 @@ public class Chrome_Sub100_Meter_Exch_Lv_Ct {
 		CI_Methods_Initial_Phase_Rotation_Test.addSuccessValuesNonDnoBno(driver, sTestCaseName);
 				
 		// Invoke method to complete the Terminal Test Block Tests section
-		CI_Methods_Test_Block_Tests.addSuccessValuesHvLvCt(driver, sTestCaseName);
+		CI_Methods_Test_Block_Tests.addSuccessValuesNonDnoBno(driver, sTestCaseName);
 				
 		// Invoke method to complete Display Meter Details section
 		
@@ -145,7 +151,7 @@ public class Chrome_Sub100_Meter_Exch_Lv_Ct {
 		CI_Methods_New_Meter_Details.addSuccessValuesHvLv(driver, sTestCaseName);
 				
 		// Invoke method to complete the Phase Rotation Test section 
-		CI_Methods_Phase_Rotation_Test.addSuccessValues(driver, sTestCaseName);
+		CI_Methods_Phase_Rotation_Test.addSuccessValuesAll(driver, sTestCaseName);
 				
 		// Invoke method to complete VT/CT Information for DNO/BNO and Additional Equipment
 		CI_Methods_Vt_Ct_Info_Dno_Bno.addSuccessValuesLv(driver, sTestCaseName);
@@ -166,6 +172,7 @@ public class Chrome_Sub100_Meter_Exch_Lv_Ct {
 		CI_Methods_Commissioning_Wc_3ph_Lv_Ct.addSuccessValuesLvCt(driver, sTestCaseName);
 				
 		// Invoke method to complete the final section, Complete Job
+		CI_Methods_Complete_Job.addSuccessValuesAll(driver, sTestCaseName);
 		
 		
 	}
