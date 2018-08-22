@@ -1,3 +1,4 @@
+/*
 package webModule;
 
 import org.openqa.selenium.WebDriver;
@@ -26,6 +27,7 @@ public class Methods_Job_Completion_Energy_Efficient_Information{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements of that are expected are displayed
@@ -97,6 +99,7 @@ public class Methods_Job_Completion_Energy_Efficient_Information{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful energy efficiency provided scenario
@@ -128,3 +131,5 @@ public class Methods_Job_Completion_Energy_Efficient_Information{
 			
 //END OF METHODS
 }
+
+*/

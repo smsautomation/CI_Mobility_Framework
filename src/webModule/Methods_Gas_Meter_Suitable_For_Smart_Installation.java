@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import pageObjectRepositories.Objects_Gas_Meter_Suitable_For_Smart_Installation_Page;
@@ -26,6 +26,7 @@ public class Methods_Gas_Meter_Suitable_For_Smart_Installation{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements of that are expected are displayed
@@ -68,6 +69,7 @@ public class Methods_Gas_Meter_Suitable_For_Smart_Installation{
 	* Details:
 	*
 	****************************************************************************************************/	
+	/*
 	public static void viewSuitableYesPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements of that are expected are displayed
@@ -104,6 +106,7 @@ public class Methods_Gas_Meter_Suitable_For_Smart_Installation{
 	* Details:
 	*
 	****************************************************************************************************/	
+	/*
 	public static void viewSuitableNoPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements of that are expected are displayed
@@ -144,6 +147,7 @@ public class Methods_Gas_Meter_Suitable_For_Smart_Installation{
 	* Details:
 	*
 	****************************************************************************************************/	
+	/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful suitable for smart installation
@@ -182,6 +186,7 @@ public class Methods_Gas_Meter_Suitable_For_Smart_Installation{
 	* Details:
 	*
 	****************************************************************************************************/	
+	/*
 	public static void addAbortValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for an Elec Meter Procedure Fail Abort
@@ -203,3 +208,5 @@ public class Methods_Gas_Meter_Suitable_For_Smart_Installation{
 	
 //END OF METHODS
 }
+
+*/

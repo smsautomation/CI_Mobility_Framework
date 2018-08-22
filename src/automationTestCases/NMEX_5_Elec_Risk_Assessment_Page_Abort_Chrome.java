@@ -14,7 +14,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases;
 
 import org.apache.log4j.xml.DOMConfigurator;
@@ -189,3 +189,4 @@ public class NMEX_5_Elec_Risk_Assessment_Page_Abort_Chrome {
 	}
 }
 
+*/

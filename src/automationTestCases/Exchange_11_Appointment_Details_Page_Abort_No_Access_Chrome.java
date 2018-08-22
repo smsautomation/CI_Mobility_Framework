@@ -87,7 +87,7 @@ public class Exchange_11_Appointment_Details_Page_Abort_No_Access_Chrome {
 		driver.findElement(By.xpath("//*[contains(text(), ' MR. Test_83_EXCH11')]")).click();
 
 		//Verify that we are on the Appointment Details page
-		Objects_Appointment_Details_Page.btn_Call_Forward(driver).isDisplayed();
+		//Objects_Appointment_Details_Page.btn_Call_Forward(driver).isDisplayed();
 		Log.info("Appointment Details page displayed as expected");	
 		
 		Methods_Appointment_Details.viewPage(driver, sTestCaseName);
@@ -105,10 +105,10 @@ public class Exchange_11_Appointment_Details_Page_Abort_No_Access_Chrome {
 		Methods_Appointment_Details.viewMeterDetails(driver, sTestCaseName, 83);
 				
 		//Click Call Forward to bring up Contact options
-		Objects_Appointment_Details_Page.btn_Call_Forward(driver).click();
+		//Objects_Appointment_Details_Page.btn_Call_Forward(driver).click();
 		
 		//Complete Remaining Customer Contact questions
-		Objects_Appointment_Details_Page.btn_Contact_Made_Yes(driver).click();
+		//Objects_Appointment_Details_Page.btn_Contact_Made_Yes(driver).click();
 		Objects_Appointment_Details_Page.btn_Appointment_Confirm_No(driver).click();
 		Objects_Appointment_Details_Page.btn_Customer_Contact_Supplier_Yes(driver).click();
 		Objects_Appointment_Details_Page.btn_Appointment_Reschedule_No(driver).click();

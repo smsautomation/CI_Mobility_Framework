@@ -14,7 +14,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases;
 
 
@@ -216,3 +216,4 @@ public class INST_5_Elec_Initial_Polarity_Check_At_Meter_Page_Abort_Chrome {
 	}
 }
 
+*/

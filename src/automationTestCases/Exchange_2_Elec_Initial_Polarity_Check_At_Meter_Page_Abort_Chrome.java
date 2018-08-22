@@ -14,7 +14,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases;
 
 
@@ -240,4 +240,4 @@ Methods_Login.viewPage(driver, sTestCaseName);
 	
 	}
 }
-
+*/

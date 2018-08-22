@@ -53,7 +53,7 @@ public class CI_Objects_Current_Meter_Details {
     public static WebElement btn_able_to_read_meter_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radioUnableToReadFalse")); //left tthink these ids are now the right way round
+    		element = driver.findElement(By.id("radioUnableToReadFalse")); //think these ids are now the right way round
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_able_to_read_meter_y not found | Exception desc : "+e.getMessage());
     	}
@@ -96,8 +96,7 @@ public class CI_Objects_Current_Meter_Details {
     
     
     
-    
-    }
+
     
     
     

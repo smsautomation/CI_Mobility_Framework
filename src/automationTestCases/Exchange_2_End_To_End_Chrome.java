@@ -13,7 +13,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases;
 
 import org.apache.log4j.xml.DOMConfigurator;
@@ -53,7 +53,7 @@ import pageObjectRepositories.Objects_Job_Completion_Summary_Page;
 import pageObjectRepositories.Objects_Login_Page;
 import pageObjectRepositories.Objects_Job_Completion_Capture_Customer_Signature_Page;
 
-
+/*
 public class Exchange_2_End_To_End_Chrome {
 
 	//Declare our test variables
@@ -207,7 +207,7 @@ public class Exchange_2_End_To_End_Chrome {
 		Methods_Electricity_Meter_Initial_Polarity_Check_Martindale_Test.viewPage(driver, sTestCaseName);
 		Log.info("Electricity Meter Initial Polarity Check - Martindale Test initial elements displayed as expected");
 						
-		/*//Invoke Method to complete a successful Martindale Test 
+		//Invoke Method to complete a successful Martindale Test 
 		Methods_Electricity_Meter_Initial_Polarity_Check_Martindale_Test.addSuccessValues(driver, sTestCaseName);
 		*/
 		
@@ -420,4 +420,4 @@ public class Exchange_2_End_To_End_Chrome {
 	
 	}
 }
-
+*/

@@ -112,39 +112,59 @@ public class Chrome_Cop10_Taa_Non_Compliance_Visit_Lv_Ct {
 				
 		// Invoke method to complete Call Forward and Doorstep Protocol sections
 		CI_Methods_Call_Forward.addSuccessValues(driver, sTestCaseName);
-		System.out.println("call forward complete");
 		CI_Methods_Doorstep_Protocol.addSuccessValues(driver, sTestCaseName);
-		System.out.println("doorstep protocol complete");
 						
 		// Invoke method to complete a successful initial risk assessment (check for smell of gas)
 		CI_Methods_Init_Risk_Assess.addSuccessValues(driver, sTestCaseName);
 						
 		// Invoke method to complete C&I Pre Task section
-		CI_Methods_Ci_Pre_Task.addSuccessValuesSub100Wc1ph(driver, sTestCaseName);
-		
-		// Invoke method to complete the Carry Out Network Signal Strength section
-		CI_Methods_Network_Signal_Strength_Test.addSuccessValuesAll(driver, sTestCaseName);
+		CI_Methods_Ci_Pre_Task.addSuccessValuesCop10LvCt(driver, sTestCaseName);
+		Log.info("C&I Pre-Task (COP10 LV CT) section completed");
 		
 		// Invoke method to complete Carry Out Electricity Risk Assessment section
 		CI_Methods_Elec_Risk_Assessment.addSuccessValuesAll(driver, sTestCaseName);
 		
-		// Invoke method to complete Pre Task - Determine if Customer Needs To Isolate Sensitive Equipment section
-		CI_Methods_Pre_Task_Isolate_Sensitive_Equipment.addSuccessValuesAllNa(driver, sTestCaseName);
-		
-		// Invoke method to complete Initial Polarity Check - Martindale Test section
-		CI_Methods_Initial_Polarity_Check_Martindale.addSuccessValuesAll(driver, sTestCaseName);	
-		
-		// Invoke method to complete the Initial Polarity Check section 
-		
-		
 		// Invoke method to complete Display Meter Details section
 		
 		
-		// Invoke method to complete Detailed Meter Readings section
+		// Invoke method to complete Detailed Meter Readings section ?
 		
 		
-		// Invoke method to complete the Fault section
-		CI_Methods_Fault.addSuccessValuesAllNoFault(driver, sTestCaseName);
+		// Invoke method to complete the TAA Non-Compliance Visit (commission) section
+		CI_Methods_Taa_Non_Compliance_Visit.addSuccessValuesCommission(driver, sTestCaseName);
+		Log.info("TAA Non-Compliance Visit (commission) section completed");
+		
+		// Commission (if that tick box selected above)
+		CI_Methods_Commissioning_Wc_3ph_Lv_Ct.addSuccessValuesLvCt(driver, sTestCaseName);
+		Log.info("Commissioning Wc 3PH and LV CT section completed");
+		
+		/*
+		
+		// Invoke method to complete the TAA Non-Compliance Visit (accuracy) section
+		CI_Methods_Taa_Non_Compliance_Visit.addSuccessValuesCop4Test(driver, sTestCaseName);
+		Log.info("TAA Non-Compliance Visit (accuracy COP4) section completed");
+		
+		// Accuracy Test (if that tick box selected above)
+		CI_Methods_Accuracy_Test_Cop4
+		
+		// Invoke method to complete the TAA Non-Compliance Visit (site survey) section
+		CI_Methods_Taa_Non_Compliance_Visit.addSuccessValuesSiteSurvey(driver, sTestCaseName);
+		Log.info("TAA Non-Compliance Visit (site survey) section completed");
+		
+		// Site Survey (if that tick box selected above)
+		
+		
+		// Invoke method to complete the TAA Non-Compliance Visit (meter read) section
+		CI_Methods_Taa_Non_Compliance_Visit.addSuccessValuesMeterRead(driver, sTestCaseName);
+		Log.info("TAA Non-Compliance Visit (meter read) section completed");
+		
+		// Meter Reading (if that tick box selected above)
+		
+		*/
+		
+		// Invoke method to complete the TAA Non-Compliance Visit (end) section
+		CI_Methods_Taa_Non_Compliance_Visit.addSuccessValuesEnd(driver, sTestCaseName);
+		Log.info("TAA Non-Compliance Visit (end) section completed");		
 		
 		// Invoke method to complete the final section: Complete Job
 		CI_Methods_Complete_Job.addSuccessValuesAll(driver, sTestCaseName);

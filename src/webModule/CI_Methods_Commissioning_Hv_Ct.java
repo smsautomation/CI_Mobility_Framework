@@ -70,7 +70,7 @@ public class CI_Methods_Commissioning_Hv_Ct{
 	
 	
 	/* **************************************************************************************************
-	* Function: addSuccessValuesHvCt
+	* Function: addSuccessValuesAllPart1
 	* Author: Charlotte Jones
 	* Date: 08/08/2018
 	* Purpose: This method adds the required responses in the Commissioning Document - HV CT
@@ -123,22 +123,22 @@ public class CI_Methods_Commissioning_Hv_Ct{
 					sUnit
 		 			iImpulsesKwAct
 					iImpulsesKwTime
-					iImpulsesKwPulseVal
-					iImpulsesKvarAct
-					iImpulsesKvarTime
-					iImpulsesKvarPulseVal
-					sTimeStart
-					sTimeFinish
-		 			iImportKwhStart
-		 			iImportKwhFinish
-					iExportKwhStart
-					iExportKwhFinish
-					iTotalKvarhStart
-					iTotalKvarhFinish
-					iTotalKvahStart
-					iTotalKvahFinish
-					sCommissDate
-					sComments
+	*				iImpulsesKwPulseVal
+	*				iImpulsesKvarAct
+	*				iImpulsesKvarTime
+	*				iImpulsesKvarPulseVal
+	*				sTimeStart
+	*				sTimeFinish
+	*	 			iImportKwhStart
+	*	 			iImportKwhFinish
+	*				iExportKwhStart
+	*				iExportKwhFinish
+	*				iTotalKvarhStart
+	*				iTotalKvarhFinish
+	*				iTotalKvahStart
+	*				iTotalKvahFinish
+	*				sCommissDate
+	*				sComments
 	* Returns: 
 	*****************************************************************************************************
 	* Change Log:
@@ -148,7 +148,7 @@ public class CI_Methods_Commissioning_Hv_Ct{
 	* Details:
 	*
 	****************************************************************************************************/	
-	public static void addSuccessValuesHvCt(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesAllPart1(WebDriver driver, String sTestCaseName) throws Exception{
 	
 	
 		// *!*!*!*!*!*!* values needed for below variables *!*!*!*!*!*!*
@@ -163,60 +163,8 @@ public class CI_Methods_Commissioning_Hv_Ct{
 		Integer iL1MeasuredIPri = 12;
 		Integer	iL1MeasuredISec = 52;
 		Integer iL3MeasuredVoltsSec = 5;
-		Integer	iL1MeasuredVoltsLv = 67;
-		Integer	iL1MeasuredILv = 95;
-		Integer	iL1MeasuredVoltsSecHv = 45;
-		Integer	iL1MeasuredISecHv = 6;
-		Integer	iL2MeasuredVoltsLv = 1;
-		Integer	iL2MeasuredILv = 3;
-		Integer	iL3MeasuredVoltsLv = 8;
-		Integer	iL3MeasuredILv = 8;
-		Integer iL3MeasuredVoltsSecHv = 9;
-		Integer	iL3MeasuredISecHv = 7;
-		Integer	iL1MeasuredVolts = 4;
-		Integer	iL1MeasuredKvaP = 2;
-		Integer	iL1MeasuredKvaS = 5;
-		Integer	iL2MeasuredVolts = 6;
-		Integer	iL2MeasuredIPri = 8;
-		Integer	iL2MeasuredISec = 4;
-		Integer	iL2MeasuredKvaP = 6;
-		Integer	iL2MeasuredKvaS = 44;
-		Integer	iL3MeasuredVolts = 215;
 		Integer	iL3MeasuredIPri = 7;
 		Integer	iL3MeasuredISec = 68;
-		Integer	iL3MeasuredKvaP = 5;
-		Integer	iL3MeasuredKvaS = 6;
-		Integer	iL1MeterIndicVPri = 66;
-		Integer iL1MeterIndicIPri = 44;
-		Integer iL2MeterIndicVPri = 200;
-		Integer	iL2MeterIndicIPri = 3;
-		Integer	iL3MeterIndicVPri = 268;
-		Integer	iL3MeterIndicIPri = 5555;
-		Integer	iDisplayKw = 99999;
-		Integer iDisplayKvar = 123456;
-		String  sDisplayPf = "0.00001";
-		Integer	iDisplayKva = 654;
-		Integer	iRisingMD = 65449;
-		Integer	iTimeSecs = 18000;
-		String	sUnit = "kw";
-		Integer iImpulsesKwAct = 91;
-		Integer	iImpulsesKwTime = 6;
-		Integer	iImpulsesKwPulseVal = 1;
-		Integer	iImpulsesKvarAct = 647;
-		Integer	iImpulsesKvarTime = 222;
-		Integer	iImpulsesKvarPulseVal = 451;
-		String	sTimeStart = "12:30";
-		String	sTimeFinish = "14:00";
-		Integer iImportKwhStart = 1;
-		Integer iImportKwhFinish = 2;
-		Integer	iExportKwhStart = 15;
-		Integer	iExportKwhFinish = 18;
-		Integer	iTotalKvarhStart = 19;
-		Integer	iTotalKvarhFinish = 119;
-		Integer	iTotalKvahStart = 555;
-		Integer	iTotalKvahFinish = 6478;
-		String	sCommissDate = "";   // would need this to match the job date - so this would defos need to be included in the spreadsheet
-		String	sComments = "lots of comments about commissioning";
 		
 				
 		CI_Objects_Commissioning_Hv_Ct.btn_can_meters_be_commissioned_y(driver).click();
@@ -344,7 +292,7 @@ public class CI_Methods_Commissioning_Hv_Ct{
 		CI_Objects_Commissioning_Hv_Ct.txt_l1_measured_i_sec(driver).sendKeys(Integer.toString(iL1MeasuredISec));
 		{
 			Log.info(sTestCaseName + " | L1 - Measured - I (sec) field completed");
-		
+		}
 		CI_Objects_Commissioning_Hv_Ct.txt_l3_measured_volts_sec(driver).click();
 		CI_Objects_Commissioning_Hv_Ct.txt_l3_measured_volts_sec(driver).sendKeys(Integer.toString(iL3MeasuredVoltsSec));
 		{
@@ -362,7 +310,107 @@ public class CI_Methods_Commissioning_Hv_Ct{
 		{
 			Log.info(sTestCaseName + " | L3 - Measured - I (sec) field completed");
 		}		
-			
+	
+		
+		
+	// END OF ADD SUCCESS VALUES ALL PART 1 METHODS 	
+	}		
+		
+	/* **************************************************************************************************
+	* Function: addSuccessValuesAllPart1
+	* Author: Charlotte Jones
+	* Date: 08/08/2018
+	* Purpose: This method adds the required responses in the Commissioning Document - HV CT
+	* section for a happy path scenario
+	* Arguments: 	sSerialNum
+			 			iL1L2
+						iL1L3
+			 			iL2L3
+						iL1Earth
+						iL1Neutral
+			 			iL1MeasuredVoltsSec
+			 			iL1MeasuredIPri
+						iL1MeasuredISec
+			 			iL3MeasuredVoltsSec
+			 			iL1MeasuredVoltsLv
+						iL1MeasuredILv
+						iL1MeasuredVoltsSecHv
+						iL1MeasuredISecHv
+						iL2MeasuredVoltsLv
+						iL2MeasuredILv
+						iL3MeasuredVoltsLv
+						iL3MeasuredILv
+			 			iL3MeasuredVoltsSecHv
+						iL3MeasuredISecHv
+						iL1MeasuredVolts
+						iL1MeasuredKvaP
+						iL1MeasuredKvaS
+						iL2MeasuredVolts
+						iL2MeasuredIPri
+						iL2MeasuredISec
+						iL2MeasuredKvaP
+						iL2MeasuredKvaS
+						iL3MeasuredVolts
+						iL3MeasuredIPri
+						iL3MeasuredISec
+						iL3MeasuredKvaP
+						iL3MeasuredKvaS
+						iL1MeterIndicVPri
+			 			iL1MeterIndicIPri
+			 			iL2MeterIndicVPri
+						iL2MeterIndicIPri
+						iL3MeterIndicVPri
+						iL3MeterIndicIPri
+						iDisplayKw
+			 			iDisplayKvar
+			  			sDisplayPf
+						iDisplayKva
+						iRisingMD
+						iTimeSecs
+						sUnit
+			 			iImpulsesKwAct
+						iImpulsesKwTime
+						iImpulsesKwPulseVal
+						iImpulsesKvarAct
+						iImpulsesKvarTime
+						iImpulsesKvarPulseVal
+						sTimeStart
+						sTimeFinish
+			 			iImportKwhStart
+			 			iImportKwhFinish
+						iExportKwhStart
+						iExportKwhFinish
+						iTotalKvarhStart
+						iTotalKvarhFinish
+						iTotalKvahStart
+						iTotalKvahFinish
+						sCommissDate
+					sComments
+	* Returns: 
+	*****************************************************************************************************
+	* Change Log:
+	* 
+	* Date:
+	* Author: 
+	* Details:
+	*
+	****************************************************************************************************/	
+	public static void addSuccessValuesLvCurrents(WebDriver driver, String sTestCaseName) throws Exception{
+		
+	
+		// *!*!*!*!*!*!* values needed for below variables *!*!*!*!*!*!*
+		
+		Integer	iL1MeasuredVoltsLv = 67;
+		Integer	iL1MeasuredILv = 95;
+		Integer	iL1MeasuredVoltsSecHv = 45;
+		Integer	iL1MeasuredISecHv = 6;
+		Integer	iL2MeasuredVoltsLv = 1;
+		Integer	iL2MeasuredILv = 3;
+		Integer	iL3MeasuredVoltsLv = 8;
+		Integer	iL3MeasuredILv = 8;
+		Integer iL3MeasuredVoltsSecHv = 9;
+		Integer	iL3MeasuredISecHv = 7;
+		
 		
 		// Measured and Calculated Load Values with LV Currents (display with the Meter Indicated Values section) sub-section
 		
@@ -437,8 +485,114 @@ public class CI_Methods_Commissioning_Hv_Ct{
 		
 		// *!*!*!*!*!*!* Need to include method for Read Only kVA (LV) - TOTAL check *!*!*!*!*!*!*
 		// *!*!*!*!*!*!* Need to include method for Read Only kVA (HV) - TOTAL check *!*!*!*!*!*!*
+	
 		
+	// END OF ADD SUCCESS VALUES LV CURRENTS METHOD	
+	}	
+	
+
+	/* **************************************************************************************************
+	* Function: addSuccessValuesAllPart1
+	* Author: Charlotte Jones
+	* Date: 08/08/2018
+	* Purpose: This method adds the required responses in the Commissioning Document - HV CT
+	* section for a happy path scenario
+	* Arguments: 	sSerialNum
+			 			iL1L2
+						iL1L3
+			 			iL2L3
+						iL1Earth
+						iL1Neutral
+			 			iL1MeasuredVoltsSec
+			 			iL1MeasuredIPri
+						iL1MeasuredISec
+			 			iL3MeasuredVoltsSec
+			 			iL1MeasuredVoltsLv
+						iL1MeasuredILv
+						iL1MeasuredVoltsSecHv
+						iL1MeasuredISecHv
+						iL2MeasuredVoltsLv
+						iL2MeasuredILv
+						iL3MeasuredVoltsLv
+						iL3MeasuredILv
+			 			iL3MeasuredVoltsSecHv
+						iL3MeasuredISecHv
+						iL1MeasuredVolts
+						iL1MeasuredKvaP
+						iL1MeasuredKvaS
+						iL2MeasuredVolts
+						iL2MeasuredIPri
+						iL2MeasuredISec
+						iL2MeasuredKvaP
+						iL2MeasuredKvaS
+						iL3MeasuredVolts
+						iL3MeasuredIPri
+						iL3MeasuredISec
+						iL3MeasuredKvaP
+						iL3MeasuredKvaS
+						iL1MeterIndicVPri
+			 			iL1MeterIndicIPri
+			 			iL2MeterIndicVPri
+						iL2MeterIndicIPri
+						iL3MeterIndicVPri
+						iL3MeterIndicIPri
+						iDisplayKw
+			 			iDisplayKvar
+			  			sDisplayPf
+						iDisplayKva
+						iRisingMD
+						iTimeSecs
+						sUnit
+			 			iImpulsesKwAct
+						iImpulsesKwTime
+						iImpulsesKwPulseVal
+						iImpulsesKvarAct
+						iImpulsesKvarTime
+						iImpulsesKvarPulseVal
+						sTimeStart
+						sTimeFinish
+			 			iImportKwhStart
+			 			iImportKwhFinish
+						iExportKwhStart
+						iExportKwhFinish
+						iTotalKvarhStart
+						iTotalKvarhFinish
+						iTotalKvahStart
+						iTotalKvahFinish
+						sCommissDate
+					sComments
+	* Returns: 
+	*****************************************************************************************************
+	* Change Log:
+	* 
+	* Date:
+	* Author: 
+	* Details:
+	*
+	****************************************************************************************************/	
+	public static void addSuccessValuesHvCurrents(WebDriver driver, String sTestCaseName) throws Exception{
 		
+		// *!*!*!*!*!*!* values needed for below variables *!*!*!*!*!*!*
+		
+
+		Integer iL1MeasuredIPri = 12;
+		Integer	iL1MeasuredISec = 52;
+		Integer	iL1MeasuredVolts = 4;
+		Integer	iL1MeasuredKvaP = 2;
+		Integer	iL1MeasuredKvaS = 5;
+		Integer	iL2MeasuredVolts = 6;
+		Integer	iL2MeasuredIPri = 8;
+		Integer	iL2MeasuredISec = 4;
+		Integer	iL2MeasuredKvaP = 6;
+		Integer	iL2MeasuredKvaS = 44;
+		Integer	iL3MeasuredVolts = 215;
+		Integer	iL3MeasuredIPri = 7;
+		Integer	iL3MeasuredISec = 68;
+		Integer	iL3MeasuredKvaP = 5;
+		Integer	iL3MeasuredKvaS = 6;
+	
+	
+	
 		// Measured and Calculated Load Values With HV 4 Wire Currents (display with the Meter Indicated Values section)
 		
 		CI_Objects_Commissioning_Hv_Ct.WITH_HV_4_WIRE_CURRENTS.txt_l1_measured_volts(driver).click();
@@ -533,8 +687,128 @@ public class CI_Methods_Commissioning_Hv_Ct{
 		
 		// *!*!*!*!*!*!* Need to include method for Read Only kVA (P) check *!*!*!*!*!*!*
 		// *!*!*!*!*!*!* Need to include method for Read Only kVA (S) check *!*!*!*!*!*!*
+	
 		
 		
+	// END OF ADD SUCCESS VALUES HV CURRENTS METHOD 	
+	}
+		
+	/* **************************************************************************************************
+	* Function: addSuccessValuesAllPart1
+	* Author: Charlotte Jones
+	* Date: 08/08/2018
+	* Purpose: This method adds the required responses in the Commissioning Document - HV CT
+	* section for a happy path scenario
+	* Arguments: 	sSerialNum
+			 			iL1L2
+						iL1L3
+			 			iL2L3
+						iL1Earth
+						iL1Neutral
+			 			iL1MeasuredVoltsSec
+			 			iL1MeasuredIPri
+						iL1MeasuredISec
+			 			iL3MeasuredVoltsSec
+			 			iL1MeasuredVoltsLv
+						iL1MeasuredILv
+						iL1MeasuredVoltsSecHv
+						iL1MeasuredISecHv
+						iL2MeasuredVoltsLv
+						iL2MeasuredILv
+						iL3MeasuredVoltsLv
+						iL3MeasuredILv
+			 			iL3MeasuredVoltsSecHv
+						iL3MeasuredISecHv
+						iL1MeasuredVolts
+						iL1MeasuredKvaP
+						iL1MeasuredKvaS
+						iL2MeasuredVolts
+						iL2MeasuredIPri
+						iL2MeasuredISec
+						iL2MeasuredKvaP
+						iL2MeasuredKvaS
+						iL3MeasuredVolts
+						iL3MeasuredIPri
+						iL3MeasuredISec
+						iL3MeasuredKvaP
+						iL3MeasuredKvaS
+						iL1MeterIndicVPri
+			 			iL1MeterIndicIPri
+			 			iL2MeterIndicVPri
+						iL2MeterIndicIPri
+						iL3MeterIndicVPri
+						iL3MeterIndicIPri
+						iDisplayKw
+			 			iDisplayKvar
+			  			sDisplayPf
+						iDisplayKva
+						iRisingMD
+						iTimeSecs
+						sUnit
+			 			iImpulsesKwAct
+						iImpulsesKwTime
+						iImpulsesKwPulseVal
+						iImpulsesKvarAct
+						iImpulsesKvarTime
+						iImpulsesKvarPulseVal
+						sTimeStart
+						sTimeFinish
+			 			iImportKwhStart
+			 			iImportKwhFinish
+						iExportKwhStart
+						iExportKwhFinish
+						iTotalKvarhStart
+						iTotalKvarhFinish
+						iTotalKvahStart
+						iTotalKvahFinish
+						sCommissDate
+					sComments
+	* Returns: 
+	*****************************************************************************************************
+	* Change Log:
+	* 
+	* Date:
+	* Author: 
+	* Details:
+	*
+	****************************************************************************************************/	
+	public static void addSuccessValuesAllPart2(WebDriver driver, String sTestCaseName) throws Exception{
+		
+		// *!*!*!*!*!*!* values needed for below variables *!*!*!*!*!*!*
+		
+		Integer	iL1MeterIndicVPri = 66;
+		Integer iL1MeterIndicIPri = 44;
+		Integer iL2MeterIndicVPri = 200;
+		Integer	iL2MeterIndicIPri = 3;
+		Integer	iL3MeterIndicVPri = 268;
+		Integer	iL3MeterIndicIPri = 5555;
+		Integer	iDisplayKw = 99999;
+		Integer iDisplayKvar = 123456;
+		String  sDisplayPf = "0.00001";
+		Integer	iDisplayKva = 654;
+		Integer	iRisingMD = 65449;
+		Integer	iTimeSecs = 18000;
+		String	sUnit = "kw";
+		Integer iImpulsesKwAct = 91;
+		Integer	iImpulsesKwTime = 6;
+		Integer	iImpulsesKwPulseVal = 1;
+		Integer	iImpulsesKvarAct = 647;
+		Integer	iImpulsesKvarTime = 222;
+		Integer	iImpulsesKvarPulseVal = 451;
+		String	sTimeStart = "12:30";
+		String	sTimeFinish = "14:00";
+		Integer iImportKwhStart = 1;
+		Integer iImportKwhFinish = 2;
+		Integer	iExportKwhStart = 15;
+		Integer	iExportKwhFinish = 18;
+		Integer	iTotalKvarhStart = 19;
+		Integer	iTotalKvarhFinish = 119;
+		Integer	iTotalKvahStart = 555;
+		Integer	iTotalKvahFinish = 6478;
+		String	sCommissDate = "";   // would need this to match the job date - so this would defos need to be included in the spreadsheet
+		String	sComments = "lots of comments about commissioning";	
+	
+	
 		// Meter Indicated Values (display with the Measured and Calculated Load Values section) sub-section
 		
 		CI_Objects_Commissioning_Hv_Ct.txt_l1_meter_indicated_v_primary(driver).click();
@@ -767,10 +1041,9 @@ public class CI_Methods_Commissioning_Hv_Ct{
 		
 		
 	}	
-	// END OF ADD SUCCESS VALUES HV CT METHOD
+	// END OF ADD SUCCESS VALUES ALL PART 2 METHOD
 
+	
 }
-}		
-		
 	
 //END OF METHODS

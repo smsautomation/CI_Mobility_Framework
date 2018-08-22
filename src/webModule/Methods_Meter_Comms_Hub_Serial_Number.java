@@ -1,3 +1,4 @@
+/*
 package webModule;
 
 import org.openqa.selenium.WebDriver;
@@ -26,6 +27,8 @@ public class Methods_Meter_Comms_Hub_Serial_Number{
 	* Details:
 	*
 	****************************************************************************************************/	
+	/*
+	
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements that are expected are displayed
@@ -59,6 +62,7 @@ public class Methods_Meter_Comms_Hub_Serial_Number{
 	* Details:
 	*
 	****************************************************************************************************/	
+	/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Click on the Asset selection Combo box and select the first option
@@ -125,3 +129,5 @@ public class Methods_Meter_Comms_Hub_Serial_Number{
 		
 //END OF METHODS
 }
+	
+	*/

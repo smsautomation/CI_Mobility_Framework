@@ -64,7 +64,7 @@ public class CI_Methods_Modem_Comms_Details{
 	
 		
 	/* **************************************************************************************************
-	* Function: addSuccessValuesGsmModem
+	* Function: addSuccessValuesAllGsmModem
 	* Author: Charlotte Jones
 	* Date: 07/08/2018
 	* Purpose: This method adds the required responses in the Modem/Comms Details section for a happy
@@ -87,7 +87,7 @@ public class CI_Methods_Modem_Comms_Details{
 	****************************************************************************************************/	
 	
 	
-	public static void addSuccessValuesGsmModem(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesAllGsmModem(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		// *!*!*!*!*!*!*!* Need to add values to the below variables *!*!*!*!*!*!*!*
 		
@@ -162,10 +162,10 @@ public class CI_Methods_Modem_Comms_Details{
 		
 	}	
 	
-	// END OF ADD SUCCESS VALUES GSM
+	// END OF ADD SUCCESS VALUES ALL GSM MODEM METHOD
 			
 	/* **************************************************************************************************
-	* Function: addSuccessValuesPstnModem
+	* Function: addSuccessValuesAllPstnModem
 	* Author: Charlotte Jones
 	* Date: 07/08/2018
 	* Purpose: This method adds the required responses in the Modem/Comms Details section for a happy
@@ -189,7 +189,7 @@ public class CI_Methods_Modem_Comms_Details{
 	
 	
 	
-	public static void addSuccessValuesPstnModem(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesAllPstnModem(WebDriver driver, String sTestCaseName) throws Exception{
 		
 		// *!*!*!*!*!*!*!* Need to add values to the below variables *!*!*!*!*!*!*!*
 		
@@ -270,12 +270,12 @@ public class CI_Methods_Modem_Comms_Details{
 		
 	}	
 		
-	// END OF ADD SUCCESS VALUES PSTN
+	// END OF ADD SUCCESS VALUES ALL PSTN MODEM METHOD
 	
 	
 	
 	/* **************************************************************************************************
-	* Function: addSuccessValuesPaknetModem
+	* Function: addSuccessValuesAllPaknetModem
 	* Author: Charlotte Jones
 	* Date: 07/08/2018
 	* Purpose: This method adds the required responses in the Modem/Comms Details section for a happy
@@ -297,7 +297,7 @@ public class CI_Methods_Modem_Comms_Details{
 	*
 	****************************************************************************************************/
 	
-	public static void addSuccessValuesPaknetModem(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesAllPaknetModem(WebDriver driver, String sTestCaseName) throws Exception{
 		
 		// *!*!*!*!*!*!*!* Need to add values to the below variables *!*!*!*!*!*!*!*
 		
@@ -348,12 +348,12 @@ public class CI_Methods_Modem_Comms_Details{
 	}
 	
 	
-	// END OF ADD SUCCESS VALUES PAKNET
+	// END OF ADD SUCCESS VALUES ALL PAKNET MODEM METHOD
 	
 	
 	
 	/* **************************************************************************************************
-	* Function: addSuccessValuesOtherModem
+	* Function: addSuccessValuesAllOtherModem
 	* Author: Charlotte Jones
 	* Date: 07/08/2018
 	* Purpose: This method adds the required responses in the Modem/Comms Details section for a happy path
@@ -373,7 +373,7 @@ public class CI_Methods_Modem_Comms_Details{
 	*
 	****************************************************************************************************/
 	
-	public static void addSuccessValuesOtherModem(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesAllOtherModem(WebDriver driver, String sTestCaseName) throws Exception{
 		
 		
 		// *!*!*!*!*!*!*!* Need to add values to the below variables *!*!*!*!*!*!*!*
@@ -424,7 +424,7 @@ public class CI_Methods_Modem_Comms_Details{
 		
 	}
 	
-	// END OF ADD SUCCESS VALUES OTHER
+	// END OF ADD SUCCESS VALUES ALL OTHER MODEM METHOD
 	
 	
 //END OF METHODS

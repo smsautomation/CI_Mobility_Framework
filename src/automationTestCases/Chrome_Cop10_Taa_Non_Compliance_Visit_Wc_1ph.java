@@ -80,14 +80,12 @@ public class Chrome_Cop10_Taa_Non_Compliance_Visit_Wc_1ph {
 		System.out.println("login page reached");
 		
 		CI_Methods_Login.addSuccessValues(driver, sTestCaseName);
-		System.out.println("logged in");
 		
 		// Methods_Appointments_List.viewPage(driver, sTestCaseName);
 		
 		//Select the correct appointment
 		driver.findElement(By.xpath(".//*[@id='app']/div/div/workorderlistitem{7]/div/div[1]/div/div[1]/span[3]/span")).click();
 		//driver.findElement(By.xpath("//*[contains(text(), ' Charlotte116')]")).click();
-		System.out.println("selected job");
 		
 		//Verify that we are on the Appointment Details page
 		//Objects_Appointment_Details_Page.btn_Call_Forward(driver).isDisplayed();
@@ -120,32 +118,32 @@ public class Chrome_Cop10_Taa_Non_Compliance_Visit_Wc_1ph {
 		CI_Methods_Init_Risk_Assess.addSuccessValues(driver, sTestCaseName);
 						
 		// Invoke method to complete C&I Pre Task section
-		CI_Methods_Ci_Pre_Task.addSuccessValuesSub100Wc1ph(driver, sTestCaseName);
-		
-		// Invoke method to complete the Carry Out Network Signal Strength section
-		CI_Methods_Network_Signal_Strength_Test.addSuccessValuesAll(driver, sTestCaseName);
+		CI_Methods_Ci_Pre_Task.addSuccessValuesCop10Wc1ph(driver, sTestCaseName);
+		Log.info("C&I Pre-Task (WC 1PH) section completed");
 		
 		// Invoke method to complete Carry Out Electricity Risk Assessment section
 		CI_Methods_Elec_Risk_Assessment.addSuccessValuesAll(driver, sTestCaseName);
-		
-		// Invoke method to complete Pre Task - Determine if Customer Needs To Isolate Sensitive Equipment section
-		CI_Methods_Pre_Task_Isolate_Sensitive_Equipment.addSuccessValuesAllYes(driver, sTestCaseName);
-		
-		// Invoke method to complete Initial Polarity Check - Martindale Test section
-		CI_Methods_Initial_Polarity_Check_Martindale.addSuccessValuesAll(driver, sTestCaseName);
-	
-		
-		// Invoke method to complete the Initial Polarity Check section 
-		
-		
+		Log.info("Elec Risk Assessment section completed");
+
 		// Invoke method to complete Display Meter Details section
 		
 		
-		// Invoke method to complete Detailed Meter Readings section
+		// Invoke method to complete Detailed Meter Readings section ?
 		
 		
-		// Invoke method to complete the Fault section
-		CI_Methods_Fault.addSuccessValuesAllNoFault(driver, sTestCaseName);
+		/*
+		// Invoke method to complete the TAA Non-Compliance Visit (site survey) section
+		CI_Methods_Taa_Non_Compliance_Visit.addSuccessValuesSiteSurvey(driver, sTestCaseName);
+		Log.info("TAA Non-Compliance Visit site survey) section completed");
+		
+		// Site Survey (if that tick box selected above)
+		CI_Methods_Site_Survey.addMethod;
+		
+		*/
+		
+		// Invoke method to complete the TAA Non-Compliance section
+		CI_Methods_Taa_Non_Compliance_Visit.addSuccessValuesEnd(driver, sTestCaseName);
+		Log.info("TAA Non-Compliance Visit (end) section completed");
 		
 		// Invoke method to complete the final section: Complete Job
 		CI_Methods_Complete_Job.addSuccessValuesAll(driver, sTestCaseName);

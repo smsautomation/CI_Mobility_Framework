@@ -109,30 +109,39 @@ public class Chrome_Sub100_Meter_Fault_Wc_3ph_Exch {
 		// Invoke method to complete Call Forward and Doorstep Protocol sections
 		CI_Methods_Call_Forward.addSuccessValues(driver, sTestCaseName);
 		CI_Methods_Doorstep_Protocol.addSuccessValues(driver, sTestCaseName);
+		Log.info("Call Forward and Doorstep Protocol sections completed");
 						
 		// Invoke method to complete a successful initial risk assessment (check for smell of gas)
 		CI_Methods_Init_Risk_Assess.addSuccessValues(driver, sTestCaseName);
+		Log.info("Initial Risk Assessment section completed");
 						
 		// Invoke method to complete C&I Pre Task section
 		CI_Methods_Ci_Pre_Task.addSuccessValuesSub100Wc1ph(driver, sTestCaseName);
+		Log.info("C&I Pre-Task section completed");
 		
 		// Invoke method to complete the Carry Out Network Signal Strength section
 		CI_Methods_Network_Signal_Strength_Test.addSuccessValuesAll(driver, sTestCaseName);
+		Log.info("Network Signal Strength Test section completed");
 		
 		// Invoke method to complete Carry Out Electricity Risk Assessment section
 		CI_Methods_Elec_Risk_Assessment.addSuccessValuesAll(driver, sTestCaseName);
+		Log.info("Elec Risk Assessment section completed");
 		
 		// Invoke method to complete Pre Task - Determine if Customer Needs To Isolate Sensitive Equipment section
 		CI_Methods_Pre_Task_Isolate_Sensitive_Equipment.addSuccessValuesAllNa(driver, sTestCaseName);
+		Log.info("Pre-Task - Isolate Sensitive Equipment section completed");
 		
 		// Invoke method to complete Initial Polarity Check - Martindale Test section
 		CI_Methods_Initial_Polarity_Check_Martindale.addSuccessValuesAll(driver, sTestCaseName);
+		Log.info("Initial Polarity Check - Martindale section completed");
 		
 		// Invoke method to complete Initial Polarity Check - At Meter and Cut Out section
 		CI_Methods_Initial_Polarity_Check_At_Meter.addSuccessValuesSub100Cop10Cop5SmWc(driver, sTestCaseName);
+		Log.info("Initial Polarity Check At Meter section completed");
 	
 		// Invoke method to complete Initial Phase Rotation Test section
 		CI_Methods_Initial_Phase_Rotation_Test.addSuccessValuesNonDnoBno(driver, sTestCaseName);
+		Log.info("Initial Phase Rotation Test section completed");
 		
 		// Invoke method to complete Display Meter Details section
 		
@@ -142,51 +151,65 @@ public class Chrome_Sub100_Meter_Fault_Wc_3ph_Exch {
 		
 		// Invoke method to complete the Fault section
 		CI_Methods_Fault.addSuccessValuesAllFaultPart1(driver, sTestCaseName);
+		Log.info("Fault (part 1) section completed");
 		
 		// Invoke method to complete the Non-Serialised Asset Info section
-		CI_Methods_Non_Serialised_Asset_Info.addSuccessValuesAerial(driver, sTestCaseName);
+		CI_Methods_Non_Serialised_Asset_Info.addSuccessValuesAllAerial(driver, sTestCaseName);
+		Log.info("Non-Serialised Asset Info section completed");
 		
 		// Invoke method to complete the Fault section
 		CI_Methods_Fault.addSuccessValuesAllFaultPart2MeterExch(driver, sTestCaseName);
+		Log.info("Fault (part 2 - meter exch) section completed");
 		
 		// Invoke method to complete Final Read section
 		
 		
 		// Invoke method to complete Remove Asset section
-		CI_Methods_Remove_Asset.addSuccessValuesSub100(driver, sTestCaseName);
+		CI_Methods_Remove_Asset.addSuccessValuesAll(driver, sTestCaseName);
+		Log.info("Remove Asset section completed");
 		
 		// Invoke method to complete New Meter section
-		CI_Methods_New_Meter_Details.addSuccessValuesWc(driver, sTestCaseName);
+		CI_Methods_New_Meter_Details.addSuccessValuesSub100Sm(driver, sTestCaseName);
+		Log.info("New Meter section completed");
 		
 		// Invoke method to complete Polarity Check At the Meter section
 		CI_Methods_Polarity_Check_At_Meter.addSuccessValuesAll(driver, sTestCaseName);
+		Log.info("Polarity Check At Meter section completed");
 		
 		// Invoke method to complete Phase Rotation Test section
 		CI_Methods_Phase_Rotation_Test.addSuccessValuesAll(driver, sTestCaseName);
+		Log.info("Phase Rotation Test section completed");
 
 		// Invoke method to complete Polarity Check - Martindale Test section
 		CI_Methods_Polarity_Check_Martindale.addSuccessValuesAll(driver, sTestCaseName);
+		Log.info("Polarity Check - Martindale section completed");
 		
 		// Invoke method to complete the Detailed Meter Readings section
 		
 		
 		// Invoke method to complete the Modem/Comms Details section
-		CI_Methods_Modem_Comms_Details.addSuccessValuesPstnModem(driver, sTestCaseName);
+		CI_Methods_Modem_Comms_Details.addSuccessValuesAllPstnModem(driver, sTestCaseName);
+		Log.info("Modem Comms Details section completed");
 		
 		// Invoke method to complete the Non-Serialised Asset Information section
-		CI_Methods_Non_Serialised_Asset_Info.addSuccessValueElecInstall(driver, sTestCaseName);
+		CI_Methods_Non_Serialised_Asset_Info.addSuccessValuesAllElecInstall(driver, sTestCaseName);
+		Log.info("Non-Serialised Asset Info section completed");
 		
 		// Invoke method to complete the Post Installation Checks (For Whole Current 1PH/3PH Metering) section
 		CI_Methods_Post_Install_Checks_Wc.addSuccessValues3ph(driver, sTestCaseName);
+		Log.info("Post Installation Checks (WC) section completed");
 		
 		// Invoke method to complete the Commissioning Document - WC 3PH & LV CT section
 		CI_Methods_Commissioning_Wc_3ph_Lv_Ct.addSuccessValuesWc3ph(driver, sTestCaseName);
+		Log.info("Commissioning (WC 3PH and LV CT) section completed");
 		
 		// Invoke method to complete the Fault section
 		CI_Methods_Fault.addSuccessValuesAllFaultPart3(driver, sTestCaseName);
+		Log.info("Fault (part 3) section completed");
 		
 		// Invoke method to complete the final section, Complete Job
 		CI_Methods_Complete_Job.addSuccessValuesAll(driver, sTestCaseName);
+		Log.info("Job Completion section completed");
 		
 		
 	}

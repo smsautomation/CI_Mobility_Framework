@@ -146,45 +146,56 @@ public class Chrome_Sub100_Meter_Fault_Wc_1ph_Exch {
 		
 		// Invoke method to complete the Fault section
 		CI_Methods_Fault.addSuccessValuesAllFaultPart1(driver, sTestCaseName);
+		Log.info("Fault part 1 section completed");
 		
 		// Invoke method to complete the Non-Serialised Asset Information section
 		
 		
 		// Invoke method to complete the Fault section
 		CI_Methods_Fault.addSuccessValuesAllFaultPart2MeterExch(driver, sTestCaseName);
+		Log.info("Fault (part 2 - meter exch) section completed");
 		
 		// Invoke method to complete the Remove Meter Final Reading section
 		
 		
 		// Invoke method to complete Remove Asset section
-		CI_Methods_Remove_Asset.addSuccessValuesSub100(driver, sTestCaseName);
+		CI_Methods_Remove_Asset.addSuccessValuesAll(driver, sTestCaseName);
+		Log.info("Remove Asset section completed");
 		
 		// Invoke method to complete New Meter section
-		CI_Methods_New_Meter_Details.addSuccessValuesWc(driver, sTestCaseName);
+		CI_Methods_New_Meter_Details.addSuccessValuesSub100Sm(driver, sTestCaseName);
+		Log.info("New Meter section completed");
 		
 		// Invoke method to complete Polarity Check At the Meter section
 		CI_Methods_Polarity_Check_At_Meter.addSuccessValuesAll(driver, sTestCaseName);
+		Log.info("Polarity Check At Meter section completed");
 		
 		// Invoke method to complete Polarity Check Martindale section
 		CI_Methods_Polarity_Check_Martindale.addSuccessValuesAll(driver, sTestCaseName);
+		Log.info("Polarity Check - Martindale section completed");
 		
 		// Invoke method to complete Detailed Meter Readings section
 		
 		
 		// Invoke method to complete Modem Comms section
-		CI_Methods_Modem_Comms_Details.addSuccessValuesGsmModem(driver, sTestCaseName);
+		CI_Methods_Modem_Comms_Details.addSuccessValuesAllGsmModem(driver, sTestCaseName);
+		Log.info("Modem Comms Details section completed");
 		
 		//Invoke method to complete Non-Serialised Asset Information section
-		CI_Methods_Non_Serialised_Asset_Info.addSuccessValuesAerial(driver, sTestCaseName);
+		CI_Methods_Non_Serialised_Asset_Info.addSuccessValuesAllAerial(driver, sTestCaseName);
+		Log.info("Non-Serialised Asset Info section completed");
 		
 		// Invoke method to complete Post Installation Checks (For Whole Current 1PH/3PH Metering)
 		CI_Methods_Post_Install_Checks_Wc.addSuccessValues1ph(driver, sTestCaseName);
+		Log.info("Post Installation Checks (WC) section completed");
 		
 		// Invoke method to complete the Fault section
 		CI_Methods_Fault.addSuccessValuesAllFaultPart3(driver, sTestCaseName);
+		Log.info("Fault (part 3) section completed");
 		
 		// Invoke method to complete the final section: Complete Job
 		CI_Methods_Complete_Job.addSuccessValuesAll(driver, sTestCaseName);
+		Log.info("Job Completion section completed");
 		
 		
 	}

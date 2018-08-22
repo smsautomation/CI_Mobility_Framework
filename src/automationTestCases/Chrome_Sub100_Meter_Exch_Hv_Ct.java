@@ -147,19 +147,22 @@ public class Chrome_Sub100_Meter_Exch_Hv_Ct {
 		
 		
 		// Invoke method to complete the New Meter Details section
-		CI_Methods_New_Meter_Details.addSuccessValuesHvLv(driver, sTestCaseName);
+		CI_Methods_New_Meter_Details.addSuccessValuesSub100Sm(driver, sTestCaseName);
+		Log.info("New Meter section completed");
 		
 		// Invoke method to complete the Phase Rotation Test section 
 		CI_Methods_Phase_Rotation_Test.addSuccessValuesAll(driver, sTestCaseName);
 		
 		// Invoke method to complete VT/CT Information for DNO/BNO and Additional Equipment
-		CI_Methods_Vt_Ct_Info_Dno_Bno.addSuccessValuesHv(driver, sTestCaseName);
+		CI_Methods_Vt_Ct_Info_Dno_Bno.addSuccessValuesAllNonCop2Hv(driver, sTestCaseName);
+		Log.info("VT CT info for DNO/BNO (Non-COP2 HV) section completed");
 		
 		// Invoke method to complete Detailed Meter Readings
 		
 		
 		// Invoke method to complete Modem/Comms Details
-		CI_Methods_Modem_Comms_Details.addSuccessValuesPaknetModem(driver, sTestCaseName);
+		CI_Methods_Modem_Comms_Details.addSuccessValuesAllPaknetModem(driver, sTestCaseName);
+		Log.info("Modem Comms Details (Paknet modem) section completed");
 		
 		// Invoke method to complete the Non-Serialised Asset Information
 		CI_Methods_Non_Serialised_Asset_Info.addSuccessValuesContactor(driver, sTestCaseName);
@@ -168,7 +171,12 @@ public class Chrome_Sub100_Meter_Exch_Hv_Ct {
 		CI_Methods_Post_Install_Checks_Lv_Hv.addSuccessValuesLvHv(driver, sTestCaseName);
 		
 		// Invoke method to complete the Commissioning Document - HV CT
-		CI_Methods_Commissioning_Hv_Ct.addSuccessValuesHvCt(driver, sTestCaseName);
+		CI_Methods_Commissioning_Hv_Ct.addSuccessValuesAllPart1(driver, sTestCaseName);
+		Log.info("Commissioning (HV CT - part 1) section completed");
+		
+		// Invoke method to complete the Commissioning Document - HV CT
+		CI_Methods_Commissioning_Hv_Ct.addSuccessValuesAllPart2(driver, sTestCaseName);
+		Log.info("Commissioning (HV CT - part 2) section completed");
 		
 		// Invoke method to complete the final section, Complete Job
 		CI_Methods_Complete_Job.addSuccessValuesAll(driver, sTestCaseName);

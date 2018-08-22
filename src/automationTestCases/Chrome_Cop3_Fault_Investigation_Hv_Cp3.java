@@ -118,21 +118,27 @@ public class Chrome_Cop3_Fault_Investigation_Hv_Cp3 {
 						
 		// Invoke method to complete a successful initial risk assessment (check for smell of gas)
 		CI_Methods_Init_Risk_Assess.addSuccessValues(driver, sTestCaseName);
+		Log.info("Initial Risk Assessment section completed");
 						
 		// Invoke method to complete C&I Pre Task section
 		CI_Methods_Ci_Pre_Task.addSuccessValuesCop3Hv(driver, sTestCaseName);
+		Log.info("C&I Pre-Task section completed");
 		
 		// Invoke method to complete the Carry Out Network Signal Strength section
 		CI_Methods_Network_Signal_Strength_Test.addSuccessValuesAll(driver, sTestCaseName);
+		Log.info("Network Signal Strength Test section completed");
 		
 		// Invoke method to complete Carry Out Electricity Risk Assessment section
 		CI_Methods_Elec_Risk_Assessment.addSuccessValuesAll(driver, sTestCaseName);
+		Log.info("Elec Risk Assessment section completed");
 
 		// Invoke method to complete the Initial Phase Rotation Test section
 		CI_Methods_Initial_Phase_Rotation_Test.addSuccessValuesNonDnoBno(driver, sTestCaseName);
+		Log.info("Initial Phase Rotation Test section completed");
 		
 		// Invoke method to complete the Test Block Tests section
 		CI_Methods_Test_Block_Tests.addSuccessValuesNonDnoBno(driver, sTestCaseName);
+		Log.info("Test Block Tests section completed");
 		
 		// Invoke method to complete Display Meter Details section
 		
@@ -142,49 +148,67 @@ public class Chrome_Cop3_Fault_Investigation_Hv_Cp3 {
 		
 		// Invoke method to complete the Fault section
 		CI_Methods_Fault.addSuccessValuesAllFaultPart1(driver, sTestCaseName);
+		Log.info("Fault (part 1) section completed");
 		
 		// Invoke method to complete the Non-Serialised Asset Information section
-		CI_Methods_Non_Serialised_Asset_Info.addSuccessValuePulseBox(driver, sTestCaseName);
+		CI_Methods_Non_Serialised_Asset_Info.addSuccessValuesAllPulseBox(driver, sTestCaseName);
+		Log.info("Non-Serialised Asset Info section completed");
 		
 		// Invoke method to complete the Fault section
 		CI_Methods_Fault.addSuccessValuesAllFaultPart2MeterExch(driver, sTestCaseName);
+		Log.info("Fault (part 2) section completed");
 		
 		// Invoke method to complete the Remove Meter Final Reading section
 		
 		
 		// Invoke method to complete the Remove Asset section
 		CI_Methods_Remove_Asset.addSuccessValuesAll(driver, sTestCaseName);
+		Log.info("Remove Asset section completed");
 		
 		// Invoke method to complete the New Meter section
-		
+		CI_Methods_New_Meter_Details.addSuccessValuesCop5Cop3Cop2(driver, sTestCaseName);
+		Log.info("New Meter section completed");
 		
 		// Invoke method to complete the Phase Rotation section
 		CI_Methods_Phase_Rotation_Test.addSuccessValuesAll(driver, sTestCaseName);
+		Log.info("Phase Rotation Test section completed");
 		
-		// Invoke method to complete the VT CT Information for DNO section
-		
+		// Invoke method to complete the VT CT Information for DNOBNO section
+		CI_Methods_Vt_Ct_Info_Dno_Bno.addSuccessValuesAllNonCop2Hv(driver, sTestCaseName);
+		Log.info("VT CT Info for DNO/BNO section completed");
 		
 		// Invoke method to complete the Detailed Meter Readings section
 		
 		
 		// Invoke method to complete the Modem Comms Details section
-		CI_Methods_Modem_Comms_Details.addSuccessValuesGsmModem(driver, sTestCaseName);					// need to check this is ok
+		CI_Methods_Modem_Comms_Details.addSuccessValuesAllGsmModem(driver, sTestCaseName);
+		Log.info("Modem Comms Details section completed");
 		
 		// Invoke method to complete the Non-Serialised Asset Information section
-		CI_Methods_Non_Serialised_Asset_Info.addSuccessValueElecInstall(driver, sTestCaseName);					// need to check this is ok
+		CI_Methods_Non_Serialised_Asset_Info.addSuccessValuesAllElecInstall(driver, sTestCaseName);
+		Log.info("Non-Serialised Asset Info section completed");
 		
 		// Invoke method to complete the Post Installation Check CT section
-		CI_Methods_Post_Install_Checks_Lv_Hv.addSuccessValuesLvHv(driver, sTestCaseName);		// need to check this is ok
+		CI_Methods_Post_Install_Checks_Lv_Hv.addSuccessValuesLvHv(driver, sTestCaseName);
+		Log.info("Post Installation Checks - LV HV section completed");
 		
 		// Invoke method to complete the Commission Document - HV CT section
-		CI_Methods_Commissioning_Hv_Ct.addSuccessValuesHvCt(driver, sTestCaseName);				// need to check this is ok
+		CI_Methods_Commissioning_Hv_Ct.addSuccessValuesAllPart1(driver, sTestCaseName);
+		Log.info("Commissioning - HV CT section completed");
+		
+		// *!*!*!*!* might want to include the LV currents or 3PH 4 wire parts - need to speak to Paul Meadows about when they're applicable *!*!*!*!*
+		
+		// Invoke method to complete the Commission Document - HV CT section
+		CI_Methods_Commissioning_Hv_Ct.addSuccessValuesAllPart2(driver, sTestCaseName);
+		Log.info("Commissioning - HV CT section completed");
 		
 		// Invoke method to complete the Fault section
-		CI_Methods_Fault.addSuccessValuesAllFaultPart3(driver, sTestCaseName);					// need to check this is ok
+		CI_Methods_Fault.addSuccessValuesAllFaultPart3(driver, sTestCaseName);
+		Log.info("Fault (part 3) section completed");
 		
 		// Invoke method to complete the final section: Complete Job
 		CI_Methods_Complete_Job.addSuccessValuesAll(driver, sTestCaseName);
-		
+		Log.info("Job Completion section completed");
 		
 	}
 

@@ -43,6 +43,35 @@ public class CI_Objects_Taa_Non_Compliance_Visit {
     	return element;
     }
     
+    public static WebElement btn_cop4_test(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_cop4_test not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement btn_site_survey_required(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_site_survey_required not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement btn_meter_read_required(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_meter_read_required not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
     
     // Job Resolution sub-section
     

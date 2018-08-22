@@ -148,22 +148,26 @@ public class Chrome_Sub100_Meter_Exch_Lv_Ct {
 				
 				
 		// Invoke method to complete the New Meter Details section
-		CI_Methods_New_Meter_Details.addSuccessValuesHvLv(driver, sTestCaseName);
+		CI_Methods_New_Meter_Details.addSuccessValuesSub100Sm(driver, sTestCaseName);
+		Log.info("New Meter section completed");
 				
 		// Invoke method to complete the Phase Rotation Test section 
 		CI_Methods_Phase_Rotation_Test.addSuccessValuesAll(driver, sTestCaseName);
 				
 		// Invoke method to complete VT/CT Information for DNO/BNO and Additional Equipment
-		CI_Methods_Vt_Ct_Info_Dno_Bno.addSuccessValuesLv(driver, sTestCaseName);
+		CI_Methods_Vt_Ct_Info_Dno_Bno.addSuccessValuesAllLv(driver, sTestCaseName);
+		Log.info("VT CT Info for DNO/BNO (All LV) section completed");
 		
 		// Invoke method to complete Detailed Meter Readings
 				
 				
 		// Invoke method to complete Modem/Comms Details
-		CI_Methods_Modem_Comms_Details.addSuccessValuesOtherModem(driver, sTestCaseName);
+		CI_Methods_Modem_Comms_Details.addSuccessValuesAllOtherModem(driver, sTestCaseName);
+		Log.info("Modem Comms Details (Other modem) section completed");
 				
 		// Invoke method to complete the Non-Serialised Asset Information
-		CI_Methods_Non_Serialised_Asset_Info.addSuccessValuePulseBox(driver, sTestCaseName);
+		CI_Methods_Non_Serialised_Asset_Info.addSuccessValuesAllPulseBox(driver, sTestCaseName);
+		Log.info("Non-Serialised Asset Info (pulse box) section completed");
 			
 		// Invoke method to complete the Post Installation Checks (For LV/HV CT Metering) section
 		CI_Methods_Post_Install_Checks_Lv_Hv.addSuccessValuesLvHv(driver, sTestCaseName);

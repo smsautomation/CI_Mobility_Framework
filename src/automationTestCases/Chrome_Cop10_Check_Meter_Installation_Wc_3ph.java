@@ -112,15 +112,14 @@ public class Chrome_Cop10_Check_Meter_Installation_Wc_3ph {
 				
 		// Invoke method to complete Call Forward and Doorstep Protocol sections
 		CI_Methods_Call_Forward.addSuccessValues(driver, sTestCaseName);
-		System.out.println("call forward complete");
 		CI_Methods_Doorstep_Protocol.addSuccessValues(driver, sTestCaseName);
-		System.out.println("doorstep protocol complete");
 						
 		// Invoke method to complete a successful initial risk assessment (check for smell of gas)
 		CI_Methods_Init_Risk_Assess.addSuccessValues(driver, sTestCaseName);
 						
 		// Invoke method to complete C&I Pre Task section
-		CI_Methods_Ci_Pre_Task.addSuccessValuesSub100Wc1ph(driver, sTestCaseName);
+		CI_Methods_Ci_Pre_Task.addSuccessValuesCop10Wc3ph(driver, sTestCaseName);
+		Log.info("C&I Pre-Task (WC 3PH) section completed");
 		
 		// Invoke method to complete the Carry Out Network Signal Strength section
 		CI_Methods_Network_Signal_Strength_Test.addSuccessValuesAll(driver, sTestCaseName);

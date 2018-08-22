@@ -149,7 +149,8 @@ public class Chrome_Sub100_Meter_Exch_Wc_3ph {
 		
 		
 		// Invoke method to complete New Meter section
-		CI_Methods_New_Meter_Details.addSuccessValuesWc(driver, sTestCaseName);
+		CI_Methods_New_Meter_Details.addSuccessValuesSub100Sm(driver, sTestCaseName);
+		Log.info("New Meter section completed");
 		
 		// Invoke method to complete Polarity Check At the Meter section
 		CI_Methods_Polarity_Check_At_Meter.addSuccessValuesAll(driver, sTestCaseName);
@@ -164,10 +165,12 @@ public class Chrome_Sub100_Meter_Exch_Wc_3ph {
 		
 		
 		// Invoke method to complete the Modem/Comms Details section
-		CI_Methods_Modem_Comms_Details.addSuccessValuesPstnModem(driver, sTestCaseName);
+		CI_Methods_Modem_Comms_Details.addSuccessValuesAllPstnModem(driver, sTestCaseName);
+		Log.info("Modem Comms Details (PSTN modem) section completed");
 		
 		// Invoke method to complete the Non-Serialised Asset Information section
-		CI_Methods_Non_Serialised_Asset_Info.addSuccessValueElecInstall(driver, sTestCaseName);
+		CI_Methods_Non_Serialised_Asset_Info.addSuccessValuesAllElecInstall(driver, sTestCaseName);
+		Log.info("Non-Serialised Asset Info (Elec install) section completed");
 		
 		// Invoke method to complete the Post Installation Checks (For Whole Current 1PH/3PH Metering) section
 		CI_Methods_Post_Install_Checks_Wc.addSuccessValues3ph(driver, sTestCaseName);

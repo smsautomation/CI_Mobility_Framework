@@ -14,7 +14,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases;
 
 import org.apache.log4j.xml.DOMConfigurator;
@@ -177,3 +177,4 @@ public class Exchange_1_Gas_Meter_Initial_Risk_Assessment_Gas_Abort_Chrome {
 	}
 }
 
+*/

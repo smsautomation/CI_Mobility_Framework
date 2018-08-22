@@ -70,7 +70,7 @@ public class CI_Methods_Non_Serialised_Asset_Info{
 	
 	
 	/* **************************************************************************************************
-	* Function: addSuccessValuesAerial
+	* Function: addSuccessValuesAllAerial
 	* Author: Charlotte Jones
 	* Date: 07/08/2018
 	* Purpose: This method adds the required responses in the Non Serialised Assets section for a happy
@@ -86,7 +86,7 @@ public class CI_Methods_Non_Serialised_Asset_Info{
 	* Details:
 	*
 	****************************************************************************************************/	
-	public static void addSuccessValuesAerial(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesAllAerial(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		
 		// *!*!*!*!*!*!*!*!* Need to complete the below with valid values *!*!*!*!*!*!*!*!*
@@ -125,12 +125,12 @@ public class CI_Methods_Non_Serialised_Asset_Info{
 		
 	}
 
-	// END OF ADD SUCCESS VALUES AERIAL METHOD
+	// END OF ADD SUCCESS VALUES ALL AERIAL METHOD
 	
 	
 
 	/* **************************************************************************************************
-	* Function: addSuccessValuesContactor
+	* Function: addSuccessValuesAllContactor
 	* Author: Charlotte Jones
 	* Date: 07/08/2018
 	* Purpose: This method adds the required responses in the Non Serialised Assets section for a happy
@@ -181,12 +181,12 @@ public class CI_Methods_Non_Serialised_Asset_Info{
 		
 	}
 	
-	// END OF ADD SUCCESS VALUES CONTACTOR METHOD
+	// END OF ADD SUCCESS VALUES ALL CONTACTOR METHOD
 	
 	
 	
 	/* **************************************************************************************************
-	* Function: addSuccessValuesPulseBox
+	* Function: addSuccessValuesAllPulseBox
 	* Author: Charlotte Jones
 	* Date: 07/08/2018
 	* Purpose: This method adds the required responses in the Non Serialised Assets section for a happy
@@ -202,7 +202,7 @@ public class CI_Methods_Non_Serialised_Asset_Info{
 	* Details:
 	*
 	****************************************************************************************************/	
-	public static void addSuccessValuePulseBox(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesAllPulseBox(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		
 		// *!*!*!*!*!*!*!*!* Need to complete the below with valid values *!*!*!*!*!*!*!*!*	
@@ -239,11 +239,11 @@ public class CI_Methods_Non_Serialised_Asset_Info{
 		
 	}
 	
-	// END OF ADD SUCCESS VALUES PULSE BOX METHOD
+	// END OF ADD SUCCESS VALUES ALL PULSE BOX METHOD
 	
 	
 	/* **************************************************************************************************
-	* Function: addSuccessValuesElecInstall
+	* Function: addSuccessValuesAllElecInstall
 	* Author: Charlotte Jones
 	* Date: 07/08/2018
 	* Purpose: This method adds the required responses in the Non Serialised Assets section for a happy
@@ -259,7 +259,7 @@ public class CI_Methods_Non_Serialised_Asset_Info{
 	* Details:
 	*
 	****************************************************************************************************/	
-	public static void addSuccessValueElecInstall(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesAllElecInstall(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		
 		// *!*!*!*!*!*!*!*!* Need to complete the below with valid values *!*!*!*!*!*!*!*!*	
@@ -297,7 +297,7 @@ public class CI_Methods_Non_Serialised_Asset_Info{
 		
 	}
 	
-	// END OF ADD SUCCESS VALUES ELEC INSTALL METHOD
+	// END OF ADD SUCCESS VALUES ALL ELEC INSTALL METHOD
 	
 	
 	

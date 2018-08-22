@@ -126,7 +126,8 @@ public class Chrome_Cop10_Check_Meter_Installation_Wc_1ph {
 		CI_Methods_Elec_Risk_Assessment.addSuccessValuesAll(driver, sTestCaseName);
 		
 		// Invoke method to complete the Pre-Task - Determine if Customer Needs To Isolate Sensitive Equipment section 
-		
+		CI_Methods_Pre_Task_Isolate_Sensitive_Equipment.addSuccessValuesAllYes(driver, sTestCaseName);
+		Log.info("Pre Task - Determin if Customer Needs to Isolate Sensitive Equipment section completed");
 		
 		// Invoke method to complete the Initial Polarity Check - Martindale section
 		CI_Methods_Initial_Polarity_Check_Martindale.addSuccessValuesAll(driver, sTestCaseName);
@@ -135,7 +136,7 @@ public class Chrome_Cop10_Check_Meter_Installation_Wc_1ph {
 		CI_Methods_Initial_Polarity_Check_At_Meter.addSuccessValuesSub100Cop10Cop5SmWc(driver, sTestCaseName);
 		
 		// Invoke method to complete Display Meter Details section
-	
+		
 		
 		// Invoke method to complete the Detailed Meter Readings section
 		

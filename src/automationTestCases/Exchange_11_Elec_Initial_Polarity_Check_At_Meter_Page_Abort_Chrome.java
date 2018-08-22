@@ -15,6 +15,7 @@
 *
 *********************************************************************/
 
+/*
 package automationTestCases;
 
 
@@ -226,3 +227,4 @@ public class Exchange_11_Elec_Initial_Polarity_Check_At_Meter_Page_Abort_Chrome 
 	}
 }
 
+*/

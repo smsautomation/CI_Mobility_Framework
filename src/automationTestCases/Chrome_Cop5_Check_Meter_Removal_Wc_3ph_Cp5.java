@@ -112,9 +112,7 @@ public class Chrome_Cop5_Check_Meter_Removal_Wc_3ph_Cp5 {
 				
 		// Invoke method to complete Call Forward and Doorstep Protocol sections
 		CI_Methods_Call_Forward.addSuccessValues(driver, sTestCaseName);
-		System.out.println("call forward complete");
 		CI_Methods_Doorstep_Protocol.addSuccessValues(driver, sTestCaseName);
-		System.out.println("doorstep protocol complete");
 						
 		// Invoke method to complete a successful initial risk assessment (check for smell of gas)
 		CI_Methods_Init_Risk_Assess.addSuccessValues(driver, sTestCaseName);
