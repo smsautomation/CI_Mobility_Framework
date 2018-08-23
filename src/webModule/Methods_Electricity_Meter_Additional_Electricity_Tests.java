@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
@@ -27,6 +27,7 @@ public class Methods_Electricity_Meter_Additional_Electricity_Tests{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements that are expected are displayed
@@ -61,6 +62,7 @@ public class Methods_Electricity_Meter_Additional_Electricity_Tests{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful additional tests scenario 
@@ -122,6 +124,7 @@ public class Methods_Electricity_Meter_Additional_Electricity_Tests{
 		* Details:
 		*
 		****************************************************************************************************/	
+/*
 		public static void addSuccessValuesINST5(WebDriver driver, String sTestCaseName) throws Exception{
 		
 			//Add correct responses for a successful additional tests scenario for the INST5 workflow 
@@ -172,3 +175,4 @@ public class Methods_Electricity_Meter_Additional_Electricity_Tests{
 		
 //END OF METHODS
 }
+*/

@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.WebDriver;
 
 import pageObjectRepositories.Objects_Gas_Meter_Install_Kit_Page;
@@ -26,6 +26,7 @@ public class Methods_Gas_Meter_Install_Kit{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements that are expected are displayed
@@ -63,7 +64,8 @@ public class Methods_Gas_Meter_Install_Kit{
 	* Author: 
 	* Details:
 	*
-	****************************************************************************************************/	
+	****************************************************************************************************/
+/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful install kit scenario 
@@ -86,3 +88,4 @@ public class Methods_Gas_Meter_Install_Kit{
 		
 //END OF METHODS
 }
+*/

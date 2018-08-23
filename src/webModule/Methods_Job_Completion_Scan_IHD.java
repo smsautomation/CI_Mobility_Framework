@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -29,6 +29,7 @@ public class Methods_Job_Completion_Scan_IHD{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements of that are expected are displayed
@@ -63,6 +64,7 @@ public class Methods_Job_Completion_Scan_IHD{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewPageSMETS2(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements of that are expected are displayed
@@ -98,6 +100,7 @@ public class Methods_Job_Completion_Scan_IHD{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful installed meters configuration
@@ -144,6 +147,7 @@ public class Methods_Job_Completion_Scan_IHD{
 		* Details:
 		*
 		****************************************************************************************************/	
+/*
 		public static void addSuccessValuesSMETS2(WebDriver driver, String sTestCaseName) throws Exception{
 		
 			//Click on the Asset selection Combo box and select the first option
@@ -193,3 +197,4 @@ public class Methods_Job_Completion_Scan_IHD{
 			
 //END OF METHODS
 }
+*/

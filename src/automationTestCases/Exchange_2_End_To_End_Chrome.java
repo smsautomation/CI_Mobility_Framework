@@ -211,6 +211,7 @@ public class Exchange_2_End_To_End_Chrome {
 		Methods_Electricity_Meter_Initial_Polarity_Check_Martindale_Test.addSuccessValues(driver, sTestCaseName);
 		*/
 		
+		/*
 		//Invoke Method to complete a successful Martindale Test 
 		// Added by Tomasz
 		Methods_Electricity_Meter_Initial_Polarity_Check_Martindale_Test.addSuccessValuesSocket(driver, sTestCaseName);

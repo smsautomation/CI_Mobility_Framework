@@ -37,7 +37,7 @@ public class CI_Objects_Remove_Asset {
     	}
     	return element;
     }
-    
+
     public static WebElement btn_delete_removed_asset(WebDriver driver) {
     	
     	try {

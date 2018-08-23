@@ -14,7 +14,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases;
 
 import org.apache.log4j.xml.DOMConfigurator;
@@ -188,13 +188,17 @@ public class Exchange_3_Elec_Suitable_For_Smart_Installation_Page_Abort_Chrome {
 		//Invoke Method to complete Aborts questions for a success outcome 
 		Methods_Aborts.addSuccessValuesReasonsOrange(driver, sTestCaseName);
 		
-		/*//Verify that we are on the Gas Meter Initial Risk Assessment page
+		/*
+		 //Verify that we are on the Gas Meter Initial Risk Assessment page
 		Objects_Gas_Meter_Initial_Risk_Assessment_Page.lbl_Initial_Risk_Assessment(driver).isDisplayed();
 		Log.info("Gas Meter Initial Risk Assessment page displayed as expected");	
 								
 		//Invoke Method to complete a successful initial risk assessment 
-		Methods_Gas_Meter_Initial_Risk_Assessment.addSuccessValues(driver, sTestCaseName);*/
-					
+		Methods_Gas_Meter_Initial_Risk_Assessment.addSuccessValues(driver, sTestCaseName);
+		*/
+		
+		/*
+
 		//Verify that we are on the Gas Meter Risk Assessment - Gas page
 		Objects_Gas_Meter_Risk_Assessment_Gas_Page.lbl_Risk_Assessment_Gas(driver).isDisplayed();
 		Log.info("Risk Assessment - Gas page displayed as expected");
@@ -240,4 +244,4 @@ public class Exchange_3_Elec_Suitable_For_Smart_Installation_Page_Abort_Chrome {
 	
 	}
 }
-
+*/

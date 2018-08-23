@@ -13,7 +13,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases.automationTestCases;
 
 import java.util.concurrent.TimeUnit;
@@ -351,3 +351,4 @@ public class Exchange_11_End_To_End_IE {
 	}
 }
 
+*/

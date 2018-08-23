@@ -63,7 +63,7 @@ public class CI_Methods_De_Energisation_Of_Supply{
 	
 		
 	/* **************************************************************************************************
-	* Function: addSuccessValues
+	* Function: addSuccessValuesAll
 	* Author: Charlotte Jones
 	* Date: 09/08/2018
 	* Purpose: This method adds the required responses in the De-energisation of Supply section for a
@@ -80,14 +80,13 @@ public class CI_Methods_De_Energisation_Of_Supply{
 	****************************************************************************************************/	
 	
 	
-	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesAll(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		
-		// Install Check Meter
-		
+				
 		CI_Objects_De_Energisation_Of_Supply.btn_supply_de_energised_y(driver).click();
 	    {
-			Log.info(sTestCaseName + " | Supply De-energised? Yes radio button selected");
+			Log.info(sTestCaseName + " | Supply De-energised? - Yes radio button selected");
 		}
 	    
 	    CI_Objects_De_Energisation_Of_Supply.btn_safety_label_fitted(driver).click();
@@ -97,7 +96,7 @@ public class CI_Methods_De_Energisation_Of_Supply{
 	    
 	    CI_Objects_De_Energisation_Of_Supply.btn_all_seals_intact(driver).click();
 	    {
-			Log.info(sTestCaseName + " | All Seals Intact =- Including Blocks and Isolators checkbox ticked");
+			Log.info(sTestCaseName + " | All Seals Intact - Including Blocks and Isolators checkbox ticked");
 		}
 	    
 	    CI_Objects_De_Energisation_Of_Supply.btn_visual_inspection_completed(driver).click();

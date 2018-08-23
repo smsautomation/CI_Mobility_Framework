@@ -14,7 +14,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases;
 
 
@@ -149,4 +149,4 @@ public class Exchange_5_Appointment_Details_Page_Abort_No_Access_Chrome {
 	
 	}
 }
-
+*/

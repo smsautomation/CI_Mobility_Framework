@@ -13,7 +13,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases.automationTestCases;
 
 import java.util.concurrent.TimeUnit;
@@ -361,7 +361,7 @@ public class IE_Sub100_Meter_Exch_Wc_3ph {
 	}
 	
 		*/
-	
+	/*
 	//Log out
 	@AfterMethod
 	public void afterMethod() {
@@ -372,4 +372,4 @@ public class IE_Sub100_Meter_Exch_Wc_3ph {
 	
 	}
 }
-
+*/

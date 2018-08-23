@@ -14,7 +14,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases;
 
 import org.apache.log4j.xml.DOMConfigurator;
@@ -202,4 +202,4 @@ public class FLTY_2_Elec_Determine_Emergency_Call_Out_Page_Abort_Chrome {
 	
 	}
 }
-
+*/

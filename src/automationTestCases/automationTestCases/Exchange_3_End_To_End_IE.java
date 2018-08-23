@@ -13,7 +13,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases.automationTestCases;
 
 import org.apache.log4j.xml.DOMConfigurator;
@@ -533,4 +533,4 @@ public class Exchange_3_End_To_End_IE {
 	
 	}
 }
-
+*/

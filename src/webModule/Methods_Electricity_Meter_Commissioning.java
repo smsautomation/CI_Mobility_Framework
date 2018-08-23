@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
@@ -27,6 +27,7 @@ public class Methods_Electricity_Meter_Commissioning{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements that are expected are displayed
@@ -55,10 +56,10 @@ public class Methods_Electricity_Meter_Commissioning{
 		}
 		*/
 		//Take a screenshot to show what we've done
-		Utils.takeScreenshot(driver, sTestCaseName + "-viewPage");
+		//Utils.takeScreenshot(driver, sTestCaseName + "-viewPage");
 		
 	//END OF VIEW PAGE METHOD
-	}
+	//}
 	
 	/* **************************************************************************************************
 	* Function: addSuccessValues
@@ -77,6 +78,7 @@ public class Methods_Electricity_Meter_Commissioning{
 	* Details:
 	*
 	****************************************************************************************************/	
+	/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful commissioning scenario 
@@ -110,6 +112,7 @@ public class Methods_Electricity_Meter_Commissioning{
 	* Details:
 	*
 	****************************************************************************************************/	
+	/*
 	//public static void addSuccessValuesSmart(WebDriver driver, String sTestCaseName) throws Exception{
 	public static void addSuccessValuesSmart(WebDriver driver, String sTestCaseName) throws Exception{
 	
@@ -171,6 +174,7 @@ public class Methods_Electricity_Meter_Commissioning{
 	* Details:
 	*
 	****************************************************************************************************/	
+	/*
 	//public static void addSuccessValuesSmart(WebDriver driver, String sTestCaseName) throws Exception{
 	public static void addSuccessValuesSpark(WebDriver driver, String sTestCaseName) throws Exception{
 	
@@ -194,3 +198,4 @@ public class Methods_Electricity_Meter_Commissioning{
 		
 //END OF METHODS
 }
+*/

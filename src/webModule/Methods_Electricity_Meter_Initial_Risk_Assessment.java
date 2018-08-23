@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.WebDriver;
 
 import pageObjectRepositories.Objects_Electricity_Meter_Initial_Risk_Assessment_Page;
@@ -26,6 +26,7 @@ public class Methods_Electricity_Meter_Initial_Risk_Assessment{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements of that are expected are displayed
@@ -65,6 +66,7 @@ public class Methods_Electricity_Meter_Initial_Risk_Assessment{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewSmellGasPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements of that are expected are displayed
@@ -107,10 +109,10 @@ public class Methods_Electricity_Meter_Initial_Risk_Assessment{
 		}
 		*/
 		//Take a screenshot to show what we've done
-		Utils.takeScreenshot(driver, sTestCaseName + "-viewSmellGasPage");
+		//Utils.takeScreenshot(driver, sTestCaseName + "-viewSmellGasPage");
 		
 	//END OF VIEW SMELL GAS PAGE METHOD
-	}
+	//}
 	
 	/* **************************************************************************************************
 	* Function: addSuccessValues
@@ -129,6 +131,7 @@ public class Methods_Electricity_Meter_Initial_Risk_Assessment{
 	* Details:
 	*
 	****************************************************************************************************/	
+	/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful initial risk assessment
@@ -163,6 +166,7 @@ public class Methods_Electricity_Meter_Initial_Risk_Assessment{
 	* Details:
 	*
 	****************************************************************************************************/	
+	/*
 	public static void addAbortValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for an Elec Meter Procedure Fail Abort
@@ -205,3 +209,4 @@ public class Methods_Electricity_Meter_Initial_Risk_Assessment{
 	
 //END OF METHODS
 }
+	*/

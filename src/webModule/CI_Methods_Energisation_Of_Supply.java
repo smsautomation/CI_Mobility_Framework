@@ -63,7 +63,7 @@ public class CI_Methods_Energisation_Of_Supply{
 	
 		
 	/* **************************************************************************************************
-	* Function: addSuccessValuesBeforeMeterReadings
+	* Function: addSuccessValuesAllBeforeMeterReadings
 	* Author: Charlotte Jones
 	* Date: 09/08/2018
 	* Purpose: This method adds the required responses in the Energisation of Supply section for a
@@ -81,7 +81,7 @@ public class CI_Methods_Energisation_Of_Supply{
 	****************************************************************************************************/	
 	
 	
-	public static void addSuccessValuesBeforeMeterReadings(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void addSuccessValuesAllBeforeMeterReadings(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		
 		CI_Objects_Energisation_Of_Supply.btn_supply_live_y(driver).click();
@@ -96,7 +96,7 @@ public class CI_Methods_Energisation_Of_Supply{
 	    
 	    CI_Objects_Energisation_Of_Supply.btn_phase_rotation_checked(driver).click();
 	    {
-			Log.info(sTestCaseName + " | Phase Rotation Checked At Service Cut Out checkboxed");
+			Log.info(sTestCaseName + " | Phase Rotation Checked At Service Cut Out checkbox ticked");
 	    }
 	    
 	    CI_Objects_Energisation_Of_Supply.btn_cust_install_complete_y(driver).click();
@@ -106,16 +106,40 @@ public class CI_Methods_Energisation_Of_Supply{
 	    
 	    CI_Objects_Energisation_Of_Supply.btn_supply_re_energised(driver).click();
 	    {
-			Log.info(sTestCaseName + " | Suppli Re-energisd and Safety Notices Fitted checkbox ticked");
+			Log.info(sTestCaseName + " | Supply Re-energised and Safety Notices Fitted checkbox ticked");
 	    }
 	    
 	    
 	}	
 	
 	
-	public static void addSuccessValuesAfterMeterReadings(WebDriver driver, String sTestCaseName) throws Exception{		
+	/* **************************************************************************************************
+	* Function: addSuccessValuesAllAfterMeterReadings
+	* Author: Charlotte Jones
+	* Date: 09/08/2018
+	* Purpose: This method adds the required responses in the Energisation of Supply section for a
+	* 	happy path scenario - this covers this part of the section once it comes back after calling
+	* 	Detailed Meter Readings
+	* Arguments:			
+	* Returns: 
+	*****************************************************************************************************
+	* Change Log:
+	* 
+	* Date:
+	* Author: 
+	* Details:
+	*
+	****************************************************************************************************/	
 	
+	
+	public static void addSuccessValuesAllAfterMeterReadings(WebDriver driver, String sTestCaseName) throws Exception{		
+	
+		// variables
+		String sSupplyEnergised = "comments about the energisation of supply";
+		
+		
 		CI_Objects_Energisation_Of_Supply.txt_supply_energised_comments(driver).click();
+		CI_Objects_Energisation_Of_Supply.txt_supply_energised_comments(driver).sendKeys(sSupplyEnergised);
 	    {
 			Log.info(sTestCaseName + " | Supply Energised - Comments field completed");
 		}

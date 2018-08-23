@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import pageObjectRepositories.Objects_Found_Meter_Details_Page;
@@ -26,6 +26,7 @@ public class Methods_Found_Meter_Details{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements that are expected are displayed
@@ -61,6 +62,7 @@ public class Methods_Found_Meter_Details{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 		
 		Objects_Found_Meter_Details_Page.txt_Found_Meter_Serial_No(driver).click();
@@ -85,7 +87,7 @@ public class Methods_Found_Meter_Details{
 		Objects_Found_Meter_Details_Page.cbx_SSC_Code(driver).sendKeys(Keys.ENTER);{
 		Log.info(sTestCaseName + " | CCS Code selected from the SSC Code Combobox");
 		}*/
-		
+		/*
 		Objects_Found_Meter_Details_Page.cbx_Found_Meter_Location_Code(driver).click();
 		Objects_Found_Meter_Details_Page.cbx_Found_Meter_Location_Code(driver).sendKeys("H");
 		Objects_Found_Meter_Details_Page.cbx_Found_Meter_Location_Code(driver).sendKeys(Keys.ENTER);{
@@ -129,7 +131,8 @@ public class Methods_Found_Meter_Details{
 	* Author: 
 	* Details:
 	*
-	****************************************************************************************************/	
+	****************************************************************************************************/
+/*
 	public static void addSuccessValuesEXCH5(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		Objects_Found_Meter_Details_Page.txt_Found_Meter_Serial_No(driver).click();
@@ -198,6 +201,7 @@ public class Methods_Found_Meter_Details{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValuesEXCH9(WebDriver driver, String sTestCaseName) throws Exception{
 		
 		Objects_Found_Meter_Details_Page.txt_Found_Meter_Serial_No(driver).click();{
@@ -230,7 +234,7 @@ public class Methods_Found_Meter_Details{
 		Objects_Found_Meter_Details_Page.cbx_SSC_Code(driver).sendKeys(Keys.ENTER);{
 		Log.info(sTestCaseName + " | CCS Code selected from the SSC Code Combobox");
 		}*/
-		
+		/*
 		Objects_Found_Meter_Details_Page.cbx_Found_Meter_Location_Code(driver).click();
 		Objects_Found_Meter_Details_Page.cbx_Found_Meter_Location_Code(driver).sendKeys("H");
 		Objects_Found_Meter_Details_Page.cbx_Found_Meter_Location_Code(driver).sendKeys(Keys.ENTER);{
@@ -273,6 +277,7 @@ public class Methods_Found_Meter_Details{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValuesEXCH11(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		Objects_Found_Meter_Details_Page.txt_Found_Meter_Serial_No(driver).click();
@@ -296,6 +301,7 @@ public class Methods_Found_Meter_Details{
 		Objects_Electricity_Meter_New_Meter_Details_Page.cbx_SSC_Code(driver).sendKeys(Keys.ENTER);{
 		Log.info(sTestCaseName + " | CCS Code selected from the SSC Code Combobox");
 		}*/
+/*
 		Objects_Found_Meter_Details_Page.cbx_Found_Meter_Location_Code(driver).click();
 		Objects_Found_Meter_Details_Page.cbx_Found_Meter_Location_Code(driver).sendKeys("H");
 		Objects_Found_Meter_Details_Page.cbx_Found_Meter_Location_Code(driver).sendKeys(Keys.ENTER);{
@@ -323,3 +329,4 @@ public class Methods_Found_Meter_Details{
 	//END OF ADD SUCCESS VALUES METHOD
 //END OF METHODS
 }
+*/

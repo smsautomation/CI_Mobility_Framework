@@ -1,6 +1,5 @@
 package webModule;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 import pageObjectRepositories.CI_Objects_Current_Meter_Details;
@@ -94,9 +93,9 @@ public class CI_Methods_Current_Meter_Details{
 			Log.info(sTestCaseName + " | No of Registers field completed");
 		}
 		
-		CI_Objects_Current_Meter_Details.btn_existing_serial_num_correct_y(driver).click();
+		CI_Objects_Current_Meter_Details.btn_below_meter_details_correct_y(driver).click();
 		{
-			Log.info(sTestCaseName + " | Existing Elec Meter Serial Number Details Correct? - Yes radio button clicked");
+			Log.info(sTestCaseName + " | Below Meter Details Correct? - Yes radio button clicked");
 		}
 		
 	    

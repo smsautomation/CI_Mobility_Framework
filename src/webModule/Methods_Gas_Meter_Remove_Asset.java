@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import pageObjectRepositories.Objects_Gas_Meter_Remove_Asset_Page;
@@ -26,6 +26,7 @@ public class Methods_Gas_Meter_Remove_Asset{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements that are expected are displayed
@@ -60,6 +61,7 @@ public class Methods_Gas_Meter_Remove_Asset{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 		Log.info("addSuccessValues: Started");
 		//Add correct responses for a successful remove asset 
@@ -76,6 +78,7 @@ public class Methods_Gas_Meter_Remove_Asset{
 		/*Objects_Gas_Meter_Remove_Asset_Page.btn_Remove_Success_OK(driver).click();{
 		Log.info(sTestCaseName + " | Remove Success OK button clicked");
 		}*/
+/*
 		Objects_Gas_Meter_Remove_Asset_Page.lbl_Gas_Remove_Asset_Complete(driver).isDisplayed();{
 		Log.info(sTestCaseName + " | Remove Asset Complete label displayed");
 		}
@@ -101,6 +104,7 @@ public class Methods_Gas_Meter_Remove_Asset{
 	* Details:
 	*
 	****************************************************************************************************/	
+	/*
 	public static void addSuccessValuesRMVE(WebDriver driver, String sTestCaseName) throws Exception{
 		Log.info("addSuccessValues: Started");
 		//Add correct responses for a successful remove asset 
@@ -119,6 +123,7 @@ public class Methods_Gas_Meter_Remove_Asset{
 		Log.info(sTestCaseName + " | Remove Success OK button clicked");
 		}
 		Thread.sleep(500);*/
+/*
 		Objects_Gas_Meter_Remove_Asset_Page.btn_Capture_Final_Photo(driver).click();{
 		Log.info(sTestCaseName + " | Remove Success OK button clicked");
 		}		
@@ -138,3 +143,4 @@ public class Methods_Gas_Meter_Remove_Asset{
 		
 //END OF METHODS
 }
+*/

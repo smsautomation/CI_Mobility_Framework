@@ -86,6 +86,10 @@ public class CI_Methods_Reprogramme_Meter{
 	*
 	****************************************************************************************************/	
 	public static void addSuccessValuesNoCommission(WebDriver driver, String sTestCaseName) throws Exception{
+		
+		
+	 ***** need to clarify whether or not this method is valid for sub100 meter types - email to nicky 23/08/2018 ******	
+	 // deliberately left the above not commented out, so that it would create an error to make me come back to it!
 	
 		// *!*!*!*!*!*!*!* Need values for below variables *!*!*!*!*!*!*!* 
 		

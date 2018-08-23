@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import pageObjectRepositories.Objects_Electricity_Meter_Han_Wan_Checks_Page;
@@ -25,7 +25,8 @@ public class Methods_Electricity_Meter_Han_Wan_Checks{
 	* Author: 
 	* Details:
 	*
-	****************************************************************************************************/	
+	****************************************************************************************************/
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements that are expected are displayed
@@ -63,7 +64,8 @@ public class Methods_Electricity_Meter_Han_Wan_Checks{
 	* Author: 
 	* Details:
 	*
-	****************************************************************************************************/	
+	****************************************************************************************************/
+/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful HAN / WAN check 
@@ -124,6 +126,7 @@ public class Methods_Electricity_Meter_Han_Wan_Checks{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessSPRKValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful HAN / WAN check 
@@ -193,6 +196,7 @@ public class Methods_Electricity_Meter_Han_Wan_Checks{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addAbortValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for an aborted HAN/WAN Check check
@@ -229,3 +233,4 @@ public class Methods_Electricity_Meter_Han_Wan_Checks{
 	
 //END OF METHODS
 }
+*/

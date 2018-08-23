@@ -13,7 +13,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases.automationTestCases;
 
 import java.util.concurrent.TimeUnit;
@@ -230,4 +230,4 @@ public class NMEX_5_End_To_End_IE {
 	
 	}
 }
-
+*/

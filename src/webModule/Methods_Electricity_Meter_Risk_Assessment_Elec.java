@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
@@ -27,6 +27,7 @@ public class Methods_Electricity_Meter_Risk_Assessment_Elec{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements of that are expected are displayed
@@ -61,7 +62,8 @@ public class Methods_Electricity_Meter_Risk_Assessment_Elec{
 	* Author: 
 	* Details:
 	*
-	****************************************************************************************************/	
+	****************************************************************************************************/
+/*
 	public static void viewRiskAssessmentYesPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements of that are expected are displayed
@@ -111,6 +113,7 @@ public class Methods_Electricity_Meter_Risk_Assessment_Elec{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful risk assessment - elec
@@ -166,6 +169,7 @@ public class Methods_Electricity_Meter_Risk_Assessment_Elec{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addAbortValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for an Elec Meter Procedure Fail Abort
@@ -203,3 +207,4 @@ public class Methods_Electricity_Meter_Risk_Assessment_Elec{
 	
 //END OF METHODS
 }
+*/

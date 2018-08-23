@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.WebDriver;
 
 import pageObjectRepositories.Objects_Electricity_Meter_Initial_Meter_Reading_Page;
@@ -26,6 +26,7 @@ public class Methods_Electricity_Meter_Initial_Meter_Reading{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements that are expected are displayed
@@ -64,6 +65,7 @@ public class Methods_Electricity_Meter_Initial_Meter_Reading{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful additional tests scenario 
@@ -102,6 +104,7 @@ public class Methods_Electricity_Meter_Initial_Meter_Reading{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValues2Registers(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful additional tests scenario 
@@ -143,6 +146,7 @@ public class Methods_Electricity_Meter_Initial_Meter_Reading{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValues1RDumb(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful additional tests scenario 
@@ -165,3 +169,4 @@ public class Methods_Electricity_Meter_Initial_Meter_Reading{
 		
 //END OF METHODS
 }
+*/

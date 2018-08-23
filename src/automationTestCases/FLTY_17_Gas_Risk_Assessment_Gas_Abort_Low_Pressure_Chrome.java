@@ -14,7 +14,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases;
 
 import org.apache.log4j.xml.DOMConfigurator;
@@ -445,4 +445,4 @@ public class FLTY_17_Gas_Risk_Assessment_Gas_Abort_Low_Pressure_Chrome {
 	
 	}
 }
-
+*/

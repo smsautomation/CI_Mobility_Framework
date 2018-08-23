@@ -14,7 +14,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases;
 
 import org.apache.log4j.xml.DOMConfigurator;
@@ -189,3 +189,4 @@ Methods_Login.viewPage(driver, sTestCaseName);
 	}
 }
 
+*/

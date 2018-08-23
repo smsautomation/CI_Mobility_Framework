@@ -14,7 +14,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases;
 
 import org.apache.log4j.xml.DOMConfigurator;
@@ -446,3 +446,4 @@ public class Exchange_3_Gas_Risk_Assessment_Gas_Abort_Med_Pressure_Chrome {
 	}
 }
 
+*/

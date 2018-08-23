@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.WebDriver;
 import pageObjectRepositories.Objects_Gas_Meter_SMETS2_Install_Commissioning_Page;
 import utility.Log;
@@ -25,6 +25,7 @@ public class Methods_Gas_Meter_SMETS2_Install_Commissioning{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements that are expected are displayed
@@ -60,6 +61,7 @@ public class Methods_Gas_Meter_SMETS2_Install_Commissioning{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValuesSMETS2(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful commissioning scenario 
@@ -80,3 +82,4 @@ public class Methods_Gas_Meter_SMETS2_Install_Commissioning{
 		
 //END OF METHODS
 }
+*/

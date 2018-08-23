@@ -13,7 +13,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases;
 
 import org.apache.log4j.xml.DOMConfigurator;
@@ -109,4 +109,4 @@ public class Exchange_3_Return_To_Appointments_List_Page_From_Appointment_Detail
 	
 	}
 }
-
+*/

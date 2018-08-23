@@ -14,7 +14,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases;
 
 import org.apache.log4j.xml.DOMConfigurator;
@@ -205,4 +205,4 @@ public class Exchange_2_Elec_Suitable_For_Smart_Installation_Page_Abort_Chrome {
 	
 	}
 }
-
+*/

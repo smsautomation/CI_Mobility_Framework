@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.WebDriver;
 
 import pageObjectRepositories.Objects_Gas_Meter_Gas_Appliance_Safety_Checks_Page;
@@ -26,6 +26,7 @@ public class Methods_Gas_Meter_Gas_Appliance_Safety_Checks{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements of that are expected are displayed
@@ -81,6 +82,7 @@ public class Methods_Gas_Meter_Gas_Appliance_Safety_Checks{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful gas appliance safety check
@@ -108,3 +110,4 @@ public class Methods_Gas_Meter_Gas_Appliance_Safety_Checks{
 			
 //END OF METHODS
 }
+*/

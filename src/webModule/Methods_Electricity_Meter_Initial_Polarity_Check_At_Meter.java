@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.WebDriver;
 import pageObjectRepositories.Objects_Electricity_Meter_Initial_Polarity_Check_At_Meter_Page;
 import pageObjectRepositories.Objects_Found_Meter_Details_Page;
@@ -25,7 +25,8 @@ public class Methods_Electricity_Meter_Initial_Polarity_Check_At_Meter{
 	* Author: 
 	* Details:
 	*
-	****************************************************************************************************/	
+	****************************************************************************************************/
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 
@@ -66,6 +67,7 @@ public class Methods_Electricity_Meter_Initial_Polarity_Check_At_Meter{
 	* Details:
 	*
 	****************************************************************************************************/	
+	/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful initial polarity check 
@@ -100,6 +102,7 @@ public class Methods_Electricity_Meter_Initial_Polarity_Check_At_Meter{
 	* Details:
 	*
 	****************************************************************************************************/	
+	/*
 	public static void addSuccessValuesINST(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful initial polarity check 
@@ -133,6 +136,7 @@ public class Methods_Electricity_Meter_Initial_Polarity_Check_At_Meter{
 	* Details:
 	*
 	****************************************************************************************************/	
+	/*
 	public static void addSuccessValuesINSTFail(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful initial polarity check 
@@ -178,6 +182,7 @@ public class Methods_Electricity_Meter_Initial_Polarity_Check_At_Meter{
 	* Details:
 	*
 	****************************************************************************************************/	
+	/*
 	public static void addAbortValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for an aborted polarity check
@@ -225,3 +230,4 @@ public class Methods_Electricity_Meter_Initial_Polarity_Check_At_Meter{
 	
 //END OF METHODS
 }
+*/

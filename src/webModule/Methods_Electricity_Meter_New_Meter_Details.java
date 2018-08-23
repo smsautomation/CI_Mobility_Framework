@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -27,6 +27,7 @@ public class Methods_Electricity_Meter_New_Meter_Details{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements that are expected are displayed
@@ -61,6 +62,7 @@ public class Methods_Electricity_Meter_New_Meter_Details{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewPageSMETS2(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements that are expected are displayed
@@ -99,6 +101,7 @@ public class Methods_Electricity_Meter_New_Meter_Details{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 		
 		//Add correct responses for a successful new meter details 
@@ -136,6 +139,7 @@ public class Methods_Electricity_Meter_New_Meter_Details{
 		Objects_Electricity_Meter_New_Meter_Details_Page.cbx_SSC_Code(driver).sendKeys(Keys.ENTER);{
 		Log.info(sTestCaseName + " | CCS Code selected from the SSC Code Combobox");
 		}*/
+/*
 		Objects_Electricity_Meter_New_Meter_Details_Page.cbx_Meter_Location_Code(driver).click();
 		Objects_Electricity_Meter_New_Meter_Details_Page.cbx_Meter_Location_Code(driver).sendKeys("H");
 		Objects_Electricity_Meter_New_Meter_Details_Page.cbx_Meter_Location_Code(driver).sendKeys(Keys.ENTER);{
@@ -173,6 +177,7 @@ public class Methods_Electricity_Meter_New_Meter_Details{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValuesEXCH5(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful new meter details 
@@ -244,6 +249,7 @@ public class Methods_Electricity_Meter_New_Meter_Details{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValuesR1SMETS2(WebDriver driver, String sTestCaseName) throws Exception{
 		
 		//Click on the Asset selection Combo box and select the first option
@@ -330,7 +336,8 @@ public class Methods_Electricity_Meter_New_Meter_Details{
 	* Author: 
 	* Details:
 	*
-	****************************************************************************************************/	
+	****************************************************************************************************/
+/*
 	public static void addSuccessValuesEXCH9(WebDriver driver, String sTestCaseName) throws Exception{
 		
 		//Add correct responses for a successful new meter details 
@@ -409,6 +416,7 @@ public class Methods_Electricity_Meter_New_Meter_Details{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValuesEXCH11(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful new meter details 
@@ -443,6 +451,7 @@ public class Methods_Electricity_Meter_New_Meter_Details{
 		Objects_Electricity_Meter_New_Meter_Details_Page.cbx_SSC_Code(driver).sendKeys(Keys.ENTER);{
 		Log.info(sTestCaseName + " | CCS Code selected from the SSC Code Combobox");
 		}*/
+/*
 		Objects_Electricity_Meter_New_Meter_Details_Page.cbx_Meter_Location_Code(driver).click();
 		Objects_Electricity_Meter_New_Meter_Details_Page.cbx_Meter_Location_Code(driver).sendKeys("H");
 		Objects_Electricity_Meter_New_Meter_Details_Page.cbx_Meter_Location_Code(driver).sendKeys(Keys.ENTER);{
@@ -463,3 +472,4 @@ public class Methods_Electricity_Meter_New_Meter_Details{
 	//END OF ADD SUCCESS VALUES METHOD
 //END OF METHODS
 }
+*/

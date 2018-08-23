@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
@@ -27,6 +27,7 @@ public class Methods_Electricity_Meter_Remove_Asset{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements that are expected are displayed
@@ -61,6 +62,7 @@ public class Methods_Electricity_Meter_Remove_Asset{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful remove asset 
@@ -77,6 +79,7 @@ public class Methods_Electricity_Meter_Remove_Asset{
 		/*Objects_Electricity_Meter_Remove_Asset_Page.btn_Remove_Success_OK(driver).click();{
 		Log.info(sTestCaseName + " | Remove Success OK button clicked");
 		}*/
+/*
 		Objects_Electricity_Meter_Remove_Asset_Page.lbl_Remove_Asset_Complete(driver).isDisplayed();{
 		Log.info(sTestCaseName + " | Remove Meter Complete label displayed");
 		}
@@ -90,3 +93,4 @@ public class Methods_Electricity_Meter_Remove_Asset{
 		
 //END OF METHODS
 }
+*/

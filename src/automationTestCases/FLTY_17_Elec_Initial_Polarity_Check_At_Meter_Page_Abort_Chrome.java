@@ -14,7 +14,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases;
 
 import org.apache.log4j.xml.DOMConfigurator;
@@ -280,4 +280,4 @@ public class FLTY_17_Elec_Initial_Polarity_Check_At_Meter_Page_Abort_Chrome {
 	
 	}
 }
-
+*/

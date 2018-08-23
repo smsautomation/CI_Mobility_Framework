@@ -14,7 +14,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases;
 
 import org.apache.log4j.xml.DOMConfigurator;
@@ -419,6 +419,7 @@ public class Exchange_3_Elec_HAN_WAN_Checks_Page_Abort_Chrome {
 		Methods_Job_Completion_Configure_All_Meters_Installed.addSuccessValues(driver, sTestCaseName);
 		*/	
 		
+		/*
 		//Verify that we are on the Job Completion Energy Efficiency Information page
 		Objects_Job_Completion_Energy_Efficiency_Information_Page.lbl_Energy_Efficiency_Information(driver).isDisplayed();
 		Log.info("Job Completion Energy Efficient Information page displayed as expected");
@@ -429,6 +430,7 @@ public class Exchange_3_Elec_HAN_WAN_Checks_Page_Abort_Chrome {
 																																		
 		//Invoke Method to complete Energy Efficiency information page 
 		Methods_Job_Completion_Energy_Efficient_Information.addSuccessValues(driver, sTestCaseName);
+		
 		/*
 		//Verify that we are on the Job Completion Summary page
 		Objects_Job_Completion_Smart_Education_Page.lbl_Smart_Education(driver).isDisplayed();
@@ -439,8 +441,11 @@ public class Exchange_3_Elec_HAN_WAN_Checks_Page_Abort_Chrome {
 		Log.info("Job Completion Summary initial elements displayed as expected");
 																																				
 		//Invoke Method to complete Summary page 
-		Methods_Job_Completion_Smart_Education.addSuccessValues(driver, sTestCaseName);	*/
-																				
+		Methods_Job_Completion_Smart_Education.addSuccessValues(driver, sTestCaseName);
+		*/
+			
+		/*
+		 
 		//Verify that we are on the Job Completion Summary page
 		Objects_Job_Completion_Summary_Page.lbl_Summary(driver).isDisplayed();
 		Log.info("Job Completion Summary page displayed as expected");
@@ -481,4 +486,4 @@ public class Exchange_3_Elec_HAN_WAN_Checks_Page_Abort_Chrome {
 	
 	}
 }
-
+*/

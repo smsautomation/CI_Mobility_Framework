@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.WebDriver;
 import pageObjectRepositories.Objects_Appointment_Details_Page;
 import utility.Log;
@@ -52,6 +52,7 @@ public class Methods_Appointment_Details{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void getTableValues(int iRow) {
 		
 		sDataMPAN = Utils.assignStringVariable("E_SPR(mpan)", iRow); 
@@ -99,6 +100,7 @@ public class Methods_Appointment_Details{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewJobDetails(WebDriver driver, String sTestCaseName, int iRow) throws Exception{
 	
 		getTableValues(iRow);
@@ -177,6 +179,7 @@ public class Methods_Appointment_Details{
 		Log.info(sTestCaseName + " | \"" + sSupplier + "\" displayed as Supplier");
 		}
 */		
+/*
 		//Check that the Meter Type Elec is shown
 		if (sMeterTypeElec.length() > 0){
 			sMeterTypeElec = Objects_Appointment_Details_Page.Job_Details.lbl_Meter_Type_Elec(driver).getText();
@@ -202,7 +205,7 @@ public class Methods_Appointment_Details{
 		Log.info(sTestCaseName + " | \"" + sMeterTypeGas + "\" displayed as Meter Type Gas");
 		}
 		*/
-		
+		/*
 		//Check that the Job Description Gas is shown
 		if (sJobDescriptionGas.length() > 0){
 			sJobDescriptionGas = Objects_Appointment_Details_Page.Job_Details.lbl_Job_Description_Gas(driver).getText();
@@ -217,10 +220,10 @@ public class Methods_Appointment_Details{
 		}
 		*/
 		//Take a screenshot to show what we've done
-		Utils.takeScreenshot(driver, sTestCaseName + "-viewJobDetails");
+		//Utils.takeScreenshot(driver, sTestCaseName + "-viewJobDetails");
 		
 	//END OF VIEW JOB DETAILS METHOD	
-	}
+	//}
 	
 	/* **************************************************************************************************
 	* Function: viewCustomerDetailsItem
@@ -237,7 +240,8 @@ public class Methods_Appointment_Details{
 	* Author: 
 	* Details:
 	*
-	****************************************************************************************************/	
+	****************************************************************************************************/
+	/*
 	public static void viewCustomerDetails(WebDriver driver, String sTestCaseName, int iRow) throws Exception{
 	
 		getTableValues(iRow);
@@ -354,6 +358,7 @@ public class Methods_Appointment_Details{
 	* Details:
 	*
 	****************************************************************************************************/	
+	/*
 	public static void viewMeterDetails(WebDriver driver, String sTestCaseName, int iRow) throws Exception{
 	
 				
@@ -428,10 +433,10 @@ public class Methods_Appointment_Details{
 		*/
 		
 		//Take a screenshot to show what we've done
-		Utils.takeScreenshot(driver, sTestCaseName + "-viewJobDetails");
+		//Utils.takeScreenshot(driver, sTestCaseName + "-viewJobDetails");
 		
 	//END OF VIEW METER DETAILS METHOD	
-	}	
+	//}	
 	
 	
 	
@@ -451,6 +456,7 @@ public class Methods_Appointment_Details{
 	* Details:
 	*
 	****************************************************************************************************/	
+	/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements of that are expected are displayed
@@ -481,3 +487,4 @@ public class Methods_Appointment_Details{
 	}
 //END OF METHODS
 }
+	*/

@@ -13,7 +13,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases.automationTestCases;
 
 import java.util.concurrent.TimeUnit;
@@ -338,7 +338,7 @@ public class IE_Sub100_Meter_Exch_Hv_Ct {
 	}
 	
 		*/
-	
+	/*
 	//Log out
 	@AfterMethod
 	public void afterMethod() {
@@ -349,4 +349,4 @@ public class IE_Sub100_Meter_Exch_Hv_Ct {
 	
 	}
 }
-
+*/

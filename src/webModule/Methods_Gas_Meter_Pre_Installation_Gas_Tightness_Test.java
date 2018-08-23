@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
@@ -27,6 +27,7 @@ public class Methods_Gas_Meter_Pre_Installation_Gas_Tightness_Test{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements of that are expected are displayed
@@ -66,6 +67,7 @@ public class Methods_Gas_Meter_Pre_Installation_Gas_Tightness_Test{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful suitable for smart installation
@@ -105,6 +107,7 @@ public class Methods_Gas_Meter_Pre_Installation_Gas_Tightness_Test{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addAbortValuesFailedTest(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a Gas Meter Procedure Fail Abort
@@ -138,6 +141,7 @@ public class Methods_Gas_Meter_Pre_Installation_Gas_Tightness_Test{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addAbortValuesPressureDrop(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a Gas Meter Procedure Fail Abort
@@ -195,3 +199,4 @@ public class Methods_Gas_Meter_Pre_Installation_Gas_Tightness_Test{
 	
 //END OF METHODS
 }
+*/

@@ -14,7 +14,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases;
 
 import org.apache.log4j.xml.DOMConfigurator;
@@ -498,3 +498,4 @@ public class FLTY_17_Gas_Meter_Pre_Installation_Gas_Tightness_Test_Failed_Test_A
 	}
 }
 
+*/

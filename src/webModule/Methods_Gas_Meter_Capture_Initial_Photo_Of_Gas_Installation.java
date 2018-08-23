@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.WebDriver;
 
 import pageObjectRepositories.Objects_Gas_Meter_Capture_Initial_Photo_Of_Gas_Installation_Page;
@@ -26,6 +26,7 @@ public class Methods_Gas_Meter_Capture_Initial_Photo_Of_Gas_Installation{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements of that are expected are displayed
@@ -60,6 +61,7 @@ public class Methods_Gas_Meter_Capture_Initial_Photo_Of_Gas_Installation{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful suitable for smart installation
@@ -80,3 +82,4 @@ public class Methods_Gas_Meter_Capture_Initial_Photo_Of_Gas_Installation{
 	
 //END OF METHODS
 }
+*/

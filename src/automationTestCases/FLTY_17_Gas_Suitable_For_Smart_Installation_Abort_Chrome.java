@@ -14,7 +14,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases;
 
 import org.apache.log4j.xml.DOMConfigurator;
@@ -473,4 +473,4 @@ public class FLTY_17_Gas_Suitable_For_Smart_Installation_Abort_Chrome {
 	
 	}
 }
-
+*/

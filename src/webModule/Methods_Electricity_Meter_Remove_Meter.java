@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
@@ -27,6 +27,7 @@ public class Methods_Electricity_Meter_Remove_Meter{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements that are expected are displayed
@@ -69,6 +70,7 @@ public class Methods_Electricity_Meter_Remove_Meter{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful remove meter 
@@ -80,6 +82,7 @@ public class Methods_Electricity_Meter_Remove_Meter{
 		Log.info(sTestCaseName + " | No Fault Found selected from Status of Asset combobox");
 		}
 		*/
+/*
 		Objects_Electricity_Meter_Remove_Meter_Page.txt_Removed_Meter_Readings(driver).click();
 		Objects_Electricity_Meter_Remove_Meter_Page.txt_Removed_Meter_Readings(driver).sendKeys("12345");
 		Objects_Electricity_Meter_Remove_Meter_Page.txt_Removed_Meter_Readings(driver).sendKeys(Keys.TAB);{
@@ -98,3 +101,4 @@ public class Methods_Electricity_Meter_Remove_Meter{
 		
 //END OF METHODS
 }
+*/

@@ -2,7 +2,6 @@ package webModule;
 
 import org.openqa.selenium.WebDriver;
 
-import pageObjectRepositories.CI_Objects_Initial_Phase_Rotation_Test;
 import pageObjectRepositories.CI_Objects_Taa_Non_Compliance_Visit;
 import utility.Log;
 
@@ -252,7 +251,7 @@ public class CI_Methods_Taa_Non_Compliance_Visit{
 		
 		
 		CI_Objects_Taa_Non_Compliance_Visit.txt_outcome_of_visit(driver).click();
-		CI_Objects_Taa_Non_Compliance_Visit.txt_outcome_of_visit(driver).sendKeys(sVistOutcome);
+		CI_Objects_Taa_Non_Compliance_Visit.txt_outcome_of_visit(driver).sendKeys(sVisitOutcome);
 	    {
 			Log.info(sTestCaseName + " | Outcome of Visit textbox completed");
 		}

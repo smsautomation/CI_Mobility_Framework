@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import pageObjectRepositories.Objects_Electricity_Meter_Initial_Polarity_Check_Martindale_Test_Page;
@@ -25,7 +25,8 @@ public class Methods_Electricity_Meter_Initial_Polarity_Check_Martindale_Test{
 	* Author: 
 	* Details:
 	*
-	****************************************************************************************************/	
+	****************************************************************************************************/
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements of that are expected are displayed
@@ -60,6 +61,7 @@ public class Methods_Electricity_Meter_Initial_Polarity_Check_Martindale_Test{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful initial polarity check - Martindale test
@@ -111,7 +113,8 @@ public class Methods_Electricity_Meter_Initial_Polarity_Check_Martindale_Test{
 	* Author: 
 	* Details:
 	*
-	****************************************************************************************************/	
+	****************************************************************************************************/
+/*
 	public static void addSuccessValuesSocket(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful initial polarity check - Martindale test
@@ -167,3 +170,5 @@ public class Methods_Electricity_Meter_Initial_Polarity_Check_Martindale_Test{
 	
 //END OF METHODS
 }
+
+*/

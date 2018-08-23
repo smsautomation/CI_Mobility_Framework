@@ -84,7 +84,7 @@ public class CI_Objects_Elec_Risk_Assessment {
     public static WebElement btn_photo_hazards_pass(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("photoelectriskassessriskAssessPass));
+    		element = driver.findElement(By.id("photoelectriskassessriskAssessPass"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_photo_hazards_pass not found | Exception desc : "+e.getMessage());
     	}
@@ -116,7 +116,7 @@ public class CI_Objects_Elec_Risk_Assessment {
     public static WebElement btn_photo_hazards_fail(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("photoelecriskassessriskAssessFail));
+    		element = driver.findElement(By.id("photoelecriskassessriskAssessFail"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_photo_hazards_fail not found | Exception desc : "+e.getMessage());
     	}

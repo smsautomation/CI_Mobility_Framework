@@ -14,7 +14,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases;
 
 import org.apache.log4j.xml.DOMConfigurator;
@@ -164,3 +164,4 @@ public class Exchange_9_Doorstep_Protocol_Page_Abort_Doorstep_Procedure_Fail_Chr
 	}
 }
 
+*/

@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.WebDriver;
 
 import pageObjectRepositories.Objects_Gas_Meter_Remove_Meter_Page;
@@ -26,6 +26,7 @@ public class Methods_Gas_Meter_Remove_Meter{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements that are expected are displayed
@@ -68,6 +69,7 @@ public class Methods_Gas_Meter_Remove_Meter{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful remove meter 
@@ -78,6 +80,7 @@ public class Methods_Gas_Meter_Remove_Meter{
 		Log.info(sTestCaseName + " | No Fault Found selected from Status of Asset combobox");
 		}
 		*/
+/*
 		Objects_Gas_Meter_Remove_Meter_Page.txt_Removed_Meter_Readings(driver).click();
 		Objects_Gas_Meter_Remove_Meter_Page.txt_Removed_Meter_Readings(driver).sendKeys("12345");
 		Objects_Gas_Meter_Remove_Meter_Page.lbl_Gas_Meter_Serial_Number(driver).click();{
@@ -96,3 +99,4 @@ public class Methods_Gas_Meter_Remove_Meter{
 		
 //END OF METHODS
 }
+*/

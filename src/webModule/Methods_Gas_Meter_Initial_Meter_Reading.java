@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
@@ -27,6 +27,7 @@ public class Methods_Gas_Meter_Initial_Meter_Reading{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements that are expected are displayed
@@ -65,6 +66,7 @@ public class Methods_Gas_Meter_Initial_Meter_Reading{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful additional tests scenario 
@@ -90,3 +92,4 @@ public class Methods_Gas_Meter_Initial_Meter_Reading{
 		
 //END OF METHODS
 }
+*/

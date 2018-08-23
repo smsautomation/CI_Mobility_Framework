@@ -13,7 +13,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases;
 
 import org.apache.log4j.xml.DOMConfigurator;
@@ -315,4 +315,4 @@ public class INST_5_End_To_End_Chrome {
 	
 	}
 }
-
+*/

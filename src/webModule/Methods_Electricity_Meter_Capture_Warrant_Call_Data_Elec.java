@@ -1,5 +1,5 @@
 package webModule;
-
+/*
 import org.openqa.selenium.WebDriver;
 import pageObjectRepositories.Objects_Electricity_Meter_Capture_Warrant_Call_Data_Page;
 import utility.Log;
@@ -24,7 +24,8 @@ public class Methods_Electricity_Meter_Capture_Warrant_Call_Data_Elec{
 	* Author: 
 	* Details:
 	*
-	****************************************************************************************************/	
+	****************************************************************************************************/
+/*
 	public static void viewPage(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Check that all of the elements of that are expected are displayed
@@ -63,6 +64,7 @@ public class Methods_Electricity_Meter_Capture_Warrant_Call_Data_Elec{
 	* Details:
 	*
 	****************************************************************************************************/	
+/*
 	public static void addSuccessValues(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		//Add correct responses for a successful Meter Exchange
@@ -83,3 +85,4 @@ public class Methods_Electricity_Meter_Capture_Warrant_Call_Data_Elec{
 	
 //END OF METHODS
 }
+*/

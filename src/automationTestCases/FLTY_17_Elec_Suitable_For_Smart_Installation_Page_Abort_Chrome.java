@@ -14,7 +14,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases;
 
 import org.apache.log4j.xml.DOMConfigurator;
@@ -206,7 +206,7 @@ public class FLTY_17_Elec_Suitable_For_Smart_Installation_Page_Abort_Chrome {
 		//Invoke Method to complete a successful initial risk assessment 
 		Methods_Gas_Meter_Initial_Risk_Assessment.addSuccessValues(driver, sTestCaseName);
 		*/
-					
+		/*			
 		//Verify that we are on the Gas Meter Risk Assessment - Gas page
 		Objects_Gas_Meter_Risk_Assessment_Gas_Page.lbl_Risk_Assessment_Gas(driver).isDisplayed();
 		Log.info("Risk Assessment - Gas page displayed as expected");
@@ -252,4 +252,4 @@ public class FLTY_17_Elec_Suitable_For_Smart_Installation_Page_Abort_Chrome {
 	
 	}
 }
-
+*/

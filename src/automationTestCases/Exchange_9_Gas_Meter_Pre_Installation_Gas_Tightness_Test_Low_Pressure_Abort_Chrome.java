@@ -14,7 +14,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases;
 
 
@@ -507,3 +507,4 @@ public class Exchange_9_Gas_Meter_Pre_Installation_Gas_Tightness_Test_Low_Pressu
 	}
 }
 
+*/

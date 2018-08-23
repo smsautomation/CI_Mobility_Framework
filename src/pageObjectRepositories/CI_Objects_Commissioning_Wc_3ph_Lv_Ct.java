@@ -786,10 +786,6 @@ public class CI_Objects_Commissioning_Wc_3ph_Lv_Ct {
     	
     	
 
-    	
-
-    	  
-      }
 			
 //END OF METHODS	    
 }

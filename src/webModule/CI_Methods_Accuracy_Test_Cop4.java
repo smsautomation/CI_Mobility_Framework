@@ -68,7 +68,9 @@ public class CI_Methods_Accuracy_Test_Cop4{
 	* Author: Charlotte Jones
 	* Date: 08/08/2018
 	* Purpose: This method adds the required responses in the Accuracy Test (COP4) section for a happy
-	* path scenario - choosing type of test as TYPE B
+	* 	path scenario - choosing type of test as TYPE B
+	* Metering Supply Types:			sdf
+	* 									df
 	* Arguments:	sSerialNum
 	* 				sStartTime
 	* 				sErrorCalib
@@ -102,6 +104,8 @@ public class CI_Methods_Accuracy_Test_Cop4{
 	*
 	****************************************************************************************************/	
 	
+	**** 	need to look at meter types applicable for the classes in this method
+	//deliberately not commented out the above task to ensure it generates an error for me to come back to
 	
 	public static void addSuccessValuesCustLoadNonWc(WebDriver driver, String sTestCaseName) throws Exception{
 	

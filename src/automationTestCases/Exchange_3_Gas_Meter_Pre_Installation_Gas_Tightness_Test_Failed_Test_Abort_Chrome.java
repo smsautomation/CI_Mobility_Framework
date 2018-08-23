@@ -14,7 +14,7 @@
 * Details:
 *
 *********************************************************************/
-
+/*
 package automationTestCases;
 
 import org.apache.log4j.xml.DOMConfigurator;
@@ -486,3 +486,4 @@ public class Exchange_3_Gas_Meter_Pre_Installation_Gas_Tightness_Test_Failed_Tes
 	}
 }
 
+*/

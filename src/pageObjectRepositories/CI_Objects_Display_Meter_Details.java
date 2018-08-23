@@ -41,7 +41,7 @@ public class CI_Objects_Display_Meter_Details {
     public static WebElement btn_existing_serial_no_correct_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID);
+    		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_existing_serial_no_correct_y not found | Exception desc : "+e.getMessage());
     	}
@@ -83,7 +83,7 @@ public class CI_Objects_Display_Meter_Details {
     public static WebElement btn_continue_with_job_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(radiotargetfieldTrue));
+    		element = driver.findElement(By.id("radiotargetfieldTrue"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_continue_with_job_y not found | Exception desc : "+e.getMessage());
     	}
@@ -93,7 +93,7 @@ public class CI_Objects_Display_Meter_Details {
     public static WebElement btn_continue_with_job_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(radiotargetfieldFalse));
+    		element = driver.findElement(By.id("radiotargetfieldFalse"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_continue_with_job_n not found | Exception desc : "+e.getMessage());
     	}
