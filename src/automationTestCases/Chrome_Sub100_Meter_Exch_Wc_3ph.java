@@ -84,7 +84,7 @@ public class Chrome_Sub100_Meter_Exch_Wc_3ph {
 		
 		//Select the correct appointment
 		//driver.findElement(By.xpath(".//*[@id='app']/div/div/workorderlistitem[4]/div/div[1]/div/div[1]/span[3]/span")).click();
-		driver.findElement(By.xpath("//*[contains(text(), 'Charlotte116, Charlotte116, ,')]")).click();    // needs to be a unique reference in the whole page
+		driver.findElement(By.xpath("//*[contains(text(), 'Charlotte3, Charlotte3, ,')]")).click();    // needs to be a unique reference in the whole page
 		System.out.println("selected job");
 		Thread.sleep(2000);
 		
@@ -134,7 +134,7 @@ public class Chrome_Sub100_Meter_Exch_Wc_3ph {
 		CI_Methods_Initial_Polarity_Check_Martindale.addSuccessValuesAll(driver, sTestCaseName);
 		
 		// Invoke method to complete Initial Polarity Check - At Meter and Cut Out section
-		CI_Methods_Initial_Polarity_Check_At_Meter.addSuccessValuesSub100Cop10Cop5SmWc(driver, sTestCaseName);
+		CI_Methods_Initial_Polarity_Check_At_Meter_Cut_Out.addSuccessValuesSub100Cop10Cop5SmWc(driver, sTestCaseName);
 	
 		// Invoke method to complete Initial Phase Rotation Test section
 		CI_Methods_Initial_Phase_Rotation_Test.addSuccessValuesNonDnoBno(driver, sTestCaseName);

@@ -110,7 +110,7 @@ public class CI_Methods_Initial_Polarity_Check_Martindale{
 	    CI_Objects_Initial_Polarity_Check_Martindale.cbx_socket_test_location(driver).sendKeys(sSocketTestLoc);
 	    CI_Objects_Initial_Polarity_Check_Martindale.cbx_socket_test_location(driver).sendKeys(Keys.ENTER);
 	    
-	    CI_Objects_Initial_Polarity_Check_Martindale.btn_photo_socket_test(driver).click();
+	    CI_Objects_Initial_Polarity_Check_Martindale.btn_photo_pre_installation_martindale_test(driver).click();
 	    {
 			Log.info(sTestCaseName + " | Capture ? - Pass button clicked");
 		}

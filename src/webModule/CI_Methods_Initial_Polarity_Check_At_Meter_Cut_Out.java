@@ -2,10 +2,10 @@ package webModule;
 
 import org.openqa.selenium.WebDriver;
 
-import pageObjectRepositories.CI_Objects_Initial_Polarity_Check_At_Meter;
+import pageObjectRepositories.CI_Objects_Initial_Polarity_Check_At_Meter_Cut_Out;
 import utility.Log;
 
-public class CI_Methods_Initial_Polarity_Check_At_Meter{
+public class CI_Methods_Initial_Polarity_Check_At_Meter_Cut_Out{
 	
 	
 	
@@ -85,12 +85,12 @@ public class CI_Methods_Initial_Polarity_Check_At_Meter{
 	public static void addSuccessValuesSub100Cop10Cop5SmWc(WebDriver driver, String sTestCaseName) throws Exception{
 	
 		
-		CI_Objects_Initial_Polarity_Check_At_Meter.btn_polarity_check_at_cut_out_pass(driver).click();
+		CI_Objects_Initial_Polarity_Check_At_Meter_Cut_Out.btn_polarity_check_at_cut_out_pass(driver).click();
 	    {
 			Log.info(sTestCaseName + " | Polarity Check at Cut Out? - PASS radio button clicked");
 		}
 		
-		CI_Objects_Initial_Polarity_Check_At_Meter.btn_polarity_check_at_meter_pass(driver).click();
+		CI_Objects_Initial_Polarity_Check_At_Meter_Cut_Out.btn_polarity_check_at_meter_pass(driver).click();
 	    {
 			Log.info(sTestCaseName + " | Polarity Check at Meter(s)? - PASS radio button clicked");
 		}

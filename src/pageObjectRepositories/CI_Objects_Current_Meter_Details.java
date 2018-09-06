@@ -29,11 +29,12 @@ public class CI_Objects_Current_Meter_Details {
     private static WebElement element = null;
     private static String sRepositoryName = "CI_Objects_Metering_Tasks";
 
+public static class First_Meter_Details{    
     
     public static WebElement btn_below_meter_details_correct_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiotargetfieldTrue"));
+    		element = driver.findElement(By.id("radiotargetfieldTrue1DMD-0"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_below_meter_details_correct_y not found | Exception desc : "+e.getMessage());
     	}
@@ -43,17 +44,27 @@ public class CI_Objects_Current_Meter_Details {
     public static WebElement btn_below_meter_details_correct_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiotargetfieldFalse"));
+    		element = driver.findElement(By.id("radiotargetfieldFalse1DMD-0"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_below_meter_details_correct_n not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     	}
     
+    public static WebElement txt_meter_serial_number(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("meterSerialNoDMD-0"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_meter_serial_number not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }    
+    
     public static WebElement cbx_manufacturer_letter(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("meterManDMD-0"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |cbx_manufacturer_letter not found | Exception desc : "+e.getMessage());
     	}
@@ -63,7 +74,7 @@ public class CI_Objects_Current_Meter_Details {
     public static WebElement cbx_meter_type(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("meterTypeDMD-0"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |cbx_meter_type not found | Exception desc : "+e.getMessage());
     	}
@@ -73,7 +84,7 @@ public class CI_Objects_Current_Meter_Details {
     public static WebElement txt_ct_ratio(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("meterCTTypeDMD-0"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |txt_ct_ratio not found | Exception desc : "+e.getMessage());
     	}
@@ -83,7 +94,7 @@ public class CI_Objects_Current_Meter_Details {
     public static WebElement txt_vt_ratio(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("meterVTRatioDMD-0"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |txt_vt_ratio not found | Exception desc : "+e.getMessage());
     	}
@@ -93,14 +104,14 @@ public class CI_Objects_Current_Meter_Details {
     public static WebElement cbx_baud_rate(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("meterBaudRateDMD-0"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |cbx_baud_rate not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
     
-    public static WebElement txt_fuse_size(WebDriver driver) {
+    public static WebElement txt_fuse_size(WebDriver driver) {	// went through workflow as HV CT - this field is not applicable then - need to be LV CT or WC
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
@@ -110,7 +121,7 @@ public class CI_Objects_Current_Meter_Details {
     	return element;
     }
     
-    public static WebElement txt_ssc_code(WebDriver driver) {
+    public static WebElement txt_ssc_code(WebDriver driver) {	// went through workflow as HV CT - this field is not applicable then - need to be WC
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));
@@ -123,7 +134,7 @@ public class CI_Objects_Current_Meter_Details {
     public static WebElement cbx_meter_loc_code(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("meterLocationSelectDMD-0"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |cbx_meter_loc_code not found | Exception desc : "+e.getMessage());
     	}
@@ -133,7 +144,7 @@ public class CI_Objects_Current_Meter_Details {
     public static WebElement txt_comms_num(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("meterCommsNumDMD-0"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |txt_comms_num not found | Exception desc : "+e.getMessage());
     	}
@@ -143,27 +154,27 @@ public class CI_Objects_Current_Meter_Details {
     public static WebElement txt_ip_num(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("meterIPDMD-0"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |txt_ip_num not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
     
-    public static WebElement txt_cop_type(WebDriver driver) {
+    public static WebElement txt_cop_type(WebDriver driver) {	//  not mentioned in workflow doc
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("meterCopTypeDMD-0"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |txt_cop_type not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
     
-    public static WebElement txt_max_site_capacity(WebDriver driver) {
+    public static WebElement txt_max_site_capacity(WebDriver driver) {	//  not mentioned in workflow doc
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("meterMSCDMD-0"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |txt_cop_type not found | Exception desc : "+e.getMessage());
     	}
@@ -173,7 +184,7 @@ public class CI_Objects_Current_Meter_Details {
     public static WebElement txt_num_of_registers(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("meterNoRegistersDMD-0"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |txt_num_of_registers not found | Exception desc : "+e.getMessage());
     	}
@@ -183,7 +194,7 @@ public class CI_Objects_Current_Meter_Details {
     public static WebElement btn_are_meter_details_corrected_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiotargetfieldTrue"));
+    		element = driver.findElement(By.id("radiotargetfieldTrue2DMD-0"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_are_meter_details_corrected not found | Exception desc : "+e.getMessage());
     	}
@@ -193,7 +204,7 @@ public class CI_Objects_Current_Meter_Details {
     public static WebElement btn_are_meter_details_corrected_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiotargetfieldFalse"));
+    		element = driver.findElement(By.id("radiotargetfieldFalse2DMD-0"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_are_meter_details_corrected not found | Exception desc : "+e.getMessage());
     	}
@@ -203,7 +214,7 @@ public class CI_Objects_Current_Meter_Details {
     public static WebElement btn_able_to_read_meter_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radioUnableToReadFalse"));
+    		element = driver.findElement(By.id("displaymeterdetails0-radioUnableToReadFalseMRD-0"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_able_to_read_meter_y not found | Exception desc : "+e.getMessage());
     	}
@@ -213,7 +224,7 @@ public class CI_Objects_Current_Meter_Details {
     public static WebElement btn_able_to_read_meter_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radioUnableToReadTrue"));
+    		element = driver.findElement(By.id("displaymeterdetails0-radioUnableToReadTrueMRD-0"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_able_to_read_meter_n not found | Exception desc : "+e.getMessage());
     	}
@@ -223,13 +234,237 @@ public class CI_Objects_Current_Meter_Details {
     public static WebElement txt_no_installed_meter_reading(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("ranotes")); 
+    		element = driver.findElement(By.id("displaymeterdetails0-ranotesMRD-0")); 
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |txt_no_installed_meter_reading not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
     
+//	END OF FIRST METER DETAILS CLASS
+}   
+    
+
+
+public static class Second_Meter_Details {    
+    
+    public static WebElement btn_below_meter_details_correct_y(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("radiotargetfieldTrue1DMD-1"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_below_meter_details_correct_y not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement btn_below_meter_details_correct_n(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("radiotargetfieldFalse1DMD-1"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_below_meter_details_correct_n not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    	}
+    
+    public static WebElement txt_meter_serial_number(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("meterSerialNoDMD-1"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_meter_serial_number not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }    
+    
+    public static WebElement cbx_manufacturer_letter(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("meterManDMD-1"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |cbx_manufacturer_letter not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement cbx_meter_type(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("meterTypeDMD-1"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |cbx_meter_type not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement txt_ct_ratio(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("meterCTTypeDMD-1"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_ct_ratio not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement txt_vt_ratio(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("meterVTRatioDMD-1"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_vt_ratio not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement cbx_baud_rate(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("meterBaudRateDMD-1"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |cbx_baud_rate not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement txt_fuse_size(WebDriver driver) {	// went through workflow as HV CT - this field is not applicable then - need to be LV CT or WC
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_fuse_size not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement txt_ssc_code(WebDriver driver) {	// went through workflow as HV CT - this field is not applicable then - need to be WC
+    	
+    	try {
+    		element = driver.findElement(By.id(INSERTID));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_ssc_code not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement cbx_meter_loc_code(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("meterLocationSelectDMD-1"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |cbx_meter_loc_code not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement txt_comms_num(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("meterCommsNumDMD-1"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_comms_num not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement txt_ip_num(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("meterIPDMD-1"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_ip_num not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement txt_cop_type(WebDriver driver) {	//  not mentioned in workflow doc
+    	
+    	try {
+    		element = driver.findElement(By.id("meterCopTypeDMD-1"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_cop_type not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement txt_max_site_capacity(WebDriver driver) {	//  not mentioned in workflow doc
+    	
+    	try {
+    		element = driver.findElement(By.id("meterMSCDMD-1"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_cop_type not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement txt_num_of_registers(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("meterNoRegistersDMD-1"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_num_of_registers not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement btn_are_meter_details_corrected_y(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("radiotargetfieldTrue2DMD-1"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_are_meter_details_corrected not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement btn_are_meter_details_corrected_n(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("radiotargetfieldFalse2DMD-1"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_are_meter_details_corrected not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement btn_able_to_read_meter_y(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("displaymeterdetails1-radioUnableToReadFalseMRD-0"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_able_to_read_meter_y not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }   
+   
+    public static WebElement btn_able_to_read_meter_n(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("displaymeterdetails1-radioUnableToReadTrueMRD-0"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_able_to_read_meter_n not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    } 
+    
+    public static WebElement txt_no_installed_meter_reading(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("displaymeterdetails1-ranotesMRD-0")); 
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |txt_no_installed_meter_reading not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+//	END OF SECOND METER DETAILS CLASS
+}   
+
+
+
+
+    /*
     public static WebElement txt_total_kwh_imp(WebDriver driver) {
     	
     	try {
@@ -239,6 +474,7 @@ public class CI_Objects_Current_Meter_Details {
     	}
     	return element;
     }
+    */
     
     // from Final Meter Reading section of the workflow
     
@@ -402,6 +638,16 @@ public class CI_Objects_Current_Meter_Details {
     	return element;
     }
     
+    public static WebElement btn_add_other_reg(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("btnAddNewOtherRegisterMRD"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_add_other_reg not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
     public static WebElement txt_other_reg_read(WebDriver driver) {
     	
     	try {
@@ -425,7 +671,7 @@ public class CI_Objects_Current_Meter_Details {
     public static WebElement btn_add_found_asset(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("btnNextCommDMD"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_add_found_asset not found | Exception desc : "+e.getMessage());
     	}
@@ -435,7 +681,7 @@ public class CI_Objects_Current_Meter_Details {
     public static WebElement btn_continue_with_job_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("radiotargetfieldTrue3DMD"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_continue_with_job_y not found | Exception desc : "+e.getMessage());
     	}
@@ -445,23 +691,15 @@ public class CI_Objects_Current_Meter_Details {
     public static WebElement btn_continue_with_job_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("radiotargetfieldFalse3DMD"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_continue_with_job_n not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
     
-    
-    // not going to continue on with this at the moment, as it's not yet clear if there are more changes to make in this section 
-    
-    
-    
+ 
 
-    
-    
-    
-	
 			
 //END OF METHODS	    
 }

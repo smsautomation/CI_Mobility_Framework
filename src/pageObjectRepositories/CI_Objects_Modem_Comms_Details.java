@@ -33,7 +33,7 @@ public class CI_Objects_Modem_Comms_Details {
     	public static WebElement btn_old_modem_removed_y(WebDriver driver) {
     	
     		try {
-    			element = driver.findElement(By.id(INSERTID));
+    			element = driver.findElement(By.id("radioModemRemovedTrueMC1"));
     		}catch(Exception e) {
     			Log.error(sRepositoryName + " |btn_old_modem_removed_y not found | Exception desc : "+e.getMessage());
     		}
@@ -43,7 +43,7 @@ public class CI_Objects_Modem_Comms_Details {
     	public static WebElement btn_old_modem_removed_n(WebDriver driver) {
     	
     		try {
-    			element = driver.findElement(By.id(INSERTID));
+    			element = driver.findElement(By.id("radioModemRemovedFalseMC1"));
     		}catch(Exception e) {
     			Log.error(sRepositoryName + " |btn_old_modem_removed_n not found | Exception desc : "+e.getMessage());
     		}
@@ -56,6 +56,16 @@ public class CI_Objects_Modem_Comms_Details {
     			element = driver.findElement(By.id(INSERTID));
     		}catch(Exception e) {
     			Log.error(sRepositoryName + " |txt_removed_modem_serial_num not found | Exception desc : "+e.getMessage());
+    		}
+    		return element;
+    	}
+    	
+    	public static WebElement btn_add_removed_modem(WebDriver driver) {
+        	
+    		try {
+    			element = driver.findElement(By.id("btn2MC1"));
+    		}catch(Exception e) {
+    			Log.error(sRepositoryName + " |btn_add_removed_modem not found | Exception desc : "+e.getMessage());
     		}
     		return element;
     	}

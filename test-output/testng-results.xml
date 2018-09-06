@@ -2,29 +2,54 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="48499" started-at="2018-08-21T08:48:51Z" finished-at="2018-08-21T08:49:39Z">
+  <suite name="Default suite" duration-ms="51990" started-at="2018-09-04T14:12:35Z" finished-at="2018-09-04T14:13:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="48499" started-at="2018-08-21T08:48:51Z" finished-at="2018-08-21T08:49:39Z">
-      <class name="automationTestCases.Chrome_Sub100_Meter_Exch_Wc_1ph">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:automationTestCases.Chrome_Sub100_Meter_Exch_Wc_1ph@37374a5e]" name="beforeMethod" is-config="true" duration-ms="22256" started-at="2018-08-21T08:48:51Z" finished-at="2018-08-21T08:49:13Z">
+    <test name="Default test" duration-ms="51990" started-at="2018-09-04T14:12:35Z" finished-at="2018-09-04T14:13:27Z">
+      <class name="automationTestCases.Chrome_Sub100_Meter_Exch_Wc_3ph">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:automationTestCases.Chrome_Sub100_Meter_Exch_Wc_3ph@37374a5e]" name="beforeMethod" is-config="true" duration-ms="23948" started-at="2018-09-04T14:12:35Z" finished-at="2018-09-04T14:12:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="main()[pri:0, instance:automationTestCases.Chrome_Sub100_Meter_Exch_Wc_1ph@37374a5e]" name="main" duration-ms="24617" started-at="2018-08-21T08:49:13Z" finished-at="2018-08-21T08:49:38Z">
-          <exception class="java.lang.Error">
+        <test-method status="FAIL" signature="main()[pri:0, instance:automationTestCases.Chrome_Sub100_Meter_Exch_Wc_3ph@37374a5e]" name="main" duration-ms="26227" started-at="2018-09-04T14:12:59Z" finished-at="2018-09-04T14:13:25Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unresolved compilation problem: 
-INSERTID cannot be resolved to a variable
-]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'Charlotte3, Charlotte3, ,')]"}
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.09 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'MD1KR87C', ip: '139.10.142.188', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_141'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\Z003rhmw\AppData\Local\Temp\scoped_dir9644_8458}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=68.0.3440.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bd9465eae0e523826753f5d3206076fc
+*** Element info: {Using=xpath, value=//*[contains(text(), 'Charlotte3, Charlotte3, ,')]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Error: Unresolved compilation problem: 
-INSERTID cannot be resolved to a variable
-
-at pageObjectRepositories.CI_Objects_Initial_Polarity_Check_Martindale.cbx_polarity_check_plug_in_test(CI_Objects_Initial_Polarity_Check_Martindale.java:34)
-at webModule.CI_Methods_Initial_Polarity_Check_Martindale.addSuccessValuesSub100Wc(CI_Methods_Initial_Polarity_Check_Martindale.java:96)
-at automationTestCases.Chrome_Sub100_Meter_Exch_Wc_1ph.main(Chrome_Sub100_Meter_Exch_Wc_1ph.java:145)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'Charlotte3, Charlotte3, ,')]"}
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.09 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'MD1KR87C', ip: '139.10.142.188', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_141'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\Z003rhmw\AppData\Local\Temp\scoped_dir9644_8458}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=68.0.3440.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bd9465eae0e523826753f5d3206076fc
+*** Element info: {Using=xpath, value=//*[contains(text(), 'Charlotte3, Charlotte3, ,')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+at automationTestCases.Chrome_Sub100_Meter_Exch_Wc_3ph.main(Chrome_Sub100_Meter_Exch_Wc_3ph.java:87)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -52,15 +77,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Error -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- main -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:automationTestCases.Chrome_Sub100_Meter_Exch_Wc_1ph@37374a5e]" name="afterMethod" is-config="true" duration-ms="1580" started-at="2018-08-21T08:49:38Z" finished-at="2018-08-21T08:49:39Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:automationTestCases.Chrome_Sub100_Meter_Exch_Wc_3ph@37374a5e]" name="afterMethod" is-config="true" duration-ms="1761" started-at="2018-09-04T14:13:25Z" finished-at="2018-09-04T14:13:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- automationTestCases.Chrome_Sub100_Meter_Exch_Wc_1ph -->
+      </class> <!-- automationTestCases.Chrome_Sub100_Meter_Exch_Wc_3ph -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

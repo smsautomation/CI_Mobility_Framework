@@ -22,7 +22,7 @@ import utility.Log;
 *
 *********************************************************************/
 
-public class CI_Objects_Initial_Polarity_Check_At_Meter {
+public class CI_Objects_Initial_Polarity_Check_At_Meter_Cut_Out {
    
     private static WebElement element = null;
     private static String sRepositoryName = "CI_Objects_Polarity_Check_At_Meter";
@@ -31,7 +31,7 @@ public class CI_Objects_Initial_Polarity_Check_At_Meter {
     public static WebElement btn_polarity_check_at_cut_out_pass(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("pol3"));
+    		element = driver.findElement(By.id("pol3PCI"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_polarity_check_at_cut_out_pass not found | Exception desc : "+e.getMessage());
     	}
@@ -41,7 +41,7 @@ public class CI_Objects_Initial_Polarity_Check_At_Meter {
     public static WebElement btn_polarity_check_at_cut_out_fail(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("pol4"));
+    		element = driver.findElement(By.id("pol4PCI"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_polarity_check_at_cut_out_fail not found | Exception desc : "+e.getMessage());
     	}
@@ -51,7 +51,7 @@ public class CI_Objects_Initial_Polarity_Check_At_Meter {
     public static WebElement btn_polarity_check_at_meter_pass(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("pol1PCI"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_polarity_check_at_meter_pass not found | Exception desc : "+e.getMessage());
     	}
@@ -61,7 +61,7 @@ public class CI_Objects_Initial_Polarity_Check_At_Meter {
     public static WebElement btn_polarity_check_at_meter_fail(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("pol1"));
+    		element = driver.findElement(By.id("pol2PCI"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_polarity_check_at_meter_fail not found | Exception desc : "+e.getMessage());
     	}
@@ -71,13 +71,14 @@ public class CI_Objects_Initial_Polarity_Check_At_Meter {
 	public static WebElement txt_polarity_check_at_meter(WebDriver driver){
 	   	 
 		try{
-			element = driver.findElement(By.id("pol2"));
+			element = driver.findElement(By.id("PolarityCheckAtMeterNotes-PCI"));
  		}catch(Exception e){
 			Log.error(sRepositoryName + " | txt_polarity_check_at_meter not found | Exception desc : "+e.getMessage());		
  		} 
 	    return element;
 	}  
 	
+ 
 			
 //END OF METHODS	    
 }

@@ -28,12 +28,22 @@ public class CI_Objects_Network_Signal_Strength_Test {
     private static String sRepositoryName = "CI_Objects_Network_Signal_Strength_Test";
 
       
-    public static WebElement btn_signal_strength_required(WebDriver driver) {
+    public static WebElement btn_signal_strength_required_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("radioSignalStrengthTrueNSS"));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |btn_signal_strength_required not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |btn_signal_strength_required_y not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
+    
+    public static WebElement btn_signal_strength_required_n(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("radioSignalStrengthFalseNSS"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_signal_strength_required_n not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
@@ -41,7 +51,7 @@ public class CI_Objects_Network_Signal_Strength_Test {
 	public static WebElement txt_sig_strength_vod(WebDriver driver){
 	   	 
 		try{
-			element = driver.findElement(By.id(INSERTID));
+			element = driver.findElement(By.id("input-sigstrength1NSS-0"));
  		}catch(Exception e){
 			Log.error(sRepositoryName + " | txt_sig_strength_vod not found | Exception desc : "+e.getMessage());		
  		} 
@@ -51,7 +61,7 @@ public class CI_Objects_Network_Signal_Strength_Test {
 	public static WebElement txt_sig_strength_o2(WebDriver driver){
 	   	 
 		try{
-			element = driver.findElement(By.id(INSERTID));
+			element = driver.findElement(By.id("input-sigstrength1NSS-1"));
  		}catch(Exception e){
 			Log.error(sRepositoryName + " | txt_sig_strength_o2 not found | Exception desc : "+e.getMessage());		
  		} 
@@ -61,7 +71,7 @@ public class CI_Objects_Network_Signal_Strength_Test {
 	public static WebElement txt_sig_strength_ee(WebDriver driver){
 	   	 
 		try{
-			element = driver.findElement(By.id(INSERTID));
+			element = driver.findElement(By.id("input-sigstrength1NSS-2"));
  		}catch(Exception e){
 			Log.error(sRepositoryName + " | txt_sig_strength_ee not found | Exception desc : "+e.getMessage());		
  		} 
@@ -71,7 +81,7 @@ public class CI_Objects_Network_Signal_Strength_Test {
     public static WebElement btn_enough_signal_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("radiosufficientSignalToProceedTrueNSS"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_enough_signal_y not found | Exception desc : "+e.getMessage());
     	}
@@ -81,9 +91,9 @@ public class CI_Objects_Network_Signal_Strength_Test {
     public static WebElement btn_enough_signal_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("radiosufficientSignalToProceedFalseNSS"));
     	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |btn_signal_strength_n not found | Exception desc : "+e.getMessage());
+    		Log.error(sRepositoryName + " |btn_enough_signal_n not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }    

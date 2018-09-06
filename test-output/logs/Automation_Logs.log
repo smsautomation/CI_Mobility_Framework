@@ -2203,3 +2203,133 @@ Driver info: driver.version: ChromeDriver
 2018-08-21 09:49:39,880 INFO  [Log] X 
 2018-08-21 09:49:39,880 INFO  [Log] X 
 2018-08-21 09:49:39,880 INFO  [Log] X 
+2018-08-29 11:21:31,762 INFO  [Log] **************************************************************************************** 
+2018-08-29 11:21:31,762 INFO  [Log] **************************************************************************************** 
+2018-08-29 11:21:31,762 INFO  [Log] $$$$$$$$$$$       Chrome_Sub100_Meter_Exch_Hv_Ct       $$$$$$$$$$$ 
+2018-08-29 11:21:31,762 INFO  [Log] **************************************************************************************** 
+2018-08-29 11:21:31,762 INFO  [Log] **************************************************************************************** 
+2018-08-29 11:21:50,536 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-08-29 11:21:53,971 INFO  [Log] Web application launched successfully 
+2018-08-29 11:21:55,331 INFO  [Log] Login button displayed 
+2018-08-29 11:21:55,415 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Username displayed as expected 
+2018-08-29 11:21:55,479 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Password displayed as expected 
+2018-08-29 11:21:55,546 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Login button displayed as expected 
+2018-08-29 11:21:57,102 INFO  [Log] Class Utils | Method takeScreenshot | Screenshot saved as C://Users//Z003rhmw//CI_Mobility_Framework//MobilityFramework//test-output//screenshotsChrome_Sub100_Meter_Exch_Hv_Ct-viewMainPage20180829-112155.jpg 
+2018-08-29 11:21:57,237 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Username entered 
+2018-08-29 11:21:57,385 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Password entered 
+2018-08-29 11:21:57,486 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Login button clicked 
+2018-08-29 11:22:06,915 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Call Forward button clicked 
+2018-08-29 11:22:08,034 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Contact Made radio button clicked 
+2018-08-29 11:22:08,642 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Appointment Confirm - Yes radio button clicked 
+2018-08-29 11:22:09,226 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Depart button clicked 
+2018-08-29 11:22:09,872 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | OK (pop up) button clicked 
+2018-08-29 11:22:11,529 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Arrive button clicked 
+2018-08-29 11:22:12,116 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Access to Site Gained? radio button clicked 
+2018-08-29 11:22:12,224 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Customer On Site? radio button clicked 
+2018-08-29 11:22:12,344 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | On Site button clicked 
+2018-08-29 11:22:32,482 ERROR [Log] CI_Objects_Check_For_Smell_Of_Gas |btn_smell_gas_n not found | Exception desc : no such element: Unable to locate element: {"method":"id","selector":"radioSmellGasFalse"}
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'MD1KR87C', ip: '139.10.143.96', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_141'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\Z003rhmw\AppData\Local\Temp\scoped_dir11244_19685}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=68.0.3440.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 0da6e1739e696c1b60ff296a7ef6db2e
+*** Element info: {Using=id, value=radioSmellGasFalse} 
+2018-08-29 11:22:34,923 INFO  [Log] XXXXXXXXXXXXXXXXXXXX                -E---N---D-                XXXXXXXXXXXXXXXXXXX 
+2018-08-29 11:22:34,923 INFO  [Log] XXXXXXXXXXXXXXXXXXXX    Chrome_Sub100_Meter_Exch_Hv_Ct    XXXXXXXXXXXXXXXXXXX 
+2018-08-29 11:22:34,923 INFO  [Log] X 
+2018-08-29 11:22:34,923 INFO  [Log] X 
+2018-08-29 11:22:34,923 INFO  [Log] X 
+2018-08-29 11:31:40,605 INFO  [Log] **************************************************************************************** 
+2018-08-29 11:31:40,605 INFO  [Log] **************************************************************************************** 
+2018-08-29 11:31:40,605 INFO  [Log] $$$$$$$$$$$       Chrome_Sub100_Meter_Fault_Hv_Ct_Exch       $$$$$$$$$$$ 
+2018-08-29 11:31:40,605 INFO  [Log] **************************************************************************************** 
+2018-08-29 11:31:40,605 INFO  [Log] **************************************************************************************** 
+2018-08-29 11:31:58,950 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-08-29 11:32:03,008 INFO  [Log] Web application launched successfully 
+2018-08-29 11:32:03,982 INFO  [Log] Login button displayed 
+2018-08-29 11:32:04,050 INFO  [Log] Chrome_Sub100_Meter_Fault_Hv_Ct_Exch | Username displayed as expected 
+2018-08-29 11:32:04,107 INFO  [Log] Chrome_Sub100_Meter_Fault_Hv_Ct_Exch | Password displayed as expected 
+2018-08-29 11:32:04,137 INFO  [Log] Chrome_Sub100_Meter_Fault_Hv_Ct_Exch | Login button displayed as expected 
+2018-08-29 11:32:04,747 INFO  [Log] Class Utils | Method takeScreenshot | Screenshot saved as C://Users//Z003rhmw//CI_Mobility_Framework//MobilityFramework//test-output//screenshotsChrome_Sub100_Meter_Fault_Hv_Ct_Exch-viewMainPage20180829-113204.jpg 
+2018-08-29 11:32:04,903 INFO  [Log] Chrome_Sub100_Meter_Fault_Hv_Ct_Exch | Username entered 
+2018-08-29 11:32:05,099 INFO  [Log] Chrome_Sub100_Meter_Fault_Hv_Ct_Exch | Password entered 
+2018-08-29 11:32:05,220 INFO  [Log] Chrome_Sub100_Meter_Fault_Hv_Ct_Exch | Login button clicked 
+2018-08-29 11:32:31,894 INFO  [Log] XXXXXXXXXXXXXXXXXXXX                -E---N---D-                XXXXXXXXXXXXXXXXXXX 
+2018-08-29 11:32:31,894 INFO  [Log] XXXXXXXXXXXXXXXXXXXX    Chrome_Sub100_Meter_Fault_Hv_Ct_Exch    XXXXXXXXXXXXXXXXXXX 
+2018-08-29 11:32:31,894 INFO  [Log] X 
+2018-08-29 11:32:31,894 INFO  [Log] X 
+2018-08-29 11:32:31,894 INFO  [Log] X 
+2018-08-29 11:33:12,821 INFO  [Log] **************************************************************************************** 
+2018-08-29 11:33:12,821 INFO  [Log] **************************************************************************************** 
+2018-08-29 11:33:12,821 INFO  [Log] $$$$$$$$$$$       Chrome_Sub100_Meter_Fault_Hv_Ct_Exch       $$$$$$$$$$$ 
+2018-08-29 11:33:12,821 INFO  [Log] **************************************************************************************** 
+2018-08-29 11:33:12,821 INFO  [Log] **************************************************************************************** 
+2018-08-29 11:33:30,290 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-08-29 11:33:33,703 INFO  [Log] Web application launched successfully 
+2018-08-29 11:33:34,806 INFO  [Log] Login button displayed 
+2018-08-29 11:33:34,888 INFO  [Log] Chrome_Sub100_Meter_Fault_Hv_Ct_Exch | Username displayed as expected 
+2018-08-29 11:33:34,932 INFO  [Log] Chrome_Sub100_Meter_Fault_Hv_Ct_Exch | Password displayed as expected 
+2018-08-29 11:33:34,970 INFO  [Log] Chrome_Sub100_Meter_Fault_Hv_Ct_Exch | Login button displayed as expected 
+2018-08-29 11:33:35,528 INFO  [Log] Class Utils | Method takeScreenshot | Screenshot saved as C://Users//Z003rhmw//CI_Mobility_Framework//MobilityFramework//test-output//screenshotsChrome_Sub100_Meter_Fault_Hv_Ct_Exch-viewMainPage20180829-113334.jpg 
+2018-08-29 11:33:35,669 INFO  [Log] Chrome_Sub100_Meter_Fault_Hv_Ct_Exch | Username entered 
+2018-08-29 11:33:35,855 INFO  [Log] Chrome_Sub100_Meter_Fault_Hv_Ct_Exch | Password entered 
+2018-08-29 11:33:35,953 INFO  [Log] Chrome_Sub100_Meter_Fault_Hv_Ct_Exch | Login button clicked 
+2018-08-29 11:34:02,633 INFO  [Log] XXXXXXXXXXXXXXXXXXXX                -E---N---D-                XXXXXXXXXXXXXXXXXXX 
+2018-08-29 11:34:02,633 INFO  [Log] XXXXXXXXXXXXXXXXXXXX    Chrome_Sub100_Meter_Fault_Hv_Ct_Exch    XXXXXXXXXXXXXXXXXXX 
+2018-08-29 11:34:02,633 INFO  [Log] X 
+2018-08-29 11:34:02,633 INFO  [Log] X 
+2018-08-29 11:34:02,633 INFO  [Log] X 
+2018-08-29 11:34:37,925 INFO  [Log] **************************************************************************************** 
+2018-08-29 11:34:37,925 INFO  [Log] **************************************************************************************** 
+2018-08-29 11:34:37,925 INFO  [Log] $$$$$$$$$$$       Chrome_Sub100_Meter_Exch_Hv_Ct       $$$$$$$$$$$ 
+2018-08-29 11:34:37,925 INFO  [Log] **************************************************************************************** 
+2018-08-29 11:34:37,925 INFO  [Log] **************************************************************************************** 
+2018-08-29 11:34:54,447 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-08-29 11:34:57,687 INFO  [Log] Web application launched successfully 
+2018-08-29 11:34:58,882 INFO  [Log] Login button displayed 
+2018-08-29 11:34:58,944 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Username displayed as expected 
+2018-08-29 11:34:58,985 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Password displayed as expected 
+2018-08-29 11:34:59,007 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Login button displayed as expected 
+2018-08-29 11:34:59,579 INFO  [Log] Class Utils | Method takeScreenshot | Screenshot saved as C://Users//Z003rhmw//CI_Mobility_Framework//MobilityFramework//test-output//screenshotsChrome_Sub100_Meter_Exch_Hv_Ct-viewMainPage20180829-113459.jpg 
+2018-08-29 11:34:59,692 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Username entered 
+2018-08-29 11:34:59,824 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Password entered 
+2018-08-29 11:34:59,924 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Login button clicked 
+2018-08-29 11:35:09,419 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Call Forward button clicked 
+2018-08-29 11:35:10,575 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Contact Made radio button clicked 
+2018-08-29 11:35:11,180 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Appointment Confirm - Yes radio button clicked 
+2018-08-29 11:35:11,795 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Depart button clicked 
+2018-08-29 11:35:12,480 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | OK (pop up) button clicked 
+2018-08-29 11:35:14,042 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Arrive button clicked 
+2018-08-29 11:35:14,239 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Access to Site Gained? radio button clicked 
+2018-08-29 11:35:14,325 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Customer On Site? radio button clicked 
+2018-08-29 11:35:14,458 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | On Site button clicked 
+2018-08-29 11:35:14,610 INFO  [Log] Chrome_Sub100_Meter_Exch_Hv_Ct | Can you smell Gas? - No button clicked 
+2018-08-29 11:35:28,159 INFO  [Log] XXXXXXXXXXXXXXXXXXXX                -E---N---D-                XXXXXXXXXXXXXXXXXXX 
+2018-08-29 11:35:28,159 INFO  [Log] XXXXXXXXXXXXXXXXXXXX    Chrome_Sub100_Meter_Exch_Hv_Ct    XXXXXXXXXXXXXXXXXXX 
+2018-08-29 11:35:28,159 INFO  [Log] X 
+2018-08-29 11:35:28,159 INFO  [Log] X 
+2018-08-29 11:35:28,159 INFO  [Log] X 
+2018-09-04 15:12:35,497 INFO  [Log] **************************************************************************************** 
+2018-09-04 15:12:35,498 INFO  [Log] **************************************************************************************** 
+2018-09-04 15:12:35,498 INFO  [Log] $$$$$$$$$$$       Chrome_Sub100_Meter_Exch_Wc_3ph       $$$$$$$$$$$ 
+2018-09-04 15:12:35,498 INFO  [Log] **************************************************************************************** 
+2018-09-04 15:12:35,499 INFO  [Log] **************************************************************************************** 
+2018-09-04 15:12:54,018 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-09-04 15:12:57,738 INFO  [Log] Web application launched successfully 
+2018-09-04 15:12:59,278 INFO  [Log] Login button displayed 
+2018-09-04 15:12:59,338 INFO  [Log] Chrome_Sub100_Meter_Exch_Wc_3ph | Username displayed as expected 
+2018-09-04 15:12:59,397 INFO  [Log] Chrome_Sub100_Meter_Exch_Wc_3ph | Password displayed as expected 
+2018-09-04 15:12:59,421 INFO  [Log] Chrome_Sub100_Meter_Exch_Wc_3ph | Login button displayed as expected 
+2018-09-04 15:12:59,902 INFO  [Log] Class Utils | Method takeScreenshot | Screenshot saved as C://Users//Z003rhmw//CI_Mobility_Framework//MobilityFramework//test-output//screenshotsChrome_Sub100_Meter_Exch_Wc_3ph-viewMainPage20180904-031259.jpg 
+2018-09-04 15:13:00,045 INFO  [Log] Chrome_Sub100_Meter_Exch_Wc_3ph | Username entered 
+2018-09-04 15:13:00,195 INFO  [Log] Chrome_Sub100_Meter_Exch_Wc_3ph | Password entered 
+2018-09-04 15:13:00,298 INFO  [Log] Chrome_Sub100_Meter_Exch_Wc_3ph | Login button clicked 
+2018-09-04 15:13:27,288 INFO  [Log] XXXXXXXXXXXXXXXXXXXX                -E---N---D-                XXXXXXXXXXXXXXXXXXX 
+2018-09-04 15:13:27,289 INFO  [Log] XXXXXXXXXXXXXXXXXXXX    Chrome_Sub100_Meter_Exch_Wc_3ph    XXXXXXXXXXXXXXXXXXX 
+2018-09-04 15:13:27,289 INFO  [Log] X 
+2018-09-04 15:13:27,289 INFO  [Log] X 
+2018-09-04 15:13:27,289 INFO  [Log] X 

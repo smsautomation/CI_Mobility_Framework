@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automationTestCases.Chrome_Sub100_Meter_Exch_Wc_1ph">
+      <class name="automationTestCases.Chrome_Sub100_Meter_Exch_Wc_3ph">
         <methods>
-          <include name="afterMethod"/>
           <include name="beforeMethod"/>
           <include name="main"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- automationTestCases.Chrome_Sub100_Meter_Exch_Wc_1ph -->
+      </class> <!-- automationTestCases.Chrome_Sub100_Meter_Exch_Wc_3ph -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -88,7 +88,7 @@ public class Chrome_Sub100_Meter_Exch_Lv_Ct {
 		
 		//Select the correct appointment
 		//driver.findElement(By.xpath(".//*[@id='app']/div/div/workorderlistitem[4]/div/div[1]/div/div[1]/span[3]/span")).click();
-		driver.findElement(By.xpath("//*[contains(text(), 'Charlotte116, Charlotte116, ,')]")).click();    // needs to be a unique reference in the whole page
+		driver.findElement(By.xpath("//*[contains(text(), 'Charlotte3, Charlotte3, ,')]")).click();    // needs to be a unique reference in the whole page
 		System.out.println("selected job");
 		Thread.sleep(2000);
 		

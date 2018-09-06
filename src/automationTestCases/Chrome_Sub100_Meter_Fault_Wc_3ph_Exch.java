@@ -136,7 +136,7 @@ public class Chrome_Sub100_Meter_Fault_Wc_3ph_Exch {
 		Log.info("Initial Polarity Check - Martindale section completed");
 		
 		// Invoke method to complete Initial Polarity Check - At Meter and Cut Out section
-		CI_Methods_Initial_Polarity_Check_At_Meter.addSuccessValuesSub100Cop10Cop5SmWc(driver, sTestCaseName);
+		CI_Methods_Initial_Polarity_Check_At_Meter_Cut_Out.addSuccessValuesSub100Cop10Cop5SmWc(driver, sTestCaseName);
 		Log.info("Initial Polarity Check At Meter section completed");
 	
 		// Invoke method to complete Initial Phase Rotation Test section

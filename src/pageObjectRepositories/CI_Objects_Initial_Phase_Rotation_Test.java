@@ -31,7 +31,7 @@ public class CI_Objects_Initial_Phase_Rotation_Test {
     public static WebElement btn_phase_rotation_correct_at_meter_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radioPhaseRotationCorrectTrue"));
+    		element = driver.findElement(By.id("radioPhaseRotationCorrectTrueIPR"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_phase_rotation_correct_at_meter_y not found | Exception desc : "+e.getMessage());
     	}
@@ -41,7 +41,7 @@ public class CI_Objects_Initial_Phase_Rotation_Test {
     public static WebElement btn_phase_rotation_correct_at_meter_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radioPhaseRotationCorrectFalse"));
+    		element = driver.findElement(By.id("radioPhaseRotationCorrectFalseIPR"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_phase_rotation_correct_at_meter_n not found | Exception desc : "+e.getMessage());
     	}
@@ -58,17 +58,17 @@ public class CI_Objects_Initial_Phase_Rotation_Test {
     	return element;
     } 
     
-    public static WebElement btn_phase_rotation_correct_at_service_cut_out_y(WebDriver driver) {
+    public static WebElement btn_phase_rotation_correct_at_service_cut_out_y(WebDriver driver) {	// DNO/BNO only, hence no id yet
     	
     	try {
-    		element = driver.findElement(By.className("confirm"));
+    		element = driver.findElement(By.id(INSERTID));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_phase_rotation_correct_at_meter_y not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }
     
-    public static WebElement btn_phase_rotation_correct_at_service_cut_out_n(WebDriver driver) {
+    public static WebElement btn_phase_rotation_correct_at_service_cut_out_n(WebDriver driver) {	// DNO/BNO only, hence no id yet
     	
     	try {
     		element = driver.findElement(By.id(INSERTID));

@@ -88,7 +88,7 @@ public class CI_Methods_Network_Signal_Strength_Test{
 	    
 	    
 
-		CI_Objects_Network_Signal_Strength_Test.btn_signal_strength_required(driver).click();
+		CI_Objects_Network_Signal_Strength_Test.btn_signal_strength_required_y(driver).click();
 		
 		// Vodaphone signal strength
 		CI_Objects_Network_Signal_Strength_Test.txt_sig_strength_vod(driver).click();

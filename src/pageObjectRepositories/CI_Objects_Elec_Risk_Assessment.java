@@ -31,7 +31,7 @@ public class CI_Objects_Elec_Risk_Assessment {
     public static WebElement btn_perform_risk_assess_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiora5a"));
+    		element = driver.findElement(By.id("radiora5aERA"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_perform_risk_assess_y not found | Exception desc : "+e.getMessage());
     	}
@@ -42,7 +42,7 @@ public class CI_Objects_Elec_Risk_Assessment {
     public static WebElement cbx_risk_reason_code(WebDriver driver){
       	 
 		try{
-			element = driver.findElement(By.id("selectRiskReason"));
+			element = driver.findElement(By.id("selectRiskReasonERA"));
  		}catch(Exception e){
 			Log.error(sRepositoryName + " | cbx_risk_reason_code not found | Exception desc : "+e.getMessage());		
  		} 
@@ -52,7 +52,7 @@ public class CI_Objects_Elec_Risk_Assessment {
     public static WebElement btn_risk_assess_pass_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiora9"));
+    		element = driver.findElement(By.id("radiora9ERA"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_risk_assess_pass_y not found | Exception desc : "+e.getMessage());
     	}
@@ -62,7 +62,7 @@ public class CI_Objects_Elec_Risk_Assessment {
     public static WebElement btn_risk_assess_pass_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiora10"));
+    		element = driver.findElement(By.id("radiora10ERA"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_risk_assess_pass_n not found | Exception desc : "+e.getMessage());
     	}
@@ -74,7 +74,7 @@ public class CI_Objects_Elec_Risk_Assessment {
 	public static WebElement txt_risk_assess_pass(WebDriver driver){
 	   	 
 		try{
-			element = driver.findElement(By.id("ranotes"));
+			element = driver.findElement(By.id("ranotesERA"));
  		}catch(Exception e){
 			Log.error(sRepositoryName + " | txt_risk_assess_pass not found | Exception desc : "+e.getMessage());		
  		} 
@@ -84,29 +84,20 @@ public class CI_Objects_Elec_Risk_Assessment {
     public static WebElement btn_photo_hazards_pass(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("photoelectriskassessriskAssessPass"));
+    		element = driver.findElement(By.id("photoriskAssessPass"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_photo_hazards_pass not found | Exception desc : "+e.getMessage());
     	}
     	return element;
     }      
     
-    public static WebElement btn_next_section(WebDriver driver) {
-    	
-    	try {
-    		element = driver.findElement(By.id("btnNextrae"));
-    	}catch(Exception e) {
-    		Log.error(sRepositoryName + " |btn_next_section not found | Exception desc : "+e.getMessage());
-    	}
-    	return element;
-    }
     
 // Risk Assessment Fail sub-section
     
 	public static WebElement txt_risk_assess_fail(WebDriver driver){
 	   	 
 		try{
-			element = driver.findElement(By.id("textRiskAssessFail"));
+			element = driver.findElement(By.id("textRiskAssessFailERA"));
  		}catch(Exception e){
 			Log.error(sRepositoryName + " | txt_risk_assess_fail not found | Exception desc : "+e.getMessage());		
  		} 
@@ -116,7 +107,7 @@ public class CI_Objects_Elec_Risk_Assessment {
     public static WebElement btn_photo_hazards_fail(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("photoelecriskassessriskAssessFail"));
+    		element = driver.findElement(By.id("photoriskAssessFail"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_photo_hazards_fail not found | Exception desc : "+e.getMessage());
     	}
@@ -170,7 +161,7 @@ public class CI_Objects_Elec_Risk_Assessment {
         public static WebElement btn_reschedule_job_y(WebDriver driver) {
         	
            	try {
-           		element = driver.findElement(By.id("radiora22"));
+           		element = driver.findElement(By.id("radioERARescheduleJobTrueERA"));
            	}catch(Exception e) {
            		Log.error(sRepositoryName + " |btn_reschedule_job_y not found | Exception desc : "+e.getMessage());
            	}
@@ -180,7 +171,7 @@ public class CI_Objects_Elec_Risk_Assessment {
         public static WebElement btn_reschedule_job_n(WebDriver driver) {
         	
            	try {
-           		element = driver.findElement(By.id(INSERTID));
+           		element = driver.findElement(By.id("radioERARescheduleJobFalseERA"));
            	}catch(Exception e) {
            		Log.error(sRepositoryName + " |btn_reschedule_job_n not found | Exception desc : "+e.getMessage());
            	}
@@ -198,7 +189,7 @@ public class CI_Objects_Elec_Risk_Assessment {
         public static WebElement btn_called_airline_y(WebDriver driver) {
         	
         	try {
-        		element = driver.findElement(By.id("radiora11"));
+        		element = driver.findElement(By.id("radioUpdateHnSeraTrueERA"));
         	}catch(Exception e) {
         		Log.error(sRepositoryName + " |btn_called_airline_y not found | Exception desc : "+e.getMessage());
         	}
@@ -208,7 +199,7 @@ public class CI_Objects_Elec_Risk_Assessment {
         public static WebElement btn_called_airline_n(WebDriver driver) {
             	
            	try {
-           		element = driver.findElement(By.id("radiora12"));
+           		element = driver.findElement(By.id("radioUpdateHnSeraFalseERA"));
            	}catch(Exception e) {
            		Log.error(sRepositoryName + " |btn_called_airline_n not found | Exception desc : "+e.getMessage());
            	}
@@ -218,7 +209,7 @@ public class CI_Objects_Elec_Risk_Assessment {
     	public static WebElement txt_airline_ref_no(WebDriver driver){
       	   	 
     		try{
-    			element = driver.findElement(By.id("inputraeAirlineRef"));
+    			element = driver.findElement(By.id("inputraeAirlineRefERA"));
      		}catch(Exception e){
     			Log.error(sRepositoryName + " | txt_airline_ref_no not found | Exception desc : "+e.getMessage());		
      		} 
@@ -228,7 +219,7 @@ public class CI_Objects_Elec_Risk_Assessment {
         public static WebElement btn_reported_risk_to_dno_y(WebDriver driver) {
         	
         	try {
-        		element = driver.findElement(By.id("radioRaeReportedDNOTrue"));
+        		element = driver.findElement(By.id("radioRaeReportedDNOTrueERA"));
         	}catch(Exception e) {
         		Log.error(sRepositoryName + " |btn_reported_risk_to_dno_y not found | Exception desc : "+e.getMessage());
         	}
@@ -238,7 +229,7 @@ public class CI_Objects_Elec_Risk_Assessment {
         public static WebElement btn_reported_risk_to_dno_n(WebDriver driver) {
         	
         	try {
-        		element = driver.findElement(By.id("radioRaeReportedDNOFalse"));
+        		element = driver.findElement(By.id("radioRaeReportedDNOFalseERA"));
         	}catch(Exception e) {
         		Log.error(sRepositoryName + " |btn_reported_risk_to_dno_n not found | Exception desc : "+e.getMessage());
         	}
@@ -248,7 +239,7 @@ public class CI_Objects_Elec_Risk_Assessment {
     	public static WebElement txt_dno_job_ref(WebDriver driver){
      	   	 
     		try{
-    			element = driver.findElement(By.id("inputDNOJobRef"));
+    			element = driver.findElement(By.id("inputDNOJobRefERA"));
      		}catch(Exception e){
     			Log.error(sRepositoryName + " | txt_dno_job_ref not found | Exception desc : "+e.getMessage());		
      		} 
@@ -258,7 +249,7 @@ public class CI_Objects_Elec_Risk_Assessment {
         public static WebElement btn_stay_on_site_y(WebDriver driver) {
         	
         	try {
-        		element = driver.findElement(By.id("radioStayOnSiteTrue"));
+        		element = driver.findElement(By.id("radioStayOnSiteTrueERA"));
         	}catch(Exception e) {
         		Log.error(sRepositoryName + " |btn_stay_on_site_y not found | Exception desc : "+e.getMessage());
         	}
@@ -268,7 +259,7 @@ public class CI_Objects_Elec_Risk_Assessment {
         public static WebElement btn_stay_on_site_n(WebDriver driver) {
         	
         	try {
-        		element = driver.findElement(By.id("radioStayOnSiteFalse"));
+        		element = driver.findElement(By.id("radioStayOnSiteFalseERA"));
         	}catch(Exception e) {
         		Log.error(sRepositoryName + " |btn_stay_on_site_n not found | Exception desc : "+e.getMessage());
         	}
@@ -278,7 +269,7 @@ public class CI_Objects_Elec_Risk_Assessment {
         public static WebElement btn_work_can_be_completed_y(WebDriver driver) {
         	
         	try {
-        		element = driver.findElement(By.id("radioCanCompleteTrue"));
+        		element = driver.findElement(By.id("radioCanCompleteTrueERA"));
         	}catch(Exception e) {
         		Log.error(sRepositoryName + " |btn_work_can_be_completed_y not found | Exception desc : "+e.getMessage());
         	}
@@ -288,7 +279,7 @@ public class CI_Objects_Elec_Risk_Assessment {
         public static WebElement btn_work_can_be_completed_n(WebDriver driver) {
         	
         	try {
-        		element = driver.findElement(By.id("radioCanCompleteFalse"));
+        		element = driver.findElement(By.id("radioCanCompleteFalseERA"));
         	}catch(Exception e) {
         		Log.error(sRepositoryName + " |btn_work_can_be_completed_n not found | Exception desc : "+e.getMessage());
         	}
@@ -298,29 +289,28 @@ public class CI_Objects_Elec_Risk_Assessment {
     	public static WebElement txt_assess_fail_dno_issue(WebDriver driver){
     	   	 
     		try{
-    			element = driver.findElement(By.id("textRiskAssessFailDNORemarks"));
+    			element = driver.findElement(By.id("textRiskAssessFailDNORemarksERA"));
      		}catch(Exception e){
     			Log.error(sRepositoryName + " | txt_assess_fail_dno_issue not found | Exception desc : "+e.getMessage());		
      		} 
     	    return element;
     	}        
         
-    	public static WebElement btn_next_section(WebDriver driver) {
-        	
-        	try {
-        		element = driver.findElement(By.id("btnNextrae"));
-        	}catch(Exception e) {
-        		Log.error(sRepositoryName + " |btn_next_section not found | Exception desc : "+e.getMessage());
-        	}
-        	return element;
-        } 
-          	
+ 	
     	
     }
 
 // END OF CLASS CAPTURE_JOB_DATA_REPORT_TO_DNO    	
     	
-
+ 	public static WebElement btn_next_section(WebDriver driver) {
+    	
+    	try {
+    		element = driver.findElement(By.id("btnNextraeERA"));
+    	}catch(Exception e) {
+    		Log.error(sRepositoryName + " |btn_next_section not found | Exception desc : "+e.getMessage());
+    	}
+    	return element;
+    }
 	
 			
 //END OF METHODS	    

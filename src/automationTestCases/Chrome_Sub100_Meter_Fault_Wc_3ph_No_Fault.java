@@ -129,7 +129,7 @@ public class Chrome_Sub100_Meter_Fault_Wc_3ph_No_Fault {
 		CI_Methods_Initial_Polarity_Check_Martindale.addSuccessValuesAll(driver, sTestCaseName);
 		
 		// Invoke method to complete Initial Polarity Check - At Meter and Cut Out section
-		CI_Methods_Initial_Polarity_Check_At_Meter.addSuccessValuesSub100Cop10Cop5SmWc(driver, sTestCaseName);
+		CI_Methods_Initial_Polarity_Check_At_Meter_Cut_Out.addSuccessValuesSub100Cop10Cop5SmWc(driver, sTestCaseName);
 	
 		// Invoke method to complete Initial Phase Rotation Test section
 		CI_Methods_Initial_Phase_Rotation_Test.addSuccessValuesNonDnoBno(driver, sTestCaseName);

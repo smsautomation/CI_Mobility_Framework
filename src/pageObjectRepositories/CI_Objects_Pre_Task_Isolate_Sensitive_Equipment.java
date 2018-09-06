@@ -31,7 +31,7 @@ public class CI_Objects_Pre_Task_Isolate_Sensitive_Equipment {
     public static WebElement btn_cust_isolated_equipment_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiohasCustomerIsolatedTrue"));
+    		element = driver.findElement(By.id("radiohasCustomerIsolatedTruePT"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_cust_isolated_equipment_y not found | Exception desc : "+e.getMessage());
     	}
@@ -41,7 +41,7 @@ public class CI_Objects_Pre_Task_Isolate_Sensitive_Equipment {
     public static WebElement btn_cust_isolated_equipment_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiohasCustomerIsolatedFalse"));
+    		element = driver.findElement(By.id("radiohasCustomerIsolatedFalsePT"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_cust_isolated_equipment_n not found | Exception desc : "+e.getMessage());
     	}
@@ -51,7 +51,7 @@ public class CI_Objects_Pre_Task_Isolate_Sensitive_Equipment {
     public static WebElement btn_cust_isolated_equipment_na(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiohasCustomerIsolatedNull"));
+    		element = driver.findElement(By.id("radiohasCustomerIsolatedNullPT"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_cust_isolated_equipment_na not found | Exception desc : "+e.getMessage());
     	}
@@ -71,7 +71,7 @@ public class CI_Objects_Pre_Task_Isolate_Sensitive_Equipment {
     public static WebElement btn_photo_current_install(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("photopretasknaCustomerIsolated"));
+    		element = driver.findElement(By.id("photonaCustomerIsolated"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_photo_current_install not found | Exception desc : "+e.getMessage());
     	}

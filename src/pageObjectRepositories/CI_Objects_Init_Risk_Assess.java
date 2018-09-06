@@ -31,7 +31,7 @@ public class CI_Objects_Init_Risk_Assess {
     public static WebElement btn_smell_gas_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radioSmellGasTrue"));
+    		element = driver.findElement(By.id("radioSmellGasTrueRAI"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_smell_gas_y not found | Exception desc : "+e.getMessage());
     	}
@@ -41,7 +41,7 @@ public class CI_Objects_Init_Risk_Assess {
     public static WebElement btn_smell_gas_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radioSmellGasFalse"));
+    		element = driver.findElement(By.id("radioSmellGasFalseRAI"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_smell_gas_n not found | Exception desc : "+e.getMessage());
     	}

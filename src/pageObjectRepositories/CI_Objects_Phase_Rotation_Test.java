@@ -31,7 +31,7 @@ public class CI_Objects_Phase_Rotation_Test {
     public static WebElement btn_phase_rotation_correct_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiophaseRotationCorrectTrue"));
+    		element = driver.findElement(By.id("radiophaseRotationCorrectTruePR"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_phase_rotation_correct_y not found | Exception desc : "+e.getMessage());
     	}
@@ -41,7 +41,7 @@ public class CI_Objects_Phase_Rotation_Test {
     public static WebElement btn_phase_rotation_correct_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiophaseRotationCorrectFalse"));
+    		element = driver.findElement(By.id("radiophaseRotationCorrectFalsePR"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_phase_rotation_correct_n not found | Exception desc : "+e.getMessage());
     	}
@@ -53,7 +53,7 @@ public class CI_Objects_Phase_Rotation_Test {
     public static WebElement btn_corrected_phase_rotation_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiocorrectedPhaseRotationCorrectTrue"));
+    		element = driver.findElement(By.id("radiocorrectedPhaseRotationTruePR"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_corrected_phase_rotation_y not found | Exception desc : "+e.getMessage());
     	}
@@ -63,7 +63,7 @@ public class CI_Objects_Phase_Rotation_Test {
     public static WebElement btn_corrected_phase_rotation_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiocorrectedPhaseRotationFalse"));
+    		element = driver.findElement(By.id("radiocorrectedPhaseRotationFalsePR"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_corrected_phase_rotation_n not found | Exception desc : "+e.getMessage());
     	}
@@ -75,7 +75,7 @@ public class CI_Objects_Phase_Rotation_Test {
     public static WebElement btn_abort(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("btn2JCIT"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_abort not found | Exception desc : "+e.getMessage());
     	}

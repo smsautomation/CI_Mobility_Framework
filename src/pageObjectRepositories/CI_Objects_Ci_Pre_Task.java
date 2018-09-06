@@ -32,7 +32,7 @@ public class CI_Objects_Ci_Pre_Task {
     	public static WebElement cbx_sub100_meter_supply(WebDriver driver) {
     	
     		try {
-    			element = driver.findElement(By.id("ciSupplyTypeSelect"));
+    			element = driver.findElement(By.id("ciSupplyTypeSelectCIPT"));
     		}catch(Exception e) {
     			Log.error(sRepositoryName + " |cbx_sub100_meter_supply not found | Exception desc : "+e.getMessage());
     		}
@@ -79,7 +79,7 @@ public class CI_Objects_Ci_Pre_Task {
     	public static WebElement btn_photos_allowed_y(WebDriver driver) {
         	
     		try {
-    			element = driver.findElement(By.id("radioPhotosAllowedTrue"));
+    			element = driver.findElement(By.id("radioPhotosAllowedTrueCIPT"));
     		}catch(Exception e) {
     			Log.error(sRepositoryName + " |btn_photos_allowed_y not found | Exception desc : "+e.getMessage());
     		}
@@ -89,7 +89,7 @@ public class CI_Objects_Ci_Pre_Task {
     	public static WebElement btn_photos_allowed_n(WebDriver driver) {
         	
     		try {
-    			element = driver.findElement(By.id("radioPhotosAllowedFalse"));
+    			element = driver.findElement(By.id("radioPhotosAllowedFalseCIPT"));
     		}catch(Exception e) {
     			Log.error(sRepositoryName + " |btn_dno_bno_hv_ct_meter_supply not found | Exception desc : "+e.getMessage());
     		}
@@ -99,7 +99,7 @@ public class CI_Objects_Ci_Pre_Task {
     	public static WebElement btn_confirm_supply_type_y(WebDriver driver) {
         	
     		try {
-    			element = driver.findElement(By.id("radioSupplyConfirmedTrue"));
+    			element = driver.findElement(By.id("radioSupplyConfirmedTrueCIPT"));
     		}catch(Exception e) {
     			Log.error(sRepositoryName + " |btn_confirm_supply_type_y not found | Exception desc : "+e.getMessage());
     		}
@@ -109,7 +109,7 @@ public class CI_Objects_Ci_Pre_Task {
     	public static WebElement btn_confirm_supply_type_n(WebDriver driver) {
         	
     		try {
-    			element = driver.findElement(By.id("radioSupplyConfirmedFalse"));
+    			element = driver.findElement(By.id("radioSupplyConfirmedFalseCIPT"));
     		}catch(Exception e) {
     			Log.error(sRepositoryName + " |btn_confirm_supply_type_n not found | Exception desc : "+e.getMessage());
     		}
@@ -119,7 +119,7 @@ public class CI_Objects_Ci_Pre_Task {
     	public static WebElement btn_next_section(WebDriver driver) {
         	
     		try {
-    			element = driver.findElement(By.id("btnCiPretaskNextSection"));
+    			element = driver.findElement(By.id("btnCiPretaskNextSectionCIPT"));
     		}catch(Exception e) {
     			Log.error(sRepositoryName + " |btn_next_section not found | Exception desc : "+e.getMessage());
     		}

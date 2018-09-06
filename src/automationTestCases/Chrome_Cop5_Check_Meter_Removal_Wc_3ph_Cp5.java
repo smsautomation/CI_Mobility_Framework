@@ -130,7 +130,7 @@ public class Chrome_Cop5_Check_Meter_Removal_Wc_3ph_Cp5 {
 		CI_Methods_Initial_Polarity_Check_Martindale.addSuccessValuesAll(driver, sTestCaseName);
 		
 		// Invoke method to complete the Initial Polarity Check section 
-		CI_Methods_Initial_Polarity_Check_At_Meter.addSuccessValuesSub100Cop10Cop5SmWc(driver, sTestCaseName);
+		CI_Methods_Initial_Polarity_Check_At_Meter_Cut_Out.addSuccessValuesSub100Cop10Cop5SmWc(driver, sTestCaseName);
 		
 		// Invoke method to complete the Initial Phase Rotation Test section 
 		CI_Methods_Initial_Phase_Rotation_Test.addSuccessValuesNonDnoBno(driver, sTestCaseName);

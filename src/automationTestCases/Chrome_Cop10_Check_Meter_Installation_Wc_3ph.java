@@ -131,7 +131,7 @@ public class Chrome_Cop10_Check_Meter_Installation_Wc_3ph {
 		CI_Methods_Pre_Task_Isolate_Sensitive_Equipment.addSuccessValuesAllNa(driver, sTestCaseName);
 		
 		// Invoke method to complete the Initial Polarity Check section
-		CI_Methods_Initial_Polarity_Check_At_Meter.addSuccessValuesSub100Cop10Cop5SmWc(driver, sTestCaseName);
+		CI_Methods_Initial_Polarity_Check_At_Meter_Cut_Out.addSuccessValuesSub100Cop10Cop5SmWc(driver, sTestCaseName);
 		
 		// Invoke method to complete the Initial Phase Rotation Test section
 		CI_Methods_Initial_Phase_Rotation_Test.addSuccessValuesNonDnoBno(driver, sTestCaseName);

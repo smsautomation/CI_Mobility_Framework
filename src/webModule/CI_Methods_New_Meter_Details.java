@@ -91,7 +91,8 @@ public class CI_Methods_New_Meter_Details{
 	* 				sMeterLocCode
 	* 				iCertYearMonth
 	* 				iCtRatioPrimary
-	* 				iVtRatio
+	* 				iVtRatioPrimary
+	* 				iVtRatioSecondary
 	* 				iBaudRate
 	* Returns: 
 	*****************************************************************************************************
@@ -119,7 +120,8 @@ public class CI_Methods_New_Meter_Details{
 		String 	sMeterLocCode = "";
 		Integer iCertYearMonth = 2;
 		Integer iCtRatioPrimary = 3;
-		Integer	iVtRatio = 6;
+		Integer	iVtRatioPrimary = 11000;
+		Integer	iVtRatioSecondary = 110;
 		Integer iBaudRate = 1;
 		
 		
@@ -223,11 +225,20 @@ public class CI_Methods_New_Meter_Details{
 		
 		if (sTestCaseName.contains("Hv"))
 		{
-			CI_Objects_New_Meter_Details.cbx_vt_ratio_details(driver).click();
-			CI_Objects_New_Meter_Details.cbx_vt_ratio_details(driver).sendKeys(Integer.toString(iVtRatio));
-			CI_Objects_New_Meter_Details.cbx_vt_ratio_details(driver).sendKeys(Keys.ENTER);
+			CI_Objects_New_Meter_Details.cbx_vt_ratio_primary(driver).click();
+			CI_Objects_New_Meter_Details.cbx_vt_ratio_primary(driver).sendKeys(Integer.toString(iVtRatioPrimary));
+			CI_Objects_New_Meter_Details.cbx_vt_ratio_primary(driver).sendKeys(Keys.ENTER);
 			{
-				Log.info(sTestCaseName + " | VT Ratio Details field completed");
+				Log.info(sTestCaseName + " | Primary VT Ratio field completed");
+			}	
+		}
+		
+		{
+			CI_Objects_New_Meter_Details.cbx_vt_ratio_secondary(driver).click();
+			CI_Objects_New_Meter_Details.cbx_vt_ratio_secondary(driver).sendKeys(Integer.toString(iVtRatioSecondary));
+			CI_Objects_New_Meter_Details.cbx_vt_ratio_secondary(driver).sendKeys(Keys.ENTER);
+			{
+				Log.info(sTestCaseName + " | Primary VT Ratio field completed");
 			}	
 		}
 		
@@ -288,7 +299,8 @@ public class CI_Methods_New_Meter_Details{
 		String 	sMeterLocCode = "";
 		Integer iCertYearMonth = 2;
 		Integer iCtRatioPrimary = 1;
-		Integer iVtRatio = 1;
+		Integer iVtRatioPrimary = 11000;
+		Integer	iVtRatioSecondary = 110;
 		Integer iBaudRate = 1;
 		
 		
@@ -369,11 +381,21 @@ public class CI_Methods_New_Meter_Details{
 		
 		if (sTestCaseName.contains("Hv"))
 		{
-			CI_Objects_New_Meter_Details.cbx_vt_ratio_details(driver).click();
-			CI_Objects_New_Meter_Details.cbx_vt_ratio_details(driver).sendKeys(Integer.toString(iVtRatio));
-			CI_Objects_New_Meter_Details.cbx_vt_ratio_details(driver).sendKeys(Keys.ENTER);
+			CI_Objects_New_Meter_Details.cbx_vt_ratio_primary(driver).click();
+			CI_Objects_New_Meter_Details.cbx_vt_ratio_primary(driver).sendKeys(Integer.toString(iVtRatioPrimary));
+			CI_Objects_New_Meter_Details.cbx_vt_ratio_primary(driver).sendKeys(Keys.ENTER);
 			{
-				Log.info(sTestCaseName + " | VT Ratio Details field completed");
+				Log.info(sTestCaseName + " | Primary VT Ratio field completed");
+			}
+		}
+		
+		if (sTestCaseName.contains("Hv"))
+		{
+			CI_Objects_New_Meter_Details.cbx_vt_ratio_secondary(driver).click();
+			CI_Objects_New_Meter_Details.cbx_vt_ratio_secondary(driver).sendKeys(Integer.toString(iVtRatioSecondary));
+			CI_Objects_New_Meter_Details.cbx_vt_ratio_secondary(driver).sendKeys(Keys.ENTER);
+			{
+				Log.info(sTestCaseName + " | Primary VT Ratio field completed");
 			}
 		}
 
@@ -430,7 +452,7 @@ public class CI_Methods_New_Meter_Details{
 		Integer	iOutstationNum = 012;
 		String 	sMeterLocCode = "";
 		Integer iCertYearMonth = 2;
-		Integer iCtRatioPrimary = 4;
+		Integer iCtRatioPrimary = 150;
 		Integer iBaudRate = 1;
 		
 		

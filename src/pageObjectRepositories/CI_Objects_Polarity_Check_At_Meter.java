@@ -27,11 +27,11 @@ public class CI_Objects_Polarity_Check_At_Meter {
     private static WebElement element = null;
     private static String sRepositoryName = "CI_Objects_Polarity_Check_At_Meter";
 
-      
+    
     public static WebElement btn_polarity_check_at_meter_pass(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiopolarityCheckAtMeterTrue"));
+    		element = driver.findElement(By.id("radiopolarityCheckAtMeterTruePC"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_polarity_check_at_meter_pass not found | Exception desc : "+e.getMessage());
     	}
@@ -41,7 +41,7 @@ public class CI_Objects_Polarity_Check_At_Meter {
     public static WebElement btn_polarity_check_at_meter_fail(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiopolarityCheckAtMeterTrue"));
+    		element = driver.findElement(By.id("radiopolarityCheckAtMeterFalsePC"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_polarity_check_at_meter_fail not found | Exception desc : "+e.getMessage());
     	}
@@ -51,7 +51,7 @@ public class CI_Objects_Polarity_Check_At_Meter {
     public static WebElement txt_polarity_check_at_meter_fail(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("ranotes"));
+    		element = driver.findElement(By.id("ranotesPC"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |txt_polarity_check_at_meter_fail not found | Exception desc : "+e.getMessage());
     	}
@@ -63,7 +63,7 @@ public class CI_Objects_Polarity_Check_At_Meter {
     public static WebElement btn_corrected_polarity_y(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiocorrectPolarityTrue"));
+    		element = driver.findElement(By.id("radiocorrectPolarityTruePC"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_corrected_polarity_y not found | Exception desc : "+e.getMessage());
     	}
@@ -73,7 +73,7 @@ public class CI_Objects_Polarity_Check_At_Meter {
     public static WebElement btn_corrected_polarity_n(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("radiocorrectPolarityFalse"));
+    		element = driver.findElement(By.id("radiocorrectPolarityFalsePC"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_corrected_polarity_n not found | Exception desc : "+e.getMessage());
     	}
@@ -83,7 +83,7 @@ public class CI_Objects_Polarity_Check_At_Meter {
     public static WebElement btn_abort(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id(INSERTID));
+    		element = driver.findElement(By.id("btn2JCIT"));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_abort not found | Exception desc : "+e.getMessage());
     	}

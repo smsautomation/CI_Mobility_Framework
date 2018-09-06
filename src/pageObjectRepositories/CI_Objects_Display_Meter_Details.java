@@ -22,6 +22,8 @@ import utility.Log;
 *
 *********************************************************************/
 
+// think i'm probs gonna use this one as the amalgamated version of the Current Meter Details and the Final Meter Reading section
+
 public class CI_Objects_Display_Meter_Details {
    
     private static WebElement element = null;

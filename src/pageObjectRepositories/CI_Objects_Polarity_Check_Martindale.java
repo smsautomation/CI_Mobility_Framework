@@ -51,7 +51,7 @@ public class CI_Objects_Polarity_Check_Martindale {
     public static WebElement btn_socket_safety_test_pass(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("p3"));
+    		element = driver.findElement(By.id(p3PCM)); // left without quotes as this is a duplicate of the initial Polarity Check - Martindale section
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_socket_safety_test_pass not found | Exception desc : "+e.getMessage());
     	}
@@ -61,7 +61,7 @@ public class CI_Objects_Polarity_Check_Martindale {
     public static WebElement btn_socket_safety_test_fail(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("ps4"));
+    		element = driver.findElement(By.id(ps4PCM)); // left without quotes as this is a duplicate of the initial Polarity Check - Martindale section
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |btn_socket_safety_test_fail not found | Exception desc : "+e.getMessage());
     	}
@@ -71,7 +71,7 @@ public class CI_Objects_Polarity_Check_Martindale {
     public static WebElement cbx_socket_test_location_1(WebDriver driver) {
     	
     	try {
-    		element = driver.findElement(By.id("select2"));
+    		element = driver.findElement(By.id(select2));
     	}catch(Exception e) {
     		Log.error(sRepositoryName + " |cbx_socket_test_location_1 not found | Exception desc : "+e.getMessage());
     	}

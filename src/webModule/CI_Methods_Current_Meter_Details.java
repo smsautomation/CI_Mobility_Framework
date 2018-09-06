@@ -87,16 +87,18 @@ public class CI_Methods_Current_Meter_Details{
 		
 		Integer iNumOfRegisters = 1;
 		
-		CI_Objects_Current_Meter_Details.txt_num_of_registers(driver).click();
-		CI_Objects_Current_Meter_Details.txt_num_of_registers(driver).sendKeys(Integer.toString(iNumOfRegisters));
+		CI_Objects_Current_Meter_Details.First_Meter_Details.btn_below_meter_details_correct_y(driver).click();
+		{
+			Log.info(sTestCaseName + " | Below Meter Details Correct? - Yes radio button clicked");
+		}
+		
+		CI_Objects_Current_Meter_Details.First_Meter_Details.txt_num_of_registers(driver).click();
+		CI_Objects_Current_Meter_Details.First_Meter_Details.txt_num_of_registers(driver).sendKeys(Integer.toString(iNumOfRegisters));
 		{
 			Log.info(sTestCaseName + " | No of Registers field completed");
 		}
 		
-		CI_Objects_Current_Meter_Details.btn_below_meter_details_correct_y(driver).click();
-		{
-			Log.info(sTestCaseName + " | Below Meter Details Correct? - Yes radio button clicked");
-		}
+
 		
 	    
 	// END OF ADD SUCCESS VALUES SUB100 COPs SM METHOD	

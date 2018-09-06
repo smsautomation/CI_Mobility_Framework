@@ -88,7 +88,7 @@ public class Chrome_Sub100_Meter_Exch_Hv_Ct {
 		
 		//Select the correct appointment
 		//driver.findElement(By.xpath(".//*[@id='app']/div/div/workorderlistitem[4]/div/div[1]/div/div[1]/span[3]/span")).click();
-		driver.findElement(By.xpath("//*[contains(text(), 'Charlotte116, Charlotte116, ,')]")).click();    // needs to be a unique reference in the whole page
+		driver.findElement(By.xpath("//*[contains(text(), 'Charlotte3, Charlotte3, ,')]")).click();    // needs to be a unique reference in the whole page
 		System.out.println("selected job");
 		Thread.sleep(2000);
 		
@@ -116,9 +116,11 @@ public class Chrome_Sub100_Meter_Exch_Hv_Ct {
 		// Invoke method to complete Call Forward and Doorstep Protocol sections
 		CI_Methods_Call_Forward.addSuccessValues(driver, sTestCaseName);
 		CI_Methods_Doorstep_Protocol.addSuccessValues(driver, sTestCaseName);
+		System.err.println("completed call forward and doorstep procedure");
 						
 		// Invoke method to complete a successful initial risk assessment
 		CI_Methods_Init_Risk_Assess.addSuccessValues(driver, sTestCaseName);
+		System.err.println("completed Initial Risk Assessment section");
 						
 		// Invoke method to complete C&I Pre Task section
 		CI_Methods_Ci_Pre_Task.addSuccessValuesSub100HvCt(driver, sTestCaseName);

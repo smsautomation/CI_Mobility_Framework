@@ -133,7 +133,7 @@ public class Chrome_Cop10_Check_Meter_Installation_Wc_1ph {
 		CI_Methods_Initial_Polarity_Check_Martindale.addSuccessValuesAll(driver, sTestCaseName);
 		
 		// Invoke method to complete the Initial Polarity Check section
-		CI_Methods_Initial_Polarity_Check_At_Meter.addSuccessValuesSub100Cop10Cop5SmWc(driver, sTestCaseName);
+		CI_Methods_Initial_Polarity_Check_At_Meter_Cut_Out.addSuccessValuesSub100Cop10Cop5SmWc(driver, sTestCaseName);
 		
 		// Invoke method to complete Display Meter Details section
 		
